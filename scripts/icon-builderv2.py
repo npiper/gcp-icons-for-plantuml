@@ -57,8 +57,8 @@ Include syntax:
 !include <gcp/cloud_run>
 ```
 
-Product | Macro Name | PUML file
---- | --- | ---
+Product | Macro Name | Image (SVG) | PUML file
+--- | --- | :---: | ---
 """
 
 # XML namespace used in GCP SVGs — strip for cleaner sprite output
@@ -457,7 +457,13 @@ def main():
             color = _resolve_color(svc, cat, config)
             generate_puml(target, svg_string, color, out_dir)
 
-            markdown += f"{target} | {target} | {target}.puml\n"
+            # Copy SVG and PNG (if present) into dist/ so they are versioned alongside the .puml
+            shutil.copy2(svg_path, out_dir / f"{target}.svg")
+            png_path = svg_path.with_suffix(".png")
+            if png_path.exists():
+                shutil.copy2(png_path, out_dir / f"{target}.png")
+
+            markdown += f"{target} | {target} | ![{target}](dist/{target}.svg) | {target}.puml\n"
             results.append((target, True))
             print(f"generated {target}.puml")
 
