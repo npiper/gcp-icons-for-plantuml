@@ -17,8 +17,8 @@ GCPEntityColoring(workload_identity_pool)
 sprite $workload_identity_pool <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="1" fill="none" stroke="#4285f4" stroke-miterlimit="10" stroke-width="2"/><line x1="14.002" x2="18.002" y1="10.471" y2="10.471" fill="none" stroke="#669df6" stroke-miterlimit="10"/><line x1="14.002" x2="18.002" y1="13.512" y2="13.512" fill="none" stroke="#669df6" stroke-miterlimit="10"/><rect x="6.492" y="9.49" width="5.007" height="5.007" fill="none" stroke="#aecbfa" stroke-miterlimit="10"/><rect x="8.003" y="11.009" width="2.014" height="1.991" fill="#4285f4"/></svg>
 
 GCPEntityColoring(workload_identity_pool)
-!define workload_identity_pool(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, workload_identity_pool, workload_identity_pool)
-!define workload_identity_pool(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, workload_identity_pool, workload_identity_pool)
-!define workload_identity_poolParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, workload_identity_pool, workload_identity_pool)
-!define workload_identity_poolParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, workload_identity_pool, workload_identity_pool)
+!define workload_identity_pool(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, workload_identity_pool*2, workload_identity_pool)
+!define workload_identity_pool(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, workload_identity_pool*2, workload_identity_pool)
+!define workload_identity_poolParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, workload_identity_pool*2, workload_identity_pool)
+!define workload_identity_poolParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, workload_identity_pool*2, workload_identity_pool)
 !endif

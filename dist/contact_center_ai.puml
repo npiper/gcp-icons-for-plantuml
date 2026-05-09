@@ -20,8 +20,8 @@ GCPEntityColoring(contact_center_ai)
 sprite $contact_center_ai <svg viewBox="0 0 24 24"><g transform="translate(4.4531 2.0625)" fill="#4285f4"><path d="m3.3197 2.3382 9.594e-5 3.9947 0.0041251-1.4296e-4 -0.0041251 0.0025392v5.241l3.0876 1.7886-3.4077 2.0207-2.3074-1.34c-0.40888-0.23738-0.65992-0.67067-0.65992-1.1388v-7.9037c0-0.46818 0.25104-0.90141 0.65992-1.1389z"/><path d="m11.673 7.6694 3.3594 2.0091v3.2534c0 0.46998-0.24978 0.90484-0.65674 1.1432l-6.8442 4.0089-0.020321-0.011958 0.014797 0.011958-2.9522 1.7444c-0.1582 0.093477-0.36259 0.041614-0.45651-0.11582-0.030433-0.051044-0.046547-0.10926-0.046669-0.16864l-0.006935-3.4293 3.5328-2.1127-0.010433-0.017424 4.0871-2.388z"/><path d="m8.2124 0.1832 6.2061 3.6124c0.40945 0.23829 0.66076 0.67307 0.66076 1.1429v3.3388l-3.4764-2.0661-0.0037049 0.0059642-4.111-2.3869-3.0495 1.7707v-4.013l2.4139-1.4048c0.4196-0.24427 0.9402-0.24427 1.3599 0z"/></g></svg>
 
 GCPEntityColoring(contact_center_ai)
-!define contact_center_ai(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, contact_center_ai, contact_center_ai)
-!define contact_center_ai(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, contact_center_ai, contact_center_ai)
-!define contact_center_aiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, contact_center_ai, contact_center_ai)
-!define contact_center_aiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, contact_center_ai, contact_center_ai)
+!define contact_center_ai(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, contact_center_ai*2, contact_center_ai)
+!define contact_center_ai(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, contact_center_ai*2, contact_center_ai)
+!define contact_center_aiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, contact_center_ai*2, contact_center_ai)
+!define contact_center_aiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, contact_center_ai*2, contact_center_ai)
 !endif

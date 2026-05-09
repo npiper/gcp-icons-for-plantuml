@@ -18,8 +18,8 @@ GCPEntityColoring(compute_engine)
 sprite $compute_engine <svg viewBox="0 0 24 24"><g><rect x="9" y="9" width="6" height="6" fill="#aecbfa"/><rect x="11" y="2" width="2" height="4" fill="#669df6"/><rect x="7" y="2" width="2" height="4" fill="#669df6"/><rect x="15" y="2" width="2" height="4" fill="#669df6"/><rect x="11" y="18" width="2" height="4" fill="#4285f4"/><rect x="7" y="18" width="2" height="4" fill="#4285f4"/><rect x="15" y="18" width="2" height="4" fill="#4285f4"/><rect transform="translate(8 32) rotate(-90)" x="19" y="10" width="2" height="4" fill="#4285f4"/><rect transform="translate(4 36) rotate(-90)" x="19" y="14" width="2" height="4" fill="#4285f4"/><rect transform="translate(12 28) rotate(-90)" x="19" y="6" width="2" height="4" fill="#4285f4"/><rect transform="translate(-8 16) rotate(-90)" x="3" y="10" width="2" height="4" fill="#669df6"/><rect transform="translate(-12 20) rotate(-90)" x="3" y="14" width="2" height="4" fill="#669df6"/><rect transform="translate(-4 12) rotate(-90)" x="3" y="6" width="2" height="4" fill="#669df6"/><path d="M5,5V19H19V5ZM17,17H7V7H17Z" fill="#aecbfa"/><path fill="#669df6" d="M 9 15 L 15 15 L 12 12 Z"/><path fill="#4285f4" d="M 12 12 L 15 15 L 15 9 Z"/></g></svg>
 
 GCPEntityColoring(compute_engine)
-!define compute_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, compute_engine, compute_engine)
-!define compute_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, compute_engine, compute_engine)
-!define compute_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, compute_engine, compute_engine)
-!define compute_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, compute_engine, compute_engine)
+!define compute_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, compute_engine*2, compute_engine)
+!define compute_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, compute_engine*2, compute_engine)
+!define compute_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, compute_engine*2, compute_engine)
+!define compute_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, compute_engine*2, compute_engine)
 !endif

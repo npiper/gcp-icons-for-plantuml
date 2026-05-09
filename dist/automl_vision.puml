@@ -21,8 +21,8 @@ GCPEntityColoring(automl_vision)
 sprite $automl_vision <svg viewBox="0 0 24 24"><g><path fill="#669df6" d="M 13.44 13.77 L 8.63 13.8 L 10.61 10.26 L 15.41 10.23 Z"/><path d="M6.82,19.46l.95,1.65h9.49L22,12.89,20.1,9.6l-4.74,8.21H7.77Z" fill="#4285f4"/><path d="M17.18,4.54l-.95-1.65H6.74L2,11.11,3.9,14.4,8.64,6.19h7.59Z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(automl_vision)
-!define automl_vision(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, automl_vision, automl_vision)
-!define automl_vision(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_vision, automl_vision)
-!define automl_visionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_vision, automl_vision)
-!define automl_visionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_vision, automl_vision)
+!define automl_vision(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, automl_vision*2, automl_vision)
+!define automl_vision(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_vision*2, automl_vision)
+!define automl_visionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_vision*2, automl_vision)
+!define automl_visionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_vision*2, automl_vision)
 !endif

@@ -17,8 +17,8 @@ GCPEntityColoring(quantum_engine)
 sprite $quantum_engine <svg viewBox="0 0 24 24"><g><rect x="7.01" y="2" width="2" height="3" fill="#aecbfa"/><rect x="11.01" y="2" width="2" height="3" fill="#aecbfa"/><rect x="15.01" y="2" width="2" height="3" fill="#aecbfa"/><rect x="7.01" y="19" width="2" height="3" fill="#4285f4"/><rect x="11.01" y="19" width="2" height="3" fill="#4285f4"/><rect x="15.01" y="19" width="2" height="3" fill="#4285f4"/><rect x="19" y="15" width="3" height="2" fill="#4285f4"/><rect x="19" y="11" width="3" height="2" fill="#4285f4"/><rect x="19" y="7" width="3" height="2" fill="#4285f4"/><rect x="2" y="15" width="3" height="2" fill="#aecbfa"/><rect x="2" y="11" width="3" height="2" fill="#aecbfa"/><rect x="2" y="7" width="3" height="2" fill="#aecbfa"/><g><path d="M11,13H9V7H7v8h4v3h2V15h4V7H15v6H13V6H11ZM4,20V4H20V20Z" fill="#669df6"/></g></g></svg>
 
 GCPEntityColoring(quantum_engine)
-!define quantum_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, quantum_engine, quantum_engine)
-!define quantum_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, quantum_engine, quantum_engine)
-!define quantum_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, quantum_engine, quantum_engine)
-!define quantum_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, quantum_engine, quantum_engine)
+!define quantum_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, quantum_engine*2, quantum_engine)
+!define quantum_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, quantum_engine*2, quantum_engine)
+!define quantum_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, quantum_engine*2, quantum_engine)
+!define quantum_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, quantum_engine*2, quantum_engine)
 !endif

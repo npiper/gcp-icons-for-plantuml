@@ -23,8 +23,8 @@ GCPEntityColoring(cloud_build)
 sprite $cloud_build <svg viewBox="0 0 24 24"><g><path fill="#4285f4" d="M 12.15 16.24 L 15.67 14.21 L 15.67 10.15 L 14.49 9.46 L 10.97 15.56 Z"/><path fill="#669df6" d="M 8.63 10.15 L 8.63 14.21 L 9.81 14.89 L 13.34 8.8 L 12.15 8.11 Z"/><path fill="#aecbfa" d="M 11.46 17.45 L 7.24 15.01 L 7.24 10.15 L 3.49 7.98 L 3.49 17.18 L 11.46 21.78 Z"/><path fill="#aecbfa" d="M 7.93 8.95 L 12.15 6.51 L 16.37 8.95 L 20.13 6.78 L 12.15 2.17 L 4.17 6.78 Z"/><path fill="#aecbfa" d="M 17.06 15.01 L 12.84 17.45 L 12.84 21.78 L 20.82 17.18 L 20.82 7.98 L 17.06 10.15 Z"/></g></svg>
 
 GCPEntityColoring(cloud_build)
-!define cloud_build(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_build, cloud_build)
-!define cloud_build(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_build, cloud_build)
-!define cloud_buildParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_build, cloud_build)
-!define cloud_buildParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_build, cloud_build)
+!define cloud_build(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_build*2, cloud_build)
+!define cloud_build(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_build*2, cloud_build)
+!define cloud_buildParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_build*2, cloud_build)
+!define cloud_buildParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_build*2, cloud_build)
 !endif

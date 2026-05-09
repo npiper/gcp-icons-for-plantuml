@@ -23,8 +23,8 @@ GCPEntityColoring(tools_for_powershell)
 sprite $tools_for_powershell <svg viewBox="0 0 24 24"><g><path fill="#669df6" d="M 6.68 16.3 L 4.27 12.04 L 6.68 7.79 L 4.42 7.79 L 2 12.04 L 4.42 16.3 Z"/><path fill="#4285f4" d="M 4.57 12.56 L 4.27 12.04 L 2 12.04 L 3.11 14.01 Z"/><path d="M15,6.37H9.12L5.81,12l3.31,5.59H15L18.29,12,15,6.37Zm-2.93,8.36a2.64,2.64,0,1,1,2.66-2.64,2.65,2.65,0,0,1-2.66,2.64Z" fill="#aecbfa"/><path fill="#aecbfa" d="M 4.27 12.06 L 6.68 7.79 L 4.42 7.79 L 2 12.06 L 3.11 14.03 Z"/><path d="M15,6.45h0L13.3,9.78a2.66,2.66,0,0,1-1.25,5,2.62,2.62,0,0,1-1.18-.27L9.12,17.63H15L18.29,12,15,6.45Z" fill="#669df6"/><path fill="#669df6" d="M 17.32 7.79 L 19.73 12.04 L 17.32 16.3 L 19.59 16.3 L 22 12.04 L 19.59 7.79 Z"/><path fill="#4285f4" d="M 19.43 11.53 L 19.73 12.04 L 22 12.04 L 20.89 10.07 Z"/><path fill="#aecbfa" d="M 19.73 12.02 L 17.32 16.3 L 19.59 16.3 L 22 12.02 L 20.89 10.05 Z"/></g></svg>
 
 GCPEntityColoring(tools_for_powershell)
-!define tools_for_powershell(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, tools_for_powershell, tools_for_powershell)
-!define tools_for_powershell(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, tools_for_powershell, tools_for_powershell)
-!define tools_for_powershellParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, tools_for_powershell, tools_for_powershell)
-!define tools_for_powershellParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, tools_for_powershell, tools_for_powershell)
+!define tools_for_powershell(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, tools_for_powershell*2, tools_for_powershell)
+!define tools_for_powershell(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, tools_for_powershell*2, tools_for_powershell)
+!define tools_for_powershellParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, tools_for_powershell*2, tools_for_powershell)
+!define tools_for_powershellParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, tools_for_powershell*2, tools_for_powershell)
 !endif

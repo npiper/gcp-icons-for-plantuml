@@ -20,8 +20,8 @@ GCPEntityColoring(connectivity_test)
 sprite $connectivity_test <svg version="1.1" viewBox="0 0 24 24"><g fill="none" stroke="#4285F4" stroke-width="2"><polyline points="20 4 4 13 4 6.7174"/><polyline points="4 21 20 12 20 18.283"/></g></svg>
 
 GCPEntityColoring(connectivity_test)
-!define connectivity_test(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, connectivity_test, connectivity_test)
-!define connectivity_test(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, connectivity_test, connectivity_test)
-!define connectivity_testParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, connectivity_test, connectivity_test)
-!define connectivity_testParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, connectivity_test, connectivity_test)
+!define connectivity_test(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, connectivity_test*2, connectivity_test)
+!define connectivity_test(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, connectivity_test*2, connectivity_test)
+!define connectivity_testParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, connectivity_test*2, connectivity_test)
+!define connectivity_testParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, connectivity_test*2, connectivity_test)
 !endif

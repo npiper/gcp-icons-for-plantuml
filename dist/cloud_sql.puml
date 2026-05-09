@@ -24,8 +24,8 @@ GCPEntityColoring(cloud_sql)
 sprite $cloud_sql <svg viewBox="0 0 24 24"><g><path fill="#aecbfa" d="M 4.67 10.44 L 4.67 13.45 L 12 17.35 L 12 14.34 Z"/><path fill="#aecbfa" d="M 4.67 15.09 L 4.67 18.1 L 12 22 L 12 18.99 Z"/><path fill="#669df6" d="M 12 17.35 L 19.33 13.45 L 19.33 10.44 L 12 14.34 Z"/><path fill="#669df6" d="M 12 22 L 19.33 18.1 L 19.33 15.09 L 12 18.99 Z"/><path fill="#4285f4" d="M 19.33 8.91 L 19.33 5.9 L 12 2 L 12 5.01 Z"/><path fill="#669df6" d="M 12 2 L 4.67 5.9 L 4.67 8.91 L 12 5.01 Z"/><path fill="#aecbfa" d="M 4.67 5.87 L 4.67 8.89 L 12 12.79 L 12 9.77 Z"/><path fill="#669df6" d="M 12 12.79 L 19.33 8.89 L 19.33 5.87 L 12 9.77 Z"/></g></svg>
 
 GCPEntityColoring(cloud_sql)
-!define cloud_sql(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_sql, cloud_sql)
-!define cloud_sql(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_sql, cloud_sql)
-!define cloud_sqlParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_sql, cloud_sql)
-!define cloud_sqlParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_sql, cloud_sql)
+!define cloud_sql(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_sql*2, cloud_sql)
+!define cloud_sql(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_sql*2, cloud_sql)
+!define cloud_sqlParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_sql*2, cloud_sql)
+!define cloud_sqlParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_sql*2, cloud_sql)
 !endif

@@ -21,8 +21,8 @@ GCPEntityColoring(permissions)
 sprite $permissions <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <g transform="translate(2 2)"> <path d="m10 10c2.9 0 5.2-2.3 5.2-5.2s-2.3-5.2-5.2-5.2-5.2 2.3-5.2 5.2 2.3 5.2 5.2 5.2z" fill="#5C85DE"/> <path d="m10 12.7c-3.5 0-10.5 1.7-10.5 5.2v2.6h21v-2.6c0-3.5-7-5.2-10.5-5.2z" fill="#5C85DE"/> <path d="m10 10c2.9 0 5.2-2.3 5.2-5.2s-2.3-5.2-5.2-5.2v10.4z" fill="#3367D6"/> <path d="m10 12.7v7.8h10.5v-2.6c0-3.5-7-5.2-10.5-5.2z" fill="#3367D6"/> </g> </svg>
 
 GCPEntityColoring(permissions)
-!define permissions(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, permissions, permissions)
-!define permissions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, permissions, permissions)
-!define permissionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, permissions, permissions)
-!define permissionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, permissions, permissions)
+!define permissions(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, permissions*2, permissions)
+!define permissions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, permissions*2, permissions)
+!define permissionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, permissions*2, permissions)
+!define permissionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, permissions*2, permissions)
 !endif

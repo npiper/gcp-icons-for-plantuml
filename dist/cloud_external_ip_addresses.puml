@@ -17,8 +17,8 @@ GCPEntityColoring(cloud_external_ip_addresses)
 sprite $cloud_external_ip_addresses <svg viewBox="0 0 24 24"><g><path d="M17.49,12.4v6.7a.4.4,0,0,1-.4.4H4.9a.4.4,0,0,1-.4-.4V6.9a.4.4,0,0,1,.4-.4h6.7a.4.4,0,0,0,.4-.4V4.4a.4.4,0,0,0-.4-.4H2.4a.4.4,0,0,0-.4.4V21.6a.4.4,0,0,0,.4.4H19.6a.4.4,0,0,0,.4-.4V12.4a.4.4,0,0,0-.4-.4H17.89A.4.4,0,0,0,17.49,12.4Z" fill="#669df6"/><path d="M14,2.4V9.6a.4.4,0,0,0,.4.4h7.2a.4.4,0,0,0,.4-.4V2.4a.4.4,0,0,0-.4-.4H14.4A.4.4,0,0,0,14,2.4Zm5.6,4.1H17.89a.4.4,0,0,1-.4-.4V4.4a.4.4,0,0,1,.4-.4H19.6a.4.4,0,0,1,.4.4V6.1A.4.4,0,0,1,19.6,6.5Z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(cloud_external_ip_addresses)
-!define cloud_external_ip_addresses(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_external_ip_addresses, cloud_external_ip_addresses)
-!define cloud_external_ip_addresses(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_external_ip_addresses, cloud_external_ip_addresses)
-!define cloud_external_ip_addressesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_external_ip_addresses, cloud_external_ip_addresses)
-!define cloud_external_ip_addressesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_external_ip_addresses, cloud_external_ip_addresses)
+!define cloud_external_ip_addresses(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_external_ip_addresses*2, cloud_external_ip_addresses)
+!define cloud_external_ip_addresses(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_external_ip_addresses*2, cloud_external_ip_addresses)
+!define cloud_external_ip_addressesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_external_ip_addresses*2, cloud_external_ip_addresses)
+!define cloud_external_ip_addressesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_external_ip_addresses*2, cloud_external_ip_addresses)
 !endif

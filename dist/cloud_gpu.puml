@@ -19,8 +19,8 @@ GCPEntityColoring(cloud_gpu)
 sprite $cloud_gpu <svg viewBox="0 0 24 24"><g><path d="M15.33,2V4.38H13.17V2H10.83V4.38H8.67V2H6.29V4.38A2,2,0,0,0,4.38,6.29H2V8.67H4.38v2.14H2v2.38H4.38v2.14H2v2.38H4.38a2,2,0,0,0,1.91,1.91V22H8.67V19.62h2.16V22h2.34V19.62h2.16V22h2.38V19.62a2,2,0,0,0,1.91-1.91H22V15.33H19.62V13.19H22V10.81H19.62V8.67H22V6.29H19.62a2,2,0,0,0-1.91-1.91V2Zm1.53,15.24H7.14a.38.38,0,0,1-.38-.38V7.14a.38.38,0,0,1,.38-.38h9.72a.38.38,0,0,1,.38.38v9.72A.38.38,0,0,1,16.86,17.24Z" fill="#4285f4"/><path fill="#4285f4" d="M 12.83 7.54 L 12.83 11.12 L 14.79 11.12 L 11.29 15.98 L 11.29 12.35 L 9.22 12.35 Z"/></g></svg>
 
 GCPEntityColoring(cloud_gpu)
-!define cloud_gpu(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_gpu, cloud_gpu)
-!define cloud_gpu(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_gpu, cloud_gpu)
-!define cloud_gpuParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_gpu, cloud_gpu)
-!define cloud_gpuParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_gpu, cloud_gpu)
+!define cloud_gpu(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_gpu*2, cloud_gpu)
+!define cloud_gpu(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_gpu*2, cloud_gpu)
+!define cloud_gpuParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_gpu*2, cloud_gpu)
+!define cloud_gpuParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_gpu*2, cloud_gpu)
 !endif

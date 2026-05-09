@@ -133,7 +133,8 @@ def verify_environment():
         sys.exit(1)
     try:
         result = subprocess.run(
-            [JAVA_BIN, "-jar", "plantuml.jar", "-version"],
+            [JAVA_BIN, "-Djava.awt.headless=true", "-Dapple.awt.UIElement=true",
+             "-jar", "plantuml.jar", "-version"],
             stdout=PIPE, stderr=PIPE
         )
         if result.returncode != 0:
@@ -394,7 +395,9 @@ def minify_svg_for_sprite(svg_path):
     # containing <polygon> are used in the same diagram. Convert to <path>.
     _convert_polygons_to_paths(root)
 
-    # Remove width/height from the root <svg> element only; keep viewBox
+    # Remove width/height from the root <svg> element; keep only viewBox for scaling.
+    # The display size is controlled by the *N scale multiplier in the per-icon macro
+    # definitions (SVG branch), so the sprite source stays clean.
     root.attrib.pop("width", None)
     root.attrib.pop("height", None)
     # Remove xmlns from root (ElementTree re-adds it on serialisation; handled below)
@@ -455,7 +458,8 @@ def _encode_png_sprite(png_path):
     """Call plantuml.jar -encodesprite 16z on a PNG and return the sprite lines."""
     try:
         result = subprocess.run(
-            [JAVA_BIN, "-jar", "plantuml.jar", "-encodesprite", "16z", str(png_path)],
+            [JAVA_BIN, "-Djava.awt.headless=true", "-Dapple.awt.UIElement=true",
+             "-jar", "plantuml.jar", "-encodesprite", "16z", str(png_path)],
             stdout=PIPE, stderr=PIPE
         )
         output = result.stdout.decode("UTF-8").strip()
@@ -492,10 +496,12 @@ def generate_puml(target, svg_string, color, png_sprite, out_dir):
     content += f"sprite ${target} {svg_string}\n"
     content += "\n"
     content += f"GCPEntityColoring({target})\n"
-    content += f"!define {target}(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, {color}, {target}, {target})\n"
-    content += f"!define {target}(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n"
-    content += f"!define {target}Participant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n"
-    content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n"
+    # *2 scales the SVG sprite (natural viewBox size ~24px) to ~48px display,
+    # bringing it visually closer to the PNG sprite (128px encoded, ~138px rendered).
+    content += f"!define {target}(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, {color}, {target}*2, {target})\n"
+    content += f"!define {target}(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}*2, {target})\n"
+    content += f"!define {target}Participant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, {color}, {target}*2, {target})\n"
+    content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}*2, {target})\n"
 
     if png_sprite:
         content += "!endif\n"

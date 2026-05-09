@@ -21,8 +21,8 @@ GCPEntityColoring(cloud_deployment_manager)
 sprite $cloud_deployment_manager <svg viewBox="0 0 24 24"><g><rect x="10" y="17" width="4" height="4" fill="#4285f4"/><path fill="#669df6" d="M 19 10.84 L 14.66 6.51 L 13.65 7.52 L 19 12.85 Z"/><path fill="#4285f4" d="M 15.67 9.53 L 13.65 7.52 L 14.66 6.51 L 15.67 7.52 Z"/><path fill="#aecbfa" d="M 10.94 12.24 L 9.93 11.23 L 14.66 6.51 L 15.67 7.52 Z"/><path fill="#669df6" d="M 10.94 12.24 L 8.08 9.39 L 9.1 8.38 L 11.95 11.23 Z"/><path fill="#4285f4" d="M 10.08 11.38 L 8.08 9.39 L 9.1 8.38 L 10.08 9.36 Z"/><path fill="#aecbfa" d="M 5.44 13.99 L 10.08 9.36 L 9.07 8.35 L 5 12.41 L 5 13.99 Z"/><path d="M22,4.05a1.24,1.24,0,0,0-1-1H3a1.24,1.24,0,0,0-1,1V17a1.19,1.19,0,0,0,1,1H21a1.19,1.19,0,0,0,1-1V4.05ZM20,16H4V5H20Z" fill="#669df6"/><path d="M8,22c0-.69.31-1,1-1h6c.69,0,1,.31,1,1Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(cloud_deployment_manager)
-!define cloud_deployment_manager(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_deployment_manager, cloud_deployment_manager)
-!define cloud_deployment_manager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_deployment_manager, cloud_deployment_manager)
-!define cloud_deployment_managerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_deployment_manager, cloud_deployment_manager)
-!define cloud_deployment_managerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_deployment_manager, cloud_deployment_manager)
+!define cloud_deployment_manager(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_deployment_manager*2, cloud_deployment_manager)
+!define cloud_deployment_manager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_deployment_manager*2, cloud_deployment_manager)
+!define cloud_deployment_managerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_deployment_manager*2, cloud_deployment_manager)
+!define cloud_deployment_managerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_deployment_manager*2, cloud_deployment_manager)
 !endif

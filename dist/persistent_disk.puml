@@ -17,8 +17,8 @@ GCPEntityColoring(persistent_disk)
 sprite $persistent_disk <svg viewBox="0 0 24 24"><g><path fill="#4285f4" d="M 16.17 13.67 L 16.17 18.25 L 4.08 18.25 L 4.08 22 L 19.92 22 L 19.92 13.67 Z"/><path fill="#aecbfa" d="M 7.83 10.33 L 7.83 5.75 L 19.92 5.75 L 19.92 2 L 4.08 2 L 4.08 10.33 Z"/><path fill="#669df6" d="M 9.92 7.83 L 9.92 12.42 L 4.08 12.42 L 4.08 16.17 L 14.08 16.17 L 14.08 11.58 L 19.92 11.58 L 19.92 7.83 Z"/></g></svg>
 
 GCPEntityColoring(persistent_disk)
-!define persistent_disk(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, persistent_disk, persistent_disk)
-!define persistent_disk(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, persistent_disk, persistent_disk)
-!define persistent_diskParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, persistent_disk, persistent_disk)
-!define persistent_diskParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, persistent_disk, persistent_disk)
+!define persistent_disk(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, persistent_disk*2, persistent_disk)
+!define persistent_disk(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, persistent_disk*2, persistent_disk)
+!define persistent_diskParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, persistent_disk*2, persistent_disk)
+!define persistent_diskParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, persistent_disk*2, persistent_disk)
 !endif

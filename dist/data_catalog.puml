@@ -23,8 +23,8 @@ GCPEntityColoring(data_catalog)
 sprite $data_catalog <svg viewBox="0 0 24 24"><g><path fill="#4285f4" d="M 2.81 9.37 L 5.19 5.13 L 8.25 5.13 L 8.25 7 L 6.26 7 L 4.94 9.34 L 5.75 10.7 L 4.16 11.63 Z"/><path fill="#aecbfa" d="M 14.5 13.07 L 17 11.63 L 19.5 13.07 L 19.5 15.96 L 17 17.4 L 14.5 15.96 Z"/><path fill="#aecbfa" d="M 4.5 13.07 L 7 11.63 L 9.5 13.07 L 9.5 15.96 L 7 17.4 L 4.5 15.96 Z"/><path fill="#aecbfa" d="M 9.5 4.59 L 12 3.15 L 14.5 4.59 L 14.5 7.47 L 12 8.92 L 9.5 7.47 Z"/><path fill="#4285f4" d="M 17 11.63 L 19.5 13.07 L 19.5 15.96 L 17 17.4 Z"/><path fill="#4285f4" d="M 7 11.63 L 9.5 13.07 L 9.5 15.96 L 7 17.4 Z"/><path fill="#4285f4" d="M 12 3.15 L 14.5 4.59 L 14.5 7.47 L 12 8.92 Z"/><path fill="#4285f4" d="M 18.25 10.7 L 19.06 9.35 L 17.74 7 L 15.75 7 L 15.75 5.13 L 18.81 5.13 L 21.19 9.37 L 19.84 11.63 Z"/><path fill="#4285f4" d="M 9.61 20.75 L 8.13 18.29 L 9.73 17.36 L 10.66 18.88 L 13.31 18.88 L 14.25 17.36 L 15.85 18.28 L 14.36 20.75 Z"/></g></svg>
 
 GCPEntityColoring(data_catalog)
-!define data_catalog(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, data_catalog, data_catalog)
-!define data_catalog(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, data_catalog, data_catalog)
-!define data_catalogParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, data_catalog, data_catalog)
-!define data_catalogParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, data_catalog, data_catalog)
+!define data_catalog(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, data_catalog*2, data_catalog)
+!define data_catalog(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, data_catalog*2, data_catalog)
+!define data_catalogParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, data_catalog*2, data_catalog)
+!define data_catalogParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, data_catalog*2, data_catalog)
 !endif

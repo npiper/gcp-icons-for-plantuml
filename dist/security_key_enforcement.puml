@@ -22,8 +22,8 @@ GCPEntityColoring(security_key_enforcement)
 sprite $security_key_enforcement <svg viewBox="0 0 24 24"><g><path d="M7.78,16.6V12.85c0-.15-.29-.34-.49-.43a5.46,5.46,0,1,1,7.44-6.83A5.4,5.4,0,0,1,12,12.38a.82.82,0,0,0-.54.9V22H7.78V20.25H4.17V16.6Zm3.64-9.11a1.82,1.82,0,1,0-3.64-.06,1.83,1.83,0,0,0,1.8,1.85h0a1.84,1.84,0,0,0,1.83-1.79Z" fill="#4285f4"/><path d="M19.52,5.59A5.44,5.44,0,0,0,13.2,2.15a5.44,5.44,0,0,1,1.13,10.23.84.84,0,0,0-.55.9V22h2.43V13.29a.83.83,0,0,1,.55-.9A5.4,5.4,0,0,0,19.52,5.59Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(security_key_enforcement)
-!define security_key_enforcement(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, security_key_enforcement, security_key_enforcement)
-!define security_key_enforcement(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_key_enforcement, security_key_enforcement)
-!define security_key_enforcementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_key_enforcement, security_key_enforcement)
-!define security_key_enforcementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_key_enforcement, security_key_enforcement)
+!define security_key_enforcement(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, security_key_enforcement*2, security_key_enforcement)
+!define security_key_enforcement(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_key_enforcement*2, security_key_enforcement)
+!define security_key_enforcementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_key_enforcement*2, security_key_enforcement)
+!define security_key_enforcementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_key_enforcement*2, security_key_enforcement)
 !endif

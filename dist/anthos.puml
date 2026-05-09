@@ -26,8 +26,8 @@ GCPEntityColoring(anthos)
 sprite $anthos <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <style type="text/css"> .st0{fill:#FEBC00;} .st1{fill:#EE3C2B;} .st2{fill:#2BAA4F;} .st3{fill:#3982F8;} </style> <path fill="#FEBC00" d="M 6 15.8 L 12 5.3 L 18 15.8 L 23 20.8 L 23.2 21 L 23.2 21 L 12 1.6 L 0.8 21 L 0.8 21 L 1 20.8 Z"/><path fill="#EE3C2B" d="M 12 9.7 L 1 20.8 L 5.6 18.7 L 12 12.3 L 18.4 18.7 L 23 20.8 Z"/><path fill="#2BAA4F" d="M 6 20.6 L 1.8 22.4 L 22.2 22.4 L 18 20.6 Z"/><path fill="#3982F8" d="M 23 20.8 L 12 15.8 L 1 20.8 L 0 22.4 L 1.8 22.4 L 12 17.8 L 22.2 22.4 L 24 22.4 Z"/></svg>
 
 GCPEntityColoring(anthos)
-!define anthos(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, anthos, anthos)
-!define anthos(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, anthos, anthos)
-!define anthosParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, anthos, anthos)
-!define anthosParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, anthos, anthos)
+!define anthos(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, anthos*2, anthos)
+!define anthos(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, anthos*2, anthos)
+!define anthosParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, anthos*2, anthos)
+!define anthosParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, anthos*2, anthos)
 !endif
