@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $cloud_run <svg viewBox="0 0 24 24"><g><path fill="#aecbfa" d="M 8.9 2.63 L 12.02 12 L 21.38 12 Z"/><path fill="#4285f4" d="M 21.38 12 L 12.02 12 L 8.9 21.38 Z"/><path fill="#4285f4" d="M 3.44 21.38 L 6.57 19.81 L 8.9 12 L 5.78 12 Z"/><path fill="#aecbfa" d="M 3.44 2.63 L 5.78 12 L 8.9 12 L 6.57 4.19 Z"/></g></svg>
+
+GCPEntityColoring(cloud_run)
+!define cloud_run(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_run, cloud_run)
+!define cloud_run(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_run, cloud_run)
+!define cloud_runParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_run, cloud_run)
+!define cloud_runParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_run, cloud_run)

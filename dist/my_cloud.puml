@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $my_cloud <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <g transform="translate(0 1)"> <rect width="24" height="24" fill="none"/> <g transform="translate(2 7)"> <path fill="#5C85DE" d="M -2 17 L 22 17 L 22 -7 L -2 -7 Z"/></g> </g> </svg>
+
+GCPEntityColoring(my_cloud)
+!define my_cloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, my_cloud, my_cloud)
+!define my_cloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, my_cloud, my_cloud)
+!define my_cloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, my_cloud, my_cloud)
+!define my_cloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, my_cloud, my_cloud)

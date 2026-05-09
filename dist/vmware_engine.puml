@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $vmware_engine <svg viewBox="0 0 24 24"><path d="m6.3444 13.507c2.3648 0 4.2819 1.9152 4.2819 4.2778 0 2.3625-1.9171 4.2778-4.2819 4.2778-2.3648 0-4.2819-1.9152-4.2819-4.2778 0-2.3625 1.9171-4.2778 4.2819-4.2778zm-0.034289 1.8658-0.65144 0.65393 1.3785 1.385-3.107-6.683e-4v0.92769l3.109 9.817e-4 -1.3805 1.3849 0.65124 0.65413 2.4943-2.5023zm15.752-13.31v12.523l-4.3195-2.371e-4 2.113e-4 4.3154-6.2771 5.823e-4c0.083071-0.36995 0.1269-0.75472 0.1269-1.1497 0-0.23044-0.014919-0.4574-0.043844-0.67997l4.3629-2.51e-4 2.254e-4 -4.315 4.3188-2e-7v-8.865h-8.873l2.347e-4 4.3154-4.3202-3.5977e-4 4.371e-5 4.3592c-0.22252-0.028829-0.44943-0.043697-0.67981-0.043697-0.39538 0-0.78051 0.043791-1.1508 0.12678l5.8288e-4 -6.2711 4.319-1.2289e-4 2.4882e-4 -4.315zm-3.615 3.6116v5.3001l-4.3194-6.668e-4 1.878e-4 4.3158-3.151-6.726e-4c-0.48862-0.91262-1.2403-1.6635-2.1538-2.1516l-3.3866e-4 -3.1478 4.319-6.9314e-4 2.723e-4 -4.3144z" fill="#4285f4"/></svg>
+
+GCPEntityColoring(vmware_engine)
+!define vmware_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, vmware_engine, vmware_engine)
+!define vmware_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, vmware_engine, vmware_engine)
+!define vmware_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, vmware_engine, vmware_engine)
+!define vmware_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, vmware_engine, vmware_engine)

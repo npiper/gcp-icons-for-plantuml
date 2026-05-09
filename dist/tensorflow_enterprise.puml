@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $tensorflow_enterprise <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><path d="m12.301 4 6.69 3.9033 0.0091322 3.5409-4.0267-2.3761v1.7882l2.0073 1.1714 0.011208 3.0789-2.0185-1.1929v4.5015l-2.6724 1.5849v-16zm-0.60177-3.179e-5v16l-2.6724-1.5849v-9.3469l-4.0267 2.376 0.0091322-3.5409 6.69-3.9033z" fill="#4285F4"/></g></svg>
+
+GCPEntityColoring(tensorflow_enterprise)
+!define tensorflow_enterprise(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, tensorflow_enterprise, tensorflow_enterprise)
+!define tensorflow_enterprise(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, tensorflow_enterprise, tensorflow_enterprise)
+!define tensorflow_enterpriseParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, tensorflow_enterprise, tensorflow_enterprise)
+!define tensorflow_enterpriseParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, tensorflow_enterprise, tensorflow_enterprise)

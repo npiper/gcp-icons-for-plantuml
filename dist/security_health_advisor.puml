@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $security_health_advisor <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <g transform="translate(16 4.0008)"> <path fill="#AECBFA" d="M -9 22 L 8 22 L 8 -6 L -9 -6 Z"/></g> <g transform="translate(6.6667 4.0008)"> <path fill="#669DF6" d="M -6.7 22 L 10.3 22 L 10.3 -6 L -6.7 -6 Z"/></g> <path fill="#4285F4" d="M 7.8 12 L 2 12 L 2 13 L 8.3 13 L 10 10.5 L 13 16.6 L 15.3 12 L 22 12 L 22 11 L 14.7 11 L 13 14.4 L 10.1 8.5 Z"/><rect width="24" height="24" fill="none"/> </svg>
+
+GCPEntityColoring(security_health_advisor)
+!define security_health_advisor(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, security_health_advisor, security_health_advisor)
+!define security_health_advisor(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_health_advisor, security_health_advisor)
+!define security_health_advisorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_health_advisor, security_health_advisor)
+!define security_health_advisorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_health_advisor, security_health_advisor)

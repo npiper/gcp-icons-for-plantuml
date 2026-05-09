@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $cloud_router <svg viewBox="0 0 24 24"><g><g><path d="M19,14v3l-5-5,5-5v3h3v4ZM5,10H2v4H5v3l5-5L5,7Zm9,7V14H10v3H7l5,5,5-5ZM14,7v3H10V7H7l5-5,5,5Z" fill="#4285f4"/></g></g></svg>
+
+GCPEntityColoring(cloud_router)
+!define cloud_router(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_router, cloud_router)
+!define cloud_router(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_router, cloud_router)
+!define cloud_routerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_router, cloud_router)
+!define cloud_routerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_router, cloud_router)

@@ -1,142 +1,233 @@
-
 <!--
+Copyright (c) 2026 Neil Piper (fork maintainer)
 Copyright (c) 2020 David Holsgrove
-Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-SPDX-License-Identifier: MIT (For details, see https://github.com/davidholsgrove/gcp-icons-for-plantuml/blob/master/LICENSE-CODE)
+SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 -->
-# GCP Symbols
+# GCP Symbols (v2 — SVG sprites)
 
-The table below lists all GCP symbols in the `dist/` directory, sorted by category.
+The table below lists all GCP symbols in the `dist/` directory.
 
-If you want to reference and use these files without Internet connectivity, you can also download the whole [*PlantUML Icons for GCP* dist](dist/) direcotry and reference it locally with PlantUML.
+Include syntax:
+```
+!include <gcp/GCPCommon>
+!include <gcp/cloud_run>
+```
 
-## PNG images
-
-For each symbol, there is a resized icon in PNG format generated from the source file. Where the original icons had transparency set, this has been kept in the generated icons. You can also use the images outside of PlantUML, e.g. for documents or presentations, but the official [GCP Architecture Icons](https://cloud.google.com/icons/) are available in all popular formats.
-
-## All PNG generated GCP symbols
-
-Category | PUML Macro (Name) | Image (PNG) | PUML Url
-  ---    |  ---  | :---:  | ---
-**AIAndMachineLearning** | | | **AIAndMachineLearning/all.puml**
-AIAndMachineLearning | AIHub  | ![AIHub](dist/AIAndMachineLearning/AIHub.png?raw=true) |AIAndMachineLearning/AIHub.puml
-AIAndMachineLearning | AIPlatform  | ![AIPlatform](dist/AIAndMachineLearning/AIPlatform.png?raw=true) |AIAndMachineLearning/AIPlatform.puml
-AIAndMachineLearning | AIPlatformDataLabelingService  | ![AIPlatformDataLabelingService](dist/AIAndMachineLearning/AIPlatformDataLabelingService.png?raw=true) |AIAndMachineLearning/AIPlatformDataLabelingService.puml
-AIAndMachineLearning | AdvancedSolutionsLab  | ![AdvancedSolutionsLab](dist/AIAndMachineLearning/AdvancedSolutionsLab.png?raw=true) |AIAndMachineLearning/AdvancedSolutionsLab.puml
-AIAndMachineLearning | AutoMLNaturalLanguage  | ![AutoMLNaturalLanguage](dist/AIAndMachineLearning/AutoMLNaturalLanguage.png?raw=true) |AIAndMachineLearning/AutoMLNaturalLanguage.puml
-AIAndMachineLearning | AutoMLTables  | ![AutoMLTables](dist/AIAndMachineLearning/AutoMLTables.png?raw=true) |AIAndMachineLearning/AutoMLTables.puml
-AIAndMachineLearning | AutoMLTranslation  | ![AutoMLTranslation](dist/AIAndMachineLearning/AutoMLTranslation.png?raw=true) |AIAndMachineLearning/AutoMLTranslation.puml
-AIAndMachineLearning | AutoMLVideoIntelligence  | ![AutoMLVideoIntelligence](dist/AIAndMachineLearning/AutoMLVideoIntelligence.png?raw=true) |AIAndMachineLearning/AutoMLVideoIntelligence.puml
-AIAndMachineLearning | AutoMLVision  | ![AutoMLVision](dist/AIAndMachineLearning/AutoMLVision.png?raw=true) |AIAndMachineLearning/AutoMLVision.puml
-AIAndMachineLearning | CloudAutoML  | ![CloudAutoML](dist/AIAndMachineLearning/CloudAutoML.png?raw=true) |AIAndMachineLearning/CloudAutoML.puml
-AIAndMachineLearning | CloudInferenceAPI  | ![CloudInferenceAPI](dist/AIAndMachineLearning/CloudInferenceAPI.png?raw=true) |AIAndMachineLearning/CloudInferenceAPI.puml
-AIAndMachineLearning | CloudJobsAPI  | ![CloudJobsAPI](dist/AIAndMachineLearning/CloudJobsAPI.png?raw=true) |AIAndMachineLearning/CloudJobsAPI.puml
-AIAndMachineLearning | CloudNaturalLanguageAPI  | ![CloudNaturalLanguageAPI](dist/AIAndMachineLearning/CloudNaturalLanguageAPI.png?raw=true) |AIAndMachineLearning/CloudNaturalLanguageAPI.puml
-AIAndMachineLearning | CloudSpeechtoText  | ![CloudSpeechtoText](dist/AIAndMachineLearning/CloudSpeechtoText.png?raw=true) |AIAndMachineLearning/CloudSpeechtoText.puml
-AIAndMachineLearning | CloudTPU  | ![CloudTPU](dist/AIAndMachineLearning/CloudTPU.png?raw=true) |AIAndMachineLearning/CloudTPU.puml
-AIAndMachineLearning | CloudTexttoSpeech  | ![CloudTexttoSpeech](dist/AIAndMachineLearning/CloudTexttoSpeech.png?raw=true) |AIAndMachineLearning/CloudTexttoSpeech.puml
-AIAndMachineLearning | CloudTranslationAPI  | ![CloudTranslationAPI](dist/AIAndMachineLearning/CloudTranslationAPI.png?raw=true) |AIAndMachineLearning/CloudTranslationAPI.puml
-AIAndMachineLearning | CloudVideoIntelligenceAPI  | ![CloudVideoIntelligenceAPI](dist/AIAndMachineLearning/CloudVideoIntelligenceAPI.png?raw=true) |AIAndMachineLearning/CloudVideoIntelligenceAPI.puml
-AIAndMachineLearning | CloudVisionAPI  | ![CloudVisionAPI](dist/AIAndMachineLearning/CloudVisionAPI.png?raw=true) |AIAndMachineLearning/CloudVisionAPI.puml
-AIAndMachineLearning | DialogFlowEnterpriseEdition  | ![DialogFlowEnterpriseEdition](dist/AIAndMachineLearning/DialogFlowEnterpriseEdition.png?raw=true) |AIAndMachineLearning/DialogFlowEnterpriseEdition.puml
-AIAndMachineLearning | RecommendationsAI  | ![RecommendationsAI](dist/AIAndMachineLearning/RecommendationsAI.png?raw=true) |AIAndMachineLearning/RecommendationsAI.puml
-**APIManagement** | | | **APIManagement/all.puml**
-APIManagement | APIAnalytics  | ![APIAnalytics](dist/APIManagement/APIAnalytics.png?raw=true) |APIManagement/APIAnalytics.puml
-APIManagement | APIMonetization  | ![APIMonetization](dist/APIManagement/APIMonetization.png?raw=true) |APIManagement/APIMonetization.puml
-APIManagement | ApigeeAPIPlatform  | ![ApigeeAPIPlatform](dist/APIManagement/ApigeeAPIPlatform.png?raw=true) |APIManagement/ApigeeAPIPlatform.puml
-APIManagement | ApigeeSense  | ![ApigeeSense](dist/APIManagement/ApigeeSense.png?raw=true) |APIManagement/ApigeeSense.puml
-APIManagement | CloudEndpoints  | ![CloudEndpoints](dist/APIManagement/CloudEndpoints.png?raw=true) |APIManagement/CloudEndpoints.puml
-APIManagement | DeveloperPortal  | ![DeveloperPortal](dist/APIManagement/DeveloperPortal.png?raw=true) |APIManagement/DeveloperPortal.puml
-**Compute** | | | **Compute/all.puml**
-Compute | AppEngine  | ![AppEngine](dist/Compute/AppEngine.png?raw=true) |Compute/AppEngine.puml
-Compute | CloudFunctions  | ![CloudFunctions](dist/Compute/CloudFunctions.png?raw=true) |Compute/CloudFunctions.puml
-Compute | CloudRun  | ![CloudRun](dist/Compute/CloudRun.png?raw=true) |Compute/CloudRun.puml
-Compute | ComputeEngine  | ![ComputeEngine](dist/Compute/ComputeEngine.png?raw=true) |Compute/ComputeEngine.puml
-Compute | ContainerOptimizedOS  | ![ContainerOptimizedOS](dist/Compute/ContainerOptimizedOS.png?raw=true) |Compute/ContainerOptimizedOS.puml
-Compute | GKEOnPrem  | ![GKEOnPrem](dist/Compute/GKEOnPrem.png?raw=true) |Compute/GKEOnPrem.puml
-Compute | GPU  | ![GPU](dist/Compute/GPU.png?raw=true) |Compute/GPU.puml
-Compute | KubernetesEngine  | ![KubernetesEngine](dist/Compute/KubernetesEngine.png?raw=true) |Compute/KubernetesEngine.puml
-**DataAnalytics** | | | **DataAnalytics/all.puml**
-DataAnalytics | BigQuery  | ![BigQuery](dist/DataAnalytics/BigQuery.png?raw=true) |DataAnalytics/BigQuery.puml
-DataAnalytics | CloudComposer  | ![CloudComposer](dist/DataAnalytics/CloudComposer.png?raw=true) |DataAnalytics/CloudComposer.puml
-DataAnalytics | CloudDataCatalog  | ![CloudDataCatalog](dist/DataAnalytics/CloudDataCatalog.png?raw=true) |DataAnalytics/CloudDataCatalog.puml
-DataAnalytics | CloudDataFusion  | ![CloudDataFusion](dist/DataAnalytics/CloudDataFusion.png?raw=true) |DataAnalytics/CloudDataFusion.puml
-DataAnalytics | CloudDataflow  | ![CloudDataflow](dist/DataAnalytics/CloudDataflow.png?raw=true) |DataAnalytics/CloudDataflow.puml
-DataAnalytics | CloudDatalab  | ![CloudDatalab](dist/DataAnalytics/CloudDatalab.png?raw=true) |DataAnalytics/CloudDatalab.puml
-DataAnalytics | CloudDataprep  | ![CloudDataprep](dist/DataAnalytics/CloudDataprep.png?raw=true) |DataAnalytics/CloudDataprep.puml
-DataAnalytics | CloudDataproc  | ![CloudDataproc](dist/DataAnalytics/CloudDataproc.png?raw=true) |DataAnalytics/CloudDataproc.puml
-DataAnalytics | CloudPubSub  | ![CloudPubSub](dist/DataAnalytics/CloudPubSub.png?raw=true) |DataAnalytics/CloudPubSub.puml
-DataAnalytics | Genomics  | ![Genomics](dist/DataAnalytics/Genomics.png?raw=true) |DataAnalytics/Genomics.puml
-**Databases** | | | **Databases/all.puml**
-Databases | CloudBigtable  | ![CloudBigtable](dist/Databases/CloudBigtable.png?raw=true) |Databases/CloudBigtable.puml
-Databases | CloudDatastore  | ![CloudDatastore](dist/Databases/CloudDatastore.png?raw=true) |Databases/CloudDatastore.puml
-Databases | CloudFirestore  | ![CloudFirestore](dist/Databases/CloudFirestore.png?raw=true) |Databases/CloudFirestore.puml
-Databases | CloudMemorystore  | ![CloudMemorystore](dist/Databases/CloudMemorystore.png?raw=true) |Databases/CloudMemorystore.puml
-Databases | CloudSQL  | ![CloudSQL](dist/Databases/CloudSQL.png?raw=true) |Databases/CloudSQL.puml
-Databases | CloudSpanner  | ![CloudSpanner](dist/Databases/CloudSpanner.png?raw=true) |Databases/CloudSpanner.puml
-**DeveloperTools** | | | **DeveloperTools/all.puml**
-DeveloperTools | CloudBuild  | ![CloudBuild](dist/DeveloperTools/CloudBuild.png?raw=true) |DeveloperTools/CloudBuild.puml
-DeveloperTools | CloudCode  | ![CloudCode](dist/DeveloperTools/CloudCode.png?raw=true) |DeveloperTools/CloudCode.puml
-DeveloperTools | CloudCodeforIntelliJ  | ![CloudCodeforIntelliJ](dist/DeveloperTools/CloudCodeforIntelliJ.png?raw=true) |DeveloperTools/CloudCodeforIntelliJ.puml
-DeveloperTools | CloudSDK  | ![CloudSDK](dist/DeveloperTools/CloudSDK.png?raw=true) |DeveloperTools/CloudSDK.puml
-DeveloperTools | CloudScheduler  | ![CloudScheduler](dist/DeveloperTools/CloudScheduler.png?raw=true) |DeveloperTools/CloudScheduler.puml
-DeveloperTools | CloudSourceRepositories  | ![CloudSourceRepositories](dist/DeveloperTools/CloudSourceRepositories.png?raw=true) |DeveloperTools/CloudSourceRepositories.puml
-DeveloperTools | CloudTasks  | ![CloudTasks](dist/DeveloperTools/CloudTasks.png?raw=true) |DeveloperTools/CloudTasks.puml
-DeveloperTools | CloudTestLab  | ![CloudTestLab](dist/DeveloperTools/CloudTestLab.png?raw=true) |DeveloperTools/CloudTestLab.puml
-DeveloperTools | CloudToolsforEclipse  | ![CloudToolsforEclipse](dist/DeveloperTools/CloudToolsforEclipse.png?raw=true) |DeveloperTools/CloudToolsforEclipse.puml
-DeveloperTools | CloudToolsforPowerShell  | ![CloudToolsforPowerShell](dist/DeveloperTools/CloudToolsforPowerShell.png?raw=true) |DeveloperTools/CloudToolsforPowerShell.puml
-DeveloperTools | CloudToolsforVisualStudio  | ![CloudToolsforVisualStudio](dist/DeveloperTools/CloudToolsforVisualStudio.png?raw=true) |DeveloperTools/CloudToolsforVisualStudio.puml
-DeveloperTools | ContainerRegistry  | ![ContainerRegistry](dist/DeveloperTools/ContainerRegistry.png?raw=true) |DeveloperTools/ContainerRegistry.puml
-DeveloperTools | GradleAppEnginePlugin  | ![GradleAppEnginePlugin](dist/DeveloperTools/GradleAppEnginePlugin.png?raw=true) |DeveloperTools/GradleAppEnginePlugin.puml
-DeveloperTools | IDEPlugins  | ![IDEPlugins](dist/DeveloperTools/IDEPlugins.png?raw=true) |DeveloperTools/IDEPlugins.puml
-DeveloperTools | MavenAppEnginePlugin  | ![MavenAppEnginePlugin](dist/DeveloperTools/MavenAppEnginePlugin.png?raw=true) |DeveloperTools/MavenAppEnginePlugin.puml
-**HybridAndMultiCloud** | | | **HybridAndMultiCloud/all.puml**
-HybridAndMultiCloud | HybridStackdriver  | ![HybridStackdriver](dist/HybridAndMultiCloud/HybridStackdriver.png?raw=true) |HybridAndMultiCloud/HybridStackdriver.puml
-HybridAndMultiCloud | HybridTrafficDirector  | ![HybridTrafficDirector](dist/HybridAndMultiCloud/HybridTrafficDirector.png?raw=true) |HybridAndMultiCloud/HybridTrafficDirector.puml
-**InternetOfThings** | | | **InternetOfThings/all.puml**
-InternetOfThings | CloudIoTCore  | ![CloudIoTCore](dist/InternetOfThings/CloudIoTCore.png?raw=true) |InternetOfThings/CloudIoTCore.puml
-**ManagementTools** | | | **ManagementTools/all.puml**
-ManagementTools | CloudAPIs  | ![CloudAPIs](dist/ManagementTools/CloudAPIs.png?raw=true) |ManagementTools/CloudAPIs.puml
-ManagementTools | CloudBillingAPI  | ![CloudBillingAPI](dist/ManagementTools/CloudBillingAPI.png?raw=true) |ManagementTools/CloudBillingAPI.puml
-ManagementTools | CloudConsole  | ![CloudConsole](dist/ManagementTools/CloudConsole.png?raw=true) |ManagementTools/CloudConsole.puml
-ManagementTools | CloudDeploymentManager  | ![CloudDeploymentManager](dist/ManagementTools/CloudDeploymentManager.png?raw=true) |ManagementTools/CloudDeploymentManager.puml
-ManagementTools | CloudMobileApp  | ![CloudMobileApp](dist/ManagementTools/CloudMobileApp.png?raw=true) |ManagementTools/CloudMobileApp.puml
-ManagementTools | CloudServiceMesh  | ![CloudServiceMesh](dist/ManagementTools/CloudServiceMesh.png?raw=true) |ManagementTools/CloudServiceMesh.puml
-ManagementTools | CloudShell  | ![CloudShell](dist/ManagementTools/CloudShell.png?raw=true) |ManagementTools/CloudShell.puml
-ManagementTools | Debugger  | ![Debugger](dist/ManagementTools/Debugger.png?raw=true) |ManagementTools/Debugger.puml
-ManagementTools | ErrorReporting  | ![ErrorReporting](dist/ManagementTools/ErrorReporting.png?raw=true) |ManagementTools/ErrorReporting.puml
-ManagementTools | Logging  | ![Logging](dist/ManagementTools/Logging.png?raw=true) |ManagementTools/Logging.puml
-ManagementTools | Monitoring  | ![Monitoring](dist/ManagementTools/Monitoring.png?raw=true) |ManagementTools/Monitoring.puml
-ManagementTools | Profiler  | ![Profiler](dist/ManagementTools/Profiler.png?raw=true) |ManagementTools/Profiler.puml
-ManagementTools | Stackdriver  | ![Stackdriver](dist/ManagementTools/Stackdriver.png?raw=true) |ManagementTools/Stackdriver.puml
-ManagementTools | Trace  | ![Trace](dist/ManagementTools/Trace.png?raw=true) |ManagementTools/Trace.puml
-**Migration** | | | **Migration/all.puml**
-Migration | TransferAppliance  | ![TransferAppliance](dist/Migration/TransferAppliance.png?raw=true) |Migration/TransferAppliance.puml
-**Networking** | | | **Networking/all.puml**
-Networking | CloudArmor  | ![CloudArmor](dist/Networking/CloudArmor.png?raw=true) |Networking/CloudArmor.puml
-Networking | CloudCDN  | ![CloudCDN](dist/Networking/CloudCDN.png?raw=true) |Networking/CloudCDN.puml
-Networking | CloudDNS  | ![CloudDNS](dist/Networking/CloudDNS.png?raw=true) |Networking/CloudDNS.puml
-Networking | CloudExternalIPAddresses  | ![CloudExternalIPAddresses](dist/Networking/CloudExternalIPAddresses.png?raw=true) |Networking/CloudExternalIPAddresses.puml
-Networking | CloudFirewallRules  | ![CloudFirewallRules](dist/Networking/CloudFirewallRules.png?raw=true) |Networking/CloudFirewallRules.puml
-Networking | CloudLoadBalancing  | ![CloudLoadBalancing](dist/Networking/CloudLoadBalancing.png?raw=true) |Networking/CloudLoadBalancing.puml
-Networking | CloudNAT  | ![CloudNAT](dist/Networking/CloudNAT.png?raw=true) |Networking/CloudNAT.puml
-Networking | CloudNetwork  | ![CloudNetwork](dist/Networking/CloudNetwork.png?raw=true) |Networking/CloudNetwork.puml
-Networking | CloudRouter  | ![CloudRouter](dist/Networking/CloudRouter.png?raw=true) |Networking/CloudRouter.puml
-Networking | CloudRoutes  | ![CloudRoutes](dist/Networking/CloudRoutes.png?raw=true) |Networking/CloudRoutes.puml
-Networking | CloudVPN  | ![CloudVPN](dist/Networking/CloudVPN.png?raw=true) |Networking/CloudVPN.puml
-Networking | DedicatedInterconnect  | ![DedicatedInterconnect](dist/Networking/DedicatedInterconnect.png?raw=true) |Networking/DedicatedInterconnect.puml
-Networking | PartnerInterconnect  | ![PartnerInterconnect](dist/Networking/PartnerInterconnect.png?raw=true) |Networking/PartnerInterconnect.puml
-Networking | PremiumNetworkTier  | ![PremiumNetworkTier](dist/Networking/PremiumNetworkTier.png?raw=true) |Networking/PremiumNetworkTier.puml
-Networking | StandardNetworkTier  | ![StandardNetworkTier](dist/Networking/StandardNetworkTier.png?raw=true) |Networking/StandardNetworkTier.puml
-Networking | TrafficDirector  | ![TrafficDirector](dist/Networking/TrafficDirector.png?raw=true) |Networking/TrafficDirector.puml
-Networking | VirtualPrivateCloud  | ![VirtualPrivateCloud](dist/Networking/VirtualPrivateCloud.png?raw=true) |Networking/VirtualPrivateCloud.puml
-**Security** | | | **Security/all.puml**
-Security | CloudIAM  | ![CloudIAM](dist/Security/CloudIAM.png?raw=true) |Security/CloudIAM.puml
-Security | CloudResourceManager  | ![CloudResourceManager](dist/Security/CloudResourceManager.png?raw=true) |Security/CloudResourceManager.puml
-Security | CloudSecurityCommandCenter  | ![CloudSecurityCommandCenter](dist/Security/CloudSecurityCommandCenter.png?raw=true) |Security/CloudSecurityCommandCenter.puml
-Security | CloudSecurityScanner  | ![CloudSecurityScanner](dist/Security/CloudSecurityScanner.png?raw=true) |Security/CloudSecurityScanner.puml
-Security | KeyManagementService  | ![KeyManagementService](dist/Security/KeyManagementService.png?raw=true) |Security/KeyManagementService.puml
-**Storage** | | | **Storage/all.puml**
-Storage | CloudFilestore  | ![CloudFilestore](dist/Storage/CloudFilestore.png?raw=true) |Storage/CloudFilestore.puml
-Storage | CloudStorage  | ![CloudStorage](dist/Storage/CloudStorage.png?raw=true) |Storage/CloudStorage.puml
-Storage | PersistentDisk  | ![PersistentDisk](dist/Storage/PersistentDisk.png?raw=true) |Storage/PersistentDisk.puml
+Product | Macro Name | PUML file
+--- | --- | ---
+access_context_manager | access_context_manager | access_context_manager.puml
+administration | administration | administration.puml
+advanced_agent_modeling | advanced_agent_modeling | advanced_agent_modeling.puml
+advanced_solutions_lab | advanced_solutions_lab | advanced_solutions_lab.puml
+agent_assist | agent_assist | agent_assist.puml
+ai_hub | ai_hub | ai_hub.puml
+ai_platform | ai_platform | ai_platform.puml
+ai_platform_unified | ai_platform_unified | ai_platform_unified.puml
+analytics_hub | analytics_hub | analytics_hub.puml
+anthos | anthos | anthos.puml
+anthos_config_management | anthos_config_management | anthos_config_management.puml
+anthos_service_mesh | anthos_service_mesh | anthos_service_mesh.puml
+api | api | api.puml
+api_analytics | api_analytics | api_analytics.puml
+api_monetization | api_monetization | api_monetization.puml
+apigee_api_platform | apigee_api_platform | apigee_api_platform.puml
+apigee_sense | apigee_sense | apigee_sense.puml
+app_engine | app_engine | app_engine.puml
+artifact_registry | artifact_registry | artifact_registry.puml
+asset_inventory | asset_inventory | asset_inventory.puml
+assured_workloads | assured_workloads | assured_workloads.puml
+automl | automl | automl.puml
+automl_natural_language | automl_natural_language | automl_natural_language.puml
+automl_tables | automl_tables | automl_tables.puml
+automl_translation | automl_translation | automl_translation.puml
+automl_video_intelligence | automl_video_intelligence | automl_video_intelligence.puml
+automl_vision | automl_vision | automl_vision.puml
+bare_metal_solutions | bare_metal_solutions | bare_metal_solutions.puml
+batch | batch | batch.puml
+beyondcorp | beyondcorp | beyondcorp.puml
+bigquery | bigquery | bigquery.puml
+bigtable | bigtable | bigtable.puml
+billing | billing | billing.puml
+binary_authorization | binary_authorization | binary_authorization.puml
+catalog | catalog | catalog.puml
+certificate_authority_service | certificate_authority_service | certificate_authority_service.puml
+certificate_manager | certificate_manager | certificate_manager.puml
+cloud_api_gateway | cloud_api_gateway | cloud_api_gateway.puml
+cloud_apis | cloud_apis | cloud_apis.puml
+cloud_armor | cloud_armor | cloud_armor.puml
+cloud_asset_inventory | cloud_asset_inventory | cloud_asset_inventory.puml
+cloud_audit_logs | cloud_audit_logs | cloud_audit_logs.puml
+cloud_build | cloud_build | cloud_build.puml
+cloud_cdn | cloud_cdn | cloud_cdn.puml
+cloud_code | cloud_code | cloud_code.puml
+cloud_composer | cloud_composer | cloud_composer.puml
+cloud_data_fusion | cloud_data_fusion | cloud_data_fusion.puml
+cloud_deploy | cloud_deploy | cloud_deploy.puml
+cloud_deployment_manager | cloud_deployment_manager | cloud_deployment_manager.puml
+cloud_dns | cloud_dns | cloud_dns.puml
+cloud_domains | cloud_domains | cloud_domains.puml
+cloud_ekm | cloud_ekm | cloud_ekm.puml
+cloud_endpoints | cloud_endpoints | cloud_endpoints.puml
+cloud_external_ip_addresses | cloud_external_ip_addresses | cloud_external_ip_addresses.puml
+cloud_firewall_rules | cloud_firewall_rules | cloud_firewall_rules.puml
+cloud_for_marketing | cloud_for_marketing | cloud_for_marketing.puml
+cloud_functions | cloud_functions | cloud_functions.puml
+cloud_generic | cloud_generic | cloud_generic.puml
+cloud_gpu | cloud_gpu | cloud_gpu.puml
+cloud_healthcare_api | cloud_healthcare_api | cloud_healthcare_api.puml
+cloud_healthcare_marketplace | cloud_healthcare_marketplace | cloud_healthcare_marketplace.puml
+cloud_hsm | cloud_hsm | cloud_hsm.puml
+cloud_ids | cloud_ids | cloud_ids.puml
+cloud_inference_api | cloud_inference_api | cloud_inference_api.puml
+cloud_interconnect | cloud_interconnect | cloud_interconnect.puml
+cloud_jobs_api | cloud_jobs_api | cloud_jobs_api.puml
+cloud_load_balancing | cloud_load_balancing | cloud_load_balancing.puml
+cloud_logging | cloud_logging | cloud_logging.puml
+cloud_media_edge | cloud_media_edge | cloud_media_edge.puml
+cloud_monitoring | cloud_monitoring | cloud_monitoring.puml
+cloud_nat | cloud_nat | cloud_nat.puml
+cloud_natural_language_api | cloud_natural_language_api | cloud_natural_language_api.puml
+cloud_network | cloud_network | cloud_network.puml
+cloud_ops | cloud_ops | cloud_ops.puml
+cloud_optimization_ai | cloud_optimization_ai | cloud_optimization_ai.puml
+cloud_optimization_ai_fleet_routing_api | cloud_optimization_ai_fleet_routing_api | cloud_optimization_ai_fleet_routing_api.puml
+cloud_router | cloud_router | cloud_router.puml
+cloud_routes | cloud_routes | cloud_routes.puml
+cloud_run | cloud_run | cloud_run.puml
+cloud_run_for_anthos | cloud_run_for_anthos | cloud_run_for_anthos.puml
+cloud_scheduler | cloud_scheduler | cloud_scheduler.puml
+cloud_security_scanner | cloud_security_scanner | cloud_security_scanner.puml
+cloud_shell | cloud_shell | cloud_shell.puml
+cloud_spanner | cloud_spanner | cloud_spanner.puml
+cloud_sql | cloud_sql | cloud_sql.puml
+cloud_storage | cloud_storage | cloud_storage.puml
+cloud_tasks | cloud_tasks | cloud_tasks.puml
+cloud_test_lab | cloud_test_lab | cloud_test_lab.puml
+cloud_tpu | cloud_tpu | cloud_tpu.puml
+cloud_translation_api | cloud_translation_api | cloud_translation_api.puml
+cloud_vision_api | cloud_vision_api | cloud_vision_api.puml
+cloud_vpn | cloud_vpn | cloud_vpn.puml
+compute_engine | compute_engine | compute_engine.puml
+configuration_management | configuration_management | configuration_management.puml
+connectivity_test | connectivity_test | connectivity_test.puml
+connectors | connectors | connectors.puml
+contact_center_ai | contact_center_ai | contact_center_ai.puml
+container_optimized_os | container_optimized_os | container_optimized_os.puml
+container_registry | container_registry | container_registry.puml
+data_catalog | data_catalog | data_catalog.puml
+data_labeling | data_labeling | data_labeling.puml
+data_layers | data_layers | data_layers.puml
+data_loss_prevention_api | data_loss_prevention_api | data_loss_prevention_api.puml
+data_qna | data_qna | data_qna.puml
+data_studio | data_studio | data_studio.puml
+data_transfer | data_transfer | data_transfer.puml
+database_migration_service | database_migration_service | database_migration_service.puml
+dataflow | dataflow | dataflow.puml
+datalab | datalab | datalab.puml
+dataplex | dataplex | dataplex.puml
+datapol | datapol | datapol.puml
+dataprep | dataprep | dataprep.puml
+dataproc | dataproc | dataproc.puml
+dataproc_metastore | dataproc_metastore | dataproc_metastore.puml
+datashare | datashare | datashare.puml
+datastore | datastore | datastore.puml
+datastream | datastream | datastream.puml
+debugger | debugger | debugger.puml
+developer_portal | developer_portal | developer_portal.puml
+dialogflow | dialogflow | dialogflow.puml
+dialogflow_cx | dialogflow_cx | dialogflow_cx.puml
+dialogflow_insights | dialogflow_insights | dialogflow_insights.puml
+document_ai | document_ai | document_ai.puml
+early_access_center | early_access_center | early_access_center.puml
+error_reporting | error_reporting | error_reporting.puml
+eventarc | eventarc | eventarc.puml
+filestore | filestore | filestore.puml
+financial_services_marketplace | financial_services_marketplace | financial_services_marketplace.puml
+firestore | firestore | firestore.puml
+fleet_engine | fleet_engine | fleet_engine.puml
+free_trial | free_trial | free_trial.puml
+game_servers | game_servers | game_servers.puml
+gce_systems_management | gce_systems_management | gce_systems_management.puml
+genomics | genomics | genomics.puml
+gke_on_prem | gke_on_prem | gke_on_prem.puml
+google_cloud_marketplace | google_cloud_marketplace | google_cloud_marketplace.puml
+google_kubernetes_engine | google_kubernetes_engine | google_kubernetes_engine.puml
+google_maps_platform | google_maps_platform | google_maps_platform.puml
+healthcare_nlp_api | healthcare_nlp_api | healthcare_nlp_api.puml
+home | home | home.puml
+identity_aware_proxy | identity_aware_proxy | identity_aware_proxy.puml
+identity_and_access_management | identity_and_access_management | identity_and_access_management.puml
+identity_platform | identity_platform | identity_platform.puml
+iot_core | iot_core | iot_core.puml
+iot_edge | iot_edge | iot_edge.puml
+key_access_justifications | key_access_justifications | key_access_justifications.puml
+key_management_service | key_management_service | key_management_service.puml
+kuberun | kuberun | kuberun.puml
+launcher | launcher | launcher.puml
+local_ssd | local_ssd | local_ssd.puml
+looker | looker | looker.puml
+managed_service_for_microsoft_active_directory | managed_service_for_microsoft_active_directory | managed_service_for_microsoft_active_directory.puml
+media_translation_api | media_translation_api | media_translation_api.puml
+memorystore | memorystore | memorystore.puml
+migrate_for_anthos | migrate_for_anthos | migrate_for_anthos.puml
+migrate_for_compute_engine | migrate_for_compute_engine | migrate_for_compute_engine.puml
+my_cloud | my_cloud | my_cloud.puml
+network_connectivity_center | network_connectivity_center | network_connectivity_center.puml
+network_intelligence_center | network_intelligence_center | network_intelligence_center.puml
+network_security | network_security | network_security.puml
+network_tiers | network_tiers | network_tiers.puml
+network_topology | network_topology | network_topology.puml
+onboarding | onboarding | onboarding.puml
+os_configuration_management | os_configuration_management | os_configuration_management.puml
+os_inventory_management | os_inventory_management | os_inventory_management.puml
+os_patch_management | os_patch_management | os_patch_management.puml
+partner_interconnect | partner_interconnect | partner_interconnect.puml
+partner_portal | partner_portal | partner_portal.puml
+performance_dashboard | performance_dashboard | performance_dashboard.puml
+permissions | permissions | permissions.puml
+persistent_disk | persistent_disk | persistent_disk.puml
+phishing_protection | phishing_protection | phishing_protection.puml
+policy_analyzer | policy_analyzer | policy_analyzer.puml
+premium_network_tier | premium_network_tier | premium_network_tier.puml
+private_connectivity | private_connectivity | private_connectivity.puml
+private_service_connect | private_service_connect | private_service_connect.puml
+producer_portal | producer_portal | producer_portal.puml
+profiler | profiler | profiler.puml
+project | project | project.puml
+pubsub | pubsub | pubsub.puml
+quantum_engine | quantum_engine | quantum_engine.puml
+quotas | quotas | quotas.puml
+real_world_insights | real_world_insights | real_world_insights.puml
+recommendations_ai | recommendations_ai | recommendations_ai.puml
+release_notes | release_notes | release_notes.puml
+retail_api | retail_api | retail_api.puml
+risk_manager | risk_manager | risk_manager.puml
+runtime_config | runtime_config | runtime_config.puml
+secret_manager | secret_manager | secret_manager.puml
+security | security | security.puml
+security_command_center | security_command_center | security_command_center.puml
+security_health_advisor | security_health_advisor | security_health_advisor.puml
+security_key_enforcement | security_key_enforcement | security_key_enforcement.puml
+service_discovery | service_discovery | service_discovery.puml
+speech_to_text | speech_to_text | speech_to_text.puml
+stackdriver | stackdriver | stackdriver.puml
+standard_network_tier | standard_network_tier | standard_network_tier.puml
+stream_suite | stream_suite | stream_suite.puml
+support | support | support.puml
+tensorflow_enterprise | tensorflow_enterprise | tensorflow_enterprise.puml
+text_to_speech | text_to_speech | text_to_speech.puml
+tools_for_powershell | tools_for_powershell | tools_for_powershell.puml
+trace | trace | trace.puml
+traffic_director | traffic_director | traffic_director.puml
+transfer | transfer | transfer.puml
+transfer_appliance | transfer_appliance | transfer_appliance.puml
+user_preferences | user_preferences | user_preferences.puml
+vertexai | vertexai | vertexai.puml
+video_intelligence_api | video_intelligence_api | video_intelligence_api.puml
+virtual_private_cloud | virtual_private_cloud | virtual_private_cloud.puml
+visual_inspection | visual_inspection | visual_inspection.puml
+vmware_engine | vmware_engine | vmware_engine.puml
+web_risk | web_risk | web_risk.puml
+web_security_scanner | web_security_scanner | web_security_scanner.puml
+workflows | workflows | workflows.puml
+workload_identity_pool | workload_identity_pool | workload_identity_pool.puml

@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $managed_service_for_microsoft_active_directory <svg viewBox="0 0 24 24"><g><path fill="#669df6" d="M 11 2 L 11 22 L 21 14 Z"/><path fill="#4285f4" d="M 11 2 L 10.02 3.17 L 18.87 13.78 L 10.07 20.83 L 11.01 22 L 21 13.99 Z"/><path d="M11,2,7,6.75a3.11,3.11,0,0,1,1.11,1L11,4.34V2Z" fill="#669df6"/><path d="M8.35,18a2.93,2.93,0,0,1-.92,1.19L11,22h0V20.08Z" fill="#669df6"/><path d="m6 10a1 1 0 1 1 1-1 1 1 0 0 1-1 1m0-4a3 3 0 1 0 3 3 3 3 0 0 0-3-3" fill="#aecbfa"/><path d="m6 18a1 1 0 1 1 1-1 1 1 0 0 1-1 1m0-4a3 3 0 1 0 3 3 3 3 0 0 0-3-3" fill="#aecbfa"/></g></svg>
+
+GCPEntityColoring(managed_service_for_microsoft_active_directory)
+!define managed_service_for_microsoft_active_directory(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, managed_service_for_microsoft_active_directory, managed_service_for_microsoft_active_directory)
+!define managed_service_for_microsoft_active_directory(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, managed_service_for_microsoft_active_directory, managed_service_for_microsoft_active_directory)
+!define managed_service_for_microsoft_active_directoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, managed_service_for_microsoft_active_directory, managed_service_for_microsoft_active_directory)
+!define managed_service_for_microsoft_active_directoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, managed_service_for_microsoft_active_directory, managed_service_for_microsoft_active_directory)

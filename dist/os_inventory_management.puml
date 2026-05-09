@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $os_inventory_management <svg xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 24 24"><g><use fill="#4285F4" ns1:href="#a"/></g></svg>
+
+GCPEntityColoring(os_inventory_management)
+!define os_inventory_management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, os_inventory_management, os_inventory_management)
+!define os_inventory_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, os_inventory_management, os_inventory_management)
+!define os_inventory_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, os_inventory_management, os_inventory_management)
+!define os_inventory_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, os_inventory_management, os_inventory_management)

@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $key_access_justifications <svg viewBox="0 0 24 24"><g><g><g><line x1="13.53" x2="13.53" y1="2.27" y2="4.63" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/></g><line x1="7.72" x2="9.39" y1="4.68" y2="6.34" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><line x1="5.32" x2="7.67" y1="10.49" y2="10.49" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><line x1="13.53" x2="13.53" y1="18.71" y2="16.36" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><line x1="19.35" x2="17.68" y1="16.3" y2="14.64" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><g><line x1="21.75" x2="19.4" y1="10.49" y2="10.49" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/></g><line x1="19.35" x2="17.68" y1="4.68" y2="6.34" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><line x1="6.99" x2="8.53" y1="17.2" y2="18.74" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><g fill="none" stroke-miterlimit="10"><polyline points="9.6 13.81 4.22 19.19 6.15 21.12" stroke="#abc9f8" stroke-width="2px"/><path d="m17.64 14.6a5.81 5.81 0 1 1 0-8.21 5.8 5.8 0 0 1 0 8.21z" stroke="#579bfb" stroke-width="2px"/><polyline points="10.68 10.68 12.45 12.52 16.39 8.46" stroke="#4283f2"/></g></g></g></svg>
+
+GCPEntityColoring(key_access_justifications)
+!define key_access_justifications(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, key_access_justifications, key_access_justifications)
+!define key_access_justifications(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, key_access_justifications, key_access_justifications)
+!define key_access_justificationsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, key_access_justifications, key_access_justifications)
+!define key_access_justificationsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, key_access_justifications, key_access_justifications)

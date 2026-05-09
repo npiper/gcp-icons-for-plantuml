@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $api <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <g transform="translate(1 8)"> <path d="m2-1.9c-1.1 0-2.3 1.1-2.3 2.2v9.7h2.3v-4.5h2.2v4.5h2.2v-9.7c0-1.1-1.1-2.2-2.3-2.2h-2.1zm0 5.1v-3h2.2v3h-2.2z" fill="#5C85DE"/> <path d="m10.3-2c-1.2 0-2.3 1.1-2.3 2.2v9.8h2.2v-4.5h2.2c1.1 0 2.3-1.1 2.3-2.2v-3c0-1.1-1.1-2.2-2.3-2.2h-2.1v-0.1zm-0.1 5.2v-3h2.2v3h-2.2z" fill="#5C85DE"/> <path fill="#5C85DE" d="M 18.5 0.3 L 18.5 7.8 L 16.2 7.8 L 16.2 10 L 23 10 L 23 7.8 L 20.8 7.8 L 20.8 0.3 L 23 0.3 L 23 -1.9 L 16.2 -1.9 L 16.2 0.3 Z"/><path fill="#3367D6" d="M 2 5.5 L 2 3.2 L 3.5 3.2 Z"/><path fill="#3367D6" d="M 10.2 5.5 L 10.2 3.2 L 11.5 3.2 Z"/><path fill="#3367D6" d="M 18.5 1.8 L 18.5 1.8 L 18.5 0.3 L 20.8 0.3 Z"/></g> </svg>
+
+GCPEntityColoring(api)
+!define api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, api, api)
+!define api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, api, api)
+!define apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, api, api)
+!define apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, api, api)

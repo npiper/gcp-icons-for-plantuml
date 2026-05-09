@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $error_reporting <svg viewBox="0 0 24 24"><g><path fill="#669df6" d="M 7 2 L 2 7 L 2 17 L 7 22 L 12 22 L 9.5 19.14 L 8.25 19.14 L 4.86 15.75 L 4.86 8.25 L 8.25 4.86 L 9.5 4.86 L 12 2 Z"/><path fill="#669df6" d="M 14.5 2 L 12 4.86 L 15.75 4.86 L 19.14 8.25 L 19.14 15.75 L 15.75 19.14 L 12 19.14 L 14.5 22 L 17 22 L 22 17 L 22 7 L 17 2 Z"/><path fill="#4285f4" d="M 12 17 L 9.5 14.5 L 12 12 L 9.5 9.5 L 12 7 L 9.5 7 L 7 9.5 L 7 14.5 L 9.5 17 Z"/><path fill="#4285f4" d="M 14.5 7 L 12 9.5 L 14.5 12 L 12 14.5 L 14.5 17 L 17 14.5 L 17 9.5 Z"/></g></svg>
+
+GCPEntityColoring(error_reporting)
+!define error_reporting(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, error_reporting, error_reporting)
+!define error_reporting(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, error_reporting, error_reporting)
+!define error_reportingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, error_reporting, error_reporting)
+!define error_reportingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, error_reporting, error_reporting)

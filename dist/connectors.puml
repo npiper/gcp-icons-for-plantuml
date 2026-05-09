@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $connectors <svg viewBox="0 0 24 24"><rect x="8.999" y="7.013" width="2" height="4" fill="#aecbfa"/><rect x="12.999" y="7.013" width="2" height="4" fill="#aecbfa"/><path d="m8 18.93a7.993 7.993 0 0 1 4-14.917v-2a10 10 0 0 0-4 19.159z" fill="#aecbfa"/><rect x="10.999" y="17.012" width="2" height="5" fill="#4285f4"/><path d="M16.99,10.013H7V12.95a5,5,0,1,0,10.008,0Z" fill="#4285f4"/><path d="m12 18.012a5.039 5.039 0 0 1-5-5.062v-2.937h5" fill="#669df6"/><path d="m12 2.012a10 10 0 0 1 4 19.163v-2.244a7.994 7.994 0 0 0-4-14.919z" fill="#4285f4"/></svg>
+
+GCPEntityColoring(connectors)
+!define connectors(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, connectors, connectors)
+!define connectors(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, connectors, connectors)
+!define connectorsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, connectors, connectors)
+!define connectorsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, connectors, connectors)

@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $cloud_security_scanner <svg viewBox="0 0 24 24"><circle cx="11.45" cy="11.51" r="2.89" fill="#669df6"/><path d="m18.05 6.81a8.12 8.12 0 0 0-4.94-3.23l-0.27 1.3a6.79 6.79 0 1 1-6.19 1.86l-1-0.94a8.1 8.1 0 1 0 13 2.12 1.31 1.31 0 0 1-0.6-1.11z" fill="#aecbfa"/><path d="m14.46 20.42a2 2 0 1 1 0-3.93" fill="#669df6"/><path d="m14.46 16.49a2 2 0 1 1 0 3.93" fill="#4285f4"/><path d="m19.38 8.1a1.34 1.34 0 0 1 0-2.67v-1a2.38 2.38 0 0 0 0 4.75z" fill="#669df6"/><path d="m19.38 5.43a1.34 1.34 0 0 1 0 2.67v1a2.38 2.38 0 0 0 0-4.75z" fill="#4285f4"/><path d="m4.22 12.78a2 2 0 1 1 0-3.93" fill="#669df6"/><path d="m4.22 8.85a2 2 0 0 1 0 3.93" fill="#4285f4"/></svg>
+
+GCPEntityColoring(cloud_security_scanner)
+!define cloud_security_scanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_security_scanner, cloud_security_scanner)
+!define cloud_security_scanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_security_scanner, cloud_security_scanner)
+!define cloud_security_scannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_security_scanner, cloud_security_scanner)
+!define cloud_security_scannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_security_scanner, cloud_security_scanner)

@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $network_topology <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><path d="m3.9506 8.2615c0.24054 0.081563 0.4972 0.12563 0.76369 0.12563 0.26585 0 0.52192-0.043862 0.76196-0.12505l-5.873e-5 8.1225c0 1.6681 1.29 3.0201 2.881 3.0201 1.5341 0 2.7884-1.2571 2.8761-2.8426l0.0048912-0.17747-6.037e-4 -1.3463c0.28043 0.11538 0.58583 0.17875 0.90537 0.17875 0.2138 0 0.42128-0.028369 0.61918-0.081707l-1.322e-4 1.2493c0 2.5488-1.9719 4.6154-4.4048 4.6154-2.3634 0-4.2917-1.9502-4.4-4.3982l-0.0047939-0.21725-0.0017805-8.1231zm15.335 9.1491c0.94677 0 1.7143 0.80352 1.7143 1.7947s-0.76751 1.7947-1.7143 1.7947c-0.94677 0-1.7143-0.80352-1.7143-1.7947s0.76751-1.7947 1.7143-1.7947zm-3.6429-13.336c2.4329 0 4.4048 2.0666 4.4048 4.6154l9.139e-4 8.0483c-0.24029-0.081375-0.49665-0.12534-0.76282-0.12534-0.26585 0-0.52192 0.043862-0.76196 0.12505l5.87e-5 -8.048c0-1.6681-1.29-3.0201-2.881-3.0201-1.5909 0-2.881 1.352-2.881 3.0201l1.322e-4 1.424c-0.1979-0.053338-0.40538-0.081707-0.61918-0.081707-0.31954 0-0.62494 0.063365-0.90537 0.17875l6.037e-4 -1.521c0-2.5488 1.9719-4.6154 4.4048-4.6154zm-3.5 6.7553c0.94677 0 1.7143 0.80352 1.7143 1.7947 0 0.9912-0.76751 1.7947-1.7143 1.7947-0.94677 0-1.7143-0.80352-1.7143-1.7947 0-0.9912 0.76751-1.7947 1.7143-1.7947zm-7.4286-6.8299c0.94677 0 1.7143 0.80352 1.7143 1.7947 0 0.9912-0.76751 1.7947-1.7143 1.7947-0.94677 0-1.7143-0.80352-1.7143-1.7947 0-0.9912 0.76751-1.7947 1.7143-1.7947z" fill="#4285F4"/></g></svg>
+
+GCPEntityColoring(network_topology)
+!define network_topology(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, network_topology, network_topology)
+!define network_topology(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, network_topology, network_topology)
+!define network_topologyParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, network_topology, network_topology)
+!define network_topologyParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, network_topology, network_topology)

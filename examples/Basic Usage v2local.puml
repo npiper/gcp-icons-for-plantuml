@@ -1,0 +1,22 @@
+@startuml Basic Usage - GCP IoT Rules Engine (v2 local)
+'Copyright (c) 2026 Neil Piper (fork maintainer)
+'Copyright (c) 2020 David Holsgrove
+'SPDX-License-Identifier: MIT (For details, see https://github.com/npiper/gcp-icons-for-plantuml/blob/master/LICENSE-CODE)
+!pragma svgparser sax
+!include ../dist/GCPCommon.puml
+!include ../dist/iot_core.puml
+!include ../dist/pubsub.puml
+
+left to right direction
+
+agent "Published Event" as event #fff
+
+iot_core(iotRule, "Action Error Rule", "error if Kinesis fails")
+pubsub(eventStream, "IoT Events", "2 shards")
+pubsub(errorQueue, "Rule Error Queue", "failed Rule actions")
+
+event --> iotRule : JSON message
+iotRule --> eventStream : messages
+iotRule --> errorQueue : Failed action message
+
+@enduml

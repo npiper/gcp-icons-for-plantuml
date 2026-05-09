@@ -1,0 +1,1350 @@
+# configv2.yml — GCP Icons for PlantUML, icon set v2 (2026)
+#
+# BREAKING CHANGE from v1
+# -----------------------
+# v1 imposed a curated category taxonomy (AIAndMachineLearning, Compute, etc.)
+# that required manual maintenance whenever Google reorganised their icon set.
+# v2 removes the category layer entirely and mirrors Google's own flat,
+# product-per-directory layout directly.
+#
+# Include syntax (v2):
+#   !include <gcp/cloud_run>
+#   !include <gcp/bigquery>
+#   !include <gcp/vertexai>
+#
+# v1 (removed):
+#   !include <gcp/Compute/CloudRun>
+#   !include <gcp/DataAnalytics/BigQuery>
+#
+# Builder requirement
+# -------------------
+# Requires icon-builder.py with FlatOutput support:
+#   When FlatOutput: true, write to dist/{Target}.puml
+#   instead of dist/{Name}/{Target}.puml
+#   (change one line: Path(f"../dist/{icon.category}") → Path("../dist"))
+#
+# Entry convention
+# ----------------
+#   SourceDir : exact directory name under source/official/
+#   Source    : PNG filename inside that directory (always matches dir name)
+#   Target    : PlantUML-safe identifier — same as SourceDir with dashes
+#               replaced by underscores. This is ALSO the include filename.
+#
+# Source: Google Cloud Architecture Icons, downloaded 2026-05
+# https://cloud.google.com/icons
+
+Defaults:
+  Colors:
+    GoogleBlue: "#4284F3"
+    GoogleRed: "#EA4335"
+    GoogleGreen: "#0F9D58"
+    GoogleYellow: "#F4B400"
+  Category:
+    Color: GoogleBlue
+  TargetMaxSize: 128
+  # Signal to icon-builder.py v2 to write flat output (dist/{Target}.puml)
+  FlatOutput: true
+
+Categories:
+- Name: access_context_manager
+  SourceDir: access_context_manager
+  Services:
+  - Source: access_context_manager.png
+    Target: access_context_manager
+
+- Name: administration
+  SourceDir: administration
+  Services:
+  - Source: administration.png
+    Target: administration
+
+- Name: advanced_agent_modeling
+  SourceDir: advanced_agent_modeling
+  Services:
+  - Source: advanced_agent_modeling.png
+    Target: advanced_agent_modeling
+
+- Name: advanced_solutions_lab
+  SourceDir: advanced_solutions_lab
+  Services:
+  - Source: advanced_solutions_lab.png
+    Target: advanced_solutions_lab
+
+- Name: agent_assist
+  SourceDir: agent_assist
+  Services:
+  - Source: agent_assist.png
+    Target: agent_assist
+
+- Name: ai_hub
+  SourceDir: ai_hub
+  Services:
+  - Source: ai_hub.png
+    Target: ai_hub
+
+- Name: ai_platform
+  SourceDir: ai_platform
+  Services:
+  - Source: ai_platform.png
+    Target: ai_platform
+
+- Name: ai_platform_unified
+  SourceDir: ai_platform_unified
+  Services:
+  - Source: ai_platform_unified.png
+    Target: ai_platform_unified
+
+- Name: analytics_hub
+  SourceDir: analytics_hub
+  Services:
+  - Source: analytics_hub.png
+    Target: analytics_hub
+
+- Name: anthos
+  SourceDir: anthos
+  Services:
+  - Source: anthos.png
+    Target: anthos
+
+- Name: anthos_config_management
+  SourceDir: anthos_config_management
+  Services:
+  - Source: anthos_config_management.png
+    Target: anthos_config_management
+
+- Name: anthos_service_mesh
+  SourceDir: anthos_service_mesh
+  Services:
+  - Source: anthos_service_mesh.png
+    Target: anthos_service_mesh
+
+- Name: api
+  SourceDir: api
+  Services:
+  - Source: api.png
+    Target: api
+
+- Name: api_analytics
+  SourceDir: api_analytics
+  Services:
+  - Source: api_analytics.png
+    Target: api_analytics
+
+- Name: api_monetization
+  SourceDir: api_monetization
+  Services:
+  - Source: api_monetization.png
+    Target: api_monetization
+
+- Name: apigee_api_platform
+  SourceDir: apigee_api_platform
+  Services:
+  - Source: apigee_api_platform.png
+    Target: apigee_api_platform
+
+- Name: apigee_sense
+  SourceDir: apigee_sense
+  Services:
+  - Source: apigee_sense.png
+    Target: apigee_sense
+
+- Name: app_engine
+  SourceDir: app_engine
+  Services:
+  - Source: app_engine.png
+    Target: app_engine
+
+- Name: artifact_registry
+  SourceDir: artifact_registry
+  Services:
+  - Source: artifact_registry.png
+    Target: artifact_registry
+
+- Name: asset_inventory
+  SourceDir: asset_inventory
+  Services:
+  - Source: asset_inventory.png
+    Target: asset_inventory
+
+- Name: assured_workloads
+  SourceDir: assured_workloads
+  Services:
+  - Source: assured_workloads.png
+    Target: assured_workloads
+
+- Name: automl
+  SourceDir: automl
+  Services:
+  - Source: automl.png
+    Target: automl
+
+- Name: automl_natural_language
+  SourceDir: automl_natural_language
+  Services:
+  - Source: automl_natural_language.png
+    Target: automl_natural_language
+
+- Name: automl_tables
+  SourceDir: automl_tables
+  Services:
+  - Source: automl_tables.png
+    Target: automl_tables
+
+- Name: automl_translation
+  SourceDir: automl_translation
+  Services:
+  - Source: automl_translation.png
+    Target: automl_translation
+
+- Name: automl_video_intelligence
+  SourceDir: automl_video_intelligence
+  Services:
+  - Source: automl_video_intelligence.png
+    Target: automl_video_intelligence
+
+- Name: automl_vision
+  SourceDir: automl_vision
+  Services:
+  - Source: automl_vision.png
+    Target: automl_vision
+
+- Name: bare_metal_solutions
+  SourceDir: bare_metal_solutions
+  Services:
+  - Source: bare_metal_solutions.png
+    Target: bare_metal_solutions
+
+- Name: batch
+  SourceDir: batch
+  Services:
+  - Source: batch.png
+    Target: batch
+
+- Name: beyondcorp
+  SourceDir: beyondcorp
+  Services:
+  - Source: beyondcorp.png
+    Target: beyondcorp
+
+- Name: bigquery
+  SourceDir: bigquery
+  Services:
+  - Source: bigquery.png
+    Target: bigquery
+
+- Name: bigtable
+  SourceDir: bigtable
+  Services:
+  - Source: bigtable.png
+    Target: bigtable
+
+- Name: billing
+  SourceDir: billing
+  Services:
+  - Source: billing.png
+    Target: billing
+
+- Name: binary_authorization
+  SourceDir: binary_authorization
+  Services:
+  - Source: binary_authorization.png
+    Target: binary_authorization
+
+- Name: catalog
+  SourceDir: catalog
+  Services:
+  - Source: catalog.png
+    Target: catalog
+
+- Name: certificate_authority_service
+  SourceDir: certificate_authority_service
+  Services:
+  - Source: certificate_authority_service.png
+    Target: certificate_authority_service
+
+- Name: certificate_manager
+  SourceDir: certificate_manager
+  Services:
+  - Source: certificate_manager.png
+    Target: certificate_manager
+
+- Name: cloud_api_gateway
+  SourceDir: cloud_api_gateway
+  Services:
+  - Source: cloud_api_gateway.png
+    Target: cloud_api_gateway
+
+- Name: cloud_apis
+  SourceDir: cloud_apis
+  Services:
+  - Source: cloud_apis.png
+    Target: cloud_apis
+
+- Name: cloud_armor
+  SourceDir: cloud_armor
+  Services:
+  - Source: cloud_armor.png
+    Target: cloud_armor
+
+- Name: cloud_asset_inventory
+  SourceDir: cloud_asset_inventory
+  Services:
+  - Source: cloud_asset_inventory.png
+    Target: cloud_asset_inventory
+
+- Name: cloud_audit_logs
+  SourceDir: cloud_audit_logs
+  Services:
+  - Source: cloud_audit_logs.png
+    Target: cloud_audit_logs
+
+- Name: cloud_build
+  SourceDir: cloud_build
+  Services:
+  - Source: cloud_build.png
+    Target: cloud_build
+
+- Name: cloud_cdn
+  SourceDir: cloud_cdn
+  Services:
+  - Source: cloud_cdn.png
+    Target: cloud_cdn
+
+- Name: cloud_code
+  SourceDir: cloud_code
+  Services:
+  - Source: cloud_code.png
+    Target: cloud_code
+
+- Name: cloud_composer
+  SourceDir: cloud_composer
+  Services:
+  - Source: cloud_composer.png
+    Target: cloud_composer
+
+- Name: cloud_data_fusion
+  SourceDir: cloud_data_fusion
+  Services:
+  - Source: cloud_data_fusion.png
+    Target: cloud_data_fusion
+
+- Name: cloud_deploy
+  SourceDir: cloud_deploy
+  Services:
+  - Source: cloud_deploy.png
+    Target: cloud_deploy
+
+- Name: cloud_deployment_manager
+  SourceDir: cloud_deployment_manager
+  Services:
+  - Source: cloud_deployment_manager.png
+    Target: cloud_deployment_manager
+
+- Name: cloud_dns
+  SourceDir: cloud_dns
+  Services:
+  - Source: cloud_dns.png
+    Target: cloud_dns
+
+- Name: cloud_domains
+  SourceDir: cloud_domains
+  Services:
+  - Source: cloud_domains.png
+    Target: cloud_domains
+
+- Name: cloud_ekm
+  SourceDir: cloud_ekm
+  Services:
+  - Source: cloud_ekm.png
+    Target: cloud_ekm
+
+- Name: cloud_endpoints
+  SourceDir: cloud_endpoints
+  Services:
+  - Source: cloud_endpoints.png
+    Target: cloud_endpoints
+
+- Name: cloud_external_ip_addresses
+  SourceDir: cloud_external_ip_addresses
+  Services:
+  - Source: cloud_external_ip_addresses.png
+    Target: cloud_external_ip_addresses
+
+- Name: cloud_firewall_rules
+  SourceDir: cloud_firewall_rules
+  Services:
+  - Source: cloud_firewall_rules.png
+    Target: cloud_firewall_rules
+
+- Name: cloud_for_marketing
+  SourceDir: cloud_for_marketing
+  Services:
+  - Source: cloud_for_marketing.png
+    Target: cloud_for_marketing
+
+- Name: cloud_functions
+  SourceDir: cloud_functions
+  Services:
+  - Source: cloud_functions.png
+    Target: cloud_functions
+
+- Name: cloud_generic
+  SourceDir: cloud_generic
+  Services:
+  - Source: cloud_generic.png
+    Target: cloud_generic
+
+- Name: cloud_gpu
+  SourceDir: cloud_gpu
+  Services:
+  - Source: cloud_gpu.png
+    Target: cloud_gpu
+
+- Name: cloud_healthcare_api
+  SourceDir: cloud_healthcare_api
+  Services:
+  - Source: cloud_healthcare_api.png
+    Target: cloud_healthcare_api
+
+- Name: cloud_healthcare_marketplace
+  SourceDir: cloud_healthcare_marketplace
+  Services:
+  - Source: cloud_healthcare_marketplace.png
+    Target: cloud_healthcare_marketplace
+
+- Name: cloud_hsm
+  SourceDir: cloud_hsm
+  Services:
+  - Source: cloud_hsm.png
+    Target: cloud_hsm
+
+- Name: cloud_ids
+  SourceDir: cloud_ids
+  Services:
+  - Source: cloud_ids.png
+    Target: cloud_ids
+
+- Name: cloud_inference_api
+  SourceDir: cloud_inference_api
+  Services:
+  - Source: cloud_inference_api.png
+    Target: cloud_inference_api
+
+- Name: cloud_interconnect
+  SourceDir: cloud_interconnect
+  Services:
+  - Source: cloud_interconnect.png
+    Target: cloud_interconnect
+
+- Name: cloud_jobs_api
+  SourceDir: cloud_jobs_api
+  Services:
+  - Source: cloud_jobs_api.png
+    Target: cloud_jobs_api
+
+- Name: cloud_load_balancing
+  SourceDir: cloud_load_balancing
+  Services:
+  - Source: cloud_load_balancing.png
+    Target: cloud_load_balancing
+
+- Name: cloud_logging
+  SourceDir: cloud_logging
+  Services:
+  - Source: cloud_logging.png
+    Target: cloud_logging
+
+- Name: cloud_media_edge
+  SourceDir: cloud_media_edge
+  Services:
+  - Source: cloud_media_edge.png
+    Target: cloud_media_edge
+
+- Name: cloud_monitoring
+  SourceDir: cloud_monitoring
+  Services:
+  - Source: cloud_monitoring.png
+    Target: cloud_monitoring
+
+- Name: cloud_nat
+  SourceDir: cloud_nat
+  Services:
+  - Source: cloud_nat.png
+    Target: cloud_nat
+
+- Name: cloud_natural_language_api
+  SourceDir: cloud_natural_language_api
+  Services:
+  - Source: cloud_natural_language_api.png
+    Target: cloud_natural_language_api
+
+- Name: cloud_network
+  SourceDir: cloud_network
+  Services:
+  - Source: cloud_network.png
+    Target: cloud_network
+
+- Name: cloud_ops
+  SourceDir: cloud_ops
+  Services:
+  - Source: cloud_ops.png
+    Target: cloud_ops
+
+- Name: cloud_optimization_ai
+  SourceDir: cloud_optimization_ai
+  Services:
+  - Source: cloud_optimization_ai.png
+    Target: cloud_optimization_ai
+
+- Name: cloud_optimization_ai_fleet_routing_api
+  # Note: source directory name contains ' - ' which is not a valid PUML identifier
+  # SourceDir uses the exact filesystem name; Target uses underscores only
+  SourceDir: "cloud_optimization_ai_-_fleet_routing_api"
+  Services:
+  - Source: "cloud_optimization_ai_-_fleet_routing_api.png"
+    Target: cloud_optimization_ai_fleet_routing_api
+
+- Name: cloud_router
+  SourceDir: cloud_router
+  Services:
+  - Source: cloud_router.png
+    Target: cloud_router
+
+- Name: cloud_routes
+  SourceDir: cloud_routes
+  Services:
+  - Source: cloud_routes.png
+    Target: cloud_routes
+
+- Name: cloud_run
+  SourceDir: cloud_run
+  Services:
+  - Source: cloud_run.png
+    Target: cloud_run
+
+- Name: cloud_run_for_anthos
+  SourceDir: cloud_run_for_anthos
+  Services:
+  - Source: cloud_run_for_anthos.png
+    Target: cloud_run_for_anthos
+
+- Name: cloud_scheduler
+  SourceDir: cloud_scheduler
+  Services:
+  - Source: cloud_scheduler.png
+    Target: cloud_scheduler
+
+- Name: cloud_security_scanner
+  SourceDir: cloud_security_scanner
+  Services:
+  - Source: cloud_security_scanner.png
+    Target: cloud_security_scanner
+
+- Name: cloud_shell
+  SourceDir: cloud_shell
+  Services:
+  - Source: cloud_shell.png
+    Target: cloud_shell
+
+- Name: cloud_spanner
+  SourceDir: cloud_spanner
+  Services:
+  - Source: cloud_spanner.png
+    Target: cloud_spanner
+
+- Name: cloud_sql
+  SourceDir: cloud_sql
+  Services:
+  - Source: cloud_sql.png
+    Target: cloud_sql
+
+- Name: cloud_storage
+  SourceDir: cloud_storage
+  Services:
+  - Source: cloud_storage.png
+    Target: cloud_storage
+
+- Name: cloud_tasks
+  SourceDir: cloud_tasks
+  Services:
+  - Source: cloud_tasks.png
+    Target: cloud_tasks
+
+- Name: cloud_test_lab
+  SourceDir: cloud_test_lab
+  Services:
+  - Source: cloud_test_lab.png
+    Target: cloud_test_lab
+
+- Name: cloud_tpu
+  SourceDir: cloud_tpu
+  Services:
+  - Source: cloud_tpu.png
+    Target: cloud_tpu
+
+- Name: cloud_translation_api
+  SourceDir: cloud_translation_api
+  Services:
+  - Source: cloud_translation_api.png
+    Target: cloud_translation_api
+
+- Name: cloud_vision_api
+  SourceDir: cloud_vision_api
+  Services:
+  - Source: cloud_vision_api.png
+    Target: cloud_vision_api
+
+- Name: cloud_vpn
+  SourceDir: cloud_vpn
+  Services:
+  - Source: cloud_vpn.png
+    Target: cloud_vpn
+
+- Name: compute_engine
+  SourceDir: compute_engine
+  Services:
+  - Source: compute_engine.png
+    Target: compute_engine
+
+- Name: configuration_management
+  SourceDir: configuration_management
+  Services:
+  - Source: configuration_management.png
+    Target: configuration_management
+
+- Name: connectivity_test
+  SourceDir: connectivity_test
+  Services:
+  - Source: connectivity_test.png
+    Target: connectivity_test
+
+- Name: connectors
+  SourceDir: connectors
+  Services:
+  - Source: connectors.png
+    Target: connectors
+
+- Name: contact_center_ai
+  SourceDir: contact_center_ai
+  Services:
+  - Source: contact_center_ai.png
+    Target: contact_center_ai
+
+- Name: container_optimized_os
+  SourceDir: container_optimized_os
+  Services:
+  - Source: container_optimized_os.png
+    Target: container_optimized_os
+
+- Name: container_registry
+  SourceDir: container_registry
+  Services:
+  - Source: container_registry.png
+    Target: container_registry
+
+- Name: data_catalog
+  SourceDir: data_catalog
+  Services:
+  - Source: data_catalog.png
+    Target: data_catalog
+
+- Name: data_labeling
+  SourceDir: data_labeling
+  Services:
+  - Source: data_labeling.png
+    Target: data_labeling
+
+- Name: data_layers
+  SourceDir: data_layers
+  Services:
+  - Source: data_layers.png
+    Target: data_layers
+
+- Name: data_loss_prevention_api
+  SourceDir: data_loss_prevention_api
+  Services:
+  - Source: data_loss_prevention_api.png
+    Target: data_loss_prevention_api
+
+- Name: data_qna
+  SourceDir: data_qna
+  Services:
+  - Source: data_qna.png
+    Target: data_qna
+
+- Name: data_studio
+  SourceDir: data_studio
+  Services:
+  - Source: data_studio.png
+    Target: data_studio
+
+- Name: data_transfer
+  SourceDir: data_transfer
+  Services:
+  - Source: data_transfer.png
+    Target: data_transfer
+
+- Name: database_migration_service
+  SourceDir: database_migration_service
+  Services:
+  - Source: database_migration_service.png
+    Target: database_migration_service
+
+- Name: dataflow
+  SourceDir: dataflow
+  Services:
+  - Source: dataflow.png
+    Target: dataflow
+
+- Name: datalab
+  SourceDir: datalab
+  Services:
+  - Source: datalab.png
+    Target: datalab
+
+- Name: dataplex
+  SourceDir: dataplex
+  Services:
+  - Source: dataplex.png
+    Target: dataplex
+
+- Name: datapol
+  SourceDir: datapol
+  Services:
+  - Source: datapol.png
+    Target: datapol
+
+- Name: dataprep
+  SourceDir: dataprep
+  Services:
+  - Source: dataprep.png
+    Target: dataprep
+
+- Name: dataproc
+  SourceDir: dataproc
+  Services:
+  - Source: dataproc.png
+    Target: dataproc
+
+- Name: dataproc_metastore
+  SourceDir: dataproc_metastore
+  Services:
+  - Source: dataproc_metastore.png
+    Target: dataproc_metastore
+
+- Name: datashare
+  SourceDir: datashare
+  Services:
+  - Source: datashare.png
+    Target: datashare
+
+- Name: datastore
+  SourceDir: datastore
+  Services:
+  - Source: datastore.png
+    Target: datastore
+
+- Name: datastream
+  SourceDir: datastream
+  Services:
+  - Source: datastream.png
+    Target: datastream
+
+- Name: debugger
+  SourceDir: debugger
+  Services:
+  - Source: debugger.png
+    Target: debugger
+
+- Name: developer_portal
+  SourceDir: developer_portal
+  Services:
+  - Source: developer_portal.png
+    Target: developer_portal
+
+- Name: dialogflow
+  SourceDir: dialogflow
+  Services:
+  - Source: dialogflow.png
+    Target: dialogflow
+
+- Name: dialogflow_cx
+  SourceDir: dialogflow_cx
+  Services:
+  - Source: dialogflow_cx.png
+    Target: dialogflow_cx
+
+- Name: dialogflow_insights
+  SourceDir: dialogflow_insights
+  Services:
+  - Source: dialogflow_insights.png
+    Target: dialogflow_insights
+
+- Name: document_ai
+  SourceDir: document_ai
+  Services:
+  - Source: document_ai.png
+    Target: document_ai
+
+- Name: early_access_center
+  SourceDir: early_access_center
+  Services:
+  - Source: early_access_center.png
+    Target: early_access_center
+
+- Name: error_reporting
+  SourceDir: error_reporting
+  Services:
+  - Source: error_reporting.png
+    Target: error_reporting
+
+- Name: eventarc
+  SourceDir: eventarc
+  Services:
+  - Source: eventarc.png
+    Target: eventarc
+
+- Name: filestore
+  SourceDir: filestore
+  Services:
+  - Source: filestore.png
+    Target: filestore
+
+- Name: financial_services_marketplace
+  SourceDir: financial_services_marketplace
+  Services:
+  - Source: financial_services_marketplace.png
+    Target: financial_services_marketplace
+
+- Name: firestore
+  SourceDir: firestore
+  Services:
+  - Source: firestore.png
+    Target: firestore
+
+- Name: fleet_engine
+  SourceDir: fleet_engine
+  Services:
+  - Source: fleet_engine.png
+    Target: fleet_engine
+
+- Name: free_trial
+  SourceDir: free_trial
+  Services:
+  - Source: free_trial.png
+    Target: free_trial
+
+- Name: game_servers
+  SourceDir: game_servers
+  Services:
+  - Source: game_servers.png
+    Target: game_servers
+
+- Name: gce_systems_management
+  SourceDir: gce_systems_management
+  Services:
+  - Source: gce_systems_management.png
+    Target: gce_systems_management
+
+- Name: genomics
+  SourceDir: genomics
+  Services:
+  - Source: genomics.png
+    Target: genomics
+
+- Name: gke_on_prem
+  # Note: source directory name is 'gke_on-prem'; dash replaced with underscore in Target
+  SourceDir: "gke_on-prem"
+  Services:
+  - Source: "gke_on-prem.png"
+    Target: gke_on_prem
+
+- Name: google_cloud_marketplace
+  SourceDir: google_cloud_marketplace
+  Services:
+  - Source: google_cloud_marketplace.png
+    Target: google_cloud_marketplace
+
+- Name: google_kubernetes_engine
+  SourceDir: google_kubernetes_engine
+  Services:
+  - Source: google_kubernetes_engine.png
+    Target: google_kubernetes_engine
+
+- Name: google_maps_platform
+  SourceDir: google_maps_platform
+  Services:
+  - Source: google_maps_platform.png
+    Target: google_maps_platform
+
+- Name: healthcare_nlp_api
+  SourceDir: healthcare_nlp_api
+  Services:
+  - Source: healthcare_nlp_api.png
+    Target: healthcare_nlp_api
+
+- Name: home
+  SourceDir: home
+  Services:
+  - Source: home.png
+    Target: home
+
+- Name: identity_aware_proxy
+  # Note: source directory is 'identity-aware_proxy'; dash replaced with underscore in Target
+  SourceDir: "identity-aware_proxy"
+  Services:
+  - Source: "identity-aware_proxy.png"
+    Target: identity_aware_proxy
+
+- Name: identity_and_access_management
+  SourceDir: identity_and_access_management
+  Services:
+  - Source: identity_and_access_management.png
+    Target: identity_and_access_management
+
+- Name: identity_platform
+  SourceDir: identity_platform
+  Services:
+  - Source: identity_platform.png
+    Target: identity_platform
+
+- Name: iot_core
+  SourceDir: iot_core
+  Services:
+  - Source: iot_core.png
+    Target: iot_core
+
+- Name: iot_edge
+  SourceDir: iot_edge
+  Services:
+  - Source: iot_edge.png
+    Target: iot_edge
+
+- Name: key_access_justifications
+  SourceDir: key_access_justifications
+  Services:
+  - Source: key_access_justifications.png
+    Target: key_access_justifications
+
+- Name: key_management_service
+  SourceDir: key_management_service
+  Services:
+  - Source: key_management_service.png
+    Target: key_management_service
+
+- Name: kuberun
+  SourceDir: kuberun
+  Services:
+  - Source: kuberun.png
+    Target: kuberun
+
+- Name: launcher
+  SourceDir: launcher
+  Services:
+  - Source: launcher.png
+    Target: launcher
+
+- Name: local_ssd
+  SourceDir: local_ssd
+  Services:
+  - Source: local_ssd.png
+    Target: local_ssd
+
+- Name: looker
+  SourceDir: looker
+  Services:
+  - Source: looker.png
+    Target: looker
+
+- Name: managed_service_for_microsoft_active_directory
+  SourceDir: managed_service_for_microsoft_active_directory
+  Services:
+  - Source: managed_service_for_microsoft_active_directory.png
+    Target: managed_service_for_microsoft_active_directory
+
+- Name: media_translation_api
+  SourceDir: media_translation_api
+  Services:
+  - Source: media_translation_api.png
+    Target: media_translation_api
+
+- Name: memorystore
+  SourceDir: memorystore
+  Services:
+  - Source: memorystore.png
+    Target: memorystore
+
+- Name: migrate_for_anthos
+  SourceDir: migrate_for_anthos
+  Services:
+  - Source: migrate_for_anthos.png
+    Target: migrate_for_anthos
+
+- Name: migrate_for_compute_engine
+  SourceDir: migrate_for_compute_engine
+  Services:
+  - Source: migrate_for_compute_engine.png
+    Target: migrate_for_compute_engine
+
+- Name: my_cloud
+  SourceDir: my_cloud
+  Services:
+  - Source: my_cloud.png
+    Target: my_cloud
+
+- Name: network_connectivity_center
+  SourceDir: network_connectivity_center
+  Services:
+  - Source: network_connectivity_center.png
+    Target: network_connectivity_center
+
+- Name: network_intelligence_center
+  SourceDir: network_intelligence_center
+  Services:
+  - Source: network_intelligence_center.png
+    Target: network_intelligence_center
+
+- Name: network_security
+  SourceDir: network_security
+  Services:
+  - Source: network_security.png
+    Target: network_security
+
+- Name: network_tiers
+  SourceDir: network_tiers
+  Services:
+  - Source: network_tiers.png
+    Target: network_tiers
+
+- Name: network_topology
+  SourceDir: network_topology
+  Services:
+  - Source: network_topology.png
+    Target: network_topology
+
+- Name: onboarding
+  SourceDir: onboarding
+  Services:
+  - Source: onboarding.png
+    Target: onboarding
+
+- Name: os_configuration_management
+  SourceDir: os_configuration_management
+  Services:
+  - Source: os_configuration_management.png
+    Target: os_configuration_management
+
+- Name: os_inventory_management
+  SourceDir: os_inventory_management
+  Services:
+  - Source: os_inventory_management.png
+    Target: os_inventory_management
+
+- Name: os_patch_management
+  SourceDir: os_patch_management
+  Services:
+  - Source: os_patch_management.png
+    Target: os_patch_management
+
+- Name: partner_interconnect
+  SourceDir: partner_interconnect
+  Services:
+  - Source: partner_interconnect.png
+    Target: partner_interconnect
+
+- Name: partner_portal
+  SourceDir: partner_portal
+  Services:
+  - Source: partner_portal.png
+    Target: partner_portal
+
+- Name: performance_dashboard
+  SourceDir: performance_dashboard
+  Services:
+  - Source: performance_dashboard.png
+    Target: performance_dashboard
+
+- Name: permissions
+  SourceDir: permissions
+  Services:
+  - Source: permissions.png
+    Target: permissions
+
+- Name: persistent_disk
+  SourceDir: persistent_disk
+  Services:
+  - Source: persistent_disk.png
+    Target: persistent_disk
+
+- Name: phishing_protection
+  SourceDir: phishing_protection
+  Services:
+  - Source: phishing_protection.png
+    Target: phishing_protection
+
+- Name: policy_analyzer
+  SourceDir: policy_analyzer
+  Services:
+  - Source: policy_analyzer.png
+    Target: policy_analyzer
+
+- Name: premium_network_tier
+  SourceDir: premium_network_tier
+  Services:
+  - Source: premium_network_tier.png
+    Target: premium_network_tier
+
+- Name: private_connectivity
+  SourceDir: private_connectivity
+  Services:
+  - Source: private_connectivity.png
+    Target: private_connectivity
+
+- Name: private_service_connect
+  SourceDir: private_service_connect
+  Services:
+  - Source: private_service_connect.png
+    Target: private_service_connect
+
+- Name: producer_portal
+  SourceDir: producer_portal
+  Services:
+  - Source: producer_portal.png
+    Target: producer_portal
+
+- Name: profiler
+  SourceDir: profiler
+  Services:
+  - Source: profiler.png
+    Target: profiler
+
+- Name: project
+  SourceDir: project
+  Services:
+  - Source: project.png
+    Target: project
+
+- Name: pubsub
+  SourceDir: pubsub
+  Services:
+  - Source: pubsub.png
+    Target: pubsub
+
+- Name: quantum_engine
+  SourceDir: quantum_engine
+  Services:
+  - Source: quantum_engine.png
+    Target: quantum_engine
+
+- Name: quotas
+  SourceDir: quotas
+  Services:
+  - Source: quotas.png
+    Target: quotas
+
+- Name: real_world_insights
+  # Note: source directory is 'real-world_insights'; dash replaced with underscore in Target
+  SourceDir: "real-world_insights"
+  Services:
+  - Source: "real-world_insights.png"
+    Target: real_world_insights
+
+- Name: recommendations_ai
+  SourceDir: recommendations_ai
+  Services:
+  - Source: recommendations_ai.png
+    Target: recommendations_ai
+
+- Name: release_notes
+  SourceDir: release_notes
+  Services:
+  - Source: release_notes.png
+    Target: release_notes
+
+- Name: retail_api
+  SourceDir: retail_api
+  Services:
+  - Source: retail_api.png
+    Target: retail_api
+
+- Name: risk_manager
+  SourceDir: risk_manager
+  Services:
+  - Source: risk_manager.png
+    Target: risk_manager
+
+- Name: runtime_config
+  SourceDir: runtime_config
+  Services:
+  - Source: runtime_config.png
+    Target: runtime_config
+
+- Name: secret_manager
+  SourceDir: secret_manager
+  Services:
+  - Source: secret_manager.png
+    Target: secret_manager
+
+- Name: security
+  SourceDir: security
+  Services:
+  - Source: security.png
+    Target: security
+
+- Name: security_command_center
+  SourceDir: security_command_center
+  Services:
+  - Source: security_command_center.png
+    Target: security_command_center
+
+- Name: security_health_advisor
+  SourceDir: security_health_advisor
+  Services:
+  - Source: security_health_advisor.png
+    Target: security_health_advisor
+
+- Name: security_key_enforcement
+  SourceDir: security_key_enforcement
+  Services:
+  - Source: security_key_enforcement.png
+    Target: security_key_enforcement
+
+- Name: service_discovery
+  SourceDir: service_discovery
+  Services:
+  - Source: service_discovery.png
+    Target: service_discovery
+
+- Name: speech_to_text
+  # Note: source directory is 'speech-to-text'; dashes replaced with underscores in Target
+  SourceDir: "speech-to-text"
+  Services:
+  - Source: "speech-to-text.png"
+    Target: speech_to_text
+
+- Name: stackdriver
+  SourceDir: stackdriver
+  Services:
+  - Source: stackdriver.png
+    Target: stackdriver
+
+- Name: standard_network_tier
+  SourceDir: standard_network_tier
+  Services:
+  - Source: standard_network_tier.png
+    Target: standard_network_tier
+
+- Name: stream_suite
+  SourceDir: stream_suite
+  Services:
+  - Source: stream_suite.png
+    Target: stream_suite
+
+- Name: support
+  SourceDir: support
+  Services:
+  - Source: support.png
+    Target: support
+
+- Name: tensorflow_enterprise
+  SourceDir: tensorflow_enterprise
+  Services:
+  - Source: tensorflow_enterprise.png
+    Target: tensorflow_enterprise
+
+- Name: text_to_speech
+  # Note: source directory is 'text-to-speech'; dashes replaced with underscores in Target
+  SourceDir: "text-to-speech"
+  Services:
+  - Source: "text-to-speech.png"
+    Target: text_to_speech
+
+- Name: tools_for_powershell
+  SourceDir: tools_for_powershell
+  Services:
+  - Source: tools_for_powershell.png
+    Target: tools_for_powershell
+
+- Name: trace
+  SourceDir: trace
+  Services:
+  - Source: trace.png
+    Target: trace
+
+- Name: traffic_director
+  SourceDir: traffic_director
+  Services:
+  - Source: traffic_director.png
+    Target: traffic_director
+
+- Name: transfer
+  SourceDir: transfer
+  Services:
+  - Source: transfer.png
+    Target: transfer
+
+- Name: transfer_appliance
+  SourceDir: transfer_appliance
+  Services:
+  - Source: transfer_appliance.png
+    Target: transfer_appliance
+
+- Name: user_preferences
+  SourceDir: user_preferences
+  Services:
+  - Source: user_preferences.png
+    Target: user_preferences
+
+- Name: vertexai
+  SourceDir: vertexai
+  Services:
+  - Source: vertexai.png
+    Target: vertexai
+
+- Name: video_intelligence_api
+  SourceDir: video_intelligence_api
+  Services:
+  - Source: video_intelligence_api.png
+    Target: video_intelligence_api
+
+- Name: virtual_private_cloud
+  SourceDir: virtual_private_cloud
+  Services:
+  - Source: virtual_private_cloud.png
+    Target: virtual_private_cloud
+
+- Name: visual_inspection
+  SourceDir: visual_inspection
+  Services:
+  - Source: visual_inspection.png
+    Target: visual_inspection
+
+- Name: vmware_engine
+  SourceDir: vmware_engine
+  Services:
+  - Source: vmware_engine.png
+    Target: vmware_engine
+
+- Name: web_risk
+  SourceDir: web_risk
+  Services:
+  - Source: web_risk.png
+    Target: web_risk
+
+- Name: web_security_scanner
+  SourceDir: web_security_scanner
+  Services:
+  - Source: web_security_scanner.png
+    Target: web_security_scanner
+
+- Name: workflows
+  SourceDir: workflows
+  Services:
+  - Source: workflows.png
+    Target: workflows
+
+- Name: workload_identity_pool
+  SourceDir: workload_identity_pool
+  Services:
+  - Source: workload_identity_pool.png
+    Target: workload_identity_pool

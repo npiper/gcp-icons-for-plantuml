@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $automl_natural_language <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><g transform="translate(3.25 4)" fill="#4285F4"><path d="M 11.687 13.056 L 5.0532 13.056 L 4.2212 14.496 L 5.0532 15.936 L 13.35 15.936 L 17.5 8.7498 L 15.837 5.8688 Z"/><path d="M 4.1495 7.2917e-5 L -2.1875e-4 7.1867 L 1.6637 10.068 L 5.8127 2.881 L 12.447 2.881 L 13.279 1.4409 L 12.447 7.2917e-5 Z"/><path d="M 6.5209 6.555 L 10.98 6.555 L 10.98 5.3562 L 6.5209 5.3562 Z"/><path d="M 6.5209 8.7687 L 10.98 8.7687 L 10.98 7.57 L 6.5209 7.57 Z"/><path d="M 6.5209 10.996 L 10.98 10.996 L 10.98 9.7976 L 6.5209 9.7976 Z"/></g></g></svg>
+
+GCPEntityColoring(automl_natural_language)
+!define automl_natural_language(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, automl_natural_language, automl_natural_language)
+!define automl_natural_language(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_natural_language, automl_natural_language)
+!define automl_natural_languageParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_natural_language, automl_natural_language)
+!define automl_natural_languageParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_natural_language, automl_natural_language)

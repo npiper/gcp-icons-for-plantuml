@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $cloud_healthcare_api <svg viewBox="0 0 24 24"><g><g><path fill="#aecbfa" d="M 12 22 L 11.17 21.23 L 11.17 6.67 L 12.83 6.67 L 12.83 21.23 Z"/></g><g><path d="M12,8a2.67,2.67,0,0,0,2.67-2.67H9.33A2.67,2.67,0,0,0,12,8Z" fill="#4285f4"/></g><path fill="#4285f4" d="M 12.83 18.87 L 11.17 18.87 L 11.17 17.33 L 12.83 17.33 Z"/><path fill="#4285f4" d="M 12.83 10.87 L 11.17 10.87 L 11.17 9.33 L 12.83 9.33 Z"/><circle cx="12" cy="4.67" r="2.67" fill="#aecbfa"/><path d="M16.67,10.17H6.83a1.17,1.17,0,0,0,0,2.33H10v1.67H6.83a2.84,2.84,0,0,1,0-5.67h9.84V7.33l3.33,2-3.33,2Z" fill="#669df6"/><path d="M12,7.33a2.67,2.67,0,0,0,2.67-2.66H9.33A2.67,2.67,0,0,0,12,7.33Z" fill="#669df6"/><path d="M13.36,16.5H14a1.17,1.17,0,0,0,0-2.33H12.83V12.5H14a2.84,2.84,0,0,1,0,5.67H10v1.16l-3.33-2,3.33-2V16.5Z" fill="#669df6"/></g></svg>
+
+GCPEntityColoring(cloud_healthcare_api)
+!define cloud_healthcare_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_healthcare_api, cloud_healthcare_api)
+!define cloud_healthcare_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_healthcare_api, cloud_healthcare_api)
+!define cloud_healthcare_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_healthcare_api, cloud_healthcare_api)
+!define cloud_healthcare_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_healthcare_api, cloud_healthcare_api)

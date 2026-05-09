@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $partner_interconnect <svg viewBox="0 0 24 24"><g><rect x="11.19" y="6.86" width="1.62" height="10.27" fill="#4285f4"/><rect x="2" y="11.19" width="2.7" height="1.62" fill="#669df6"/><rect x="4.43" y="8.76" width="4.86" height="6.49" rx=".24" fill="#4285f4"/><rect x="11.19" y="6.86" width="1.62" height="10.27" fill="#669df6"/><rect x="19.3" y="11.19" width="2.7" height="1.62" fill="#669df6"/><path d="M6.59,17.14v1.33a.29.29,0,0,0,.29.29H17.12a.29.29,0,0,0,.29-.29h0V17.14Z" fill="#669df6"/><path d="M17.12,5.24H6.88a.29.29,0,0,0-.29.29h0V6.86H17.41V5.53a.29.29,0,0,0-.29-.29Z" fill="#669df6"/><rect x="14.7" y="8.76" width="4.86" height="6.49" rx=".24" fill="#4285f4"/></g></svg>
+
+GCPEntityColoring(partner_interconnect)
+!define partner_interconnect(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, partner_interconnect, partner_interconnect)
+!define partner_interconnect(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, partner_interconnect, partner_interconnect)
+!define partner_interconnectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, partner_interconnect, partner_interconnect)
+!define partner_interconnectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, partner_interconnect, partner_interconnect)

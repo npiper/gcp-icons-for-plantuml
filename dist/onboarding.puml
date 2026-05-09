@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $onboarding <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <g transform="translate(0 2)"> <path fill="#5C85DE" d="M 21.2 7.6 L 21.2 14.8 L 23.3 14.8 L 23.3 6.4 Z"/><path fill="#3367D6" d="M 23.3 6.4 L 21.2 7.6 L 21.2 8.6 Z"/><path fill="#5C85DE" d="M 0.4 6.4 L 11.9 12.7 L 21.2 7.6 L 23.3 6.4 L 11.9 0.2 Z"/><path fill="#85A4E6" d="M 0.4 6.4 L 11.9 12.7 L 11.9 0.2 Z"/><path fill="#5C85DE" d="M 4.6 10.8 L 4.6 14.9 L 11.9 18.9 L 19.1 14.9 L 19.1 10.8 L 11.9 14.8 Z"/><path fill="#85A4E6" d="M 4.6 14.9 L 11.9 18.9 L 11.9 14.8 L 4.6 10.8 Z"/></g> </svg>
+
+GCPEntityColoring(onboarding)
+!define onboarding(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, onboarding, onboarding)
+!define onboarding(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, onboarding, onboarding)
+!define onboardingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, onboarding, onboarding)
+!define onboardingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, onboarding, onboarding)

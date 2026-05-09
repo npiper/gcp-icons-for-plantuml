@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $cloud_code <svg viewBox="0 0 24 24"><g><g><path fill="#aecbfa" d="M 5.45 8.53 L 8.55 5.42 L 11.65 8.53 L 8.55 11.65 Z"/><path fill="#669df6" d="M 2 12 L 5.1 8.88 L 8.2 12 L 5.1 15.12 Z"/><path fill="#4285f4" d="M 5.45 15.47 L 8.55 12.35 L 11.65 15.47 L 8.55 18.59 Z"/><path fill="#aecbfa" d="M 12.35 8.53 L 15.45 5.42 L 18.55 8.53 L 15.45 11.65 Z"/><path fill="#669df6" d="M 15.8 12 L 18.9 8.88 L 22 12 L 18.9 15.12 Z"/><path fill="#4285f4" d="M 12.35 15.47 L 15.45 12.35 L 18.55 15.47 L 15.45 18.59 Z"/></g></g></svg>
+
+GCPEntityColoring(cloud_code)
+!define cloud_code(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_code, cloud_code)
+!define cloud_code(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_code, cloud_code)
+!define cloud_codeParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_code, cloud_code)
+!define cloud_codeParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_code, cloud_code)

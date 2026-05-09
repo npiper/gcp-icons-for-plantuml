@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $healthcare_nlp_api <svg viewBox="0 0 24 24"><path d="m4.87 12.328c1.5699-0.44323 3.2093 0.45155 3.6595 1.9973 0.45015 1.5457-0.4586 3.1599-2.0285 3.6031-0.52215 0.14742-1.0484 0.14381-1.542 0.022968l-0.16326-0.044576-1.5538 2.76-1.032-0.56323 1.5522-2.7656c-0.42462-0.35893-0.75426-0.83558-0.92062-1.4068-0.45015-1.5457 0.4586-3.1599 2.0285-3.6031zm8.6685 6.1533v1.5148h-3.0769v-1.5148zm3.0769-3.0296v1.5148h-6.1538v-1.5148zm-9.2235-0.80532c-0.26911-0.92407-1.2572-1.4633-2.1957-1.1984-0.93851 0.26497-1.4862 1.2378-1.2171 2.1619 0.26911 0.92407 1.2572 1.4633 2.1957 1.1984s1.4862-1.2378 1.2171-2.1619zm12.3-2.2243v1.5148h-9.2308v-1.5148zm2.3077-3.0296v1.5148h-20v-1.5148zm0-3.0296v1.5148h-20v-1.5148zm-10.721-3.0296v1.5148h-6.9712v-1.5148zm8.4135 0v1.5148h-6.9712v-1.5148z" fill="#4285f4"/></svg>
+
+GCPEntityColoring(healthcare_nlp_api)
+!define healthcare_nlp_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, healthcare_nlp_api, healthcare_nlp_api)
+!define healthcare_nlp_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, healthcare_nlp_api, healthcare_nlp_api)
+!define healthcare_nlp_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, healthcare_nlp_api, healthcare_nlp_api)
+!define healthcare_nlp_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, healthcare_nlp_api, healthcare_nlp_api)

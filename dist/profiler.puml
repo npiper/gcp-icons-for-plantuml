@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $profiler <svg viewBox="0 0 24 24"><g><g><rect x="8" y="2" width="8" height="2" fill="#669df6"/><path d="M16.54,7.43l-.13.13L18,9.16,18.12,9A8,8,0,0,0,16.54,7.43Z" fill="#669df6"/><path fill="#669df6" d="M 20.61 6.55 L 19.01 4.95 L 16.6 7.36 L 19.11 8.05 Z"/><path d="M16.6,7.36l-.06.07A8,8,0,0,1,18.12,9l1-1Z" fill="#4285f4"/><circle cx="12" cy="14" r="4" fill="#669df6"/><path d="M12,18a4,4,0,1,0,0-8v4L8.73,16.32A4,4,0,0,0,12,18Z" fill="#aecbfa"/><path d="m12 22a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-2a6 6 0 1 0-6-6 6 6 0 0 0 6 6z" fill="#669df6"/></g></g></svg>
+
+GCPEntityColoring(profiler)
+!define profiler(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, profiler, profiler)
+!define profiler(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, profiler, profiler)
+!define profilerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, profiler, profiler)
+!define profilerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, profiler, profiler)

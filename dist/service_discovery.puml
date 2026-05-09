@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $service_discovery <svg viewBox="0 0 24 24"><path d="m18.18 17.24a9 9 0 0 1-1.51 1.32l2.94 2.94a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41z" fill="#4285f4"/><path fill="#4285f4" d="M 14 15.5 L 9.19 15.5 L 13.19 7.5 L 10 7.5 L 10 6.5 L 14.81 6.5 L 10.81 14.5 L 14 14.5 Z"/><circle cx="14" cy="15" r="1.25" fill="#669df6"/><circle cx="10" cy="15" r="1.25" fill="#669df6"/><rect x="8" y="10.5" width="8" height="1" fill="#4285f4"/><path d="m12 4a7 7 0 1 1-7 7 7 7 0 0 1 7-7m0-2a9 9 0 1 0 9 9 9 9 0 0 0-9-9" fill="#669df6"/><circle cx="12" cy="11" r="1.25" fill="#669df6"/><circle cx="8" cy="11" r="1.25" fill="#669df6"/><circle cx="16" cy="11" r="1.25" fill="#669df6"/><circle cx="14" cy="7" r="1.25" fill="#669df6"/><circle cx="10" cy="7" r="1.25" fill="#669df6"/></svg>
+
+GCPEntityColoring(service_discovery)
+!define service_discovery(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, service_discovery, service_discovery)
+!define service_discovery(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, service_discovery, service_discovery)
+!define service_discoveryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, service_discovery, service_discovery)
+!define service_discoveryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, service_discovery, service_discovery)

@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $bare_metal_solutions <svg viewBox="0 0 24 24"><g transform="translate(3 3)" fill="#4285f4"><path d="m9 17.989-9-4.2752 4.5-1.4286 4.5 4.2857 4.5-4.2857 4.5 1.4286z"/><path d="m9 0 7.5 7.1429-7.5 7.1429-7.5-7.1429zm0 1.4286-6 5.7143 6 5.7143 6-5.7143z"/><path d="m15.841 9.2847 0.659 0.63-7.5004 7.2281-7.5006-7.2281 0.659-0.629 0.627 0.6-0.062052 0.059321 6.2767 5.8891 6.2767-5.8891-0.063299-0.059321z"/></g></svg>
+
+GCPEntityColoring(bare_metal_solutions)
+!define bare_metal_solutions(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, bare_metal_solutions, bare_metal_solutions)
+!define bare_metal_solutions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, bare_metal_solutions, bare_metal_solutions)
+!define bare_metal_solutionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, bare_metal_solutions, bare_metal_solutions)
+!define bare_metal_solutionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, bare_metal_solutions, bare_metal_solutions)

@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $cloud_healthcare_marketplace <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><g transform="translate(5 1)"><path d="m1 9v10c0 1.1046 0.89543 2 2 2h8c1.1046 0 2-0.89543 2-2v-10h-12z" stroke="#4285F4" stroke-width="2"/><rect x="6" y="11" width="2" height="8" fill="#4285F4"/><rect x="3" y="14" width="8" height="2" fill="#4285F4"/><rect width="14" height="2" fill="#4285F4"/><rect y="4" width="14" height="2" fill="#4285F4"/></g></g></svg>
+
+GCPEntityColoring(cloud_healthcare_marketplace)
+!define cloud_healthcare_marketplace(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_healthcare_marketplace, cloud_healthcare_marketplace)
+!define cloud_healthcare_marketplace(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_healthcare_marketplace, cloud_healthcare_marketplace)
+!define cloud_healthcare_marketplaceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_healthcare_marketplace, cloud_healthcare_marketplace)
+!define cloud_healthcare_marketplaceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_healthcare_marketplace, cloud_healthcare_marketplace)

@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $automl_video_intelligence <svg viewBox="0 0 24 24"><g><path d="M6.83,19.46l1,1.65h9.48L22,12.89,20.1,9.6l-4.74,8.21H7.78Z" fill="#4285f4"/><path d="M17.17,4.54l-1-1.65H6.74L2,11.11,3.9,14.4,8.65,6.19h7.58Z" fill="#4285f4"/><path fill="#669df6" d="M 15.47 9.99 L 14.14 10.98 L 14.14 13.06 L 15.47 14.06 Z"/><path fill="#aecbfa" d="M 10.79 12.3 L 10.41 12.99 L 9.5 12.99 L 10.07 12.01 L 9.5 11.01 L 10.41 11.01 L 10.79 11.65 L 13.29 11.65 L 13.29 9.62 L 11.26 9.62 L 11.69 10.3 L 12.44 10.3 L 12.44 11.04 L 11.22 11.04 L 10.31 9.62 L 8.53 9.62 L 8.53 14.38 L 10.31 14.38 L 11.22 12.96 L 12.44 12.96 L 12.44 13.7 L 11.69 13.7 L 11.26 14.38 L 13.29 14.38 L 13.29 12.3 Z"/></g></svg>
+
+GCPEntityColoring(automl_video_intelligence)
+!define automl_video_intelligence(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, automl_video_intelligence, automl_video_intelligence)
+!define automl_video_intelligence(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_video_intelligence, automl_video_intelligence)
+!define automl_video_intelligenceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_video_intelligence, automl_video_intelligence)
+!define automl_video_intelligenceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_video_intelligence, automl_video_intelligence)

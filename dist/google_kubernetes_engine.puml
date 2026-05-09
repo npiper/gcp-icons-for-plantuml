@@ -1,0 +1,11 @@
+' Copyright (c) 2026 Neil Piper (fork maintainer)
+' Copyright (c) 2020 David Holsgrove
+' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
+
+sprite $google_kubernetes_engine <svg viewBox="0 0 24 24"><g><path fill="#4285f4" d="M 14.68 13.06 L 19.23 15.69 L 19.23 16.68 L 14.29 13.83 Z"/><path fill="#669df6" d="M 9.98 13.65 L 4.77 16.66 L 4.45 15.86 L 9.53 12.92 Z"/><rect x="11.55" y="3.29" width=".86" height="5.78" fill="#aecbfa"/><path d="M3.25,7V17L12,22l8.74-5V7L12,2Zm15.63,8.89L12,19.78,5.12,15.89V8.11L12,4.22l6.87,3.89v7.78Z" fill="#aecbfa"/><path fill="#aecbfa" d="M 11.98 11.5 L 15.96 9.21 L 11.98 6.91 L 8.01 9.21 Z"/><path fill="#669df6" d="M 11.52 12.3 L 7.66 10.01 L 7.66 14.6 L 11.52 16.89 Z"/><path fill="#4285f4" d="M 12.48 12.3 L 12.48 16.89 L 16.34 14.6 L 16.34 10.01 Z"/></g></svg>
+
+GCPEntityColoring(google_kubernetes_engine)
+!define google_kubernetes_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, google_kubernetes_engine, google_kubernetes_engine)
+!define google_kubernetes_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, google_kubernetes_engine, google_kubernetes_engine)
+!define google_kubernetes_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, google_kubernetes_engine, google_kubernetes_engine)
+!define google_kubernetes_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, google_kubernetes_engine, google_kubernetes_engine)

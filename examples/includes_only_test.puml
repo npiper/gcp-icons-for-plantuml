@@ -1,0 +1,9 @@
+@startuml includes_only_test
+!pragma svgparser sax
+
+!include ../dist/GCPCommon.puml
+!include ../dist/ai_platform.puml
+!include ../dist/iot_core.puml
+
+rectangle "test" as a
+@enduml
