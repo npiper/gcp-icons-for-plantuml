@@ -1,0 +1,25 @@
+@startuml Serverless API - GCP v2
+!define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
+!define GCP_USE_PNG
+!includeurl GCPPuml/GCPCommon.puml
+!includeurl GCPPuml/cloud_armor.puml
+!includeurl GCPPuml/cloud_endpoints.puml
+!includeurl GCPPuml/cloud_run.puml
+!includeurl GCPPuml/firestore.puml
+!includeurl GCPPuml/secret_manager.puml
+
+left to right direction
+actor "Client" as client
+
+cloud_armor(armor, "Cloud Armor", "DDoS / WAF")
+cloud_endpoints(endpoints, "Cloud Endpoints", "OpenAPI Gateway")
+cloud_run(service, "Orders API", "Cloud Run")
+firestore(db, "Orders Store", "Firestore")
+secret_manager(secrets, "API Keys", "Secret Manager")
+
+client --> armor
+armor --> endpoints
+endpoints --> service
+service --> db
+service --> secrets : reads at startup
+@enduml

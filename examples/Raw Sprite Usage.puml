@@ -1,8 +1,4 @@
-@startuml Raw usage - Sprites
-'Copyright (c) 2026 Neil Piper (fork maintainer)
-'Copyright (c) 2020 David Holsgrove
-'SPDX-License-Identifier: MIT (For details, see https://github.com/npiper/gcp-icons-for-plantuml/blob/master/LICENSE-CODE)
-
+@startuml Raw Sprite Usage
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
 !define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
@@ -12,10 +8,8 @@
 component "<color:green><$vertexai_png></color>" as myMLModel
 database "<color:#232F3E><$iot_core_png></color>" as myRoboticService
 iot_core(mySecondFunction, "Reinforcement Learning", "Gazebo")
-
 rectangle "<color:GCP_SYMBOL_COLOR><$vertexai_png></color>" as mySecondML
 
 myMLModel --> myRoboticService
 mySecondFunction --> mySecondML
-
 @enduml

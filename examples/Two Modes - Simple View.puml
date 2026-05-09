@@ -1,21 +1,14 @@
 @startuml Two Modes - Simple View
-'Copyright (c) 2026 Neil Piper (fork maintainer)
-'Copyright (c) 2020 David Holsgrove
-'SPDX-License-Identifier: MIT (For details, see https://github.com/npiper/gcp-icons-for-plantuml/blob/master/LICENSE-CODE)
-
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
 !define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/GCPSimplified.puml
 !includeurl GCPPuml/cloud_endpoints.puml
 !includeurl GCPPuml/app_engine.puml
-
-' Include Material Design Common icons
 !include <material/common>
 !include <material/cellphone_android>
 
 left to right direction
-
 GCPEntityColoring(MA_CELLPHONE_ANDROID)
 MA_CELLPHONE_ANDROID(#9E9E9E, 1, sources, rectangle, "Android")
 cloud_endpoints(endpoints, "GCP Cloud Endpoints", "api")
@@ -23,5 +16,4 @@ app_engine(engine, "GCP App Engine", "API Backend Instances")
 
 sources <--> endpoints
 endpoints <--> engine
-
 @enduml
