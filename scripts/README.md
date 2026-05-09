@@ -21,7 +21,7 @@ Dependencies:
 | Package | Purpose |
 |---|---|
 | `PyYAML` | Reads `configv2.yml` |
-| `Pillow` | Resizes PNG source icons to 128×128 for PNG sprites |
+| `Pillow` | Resizes PNG source icons to 72×72 for PNG sprites |
 | `scour` | Optimises and sanitises SVG source files |
 
 ### Java
@@ -126,14 +126,15 @@ For each entry in `configv2.yml`:
 1. Reads the source `.svg` from `source/official/{SourceDir}/`.
 2. Optimises it with `scour` (strips comments, IDs, normalises viewBox).
 3. Inlines CSS fill colours into element `style` attributes so PlantUML's SAX SVG parser renders them correctly.
-4. Resizes the source `.png` to 128×128 using Pillow (longest-side thumbnail, white background).
-5. Encodes the resized PNG as a PlantUML base64 sprite (`[128x128/16z]`).
+4. Resizes the source `.png` to 72×72 using Pillow (longest-side thumbnail, white background).
+5. Encodes the resized PNG as a PlantUML base64 sprite (`[72x72/16z]`).
 6. Writes a single `dist/{Target}.puml` containing:
    - License header
-   - `!pragma svgparser sax`
-   - The SVG sprite (default, used with local `!include`)
+   - The SVG sprite (default, used with local `!include`). The root `<svg>` has
+     `width="72" height="72"` so PlantUML reserves the same layout space as the
+     PNG sprite, giving consistent icon sizes across both modes.
    - The PNG sprite with `_png` suffix (used when `!define GCP_USE_PNG` is set)
-   - The entity macro in snake_case: `!define {Target}(...)`
+   - Entity macros in snake_case: `!define {Target}(...)`.
 7. Copies the full-size `.png` and `.svg` source files to `dist/{Target}.png` / `dist/{Target}.svg`.
 
 After all icons are processed:
@@ -168,8 +169,14 @@ After regenerating `dist/`, re-render the example diagrams to `docs/images/`:
 
 ```bash
 JAVA=/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home/bin/java
-$JAVA -jar scripts/plantuml.jar -tsvg -o docs/images examples/*.puml
+$JAVA -Djava.awt.headless=true -Dapple.awt.UIElement=true \
+  -jar scripts/plantuml.jar -tsvg -o docs/images examples/*.puml
 ```
+
+The `-Djava.awt.headless=true -Dapple.awt.UIElement=true` flags suppress the
+Java GUI/dock-icon that PlantUML otherwise opens on macOS, even for non-interactive
+operations. The builder passes these flags automatically when encoding PNG sprites;
+use them here too for a fully silent render.
 
 ---
 
