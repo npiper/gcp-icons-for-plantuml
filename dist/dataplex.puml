@@ -2,6 +2,24 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $dataplex_png [128x128/16z] {
+xPg7jjiW44GNH9d__-7qH0UFDtxBM2Y5UzehY4itkvRzZMmscyq6kDFU0DpNWeGVr9k6_cIzlMDahVq0qHSFFPCMsvaLzehViRZppB7OpgpPS-jRa32IqYd4
+IBr0pzlzzFE1S7K3p4O_Buqh_TdORtRrWJZgs6yD8ranSGLba97_RPFWLd0kRSzlIMy1ZI7VjjZl7n95qWF6-7vz4a24_NmxaFm8-xcM5jNR5mG_jo25_CD7
+VPxnypqXuEVMnFqy13tixugV3uEmlsf-ow8VcX-Oz7VU3N5_mhGVvQ7zFUu7Plm5FsW50q5_0XZfXjiYVk5U2fUF-o7u2rpgWx_ytALa5_mqTUeCvfX_gE7e
+D0HHkmt-K7m_SOXmwId_v8MgKp2g-xbJmOAwtxgZ9sYSL3zN72X7Ve6d-OM3_b9edv1VQu7RLox5VesnYkeS2yDlvDVuIAH76l8BPFTsMwY8uASd8c7I2Z_0
+BFDlVmMOiiwFP_Hr_WumRPs_0ConpB_tNtsn_F_LyxUz_lohvYBxEVdAwINWAl-voMW4ngtPBl7JNmxAqL8frVzoId9-_cHzizzBwlkPrtVw8SGVab-EltG_
+1vM1K5Ntw_5teXKPy4Txn0_Cp8UMV_4H_PKIHQtMHlNg3P3pRoxp_Yha7wcMk5_v_gMR7LeEj5dGpza1mQ_btyjOQTpVjUyVJFJRYUGl0V_83VqVAOg_nFsM
+yO3WHqJlXvWJ_duku4n5utdyiDz0DE657uJzLNmrgM6a1_qMqCSgyFtZ_QpxUg45lhy_MhAevsH7zVtfcIVHobE7mFC7-YctWFrL6EZmWPZ9hxs96ZyGHp_z
+Sy4RWAV_4FH22npAofTl6RiKmRwW1NdXo-TCjqMeGwzphvql9zMMqyNEwznZvvJiZLJOtyXcizbiFWC
+}
+
+GCPEntityColoring(dataplex)
+!define dataplex(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, dataplex_png, dataplex)
+!define dataplex(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dataplex_png, dataplex)
+!define dataplexParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataplex_png, dataplex)
+!define dataplexParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataplex_png, dataplex)
+!else
 sprite $dataplex <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><rect width="24" height="24"/><path d="m5.5883 10.842v4.4818l3.1531-2.1268c0.20007 0.54406 0.53157 1.0246 0.95602 1.4032l-3.2541 2.1948 4.7559 2.9235-1.62e-5 -4.33c0.26422 0.063844 0.54015 0.097672 0.82398 0.097672 0.30178 0 0.59462-0.03824 0.87395-0.11014l-5.7e-5 4.3406 2.5162-1.5467 0.78394 1.3309-4.1505 2.4365-8.1562-4.7881v-6.3072h1.6977zm9.7102 2.3728 2.8285 1.9078c0.30872-0.19649 0.67518-0.31032 1.0682-0.31032 1.1003 0 1.9922 0.89193 1.9922 1.9922s-0.89193 1.9922-1.9922 1.9922-1.9922-0.89193-1.9922-1.9922c0-0.0836 0.0051494-0.166 0.015148-0.24689l-2.8834-1.9448c0.4266-0.37636 0.76065-0.8552 0.96362-1.398zm3.8968 2.7928c-0.4401 0-0.79688 0.35677-0.79688 0.79688s0.35677 0.79688 0.79688 0.79688 0.79688-0.35677 0.79688-0.79688-0.35677-0.79688-0.79688-0.79688zm-7.172-6.0145c1.1032 0 1.9975 0.89431 1.9975 1.9975 0 1.1032-0.89431 1.9975-1.9975 1.9975-1.1032 0-1.9975-0.89431-1.9975-1.9975 0-1.1032 0.89431-1.9975 1.9975-1.9975zm0.023581-7.9308 8.1562 4.7881v6.3387h-1.698v-4.5297l-3.1902 2.1519c-0.19565-0.54598-0.52327-1.0291-0.94443-1.411l3.2668-2.2035-4.7401-2.9138 5.7e-5 4.3221c-0.27933-0.071899-0.57218-0.11014-0.87395-0.11014-0.28383 0-0.55976 0.033828-0.82398 0.097672l1.62e-5 -4.3115-2.6793 1.647-0.79748-1.3272 4.3243-2.5385zm-7.2891 3.1406c1.1003 0 1.9922 0.89193 1.9922 1.9922 0 0.082471-0.0050112 0.16377-0.014746 0.24361l2.9269 1.9742c-0.419 0.38402-0.74408 0.86886-0.93681 1.4161l-2.8966-1.9537c-0.30927 0.19753-0.67672 0.31202-1.0709 0.31202-1.1003 0-1.9922-0.89193-1.9922-1.9922s0.89193-1.9922 1.9922-1.9922zm0 1.1953c-0.4401 0-0.79688 0.35677-0.79688 0.79688s0.35677 0.79688 0.79688 0.79688 0.79688-0.35677 0.79688-0.79688-0.35677-0.79688-0.79688-0.79688z" fill="#4285F4"/></g></svg>
 
 GCPEntityColoring(dataplex)
@@ -9,3 +27,4 @@ GCPEntityColoring(dataplex)
 !define dataplex(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dataplex, dataplex)
 !define dataplexParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataplex, dataplex)
 !define dataplexParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataplex, dataplex)
+!endif

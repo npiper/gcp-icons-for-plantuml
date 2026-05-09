@@ -2,6 +2,26 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_run_for_anthos_png [128x128/16z] {
+xPPfcgGu44CxP43S_yAzGMlIifdyJANjMT2Vskl9H3pWsxylJvuyUVBaoPCdopANJyuzFhbEn0VtdJ6Fl_xYRzFmuFupn2p-Tl1dNO34_NUO9hct7o4dkRUV
+uJB7FOKnnJs5wnpt56AEUplF3ziSzxXjdE8WJop-h25dkCTDUyXbWdkCxFD1iJCl7EqWcDrtETf1xRovCDWz5dq6k-VtGWvsJndfOEdRM0TNryqS7EfUkHDZ
+tLFau63tobvZtIldCjWzPHlWO93c6L0wED2z857-i5V2PnpKAjXkT7TFuo337HpWdl0gOFtwkYUy2fY3VTqJNWNCmVxk2Qy2vc1VzuHNWSuEoZt7gq1V1pLQ
+MprRmbuEQhKD7su1vM0Vzt8yJ4ChsiMzs5xmMPqjUZZexXdU2sXHeuDxmjlxFrMWWuFPZTxnNi0krgVTA_7IGmMMJpkOLf8xwVXwWIuteRIHCFnLWJuEfjKs
+_xh0XnoCttbfOFZh0b-_006a1E3tXn215tYtm1rifoCfG3g9iT5lxVK2kXHny-mMDLYPurFo0ifT1qNFWdCAsmim5f9Sejm1XRYDznm5ZBxlUOD4uxCLdow3
+rxDW9GNPLrmMI6sMU-fN09k__sse5o2_SF5HBv14pngaUe6r5Oyu3QY8e2ttQ16iG9E3VyqvZliEK5k1bIzCPXNMK85s1_5wokDZr2O0YhuiHGEeGAE3KV1h
+Aw4N0d9BsWPRXCGRAmXaXyJnqGkShwFa1dTHFAQ5xGxcKmuSi6C6zZDInbyqQBy00K6W0Hm1_08KEntv8ZGvw10D7b7_MJqfQz3ie6tveQ2Eb_si6bz5Sx29
+hm7OGra_kmhMNGqQ7ImiGtvOmFZrn4honWK8v9Pf04gyvsiCPO7KmaTe0FuhHwMu3121bGMVD_Y-RVXpVl1lKzi1BYsFVZKoGyNVcyDev0C9iF6V_7I7lxRx
+XyWEhz4iR_dj3WBb_ITLVge7u9kqEXYullnXes4x_xs3nZYkWntUrhyrxmRWjz_gu-z-tXZWumTgZ_z-0IgFtu29sJ6Lzp-W__6LW23u_J64LxEk0OxnHyAl
+Zs7q5D-654W75oXU_hl7c8wVMK3uleca1hRvemB0wQCEBm-pMpv47rdX543qyOdFafyyUVBaoPCdJtu
+}
+
+GCPEntityColoring(cloud_run_for_anthos)
+!define cloud_run_for_anthos(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_run_for_anthos_png, cloud_run_for_anthos)
+!define cloud_run_for_anthos(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_run_for_anthos_png, cloud_run_for_anthos)
+!define cloud_run_for_anthosParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_run_for_anthos_png, cloud_run_for_anthos)
+!define cloud_run_for_anthosParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_run_for_anthos_png, cloud_run_for_anthos)
+!else
 sprite $cloud_run_for_anthos <svg viewBox="0 0 24 24"><path d="M6.42,13a3.92,3.92,0,0,0,0,7.83,3.92,3.92,0,0,0,0-7.83ZM6,17.09,5.37,19.2l-.83.42.62-2.53h0l-.62-2.52.83.42L6,17.09Zm0,2.53.83-2.53L6,14.57l3.32,2.52Z" fill="#aecbfa"/><path d="M12.75,3.13,7.47,12.42a4.61,4.61,0,0,1,1.26.5l4-7.06,4.32,7.57L12.75,9.06,8.86,13a4.37,4.37,0,0,1,1,.89L12.75,11l4.57,4.64-4.57-2.07L10.4,14.62a4.48,4.48,0,0,1,.5,1.27l1.85-.83,4.36,2H11a4.67,4.67,0,0,1-.22,1.36H21.43Z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(cloud_run_for_anthos)
@@ -9,3 +29,4 @@ GCPEntityColoring(cloud_run_for_anthos)
 !define cloud_run_for_anthos(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_run_for_anthos, cloud_run_for_anthos)
 !define cloud_run_for_anthosParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_run_for_anthos, cloud_run_for_anthos)
 !define cloud_run_for_anthosParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_run_for_anthos, cloud_run_for_anthos)
+!endif

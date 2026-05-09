@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $data_labeling_png [128x128/16z] {
+xDa7KiKm30JGlojP3lS_CCNy7dimYgDG_ARJbdLdEFqyqpHDqpHDqmGE07UwKBOZwIqlOr1S-JACQmee0ssj7v_FW_Fbs7mUd2zZ7LnV_FLnkkCkiUaxu_Fb
+WeZFRt-ZFp-wVa5UBw3m-WMkeki7J9j3IFrP7-0A45PVhKg3wckoggGXzM5DYAXFQwAZVcX-kpv4Kvb3OaE-jxuakr6wyttrcUoHmhd-NFMrriIr_rprrMh4
+S_vuwgjZBi4Ak1Q_M0iYBZvOKugu-9AroVxrQNVoExktVtszZxUaoN9j2GBy4k1O_FVbfIIblDvGQbsqA_--FYhBNRDTjSwRRvq_q2BPbLvOlbYolYk_mzqK
+eBr5-hUivALukLegogUbVFrJFgqRg_bBhyzytlBvZ_BVfsMVyQSrvUNg8pHpy_hpFsKvRl_rivjTpv-w_lDtX_y2nDy_zqBltxhuzyUz-FTNWGl7-tFxt__W
+MxjsK0KW4CGmz1N_ej6mfm-GIEXffWszl_t_CVj_-Vzpzl_s_SDi_-Bxfud-pVUFvm4S__-uV_RzUm6u_GdlRtP_zFkhtvz501Vm3vxgNzW0l7zZ0_3-5Gv0
+-tVOFyJ-fVPFBH4H4H4HDm
+}
+
+GCPEntityColoring(data_labeling)
+!define data_labeling(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, data_labeling_png, data_labeling)
+!define data_labeling(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, data_labeling_png, data_labeling)
+!define data_labelingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, data_labeling_png, data_labeling)
+!define data_labelingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, data_labeling_png, data_labeling)
+!else
 sprite $data_labeling <svg viewBox="0 0 24 24"><g><path d="M20,4H7.7a1.12,1.12,0,0,0-1,.63L3,12H5L8,6H19V7h2V5A1,1,0,0,0,20,4Z" fill="#a6cafd"/><circle cx="10" cy="12" r="3" fill="#559cfc"/><circle cx="10" cy="12" r="1" fill="#fff"/><path fill="#fff" d="M 0 0 L 8 0 L 8 1 L 0 1 Z"/><rect x="17" y="8" width="5" height="2" rx="1" fill="#669df6"/><rect x="14" y="11" width="8" height="2" rx="1" fill="#669df6"/><rect x="17" y="14" width="5" height="2" rx="1" fill="#669df6"/><path d="M19,17v1H8L6,14H4l2.69,5.37a1.12,1.12,0,0,0,1,.63H20a1,1,0,0,0,1-1V17Z" fill="#a6cafd"/><line x1="10" x2="2" y1="12" y2="12" fill="none" stroke="#2683fb" stroke-miterlimit="10"/></g></svg>
 
 GCPEntityColoring(data_labeling)
@@ -9,3 +25,4 @@ GCPEntityColoring(data_labeling)
 !define data_labeling(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, data_labeling, data_labeling)
 !define data_labelingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, data_labeling, data_labeling)
 !define data_labelingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, data_labeling, data_labeling)
+!endif

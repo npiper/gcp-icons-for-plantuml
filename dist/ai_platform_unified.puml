@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $ai_platform_unified_png [128x128/16z] {
+xTW7OkGW38NX9sGSxd_XBMbQM2pRBo9L_mK-WHipk5sMPLcMxN_2XxNjZttWwZzq0FrWltwmB-_hgwgurz-sHLVmZyq6cDqKI_Z7nW7gT4jqcQy5X-rMl6zX
+NjaN-vQpUC8d1X1Vtn6VEbjG5l2g_W1wk7ZvRs_OrVeJo5Ilqol3RlRfHH1lwssuGleg_aNmjxuUpiK_xeu-8BOrjEzFSBRrl2_QLT0rvINqXL3qV0iSeBAy
+fQSJk1T-V2J39r3rjzu2csXVcJkCpc-1xs-3hh2Y9p2VNpm_WM6SpZ-BClgypc_1w2jvuVa9pESNpqzGp0pGgLVoVb3WUjqjcEiR-jhVIDu__rnQV7iAGGSm
+yNqSy6sZ_J775npwBSm73lmAhFMjcGz4-kZuKcQtWQih7jkCP_pog9-UVmHzOYPn-vbWeymcEBpm_Pwtze2tTFNyOxhv4Tqw_w0sguJvredV_ctDby_nMn_M
+3c0-p_C3c3_dDqHssqTqjtmiI2xxMDH57z_15mdqDwLM6kItl-tCKLi2_8Vsb53FsblzqbxZFtcytnhjMxJVklW_NeJoTv8toRhlI-kh0J-uR_XjAE0d_tNV
+r_d_NIxwTT0LR3hc-vE23j-y7_7Lvtq4nFiROY9zn4Nu24rk-lZGys_5YZxy_8jBlx-mC54L7FhO29tE_0ye_VJJJp_zzDF_WD9FF_tqqrTyx03uk2gr-YpB
+iYpx3G
+}
+
+GCPEntityColoring(ai_platform_unified)
+!define ai_platform_unified(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, ai_platform_unified_png, ai_platform_unified)
+!define ai_platform_unified(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, ai_platform_unified_png, ai_platform_unified)
+!define ai_platform_unifiedParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, ai_platform_unified_png, ai_platform_unified)
+!define ai_platform_unifiedParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, ai_platform_unified_png, ai_platform_unified)
+!else
 sprite $ai_platform_unified <svg viewBox="0 0 24 24"><path d="M11.26,6.86l-3.39-2a.75.75,0,1,1,.78-1.28l3.36,2Z" fill="#aecbfa"/><path d="M11.52,10.31,4.69,6.36a.75.75,0,0,1,.75-1.3l6.08,3.52Z" fill="#aecbfa"/><path d="M19.6,5.33a.76.76,0,0,0-1-.27L12.75,8.4V6.85l3.39-2a.74.74,0,0,0,.25-1,.75.75,0,0,0-1-.25L11.65,5.78a.79.79,0,0,0-.39.68V21a.75.75,0,1,0,1.49,0V10.14l6.57-3.78A.76.76,0,0,0,19.6,5.33Z" fill="#669df6"/><circle cx="12.01" cy="3.09" r=".84" fill="#669df6"/><path d="M9.48,10.82a.73.73,0,0,1,.38.64v4.08a.74.74,0,0,1-.38.65.79.79,0,0,1-.37.1.86.86,0,0,1-.38-.1L4.41,13.7a.75.75,0,1,1,.75-1.3l3.2,1.84V11.9l-1.45-.83a.75.75,0,0,1-.27-1,.74.74,0,0,1,1-.27Z" fill="#aecbfa"/><circle cx="5.26" cy="9.26" r=".84" fill="#aecbfa"/><path d="M16.34,9.77a.74.74,0,0,1,1,.27.75.75,0,0,1-.27,1l-1.45.83v2.34l3.2-1.84a.75.75,0,1,1,.75,1.3l-4.32,2.49a.86.86,0,0,1-.38.1.79.79,0,0,1-.37-.1.74.74,0,0,1-.38-.65V11.46a.73.73,0,0,1,.38-.64Z" fill="#4285f4"/><circle cx="18.74" cy="9.26" r=".84" fill="#4285f4"/></svg>
 
 GCPEntityColoring(ai_platform_unified)
@@ -9,3 +26,4 @@ GCPEntityColoring(ai_platform_unified)
 !define ai_platform_unified(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, ai_platform_unified, ai_platform_unified)
 !define ai_platform_unifiedParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, ai_platform_unified, ai_platform_unified)
 !define ai_platform_unifiedParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, ai_platform_unified, ai_platform_unified)
+!endif

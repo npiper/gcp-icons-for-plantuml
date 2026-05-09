@@ -2,6 +2,24 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $key_access_justifications_png [128x128/16z] {
+xPhNbjmW44IXEZ3__yDE6rhowPNLkBIySD-7MuH1f3R5PhFPR3RTFi4IltyYsx_zs_-TSgXve887PNyN7kuZ9lqSKLXwTnoBzIynjC1SMVe8qDKlCOJUNJdw
+293PymHlFQGa_Li0-2sql-aP0SG_WVfTn28CHp-FjNdW1BJDemH_R_-1NRMiYW0GjOAU5C0KvxdEwlhv024Fkl3r-HYmtdA4gG_y35f2FZihGwzvvNE4Nd_K
+QjJFQScjBuLb4MTb94bfbG3CwckxHISsWCnq9dWDC3UObTK0c2o8rG1MQtt9ScDUtsl5sB0ak596dztHluOb3K1fVhcZVxt6Xuqo2LSgeUDrz6iMVRxxhQZF
+Vpl_xvE2Fccx6f0tx6uVXZuVE-_SzISBohA-oVnYJ8kR24dq3Np_jNwSY-zClnRqJ_iD5_hd_JO6Me0_-bVe7_RR25cYJ_pKyUSZT0SzsiF-fBTJVG2ctvFX
+bkX9yqz_HxEVncJJ4tqw_wA_mVZ-H02CDpyAtsxAzrV7AnXI-2rf_Q7ZGf-iF-ZhBnqNUkBwIxxgH1l_qCC3ylex0WozqtBwoFx3nfKUIN3o_ik7LlPV_Fsd
+4FQVQ_VVwyyVrf-_yC-VZ5ZzzUTl7JOMdZzs4V6nuFmrzABpvyyWw4LqJ9-_Ww0NiGYGH-Wmpm51dmH8xb_e0UI0-JIOhtq0dVRBdF-iH-jBzRNBGEW3-jhz
+CrrVlN-dwINqfVS7BBtScEUoISauUdLjRURzIGD7xwwyzpTr_OW0XVT7LBsx5lnSVHWAVhhUNGj-abuEUhU2dw87u8c-xf-VzP3hSpzV7mjABRo_fUaZWBOA
+r4-EV9CUEEbxv2heUG6a9r-HHG7QaW0xm0xGsie0Q2i0Ghyo0DegWD2l2e2s4aXxXCrcizbiVW8
+}
+
+GCPEntityColoring(key_access_justifications)
+!define key_access_justifications(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, key_access_justifications_png, key_access_justifications)
+!define key_access_justifications(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, key_access_justifications_png, key_access_justifications)
+!define key_access_justificationsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, key_access_justifications_png, key_access_justifications)
+!define key_access_justificationsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, key_access_justifications_png, key_access_justifications)
+!else
 sprite $key_access_justifications <svg viewBox="0 0 24 24"><g><g><g><line x1="13.53" x2="13.53" y1="2.27" y2="4.63" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/></g><line x1="7.72" x2="9.39" y1="4.68" y2="6.34" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><line x1="5.32" x2="7.67" y1="10.49" y2="10.49" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><line x1="13.53" x2="13.53" y1="18.71" y2="16.36" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><line x1="19.35" x2="17.68" y1="16.3" y2="14.64" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><g><line x1="21.75" x2="19.4" y1="10.49" y2="10.49" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/></g><line x1="19.35" x2="17.68" y1="4.68" y2="6.34" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><line x1="6.99" x2="8.53" y1="17.2" y2="18.74" fill="none" stroke="#579bfb" stroke-miterlimit="10" stroke-width="2px"/><g fill="none" stroke-miterlimit="10"><polyline points="9.6 13.81 4.22 19.19 6.15 21.12" stroke="#abc9f8" stroke-width="2px"/><path d="m17.64 14.6a5.81 5.81 0 1 1 0-8.21 5.8 5.8 0 0 1 0 8.21z" stroke="#579bfb" stroke-width="2px"/><polyline points="10.68 10.68 12.45 12.52 16.39 8.46" stroke="#4283f2"/></g></g></g></svg>
 
 GCPEntityColoring(key_access_justifications)
@@ -9,3 +27,4 @@ GCPEntityColoring(key_access_justifications)
 !define key_access_justifications(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, key_access_justifications, key_access_justifications)
 !define key_access_justificationsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, key_access_justifications, key_access_justifications)
 !define key_access_justificationsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, key_access_justifications, key_access_justifications)
+!endif

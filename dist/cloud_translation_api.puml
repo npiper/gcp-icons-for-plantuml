@@ -2,6 +2,24 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_translation_api_png [128x128/16z] {
+xPXfkgGW34L9oE3-DzopgK9f8_LTjGVEpnxU2P1Sy9K39fF9P3APJ5Zj9yh_fzzM_cV_z4y_bGlW30b_vOoFqWM66etx3SYj_kcV_kdNTy8_07q2XtuW_u38
+gg_b4Mo57dwIbaVGPxUV7jv-MVNoyFBvsUNhHUjRIPQlzUBjhSVBjwltr-ZUvOVXgBzrPFdu3U0aUx0ReBSkFv1caUdVuB60JkmCdgfzZzuLVTgTCcdAkXBg
+dG3RSJB82g0tEaibEuuUzG1v0f52cZIV-_8B1tG7RrShUlpigBw4Ns4X4CrUDGb-yoLmr0p4WjcItITVNdZ5pe2b-YADtv3Fx1Okl---mAbWMo2xzTcNnY_O
+60oazD6Dtx4vdEPkw24H492UqzUTNy4NGGJFyV0xjWEBd3fz2lsha7h11AWam--i7X60qkS5k4VRywiKa3uluEMKjreKD7nv0Hf-UZyBa3ul88pMz2BZz7fK
+G6rxtY0Tg6teYxO5z8T_KmwXzDjUbFxmo-Ou1AQF1r0dY6MxNerfXAH-BUMm0D-STnC14FrX0RnFtEX0HUhR0dG__9s1WEhxZ-1mQQSZAr3V5a2xjV8-4Drm
+-hO0tPsrToy4mkgZ0EuDVsScP4oVlRIZWFxm1_9H172cZmAaF_oT3cIOFgXcb4HD4m4uVHJGlVdxTo9G7z3kezEtn5zKa3xxvb_wk9tJwvW-JZc71WP_JC-9
+VYW2T5XVDF6FHO2EwakY7uq07TJNp3yQ0HfwJFSDlmBqb3uR_l482AYSHqAWqgMv6_0aFxxz4C33oIEhVHlWqUI6QJy4y7WwNfZV1QI7ooTQHE5-ExEt0kt0
+yTuYx6-ZnbTcCQDt3t_U9VZXpwS4F_o0VuWV_doZyCEVDmeEyr_OYK5PeV8VCvbC9fF9v2i
+}
+
+GCPEntityColoring(cloud_translation_api)
+!define cloud_translation_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_translation_api_png, cloud_translation_api)
+!define cloud_translation_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_translation_api_png, cloud_translation_api)
+!define cloud_translation_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_translation_api_png, cloud_translation_api)
+!define cloud_translation_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_translation_api_png, cloud_translation_api)
+!else
 sprite $cloud_translation_api <svg viewBox="0 0 24 24"><g><path d="M17.91,10.2H16.09L12,21h1.82l1-2.7h4.32l1,2.7H22Zm-2.39,6.3L17,12.6l1.48,3.9Z" fill="#4285f4"/><path d="M12.79,14.77l-2.31-2.26,0,0A15.62,15.62,0,0,0,13.88,6.6h2.67V4.8H10.18V3H8.36V4.8H2V6.59H12.15a14.06,14.06,0,0,1-2.88,4.82,14.55,14.55,0,0,1-2.1-3H5.35a16,16,0,0,0,2.71,4.1L3.44,17,4.73,18.3l4.54-4.5,2.83,2.8Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(cloud_translation_api)
@@ -9,3 +27,4 @@ GCPEntityColoring(cloud_translation_api)
 !define cloud_translation_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_translation_api, cloud_translation_api)
 !define cloud_translation_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_translation_api, cloud_translation_api)
 !define cloud_translation_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_translation_api, cloud_translation_api)
+!endif

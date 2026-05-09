@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $automl_vision_png [128x128/16z] {
+xPffWkmW20P5XVB-9tuN21rbc6TFOltk9UXNRh5y9OV3uN0u7FeohIIYh2Cb3O6n2bhICCOwr994PGJ0IX8m8f0KmSu80RdbRugWCg9GCzmROMXfxkqoe3As
+DZ-CA6YAUs6Gb84_2dslUppJFUR8SAyHK3eH26GwZqv0wJo4GAOJKGAPpgDkBjz8c4yItJlkzOtk7VVitUvf-Nym7kdUSK_gNlSwMzqJw9dkYKYznEzPP7dU
+m_kEgbsYwlSickPULNEG3psBPBdd_RqshsVliwppuMjg3kKQxiCi2-xPOlcTYR5CcHtukpdeNMcqZuREkIVcKUygWzlynyDdhdkJSpdC3FpL0kvDJUQL7vNV
+FVUcvnFZ9-x9JQkkE9Zltc844Q_yY7jEhlp6eY-wftLsIeVxAHXAOEZ9sCaRJXl5XXvp5dIV7SG2Gq_IJbxn7QbgUedhtlg2Jl07oNQDk-hIo6QgW_pYRaBA
+7VIIWyKsK_KXfsZitSdtTv-YwRjFiEsz9zZ7FVb2z_fnxyMlJ-gRNbq-qRrkaunVSQyoooDl0ZL66EJDDu50zbw5wNl3nz-_XbPpt8kZPBWNHqXmRuD_iFSM
+CAqaqOY5Bms3Y7jfLDRHaaXNjJLKoZToE1mEXyFX7m
+}
+
+GCPEntityColoring(automl_vision)
+!define automl_vision(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, automl_vision_png, automl_vision)
+!define automl_vision(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_vision_png, automl_vision)
+!define automl_visionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_vision_png, automl_vision)
+!define automl_visionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_vision_png, automl_vision)
+!else
 sprite $automl_vision <svg viewBox="0 0 24 24"><g><path fill="#669df6" d="M 13.44 13.77 L 8.63 13.8 L 10.61 10.26 L 15.41 10.23 Z"/><path d="M6.82,19.46l.95,1.65h9.49L22,12.89,20.1,9.6l-4.74,8.21H7.77Z" fill="#4285f4"/><path d="M17.18,4.54l-.95-1.65H6.74L2,11.11,3.9,14.4,8.64,6.19h7.59Z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(automl_vision)
@@ -9,3 +25,4 @@ GCPEntityColoring(automl_vision)
 !define automl_vision(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_vision, automl_vision)
 !define automl_visionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_vision, automl_vision)
 !define automl_visionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_vision, automl_vision)
+!endif

@@ -2,6 +2,20 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $tensorflow_enterprise_png [128x128/16z] {
+xT7LWUKm50JHqlDQxlmJNXuq2wu6kX8u7yLdoJddd7FEEG5JPb1PVtqfCQ0aFVaIuKclVMc4_jfN3Xs_zgKKDdxjnqsGzdqfHj_tbKF6x_jI2XY_yWCcI5Tz
+AKRVzvMxZZ_tfTHn_DhlEK4gywM--hclN3--ofTIvVXoltw2rCANwlHwNtcmhw_WsxV_WpEVfQCFvpxqyk6Q3ptyn7MVkRK_mnqVslfmruTsFfJuf3R-Wq8V
+Shs_GBaFjJxSz1Flgl7XdhzfJQN-H96_rXPHLAclpAfGNqg3VMcqBmNwzktRjs-VDDY7UR0FetqOxVCOxCCosETB-FRjsxTltxvz-qn7FX4jU_v4K9l-Gc1h
+dzZcjtuYl5V-p92UV4Rr02OkvfnppZdddFi5
+}
+
+GCPEntityColoring(tensorflow_enterprise)
+!define tensorflow_enterprise(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, tensorflow_enterprise_png, tensorflow_enterprise)
+!define tensorflow_enterprise(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, tensorflow_enterprise_png, tensorflow_enterprise)
+!define tensorflow_enterpriseParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, tensorflow_enterprise_png, tensorflow_enterprise)
+!define tensorflow_enterpriseParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, tensorflow_enterprise_png, tensorflow_enterprise)
+!else
 sprite $tensorflow_enterprise <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><path d="m12.301 4 6.69 3.9033 0.0091322 3.5409-4.0267-2.3761v1.7882l2.0073 1.1714 0.011208 3.0789-2.0185-1.1929v4.5015l-2.6724 1.5849v-16zm-0.60177-3.179e-5v16l-2.6724-1.5849v-9.3469l-4.0267 2.376 0.0091322-3.5409 6.69-3.9033z" fill="#4285F4"/></g></svg>
 
 GCPEntityColoring(tensorflow_enterprise)
@@ -9,3 +23,4 @@ GCPEntityColoring(tensorflow_enterprise)
 !define tensorflow_enterprise(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, tensorflow_enterprise, tensorflow_enterprise)
 !define tensorflow_enterpriseParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, tensorflow_enterprise, tensorflow_enterprise)
 !define tensorflow_enterpriseParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, tensorflow_enterprise, tensorflow_enterprise)
+!endif

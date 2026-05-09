@@ -2,6 +2,26 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_security_scanner_png [128x128/16z] {
+xPffakii34NHlKXa_nj-0ywBgasYnbRnZPpVNHmDe2QKox-GpMQpsMmscmtaRzKBGE9lJ1yamR-j2k01_gOYa8mYa5uUMUbtm9E8QgRj5yQLsyy1ljZLVj4U
+ZqThXdK1W8wNe7Pxz_S8kF8COYY1ghd_Dwskd09y0NZsdKThHmMmV10SG0gUUaefmZyzM3y9dyYXLoa7R9SxW4m9wg4lBz0k5W30ZHBmYNQ_54VxCSIydi3z
+NT3rNwejtQyNbaa4qFsdYMFjbz-k7QUx0THN-Hszu2Vl-mlmsT_MwHsW-_Lc_NsObPl0zvypl_zyYjr4tfo_slsSFq90OXJMSm7ac3zouKPL4b2_1e0sNNuW
+MVrEDVCzABNDfq-lVWAeFL5jZyFUwdpwB4beThv_Q5cUlYDq_mMzJAGlL3NJMX4dekvlazS_gNrb8DpQtbl6OrYx_pTrpluCrpxweMhcg3BkPDMgMZ6vPRnT
+zMFo9xG6_aldkAgvlsdm9rzGZRSIBeqitwurqCzLuD8SbU6uIb3y8O1q0-gtuqBi8nACiac_kVz96oByY0ORO6wKuOqVK-bt9Bi1gQEVKztlrDm67FtZ2L0B
+qFL-2v6a7z_LNom4mKrgxlYFVfdtQzPVJlaFTtN4VcRzqBEVWtz1_HrrlwVloABzvvoUgyuhBlUBwilVnWNhqlFlYay_5A21dXc_m_hRt_HjDM_EV-3QCrwj
+a614XkC_xuygjkR__tp747G_qVxvAnCltV_aXXznowY1FbWhjm7Y5d2obla6-Ck6et8tbVZr8VYBQgPsK95OAOmwh1fOLIiXYKgk_lsFeFo9vv_rUV002zDV
+Nm31_JOod5lhrq0SUtw9zU-_I9LGa0eWdm1oyIDzX9XP0VaDB8aKC5G_4m1dLX6gDbEuFZt1CH-0r3-ld8P2r-V0R28mV-Lzw4rz7834-gU_OwC-tm9Y_jbG
+Htq-052cdmq2VQO2bCbd4tLz6g43GcQUhKmMVLL1W10PoXyzc-OHWdG04e3y0W1jz3zapOSb3Wu--9ki-h1aP6t-Ze3WErRttm616N-pXTyuZJ6CVgx_sl85
+X_FVMbcEl1ZdVqFvQn7tBwh-_BDbI-WJLDF-aLrJANyBWggcDMDVpsQpsMmscytc9m
+}
+
+GCPEntityColoring(cloud_security_scanner)
+!define cloud_security_scanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_security_scanner_png, cloud_security_scanner)
+!define cloud_security_scanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_security_scanner_png, cloud_security_scanner)
+!define cloud_security_scannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_security_scanner_png, cloud_security_scanner)
+!define cloud_security_scannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_security_scanner_png, cloud_security_scanner)
+!else
 sprite $cloud_security_scanner <svg viewBox="0 0 24 24"><circle cx="11.45" cy="11.51" r="2.89" fill="#669df6"/><path d="m18.05 6.81a8.12 8.12 0 0 0-4.94-3.23l-0.27 1.3a6.79 6.79 0 1 1-6.19 1.86l-1-0.94a8.1 8.1 0 1 0 13 2.12 1.31 1.31 0 0 1-0.6-1.11z" fill="#aecbfa"/><path d="m14.46 20.42a2 2 0 1 1 0-3.93" fill="#669df6"/><path d="m14.46 16.49a2 2 0 1 1 0 3.93" fill="#4285f4"/><path d="m19.38 8.1a1.34 1.34 0 0 1 0-2.67v-1a2.38 2.38 0 0 0 0 4.75z" fill="#669df6"/><path d="m19.38 5.43a1.34 1.34 0 0 1 0 2.67v1a2.38 2.38 0 0 0 0-4.75z" fill="#4285f4"/><path d="m4.22 12.78a2 2 0 1 1 0-3.93" fill="#669df6"/><path d="m4.22 8.85a2 2 0 0 1 0 3.93" fill="#4285f4"/></svg>
 
 GCPEntityColoring(cloud_security_scanner)
@@ -9,3 +29,4 @@ GCPEntityColoring(cloud_security_scanner)
 !define cloud_security_scanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_security_scanner, cloud_security_scanner)
 !define cloud_security_scannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_security_scanner, cloud_security_scanner)
 !define cloud_security_scannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_security_scanner, cloud_security_scanner)
+!endif

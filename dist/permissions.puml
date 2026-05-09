@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $permissions_png [128x128/16z] {
+xTe7cbmX30FWHx45zpzmEkdHndoWbBKky6E_XfbvuibaCfbIM-zclTKYjsjtVCZy45XL5juTAtDbM57forx-YYjMy57_pb-nwyKxc3z7lSetWFjpTa7lcJ_z
+6c-W_eeBgcV-T1s__FkFGSNl-xCTvmiY_Yo2Uu_v47H_-Oehu55_QCh7b3J0u_uGtFpCd_MSttTy4xIV-KFG_kNVVGUrFRyBBZ_p_PHlUpu4jn_pn__YOy-V
+wR_g-mz_-FbtoVjFy06ir1ViW0JVFnhRyN5Xx2R-rK6S-e8HoEA-2wO_vbV9-0TIlgG1KpG0D-9BJY0yukCvdXBnY-m0XjpxaWMG3uza0OINB433hnH_oKTv
+hgPptvxRAVPh7_KHfDhFVJJX3q3V-yFgeqnfviiVtXUkJIcbrlAygcGocKmc__fYxcC0xkjFC1BO_UVxdm7lxU8gQZD_UVyzO1SMKNje_ZowXjBsphzwEO8x
+I8X_ObDAAkS-xqByZqxSv_6wEsKSy3Sda-P0pESPFLGxqObFCrfamZpcnwVJXaXc9BPN_BuVFfse26O6qmAzl-7FJlYE-_uqKlrbdo-WuhBFxu42WK-EXqtd
+WtJ_di-lW2lzGQx-BP-Vq7UjR-JkK_ZutdU1psu0QFtvD_Zffvz--kcdxzZBsDB7o3FSJ2Rp5W
+}
+
+GCPEntityColoring(permissions)
+!define permissions(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, permissions_png, permissions)
+!define permissions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, permissions_png, permissions)
+!define permissionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, permissions_png, permissions)
+!define permissionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, permissions_png, permissions)
+!else
 sprite $permissions <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <g transform="translate(2 2)"> <path d="m10 10c2.9 0 5.2-2.3 5.2-5.2s-2.3-5.2-5.2-5.2-5.2 2.3-5.2 5.2 2.3 5.2 5.2 5.2z" fill="#5C85DE"/> <path d="m10 12.7c-3.5 0-10.5 1.7-10.5 5.2v2.6h21v-2.6c0-3.5-7-5.2-10.5-5.2z" fill="#5C85DE"/> <path d="m10 10c2.9 0 5.2-2.3 5.2-5.2s-2.3-5.2-5.2-5.2v10.4z" fill="#3367D6"/> <path d="m10 12.7v7.8h10.5v-2.6c0-3.5-7-5.2-10.5-5.2z" fill="#3367D6"/> </g> </svg>
 
 GCPEntityColoring(permissions)
@@ -9,3 +25,4 @@ GCPEntityColoring(permissions)
 !define permissions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, permissions, permissions)
 !define permissionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, permissions, permissions)
 !define permissionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, permissions, permissions)
+!endif

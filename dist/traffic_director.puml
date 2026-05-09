@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $traffic_director_png [128x128/16z] {
+xPjNWXmn24G5237tFx5xvL2JSK1TjbTluz-3KjWmTFjds6mscuqur-zkJBtv649CVnmuCVtfDsBw4o6cJrm1_-4tOleJeQGFd98-SEEa3uIIFd1E-i0ewGEN
+4_tz0xYz7rWx6VXx0qJ_zc-_gdrd-slOVgNwTGoclqSupwyZBaH_ZxWm_6Z-88Om_BFvISJeSgOVpK_YuE9waX_Dmpy_3Jl9Z-RXHmMb_hnv-6S5ml7Zs_xM
+Rp_yAkttaVlyGGofz-Vx3qJOJ_crvUGHm0-Yl_Ht0uNtJzpwmzVx4K6C_b21vtwLmfy_zb302t-teWs02CAVdKdtftutq2gm29_VYDyMyBp_KRO0YC1HoWMy
+y9VjGA0e9LA_FmHGoOZCdmHGK43YNnG02aZymzO4W08IlqElMk-NYFV-OMjNG2FU-zqCB2YW9_xH3MYh9-AzVzZQ0ZJpkwtTWoFU-qTVMu1a_c6sz1ICIFnk
+1d0AghBGp8y2i0RJRr9q11B_K7s8OFfh8kYflybj0RDprQ8xINF_VG6cfbfs8YBtDx4xjEvQzjH_80eZA8d0Kl_aiO2Y2FHd_5Y3-WX-qjyaYM2nVqRmSXSi
+zGCr9UIVL03zMZzMGGrobNQk__O-XFq4Fr0qp_4hLfxZH_CaF-mKlpIc7tQElvNxjzyvVYVu4sZ-xTz-wmSEV__WHB_0pPbBjC6V2cHFHRAdGlbJiUofOFPK
+D7ygd3qLptugWFzK1Fkf4FPJCTwekBH_Xircizby0G
+}
+
+GCPEntityColoring(traffic_director)
+!define traffic_director(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, traffic_director_png, traffic_director)
+!define traffic_director(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, traffic_director_png, traffic_director)
+!define traffic_directorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, traffic_director_png, traffic_director)
+!define traffic_directorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, traffic_director_png, traffic_director)
+!else
 sprite $traffic_director <svg viewBox="0 0 24 24"><g><path d="M9,15a6.22,6.22,0,0,0-4-5V8a8.22,8.22,0,0,1,6,7Z" fill="#4285f4"/><g><path d="M5,7v4L2,9Zm6,8.39V18H9V15.38" fill="#4285f4"/><path d="M9,5H8l2-3,2,3H11V18H9Z" fill="#669df6"/><path d="M19,17V13l3,2ZM13,8.62V6h2V8.62" fill="#aecbfa"/><path d="M15,19h1l-2,3-2-3h1V6h2Z" fill="#669df6"/></g><path d="M13,6h2V8.43A6.13,6.13,0,0,0,19,14v2a8.15,8.15,0,0,1-6-7.58" fill="#aecbfa"/></g></svg>
 
 GCPEntityColoring(traffic_director)
@@ -9,3 +26,4 @@ GCPEntityColoring(traffic_director)
 !define traffic_director(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, traffic_director, traffic_director)
 !define traffic_directorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, traffic_director, traffic_director)
 !define traffic_directorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, traffic_director, traffic_director)
+!endif

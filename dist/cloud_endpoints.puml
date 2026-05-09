@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_endpoints_png [128x128/16z] {
+xPc5hkmm5CGQwkd_V_4JBin2Hi-weXsBBwIDNKYLuzS98OGGGWWXX112x-EHteuDivxf1w79uOtHggu7gWx241nZTJrIww_jAqjEeBFfgtrSmASRza41RfyN
+uFPv0MvV6I9WWbjVx8C2t3ugmEsp0jm-Ai3jem8dkFN5FYX0xDC23TZ_7vfH0DW71PXzdrCBCFky0BBF2voDs-yRlXIesR7ztaV_mkZzSu4rHgVsnvQF1Swx
+JM1_RFXSO3fNauxcJry5Q84bf-VQrr-R0hH0YL7JlaxV5g05flpQjQ_JDmLeWIM_zkmBm-HuAL1YrRFlJry5Q84v7d7j2yD69xRa_ApZBnsbRDISYEsE_rLJ
+VZ_higYv2UTSVxDUtzVkyOthQblWbFUrBw2cyKRR5LZlHchUyPjXVrDWwb2-W9faDNUtBoicMq0rm_wcmDB9-09g6lPt1Kfces_JprGrk9Q-stzNODQ6ITVI
+hQ-d2Grvb6veU2qzpAy6lfRcNmrWDUSB68SFjAzhLhsakNslm0KA0FkW0B3F2l2j0rw0RnqeqoW0x8C2m3ugmAzzM83O5tkW0B1F2y1hdnVWzda1Rj-d6mM0
+VL00RvlnRHHkdsybSljWEntO_ob2226444888OJm3m
+}
+
+GCPEntityColoring(cloud_endpoints)
+!define cloud_endpoints(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_endpoints_png, cloud_endpoints)
+!define cloud_endpoints(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_endpoints_png, cloud_endpoints)
+!define cloud_endpointsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_endpoints_png, cloud_endpoints)
+!define cloud_endpointsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_endpoints_png, cloud_endpoints)
+!else
 sprite $cloud_endpoints <svg viewBox="0 0 24 24"><g><g><path fill="#4285f4" d="M 15 10 L 9 10 L 8 12 L 9 14 L 15 14 L 16 12 Z"/><path fill="#aecbfa" d="M 16 12 L 15 10 L 9.51 10 L 9 10 L 8 12 Z"/></g><path fill="#4285f4" d="M 18 6 L 15 6 L 18.97 12 L 20.47 9.75 Z"/><path fill="#aecbfa" d="M 21.95 12 L 20.47 9.75 L 18.97 12 L 18.97 12 L 15 18 L 18 18 Z"/><path fill="#4285f4" d="M 5.95 18 L 8.95 18 L 4.98 12 L 3.48 14.25 Z"/><path fill="#aecbfa" d="M 2 12 L 3.48 14.25 L 4.98 12 L 4.98 12 L 8.95 6 L 5.95 6 Z"/></g></svg>
 
 GCPEntityColoring(cloud_endpoints)
@@ -9,3 +25,4 @@ GCPEntityColoring(cloud_endpoints)
 !define cloud_endpoints(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_endpoints, cloud_endpoints)
 !define cloud_endpointsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_endpoints, cloud_endpoints)
 !define cloud_endpointsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_endpoints, cloud_endpoints)
+!endif

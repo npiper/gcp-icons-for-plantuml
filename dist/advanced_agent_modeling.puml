@@ -2,6 +2,21 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $advanced_agent_modeling_png [128x128/16z] {
+xTg5bkmW403H42QTqF__ly_hsSeer0ftZQD5StOyo_ipJTCqrH-i-bgX3O-YrI7KjHsK-goY3G-l3kde_rYruU7LqVdkxhnL6nvU7LuTMXvU7LuTdU_kpYlQ
+yF3gw96FYEtdQek8ns-WtjE_VmD5xjS7zV4n-hCVoCmZdkhSZtFzwDgFy_tDwcD8Ft-o-ecczFEFOtIVF7-DFjcMcKtf1wlCuVr3wCTVzbVxwDEdskH-xcVo
+qVls3_d-PpVwSRZpiuEMtnXzPE9G-f5_AFt8FthsjvzUo1z_Rs3xgS_z3q2MnH-z-sSUYiRqSr0VP_h3__-RswVAmkbdsrlID-z_Z7x8zxyy5hSOtmV3gtsS
+klHnlb_xzB6ztZ-DVF_fxoNkxy_-xC_-MY5z0gFreUNXvQ7LKRNFF-4D3wsELQl3oqEhesXrLEtw7tZ3mwh3EdfOm-DitUoNHUql0rXrM4SFQtXOTLXrdBcx
+wyuQ7bOTrj736XvM7TRHW-4jrBr-MJw2QPgcwIi
+}
+
+GCPEntityColoring(advanced_agent_modeling)
+!define advanced_agent_modeling(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, advanced_agent_modeling_png, advanced_agent_modeling)
+!define advanced_agent_modeling(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, advanced_agent_modeling_png, advanced_agent_modeling)
+!define advanced_agent_modelingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, advanced_agent_modeling_png, advanced_agent_modeling)
+!define advanced_agent_modelingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, advanced_agent_modeling_png, advanced_agent_modeling)
+!else
 sprite $advanced_agent_modeling <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><rect width="24" height="24"/><g transform="translate(4.5 2.0625)"><path d="m8.2004 0.17305 6.1197 3.6279c0.41389 0.23116 0.67334 0.66817 0.67996 1.1453v7.9621c-0.0066239 0.47712-0.26608 0.91413-0.67996 1.1453l-6.7996 4.0256-2.9442 1.7488c-0.1578 0.094194-0.3614 0.042091-0.45558-0.11659-0.027054-0.050551-0.041083-0.10715-0.040798-0.16459v-3.5044l-3.3998-1.9888c-0.41389-0.23116-0.67334-0.66817-0.67996-1.1453v-7.9621c0.015567-0.47651 0.28275-0.90819 0.70036-1.1316l6.1537-3.6279c0.41489-0.24403 0.92664-0.24925 1.3463-0.013716z" fill="#AECBFA"/><path d="m12.188 7.9554v-0.66964h-1.3393v-1.3393c0-0.36983-0.29981-0.66964-0.66964-0.66964h-1.3393v-1.3393h-0.66964v1.3393h-1.2781-0.024103v-1.3393h-0.67861v1.3393h-1.3674c-0.36983 0-0.66964 0.29981-0.66964 0.66964v1.3393h-1.3393v0.66964h1.3393v1.3393h-1.3393v0.66964h1.3393v1.3393c0 0.36983 0.29981 0.66964 0.66964 0.66964h1.3393v1.3393h0.66964v-1.3393h1.398v1.3393h0.68046v-1.3393h1.2697c0.36983 0 0.66964-0.29981 0.66964-0.66964v-1.3393h1.3393v-0.66964h-1.3393v-1.3393h1.3393z" fill="#669DF6"/><path d="m9.9285 9.9643c0-0.73967-0.60892-1.3393-1.3601-1.3393-0.1656-6.14e-6 -0.32961 0.03184-0.48282 0.09375l-0.51002-0.58259c0.20127-0.23918 0.31185-0.53982 0.31281-0.85045-0.0020085-0.60909-0.42114-1.1401-1.02-1.2924v-0.71652h-0.68003v0.71652c-0.65487 0.17506-1.0785 0.79867-0.99286 1.4615s0.65436 1.1622 1.3329 1.1702c0.16997-4.2979e-4 0.33835-0.032229 0.49642-0.09375l0.50322 0.58259c-0.20372 0.23826-0.31674 0.53899-0.31961 0.85045 0.0020085 0.60909 0.42114 1.1401 1.02 1.2924v0.71652h0.68003v-0.71652c0.5989-0.15227 1.018-0.68332 1.02-1.2924zm-4.0802-2.6786c0-0.36983 0.30446-0.66964 0.68003-0.66964s0.68003 0.29981 0.68003 0.66964c0 0.36983-0.30446 0.66964-0.68003 0.66964-0.18035 0-0.35332-0.070551-0.48085-0.19613s-0.19917-0.29591-0.19917-0.47351zm2.7201 3.3482c-0.37557 0-0.68003-0.29981-0.68003-0.66964 0-0.36983 0.30446-0.66964 0.68003-0.66964s0.68003 0.29981 0.68003 0.66964c0 0.36983-0.30446 0.66964-0.68003 0.66964z" fill="#185ABC"/></g></g></svg>
 
 GCPEntityColoring(advanced_agent_modeling)
@@ -9,3 +24,4 @@ GCPEntityColoring(advanced_agent_modeling)
 !define advanced_agent_modeling(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, advanced_agent_modeling, advanced_agent_modeling)
 !define advanced_agent_modelingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, advanced_agent_modeling, advanced_agent_modeling)
 !define advanced_agent_modelingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, advanced_agent_modeling, advanced_agent_modeling)
+!endif

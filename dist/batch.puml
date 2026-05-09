@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $batch_png [128x128/16z] {
+xPS7YaL120JtPUz_uSr9A92LscoHfPcM_yTstarc68PX68PX68PX6DQ6KEGCA4Qmq6SFy8fxKAYp1dZ50oSARU89gkqeT8aNgBQYqBVFvvvG0w5ddy_TeGP2
+ppwVkqADXBvzN5H4eMQVEQc8GiCUsAC2HhF75QyiyN7MdYiFsLx-wYJeannJDt3hz0Roa2tft-2fOvIxjtF0V6u3D4Xqxl8v3L2GN1Zw5ThEET2-Hh27-uZs
+Z62VYbkkrLZsV1zhJjF-Wbh5xja7rBnLK0yP2BqhK0yP2Bq6wY43eTT0FMGW91WjzDc-HWpz7bheTv52luyK-dswzeTZ7vSJ-dqEzbyWgultbli7R5NmWb2q
+hp_fax1BO_DH97LPsDaV0MPh121Vp1Pdw-spMH5ukU_-ptu0XBm26yzFymdG-V8J6sWzm0-j0NOILe5Yxwy2jlS_0dnxVnKix26jWdxezrT1_Hg4LeK6w4Uz
+oj3N6g1BTPHtJsk0JjvAUwq1EdknxEjLWATxzamqyEpvzyMcK2YmqQbWHKA5Wqu5An0wN9JbaM2XHSfoAhBGWx9ygVQJ2MNvckn9w3T05xCGcWtGnLmAeTW0
+rTP2w15KEr3uinY6OHY6OHY6OHY6Em
+}
+
+GCPEntityColoring(batch)
+!define batch(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, batch_png, batch)
+!define batch(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, batch_png, batch)
+!define batchParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, batch_png, batch)
+!define batchParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, batch_png, batch)
+!else
 sprite $batch <svg viewBox="0 0 24 24"><path d="m15.623 5 6.016 6.5594-6.016 6.5594-2.0107-2.1929-2.0245 2.2083-1.7935-1.9553-1.778 1.9399-6.016-6.5594 6.016-6.5594 1.792 1.954-0.629 0.686-1.163-1.2676-4.7573 5.187 4.7573 5.187 1.149-1.2534-3.5936-3.9181 6.016-6.5594 2.0105 2.1915 2.0247-2.207zm-4.0353 1.3879-4.7573 5.187 4.7573 5.187 1.3945-1.5219-3.3753-3.6806 3.3613-3.6664-1.3805-1.5051z" fill="#4285F4"/></svg>
 
 GCPEntityColoring(batch)
@@ -9,3 +25,4 @@ GCPEntityColoring(batch)
 !define batch(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, batch, batch)
 !define batchParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, batch, batch)
 !define batchParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, batch, batch)
+!endif

@@ -2,6 +2,21 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $access_context_manager_png [128x128/16z] {
+xSv1iWXW40FXFAcQclkVs0vMJKKC_7s1h_KtzdgzNY_xcBUFUVkOjuzv-vYtZtdxcBUFUVkOjuzv-vYtZtdxcBT_E_y10srUWe4s3mDj7WRQF0oqUHXeyp3G
+vc6WpVD0d-U1Fiy3VPu7-hm4VfkNZddfc9VwFDJciJBF7V1GanzHs-GrW_uMUSqC-jlWl_g3_ZRuh_wWlmt-gp_eRyY3F-XlnAC_w6_2ip_eRyApF-XlmhC_
+w6_2ip_eRyApF-XlmhC_w6_2ip_eRyApF-XlmhC_w6_2ip_eRyApF-ZlZ_Zk-QDVDu2yW0y7a1VmuG3o0ZuSG5x0XmF82_Xm07a17muWB-330UG5V3Y0l80F
+1v0NyE40yW8-741Um8S3o0luS01v0HyE82_Wmm7a1NmuWBo03mT6r4_nFC1z2EeEsAS3zkc0VJfWdmxOfmFswO1zEk3l-YHL1vYl3Z3V7K2-FG1yVm3u_W3m
+_G7W-mF0zmU0xmy0tny0lX3m_O3l1tm_uFi1tm_uVi3t0xuVyFs0xmTyF-3x0T-lmlTxlLwlrsS
+}
+
+GCPEntityColoring(access_context_manager)
+!define access_context_manager(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, access_context_manager_png, access_context_manager)
+!define access_context_manager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, access_context_manager_png, access_context_manager)
+!define access_context_managerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, access_context_manager_png, access_context_manager)
+!define access_context_managerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, access_context_manager_png, access_context_manager)
+!else
 sprite $access_context_manager <svg viewBox="0 0 24 24"><g><path fill="#aecbfa" d="M 12 19.27 L 4.72 12 L 12 4.72 L 15.64 8.36 L 17 7 L 12 2 L 2 12 L 12 22 L 17 17 L 15.64 15.64 Z"/><path fill="#4285f4" d="M 18.36 8.36 L 22 12 L 18.36 15.64 Z"/><path fill="#669df6" d="M 12 8.36 L 15.64 12 L 12 15.64 Z"/></g></svg>
 
 GCPEntityColoring(access_context_manager)
@@ -9,3 +24,4 @@ GCPEntityColoring(access_context_manager)
 !define access_context_manager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, access_context_manager, access_context_manager)
 !define access_context_managerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, access_context_manager, access_context_manager)
 !define access_context_managerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, access_context_manager, access_context_manager)
+!endif

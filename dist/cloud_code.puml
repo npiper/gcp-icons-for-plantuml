@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_code_png [128x128/16z] {
+xTTdajj034HX05nmTFyJc-KkEFj9dWAT5k_lXgyLcEnlQvgcQPgcQPgcQPh2xMaUz_5n-5F-YBYBFwxy6Nzem3sy1Z1_5VVmof6N7_VmodxQKRKF2FaAU1ZG
+mYlWOK0Bhu270Isy0Xu6jF0AU1ZGmYlWOK0Bhu270Isy0Xu6jF0A-8u1uYdWOK0R7yT7FlxO0BShlukFhiz_Rq9cz7p_8tE7FyyJ1xXPvSYVvvaxF0-mhq8U
+1W3F0zo-oe6d0SpN0EIL0my3WAS1zeE0fm7Crm1yzSg1fm7Crm3abGF_tG3aUO1u7b0y300U1l3zF_0qWFaQWBnov6i0ypp03NFYdmzuEtzMlFxy2_pL6_Cy
+G3pcm6i0yZn0SS3pW3ovU9tdya_xV_Zzt_t-UMrWst407m3ChnLF-RKq07WeaNze0FCF79369V5NF23qEne0F9J0Qm3pE40ybyW_rWfwyt50yLm2NmEOhm70
+Kmby3M2-1W1F9V0rWFaQ03oLmDS0vci0y5GIhm7VypGWjv-_nFC0yTyFmESlBe6l0SpN0E2fpE9nGF4m8867YiS1nUC0syp5qm3czINSBjU3MikkBfvQQVkT
+2tctAzS0-W3w1nGF0nfu3G0U1hJm3ST_mm1uzV0EY6ze__nlFUrU_wohlUk_zRLn_zF8Rzx_zRLt_zi-W7aD0BvXW7WUmFn-lbvz_bjtyB_q_7jBhp___sLD
+qpHDqpHDqpHDqmS
+}
+
+GCPEntityColoring(cloud_code)
+!define cloud_code(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_code_png, cloud_code)
+!define cloud_code(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_code_png, cloud_code)
+!define cloud_codeParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_code_png, cloud_code)
+!define cloud_codeParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_code_png, cloud_code)
+!else
 sprite $cloud_code <svg viewBox="0 0 24 24"><g><g><path fill="#aecbfa" d="M 5.45 8.53 L 8.55 5.42 L 11.65 8.53 L 8.55 11.65 Z"/><path fill="#669df6" d="M 2 12 L 5.1 8.88 L 8.2 12 L 5.1 15.12 Z"/><path fill="#4285f4" d="M 5.45 15.47 L 8.55 12.35 L 11.65 15.47 L 8.55 18.59 Z"/><path fill="#aecbfa" d="M 12.35 8.53 L 15.45 5.42 L 18.55 8.53 L 15.45 11.65 Z"/><path fill="#669df6" d="M 15.8 12 L 18.9 8.88 L 22 12 L 18.9 15.12 Z"/><path fill="#4285f4" d="M 12.35 15.47 L 15.45 12.35 L 18.55 15.47 L 15.45 18.59 Z"/></g></g></svg>
 
 GCPEntityColoring(cloud_code)
@@ -9,3 +26,4 @@ GCPEntityColoring(cloud_code)
 !define cloud_code(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_code, cloud_code)
 !define cloud_codeParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_code, cloud_code)
 !define cloud_codeParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_code, cloud_code)
+!endif

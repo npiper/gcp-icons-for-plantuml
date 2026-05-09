@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $os_configuration_management_png [128x128/16z] {
+xTg5rgmm30JWL3Fl_yBNxqfOAPr2Vibtd5Ds25fP-Nn2224q06ZY1VyunmFVCXyt8lzy1HVbMzx_GiRps7XUIdAs408CvtZW6-L7ViR6ujfKNb5ij84TbdtL
+OOos9terJFwEgrIFpQ_ZvQElok-uckfLc_jHiMMQcDsdyjLiowQQBRtlcJywtedhN-usuJdR84zSVzdcOzhKI65TF7Hgf62QWh1Wf02Ai38eIKWW2KT1wa81
+ZOntFO3ad8ztUgqTRxJb1s1VxzdZ1b2veQS_W6NiDTM5DlQxdIkUx-oIyVnW1vRAAcKcFyaoRQGoNVVSMp3oqCloxCcEhvklk5T6UaegozIP-x_8CfZ9r-FY
+aK-S4ac-xr_5GmFnIwu1dXbjnXdir_ZqVyTQ9UxQyxpx_zxv3ETuAI1Lx_4tooE-rVNvjScOVDpyKzxJrp0RPZHRGnLo_b6Fdd_K1o_kkorl4zCcBE52P-Q_
+pQxlwrMxFp__FZ0jOtz7oFosQlsXxSXFnww_fF7xNzVbA_xpNdyRKTwtxBjdUjQEY18sKgn_H_vvQhzJvMGXX08KrtJ0xmWg_gdVyl_l3HSj_lz-FiM5ViVx
+JzIjVDkhTqEakmeXXF0J
+}
+
+GCPEntityColoring(os_configuration_management)
+!define os_configuration_management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, os_configuration_management_png, os_configuration_management)
+!define os_configuration_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, os_configuration_management_png, os_configuration_management)
+!define os_configuration_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, os_configuration_management_png, os_configuration_management)
+!define os_configuration_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, os_configuration_management_png, os_configuration_management)
+!else
 sprite $os_configuration_management <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><path d="m12 19.819c0.59968 0 1.0858 0.48825 1.0858 1.0905 0 0.60229-0.48614 1.0905-1.0858 1.0905s-1.0858-0.48825-1.0858-1.0905c0-0.60229 0.48614-1.0905 1.0858-1.0905zm1.3388-14.362c0.16045 0 0.30753 0.11778 0.3209 0.27481l0.25405 1.7274c0.4145 0.15704 0.78888 0.37951 1.1365 0.64123l1.658-0.65432c0.16045-0.052346 0.33427 0 0.4145 0.14395l1.3371 2.264c0.080225 0.14395 0.040112 0.31407-0.080225 0.41877l-1.4173 1.0862c0.040112 0.20938 0.053483 0.41877 0.053483 0.64123s-0.026742 0.43185-0.053483 0.64123l1.4307 1.0862c0.12034 0.10469 0.16045 0.27481 0.080225 0.41877l-1.3371 2.264c-0.093596 0.14395-0.26742 0.1963-0.4145 0.14395l-1.6714-0.65432c-0.33427 0.26173-0.72202 0.47111-1.1231 0.64123l-0.25405 1.7274c-0.026742 0.15704-0.17382 0.27481-0.33427 0.27481h-2.6742c-0.17382 0-0.30753-0.11778-0.33427-0.27481l-0.25405-1.7274c-0.4145-0.15704-0.78888-0.37951-1.1365-0.64123l-1.658 0.65432c-0.16045 0.052346-0.33427 0-0.4145-0.14395l-1.3371-2.264c-0.080225-0.14395-0.040112-0.31407 0.080225-0.41877l1.4173-1.0862c-0.026742-0.20938-0.040112-0.41877-0.040112-0.64123s0.013371-0.43185 0.040112-0.64123l-1.4173-1.0862c-0.13371-0.10469-0.16045-0.27481-0.080225-0.41877l1.3371-2.264c0.093596-0.14395 0.26742-0.1963 0.4145-0.14395l1.658 0.65432c0.34764-0.26173 0.7354-0.47111 1.1365-0.64123l0.25405-1.7274c0.026742-0.15704 0.17382-0.27481 0.33427-0.27481zm-9.7792 9.9953c0.52449-0.29199 1.1854-0.10167 1.4761 0.4251 0.29073 0.52677 0.10123 1.1905-0.42326 1.4825-0.52449 0.29199-1.1854 0.10167-1.4761-0.4251-0.29073-0.52677-0.10123-1.1905 0.42326-1.4825zm15.405 0.4251c0.29073-0.52677 0.9516-0.71709 1.4761-0.4251 0.52449 0.292 0.71399 0.95574 0.42326 1.4825-0.29073 0.52677-0.9516 0.71709-1.4761 0.4251-0.52449-0.292-0.71399-0.95574-0.42326-1.4825zm-6.9626-5.8401c-1.1098 0-2.0056 0.87679-2.0056 1.963s0.89584 1.963 2.0056 1.963c1.1098 0 2.0056-0.87679 2.0056-1.963s-0.89584-1.963-2.0056-1.963zm7.3859-3.3967c0.52449-0.29199 1.1854-0.10167 1.4761 0.4251 0.29073 0.52677 0.10123 1.1905-0.42326 1.4825-0.52449 0.29199-1.1854 0.10167-1.4761-0.4251-0.29073-0.52677-0.10123-1.1905 0.42326-1.4825zm-16.251 0.4251c0.29073-0.52677 0.9516-0.71709 1.4761-0.4251 0.52449 0.292 0.71399 0.95574 0.42326 1.4825-0.29073 0.52677-0.9516 0.71709-1.4761 0.4251-0.52449-0.292-0.71399-0.95574-0.42326-1.4825zm8.8637-5.0654c0.59968 0 1.0858 0.48825 1.0858 1.0905s-0.48614 1.0905-1.0858 1.0905-1.0858-0.48825-1.0858-1.0905 0.48614-1.0905 1.0858-1.0905z" fill="#4285F4"/></g></svg>
 
 GCPEntityColoring(os_configuration_management)
@@ -9,3 +25,4 @@ GCPEntityColoring(os_configuration_management)
 !define os_configuration_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, os_configuration_management, os_configuration_management)
 !define os_configuration_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, os_configuration_management, os_configuration_management)
 !define os_configuration_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, os_configuration_management, os_configuration_management)
+!endif

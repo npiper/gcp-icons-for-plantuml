@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $os_patch_management_png [128x128/16z] {
+xPg7ZkKW34LDjV__XxUfljn8yM1olRl3KPa2wDWfrCY_ok5mE1nCKkbckUd_8jjlsNxBzbkstuHFgQqEImYW6K0Be1h02w0OG0n03I06O1uADNT4YVST6SHB
+tw6a2Ka_eUZDEpz0xknz9vJ5axylVNfWT-dl9ZzcZh3d3dszArRV8wDn_KAxwCknsh5DGsBwXOQ1Em1Pf4mFbflQ5d-i9T9PUjanDDPrlUoOd0Jqic5mriYm
+nayVWqTeUf5j_XBmyz97DlbbbHhIzx1VEkZPIshGi_muRrris2HAKnlPEnh_hByvwysNLheBKsFIvSVtc-F7LqIXyZR_UApp4OldfVwItwl7F--hx_FZgjDH
+t-rlPfvyGA3FkpVYOIpunT70wrUNloNw6vPEfhzZwM3w2qvCRPS___bh57-eibvVzuUbGjtibylqG1_gpw_x-_FEZ7uqu4wex0zw-PNd5xj0dr0gREqy-kjB
+k_8QwD5YT9tjh2USswZbNqk_xLc5nZTnj-XBO0EbiTCVziaCwpLstDcewHiIr1jZ-nBHrVGH_jsFFm4MI1y8w6kA7vfo_GejANxKbmo_hXzyrWtFV_IvHGZw
+1Ry-dV--UdnYPg_iZ5RNuUszG46_m7mykorOW1E7NL_u3IY-xraTzopq26EIy5y8Edg6DJmtkDC-nRFKx-2g-KZ_234nW2gluh_o_02QC5374qyDe0iPXPp9
+J7ZKMS2XMsO0aaXFzajBzajL-KSv70w7mqy
+}
+
+GCPEntityColoring(os_patch_management)
+!define os_patch_management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, os_patch_management_png, os_patch_management)
+!define os_patch_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, os_patch_management_png, os_patch_management)
+!define os_patch_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, os_patch_management_png, os_patch_management)
+!define os_patch_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, os_patch_management_png, os_patch_management)
+!else
 sprite $os_patch_management <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><path d="m20.884 10.544c0.094559 0.60464 0.12119 1.2161 0.080773 1.8255-0.23261 3.5077-2.6427 6.631-6.1582 7.8414-0.99575 0.34287-2.023 0.51365-3.0427 0.51544l-0.20328 1.1646c0.0025068 0.036038-0.014496 0.070358-0.044937 0.090748-0.030468 0.020351-0.070043 0.023877-0.10464 0.0093009l-1.5996-1.4726-0.16728-0.036191 0.025279-0.094809-0.87933-0.80933c-0.028056-0.024334-0.041409-0.060609-0.035323-0.095964 0.0060858-0.035356 0.030749-0.064794 0.065246-0.077877l3.2125-1.431c0.042832-0.039854 0.11053-0.041986 0.1577-0.0049677 0.047174 0.037018 0.058975 0.10153 0.027489 0.15029l-0.20174 1.1608c0.77923-0.022942 1.5616-0.16444 2.323-0.42659 2.9298-1.0088 4.9383-3.6117 5.1322-6.5349 0.026908-0.40575 0.018108-0.81254-0.026792-1.2167l-0.04045-0.30261 1.4801-0.2545zm-16.722 4.8098c0.96808-0.74888 2.3884-0.60628 3.1723 0.31851 0.78393 0.92479 0.63466 2.2816-0.33342 3.0305-0.96808 0.74888-2.3884 0.60628-3.1723-0.31851-0.78393-0.92479-0.63466-2.2816 0.33342-3.0305zm9.6634-4.6176c0.69945 0.96272 0.44951 2.3367-0.55827 3.0689s-2.3918 0.54532-3.0912-0.4174c-0.69945-0.96272-0.44951-2.3367 0.55827-3.0689 1.0078-0.73219 2.3918-0.54532 3.0912 0.4174zm-1.1236-8.7274 2.6209 2.413c0.028056 0.024334 0.041409 0.060609 0.035323 0.095964-0.0060858 0.035356-0.030749 0.064794-0.065246 0.077877l-3.2125 1.431c-0.042832 0.039854-0.11053 0.041986-0.1577 0.0049677s-0.058975-0.10153-0.027489-0.15029l0.18088-1.039c-0.80898 0.014296-1.6226 0.15636-2.4136 0.42872-3.4056 1.1727-5.5141 4.4757-5.0949 7.8409l0.02758 0.19801-1.4806 0.25142c-0.63506-4.1219 1.9131-8.2136 6.0802-9.6485 1.025-0.35295 2.0833-0.52345 3.132-0.51517l0.2255-1.2888c-0.0025067-0.036038 0.014497-0.070358 0.044937-0.090748 0.030468-0.020351 0.070043-0.023877 0.10464-0.0093009zm-1.5454 8.891c-0.67185 0.48813-0.83848 1.4041-0.37218 2.0459 0.4663 0.64181 1.389 0.7664 2.0608 0.27827 0.67185-0.48813 0.83848-1.4041 0.37218-2.0459-0.4663-0.64181-1.389-0.7664-2.0608-0.27827zm5.7934-5.1815c0.94013-0.7807 2.3648-0.68553 3.182 0.21256 0.81724 0.89809 0.71762 2.259-0.22251 3.0397s-2.3648 0.68553-3.182-0.21256c-0.81724-0.89809-0.71762-2.259 0.22251-3.0397z" fill="#4285F4"/></g></svg>
 
 GCPEntityColoring(os_patch_management)
@@ -9,3 +26,4 @@ GCPEntityColoring(os_patch_management)
 !define os_patch_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, os_patch_management, os_patch_management)
 !define os_patch_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, os_patch_management, os_patch_management)
 !define os_patch_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, os_patch_management, os_patch_management)
+!endif

@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $visual_inspection_png [128x128/16z] {
+xTS7SjXG28HX7a_j_XTEZzTTlqPeTWhVrCI61I6tkAArrbfhhSrfZdSEaFCFt_B_35EycEB5T7enBI_352-cU36TNapBop35YobUJASNq_8oJF5YYXVJwSMq
+l0nJl9ZYnNHwCIqlu-du72EVVGIiytXeWEHj2mQusRFy9G3fw6dLnjUM52y3YWfFp-logNXUMH-_7tyig7G6bgZ7SKZf09DqEDvQINtUZC-FyK8Qp5lnyqDy
+_G0vIV4Xif3y2PVdwmlhaYYUhoyxx8FYURxmHY8vOTaEygyFm7-PExw4UoMEboZ85n1Va8y7sCvToDzuEruoAlCptiljn7AQl-7y4A55wydwg9C8hKBvF5vk
+vUjtW77nz9Be1OmxwyVtKEccK84zpg3Qxvv-98kl7M0Z3U0lW6JwzNY3bLEemo4RBBuzm6T_WEomEAwujSF9wP5PEq1SLpb0X7M0YCe1rW30wOjVWl7s_y7o
+bLy7-U6_GVoD0S2o-e_o0UXK6VVDYmFKim_G0qpt0E4VW5l3Ei28PqpJmnTJl9XEBwRJos9wzcAA5rEyc4ulYsbvCSMB8PxyXkzu2S95yIQADxbu-jPQQwsr
+zXC
+}
+
+GCPEntityColoring(visual_inspection)
+!define visual_inspection(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, visual_inspection_png, visual_inspection)
+!define visual_inspection(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, visual_inspection_png, visual_inspection)
+!define visual_inspectionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, visual_inspection_png, visual_inspection)
+!define visual_inspectionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, visual_inspection_png, visual_inspection)
+!else
 sprite $visual_inspection <svg viewBox="0 0 24 24"><path d="M14.28,15.33l1.93,1.93L12,20.65,1.2,12H8a4,4,0,0,0,4,4h0A4.09,4.09,0,0,0,14.28,15.33ZM16,12a4,4,0,0,1-.64,2.18l2.08,2.1L22.81,12Z" fill="#669df6"/><path d="M12,3.36,1.2,12H8a4,4,0,0,1,4-4h0a4,4,0,0,1,4,4h6.79Z" fill="#aecbfa"/><path d="M12,9.57a2.37,2.37,0,0,1,1.71.71,2.4,2.4,0,0,1,0,3.43,2.41,2.41,0,0,1-3.42,0,2.4,2.4,0,0,1,0-3.43A2.37,2.37,0,0,1,12,9.57Z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(visual_inspection)
@@ -9,3 +25,4 @@ GCPEntityColoring(visual_inspection)
 !define visual_inspection(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, visual_inspection, visual_inspection)
 !define visual_inspectionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, visual_inspection, visual_inspection)
 !define visual_inspectionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, visual_inspection, visual_inspection)
+!endif

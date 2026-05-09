@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $premium_network_tier_png [128x128/16z] {
+x5Y7Wkim22jJ-VyVljb5io3apRDkZre68Mno-HSmC30mC30mC30mG2ogzWbLOVgTr2pcY9ZW9lGxmXRx9dm5Fl6hzo0Mg9VsOFpBGjT0lhu7fL_1RXEc500O
+dSuEJ7cSdGC5ra9T_OkSvpV74l7N9mUml0qudqDlm2ltvFRKSuXO3HCm4-4N10z0cLOxmqiAgEtuiEIUloMQ1EqgiBYSIwP9XEssw4Fk0tjY1u3tsZ4vWg5A
+pGAX_llqHgMY3V_VfWUgiGJshlQzOFhqshslKCTuaEwfNPTFaP0-QGNK3oC6pg3dQpi4QWBGAVJYG5oaNdlWZkm7Oz0GVPEzVWWIUiQxodu5xB3pOKTbxrp3
+v96u8-nui4S1AId3GpXgoFuglPYxSQduj27xwmfgxgaDKCn-NVP5wScloFTzK8izUbVioa_fy2sJSJKpfI3xekl5h-2a-a2cKhun1TaNYuUpyOVYonnHoU7h
+czyqxVqUFSzqDNCtIxI-NFWKsHDJZwZoRb3fulUDwBKzxS0oEfq_T-F6pqV2xr-Na6rzI4XVXo9vuMKaf6-admxnTuTj2kalyxVdJGdchxeVddjepBJhFjfN
+wfZsn2p2l2q_K9hEAZTr-GBpjloMSse4aCh-DxRTBxbEMG-Vh_nCc_oSysgCtYxT-AzB0gKHCMZMqlyYGA61amFnGMUt_Y_ig3GHyGb0wMaxyI9zd57o87bl
+3ou8081X003T-cT-Z1dmtZqh2m0000000FW
+}
+
+GCPEntityColoring(premium_network_tier)
+!define premium_network_tier(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, premium_network_tier_png, premium_network_tier)
+!define premium_network_tier(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, premium_network_tier_png, premium_network_tier)
+!define premium_network_tierParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, premium_network_tier_png, premium_network_tier)
+!define premium_network_tierParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, premium_network_tier_png, premium_network_tier)
+!else
 sprite $premium_network_tier <svg viewBox="0 0 24 24"><g><path d="M18.23,6.24A9.61,9.61,0,0,0,12.08,4C7.24,4,3.11,7.65,2,12.9a.81.81,0,1,0,1.58.35v0C4.53,8.74,8,5.6,12.08,5.6A7.86,7.86,0,0,1,16.53,7Z" fill="#4285f4"/><path d="M18.67,7.53l-5.88,2.63h0a2,2,0,1,0,1.13,2.58,1.83,1.83,0,0,0,.12-.46.1.1,0,0,0,.05,0l5-4C19.68,7.74,19.36,7.22,18.67,7.53Z" fill="#4285f4"/><circle cx="20.04" cy="9.99" r=".84" fill="#669df6"/><circle cx="21.16" cy="13.04" r=".84" fill="#aecbfa"/></g></svg>
 
 GCPEntityColoring(premium_network_tier)
@@ -9,3 +26,4 @@ GCPEntityColoring(premium_network_tier)
 !define premium_network_tier(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, premium_network_tier, premium_network_tier)
 !define premium_network_tierParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, premium_network_tier, premium_network_tier)
 !define premium_network_tierParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, premium_network_tier, premium_network_tier)
+!endif

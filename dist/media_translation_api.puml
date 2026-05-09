@@ -2,6 +2,24 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $media_translation_api_png [128x128/16z] {
+xDU7hkGW38LXV0mux__2jt6aZTREA1d3hVbLjky719XCMTdTtTtTtPr0lfPNVAKFAEHF-i2N-dZhaY-eoRJiqhSk-59xwxbQUzv7dn1zaSXVpzDNG2xwqkVv
+0WMy3wWS-cschx6lmEBfqyTblqxY7_dgVB_y3PBhIRypAScIVZdizlj7-39_i_VqQHz9tspRljJVtahuGdwvNoAVdVNLD_ocBd4-K9B-Pgxj8_DfyMLzSYTQ
+v6-d-vs-FH9F-a32VnHXTkGB85VzKubzy59EDT-lzixtnFVVd6zsxYPaW4prUHEMJEVz-f6uwRTFyhkzrztqvPDy30w9wQVyqZyyAwp6qqSRpVSnmBe_--QS
+RYCKnhJrzve-xPSsIEnNGu8hYGERxdFAjblzwgya-ZRPtw6j5DZ1rMVqDyDyltJEMWPl2FO8ixx05qxFE8w3BSAJCTlddHFEa8rb6NjJP_lS0ipiO7ZMX9jZ
+liyLvj5pSUAy6h72LpjUVHv-6OEqDjadpwmTlu_mgboy_zhX-mX_Xdc-v_q0yE_SDQv4rezvYmT0T3-Kh1_p5HODO9ZgNWsJlkTBYGQWmtUlnbdVy_kBNlux
+_CszBMLzpnCWnuIY6qtEzpo3aMDr-8eHFudoVinp0EO--OtnLvhtFSzWLlUZ2R8-mwzcZXyczeS_oYJlLpzx9ll37sOrxwk5VFXtzl41fFsYvlduoudkue70
+bFrdZtcnO8LuGymvVp7_yCiOhu2Spr0U5duTmF0rx_iYoQqHT-1wduTVmjysMUdxvVVBijfNsymsKp-kqMfVHeT_aFFpVISVN-DBwwCBVctpwft9QR-sFhzM
+JldBU9pqoQ-VVkmluhkSzEiIlJdU-IkhKhxERzGl-KrbKkLS__FbatjjRpu808O108InwrzoPT1334JkaNla7hb7xf5xv1wvH-wHU-GUkKVk-TsUX_qbIP8C
+}
+
+GCPEntityColoring(media_translation_api)
+!define media_translation_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, media_translation_api_png, media_translation_api)
+!define media_translation_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, media_translation_api_png, media_translation_api)
+!define media_translation_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, media_translation_api_png, media_translation_api)
+!define media_translation_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, media_translation_api_png, media_translation_api)
+!else
 sprite $media_translation_api <svg viewBox="0 0 24 24"><path d="M18.56,3a.37.37,0,0,1,.38.36V7.51a.38.38,0,0,1-.75,0V3.39A.37.37,0,0,1,18.56,3Zm3.15,1.41V6a.37.37,0,0,1-.38.36A.36.36,0,0,1,21,6V4.44a.36.36,0,0,1,.37-.36A.37.37,0,0,1,21.71,4.44ZM19.57,2.67V8a.38.38,0,0,0,.75,0V2.67a.38.38,0,0,0-.75,0ZM16.82,4.19V6.41a.38.38,0,0,0,.75,0V4.19a.38.38,0,0,0-.75,0Z" fill="#aecbfa"/><path d="M2.25,20.83V5.3A1.88,1.88,0,0,1,4.12,3.42H15.9v1.5H4.12a.38.38,0,0,0-.37.38V17.21l1.06-1.06h14a.38.38,0,0,0,.37-.38V9.36h1.5v6.41a1.88,1.88,0,0,1-1.87,1.88H5.43Z" fill="#669df6"/><path d="M13.76,6.67V7.88H12.25a9.11,9.11,0,0,1-1.84,3.24l1.27,1.25-.46,1.23L9.6,12,7.05,14.53l-.85-.86,2.59-2.55A9.09,9.09,0,0,1,7.35,8.9l-.09-.19H8.48l0,0a7.3,7.3,0,0,0,1.09,1.6,7.76,7.76,0,0,0,1.48-2.49H5.43V6.67H9v-1h1.2v1Zm-1.32,8.75h1.28l.52-1.48H16.6l.52,1.48h1.29L16.09,9.24H14.75Zm2.17-2.55.55-1.55.23-.74h.07l.22.74.55,1.55Z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(media_translation_api)
@@ -9,3 +27,4 @@ GCPEntityColoring(media_translation_api)
 !define media_translation_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, media_translation_api, media_translation_api)
 !define media_translation_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, media_translation_api, media_translation_api)
 !define media_translation_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, media_translation_api, media_translation_api)
+!endif

@@ -2,6 +2,26 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $iot_core_png [128x128/16z] {
+xPXhjfiw34RHysF-8xuDXzE54gCRkOxpnxlliioMB4U2R1qi5el5WXvyIItcmFu7m9Ndojbmi1_WWSaqk_YXZW3GERbxa4-EW2pQ8t3-SFB0dl7XBP2WRmBx
+d5wZlGrykZu2dwwFm2SSlTbdWA8-1pBSxzWBVj1WlGJzd0eGon_uI0NOIu33-Z8aXXq7EumLUmsuEKxguvdiEk60gZqk0k1IqMiGZW25oSGZxVN9941XZp6w
+AnLE6boOnR4FxCk2SfEJWG4mKE-nFAu4VTLK31eCXbA3-uNUzoFJKsN4TMwR3aeVdSCHL4mVG2t_V26qzDa3u0uWhJyt5jwkyyeZ1fnlUY8yMmZ8ESSA1K3o
+8NFSRwGsz7H_JVBojtEa--0iBOxXtGF0o6giJKiUMUDoSW04sHcdMt_McsBbSh_caHRyuOXPlp_alzVoh_i5MHwCWb_QlIdtCx9UPHM_D--Qp-2ya8na_xCD
+y1U_5leFEEZR_YG0yZVwJxR5e6Go1N_p2ABIVmLt5U2wNvh-_1dm0_xI4vXYWh_o7SDuFtHBq4_xWIt5yM4_vtu2nllZxkVmO7_v3LGmr5_LFrmOw2_fGyyU
+x0UayZKtnle1ews0Ee2h7mt5wKTBV_43WF5MXDMnu-_yQv1UE_qxiCE4jYw8cVL0ckW1D_cvACp1NSVDtUocIezhNhbMnn_S-PDhOkx-JRyl__8lVoVBl_pB
+Js9-e5ppauPrdOYR_w9KyAl_OjOVWPfVuNVzP66XzEiZz9wVp0FM5m3RkVpu6KovF-X3u2N-Hiyi5XB9_NBwXPar1DwJlbm_JPxvO_fwtYKSdPJsROBAEVDV
+ZHR_gRtR__Hl_N-_M0pK-Wf0ppxD_V7__3aUwlDBmvNuGxwX03Gl_uA_CdUiudTgrAE6nGBms-S_1agz3O3jQYG_Q3OQ4mg52v5QTmVs7vHf8tdjVspc9-Ro
+ElkKBZsyk_z7Ol8NJCC6d5WwWEhpZnlwg6W7RiFdFuK4y-3CjbxaUXTwhV7Zu55Znh5Vq7zy_ZCpT-FNvcHqE-D8VpR7mi8kY4MOqXaZhJnPL9Lf6qFUTq81
+9c1F9zxymVVy-Ws_Jim_hp_Dgdyy_nAtN-VvoHlFnZJ37FkV2PE4bvDPX0aNqfy3U_QEDpy0sMP3Pk4TVpviSU_dGypSDU8MYyLYyHy
+}
+
+GCPEntityColoring(iot_core)
+!define iot_core(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, iot_core_png, iot_core)
+!define iot_core(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, iot_core_png, iot_core)
+!define iot_coreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, iot_core_png, iot_core)
+!define iot_coreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, iot_core_png, iot_core)
+!else
 sprite $iot_core <svg viewBox="0 0 24 24"><g><path d="M12.54,12.43V8h0a1.14,1.14,0,1,0-1,0v4.42H7.27V9.6a1.14,1.14,0,0,0-.53-2.15A1.14,1.14,0,0,0,6.22,9.6v2.83H6a3.82,3.82,0,1,1,1.4-7.38A5.22,5.22,0,0,1,16.84,5a4,4,0,0,1,1.23-.2h0a3.83,3.83,0,0,1,0,7.66h-.25V9.6a1.14,1.14,0,1,0-1.06,0v2.83Z" fill="#4285f4"/><path d="M7.27,15.39a2,2,0,0,1,1.54,2,2.07,2.07,0,1,1-2.59-2V12.43h1Zm-.53,3a1,1,0,1,0,0-2,1,1,0,0,0,0,2Zm11.08-3a2.07,2.07,0,1,1-1.06,0V12.44h1.06Zm-.53,3a1,1,0,0,0,.39-1.94,1,1,0,1,0-.39,1.94Zm-4.75-.43h0a2.06,2.06,0,1,1-1,0v-5.5h1.06Zm-.54,3a1,1,0,1,0-.93-.62A1,1,0,0,0,12,20.94Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(iot_core)
@@ -9,3 +29,4 @@ GCPEntityColoring(iot_core)
 !define iot_core(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, iot_core, iot_core)
 !define iot_coreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, iot_core, iot_core)
 !define iot_coreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, iot_core, iot_core)
+!endif

@@ -2,6 +2,27 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $partner_portal_png [128x128/16z] {
+x9e9akCw34F3NRx_WVywARMB6i58ogvjS81-L4I0TDilId_qHvxrG-EO6l4ulewJ7YYWQiC_RiVBdYztytNFrxlvjkVxtNnl_6SRCFRykfkVU_vus7vrF6j0
+QVnd3QY8hy_Qhuvd3UY87y_Qhuud3QXUY7-ataQFwZgwocwXPnNYlpM-gK0yGtTdx_okqkwSaN8vOTEbjVsEttM2QOoMpiZXeUsdxx9eu7u9LjETJC2co_xm
+zGzY5j0KxwDF2MdmKCajVbj0gTLnKXB7x-huLW2IWkRZy7m11PgFnEC2g075uUa2a0UTn_C516W-4iyN8C1x79uleC1kHUBv0koYzt8AuBa2naNlIMkDXWS5
+C1wi7VyL0CyL8C1xdQy0pnMGm7kT_shuVG6fHOs1G7nl-ALY_i8sW0UHzwJzGF62gXyXvsFZGJptLFxJ-sJ4-TyEK-n1FFT-tPKIz--u7_tot7itwzN-duSJ
+w46SlBCF_BB_RVO2Jc7CzxD53U6htJxgmBnq0Nan__NAyKUpF-n0G_Fl76wsmvSGgy_Rzjlvtnfh44iGi60hqXg-_Mad1w0aN3Zaolxt-gNDrIknVxKE1Fil
+ZfuKVl-LVadMy2Xwy3EeWWXuWUUVwUf4jbzB4dGWUFvhqGDirwJx213m_8kY1yvF1n6Gs-V_Gj4JY1-m0q-oayjnzEJ7VBlm_YbXz1JY9ug0w7mYUGVampMe
+yK7qS7myX38RdzXw41yF8VMVYYaOFJo_To2M7ZVnung_lk8ds8BOu_Fz3mo8DBxZnvV7psEhOlZyxMl11syW1_d_ihDENcnqVlueM40iM_un0Xu6-mTu_uk4
+zmz5sMC5-516N7u_VX5ykWMYqFhfc8-L0gyURt-OJpv_M3LrytbJhZNOVq0wU00cvMGJH6rbB3yu8sRjbT_myIJIGZAQ3wKClvJaSq5KM4Rs7vIGxztITI5R
+Aybt05ciSFumYv0-pRSFtts5H_wMNpFuWEgpTt_-NzD8BFakSmL34X30m8G--Nsev6SpcB9WJ7w_q44q7-71N5tNwaADy1xXGL_rwxAVYUCJ7jHLkonVQDLd
+tq34C_p4xz_n18WTVrpp7kd1M3NBob52U8_ne2pCiZfL4it7U30NDxL8L2E2d_DWIdDAt-YS2Nvs38IAMFnc_gIfng2zntz_rVZyzrVyzsSyFy7tPyptTpn_
+sBGryDxZtn_otr_cjzzV-j_jsm41010Gm400_HEBSV3BiPjhPF2VYl_M_iVqlnxwFzV_lVO7sbzWVuBzpSJ-Q3pWhu0_0_wE-aFlBxq_zVusYZO
+}
+
+GCPEntityColoring(partner_portal)
+!define partner_portal(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, partner_portal_png, partner_portal)
+!define partner_portal(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, partner_portal_png, partner_portal)
+!define partner_portalParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, partner_portal_png, partner_portal)
+!define partner_portalParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, partner_portal_png, partner_portal)
+!else
 sprite $partner_portal <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <path d="m20.9 13.5 1.9 1.5c0.2 0.2 0.3 0.5 0.1 0.7l-2.2 3.9c-0.1 0.2-0.4 0.3-0.7 0.2l-2.2-0.9c-0.8 0.6-1.7 1.1-2.6 1.5l-0.3 2.4c0 0.3-0.3 0.5-0.6 0.5h-4.6c-0.3 0-0.5-0.2-0.6-0.5l-0.3-2.4c-0.9-0.3-1.8-0.9-2.6-1.5l-2.2 0.9c-0.3 0.1-0.5 0-0.7-0.2l-2.2-3.9c-0.1-0.3-0.1-0.6 0.2-0.7l1.9-1.5c-0.2-1-0.2-2 0-3l-1.9-1.5c-0.3-0.1-0.3-0.4-0.2-0.7l2.2-3.9c0.1-0.2 0.4-0.3 0.7-0.2l2.2 0.9c0.8-0.7 1.7-1.2 2.7-1.5l0.3-2.4c0-0.3 0.3-0.5 0.6-0.5h4.5c0.3 0 0.5 0.2 0.6 0.5l0.3 2.4c0.9 0.3 1.8 0.9 2.6 1.5l2.2-0.9c0.3-0.1 0.5 0 0.7 0.2l2.2 3.9c0.1 0.3 0.1 0.6-0.2 0.7l-1.9 1.5c0.2 1 0.2 2 0.1 3zm-12.3 0.9 0.6-1.2h4.9c0.5 0 0.9-0.3 1.2-0.7l2.5-4.6-1.1-0.6-0.7 1.3-1.8 3.3h-4.7l-0.1-0.2-2-5h-2.1v1.3h1.3l1.6 4.3-0.9 1.6c-0.1 0.2-0.2 0.4-0.2 0.6 0 0.7 0.6 1.3 1.3 1.3h7.9v-1.3h-7.5c-0.1 0.1-0.2 0-0.2-0.1zm0.8 2c-0.7 0-1.2 0.6-1.2 1.2s0.6 1.2 1.2 1.2c0.7 0 1.2-0.6 1.2-1.2s-0.6-1.2-1.2-1.2zm5.4 0c-0.7 0-1.2 0.6-1.2 1.2s0.6 1.2 1.2 1.2c0.7 0 1.2-0.6 1.2-1.2s-0.6-1.2-1.2-1.2zm-2.8-11.9v3.3h3.3l-3.3-3.3zm0 0-3.3 3.3h3.3v-3.3zm0 3.3h-3.3l3.3 3.3v-3.3zm3.3 0h-3.3v3.3l3.3-3.3z" fill="#5C85DE"/> <path d="m12 11.1 3.3-3.3-3.3-3.3v-3.7h2.2c0.3 0 0.5 0.2 0.6 0.5l0.3 2.4c0.9 0.3 1.8 0.9 2.6 1.5l2.2-0.9c0.3-0.1 0.5 0 0.7 0.2l2.2 3.9c0.2 0.2 0.2 0.5-0.1 0.6l-1.9 1.5c0.2 1 0.2 2 0 3l1.9 1.5c0.2 0.2 0.3 0.5 0.1 0.7l-2.2 3.9c-0.1 0.2-0.4 0.3-0.7 0.2l-2.2-0.9c-0.8 0.6-1.7 1.1-2.6 1.5l-0.3 2.4c0 0.3-0.3 0.5-0.6 0.5h-2.2v-7.4h4.4v-1.3h-4.4v-1.3h2.1c0.5 0 0.9-0.3 1.2-0.7l2.5-4.6-1.1-0.6-0.7 1.3-1.8 3.3h-2.2v-0.9zm2.8 5.3c-0.7 0-1.2 0.6-1.2 1.2s0.6 1.2 1.2 1.2c0.7 0 1.2-0.6 1.2-1.2s-0.6-1.2-1.2-1.2z" fill="#3367D6"/> </svg>
 
 GCPEntityColoring(partner_portal)
@@ -9,3 +30,4 @@ GCPEntityColoring(partner_portal)
 !define partner_portal(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, partner_portal, partner_portal)
 !define partner_portalParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, partner_portal, partner_portal)
 !define partner_portalParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, partner_portal, partner_portal)
+!endif

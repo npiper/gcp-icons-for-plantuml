@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $recommendations_ai_png [128x128/16z] {
+xTXNjjWg38NXOssapVmdV4kAbm-B8WWnAVfVAHylhXzBHL4KHTT2Ett8V92D_dp9ZlfgHtsrexxQKL_jgAzsr5SxwgiTzTMw_gNkhXK_MTyNUiDFyhCh9Zdg
+9npr4uxw2RE-xFGJPdtPwITC-FVSRNw2ttzEtU7pvYTy-IfTapwh9SpwyXswPCOdglTdcVNbTWHJllo8VucWv5_qhozSoR_cNz_1Wd_7b-ixMV3l-0_qoR_X
+bmSe-1VywW44UDM7IC6_x4EauD_qoxlU2HyYDt_4XyZD7_4XSlD7V8Z8KHy27FMnx8SVlgPAYhwlrabLpUrRewwlUHITlZNh-9h7qULRfwQlsHCTldLh-9fz
+SUZReAglsHi7lWsh-9hziUkReyA_UMVi-EQgy3NFnQPlpZxvciafFbFhlddJXw-Spvv-54LH9EwM5bqZdivoUcoLlOiCOp-xKddupBueClAzF1PyOfUlMF29
+NRvYmITs-Oe5dzZbAnPyOfUlMF29NRvYmIVcVTRAYhxFQfZtcQGIfElJf1OSllV_Hz_NZrg7_V333p_yyCCFF_pmrzy_yThxfrNJWLzltgSrqevFQpNhqvff
+qwUrc_DfdRJXqthD-BHkMlLf_Vm-RP1MVDeehqyRfeLFpoBp-JH7-ibtBZAFJtEbdtoQhx5ltjBJL-yY_4B_NwCeYg9_0G
+}
+
+GCPEntityColoring(recommendations_ai)
+!define recommendations_ai(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, recommendations_ai_png, recommendations_ai)
+!define recommendations_ai(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, recommendations_ai_png, recommendations_ai)
+!define recommendations_aiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, recommendations_ai_png, recommendations_ai)
+!define recommendations_aiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, recommendations_ai_png, recommendations_ai)
+!else
 sprite $recommendations_ai <svg viewBox="0 0 24 24"><g><g><path d="M12,2H22V12H12Zm4.46,6.76L19.3,5.93l-.8-.8-2,2-1-1-.8.8Z" fill="#aecbfa"/><path d="M2,14v8h8V14Zm6,6H4V16H8Z" fill="#4285f4"/><path fill="#4285f4" d="M 12 12 L 22 12 L 22 10.03 L 14 10 Z"/><path fill="#669df6" d="M 20 4 L 20 10.02 L 22 12 L 22 2 Z"/></g><path fill="#aecbfa" d="M 10 22 L 8 20 L 8 16 L 10 14 Z"/><path fill="#669df6" d="M 2 22 L 4 20 L 8 20 L 10 22 Z"/><g><path d="M2,4v8h8V4Zm6,6H4V6H8Z" fill="#4285f4"/></g><path fill="#aecbfa" d="M 10 12 L 8 10 L 8 6 L 10 4 Z"/><path fill="#669df6" d="M 2 12 L 4 10 L 8 10 L 10 12 Z"/><g><path d="m12 14v8h8v-8zm6 6h-4v-4h4z" fill="#4285f4"/></g><path fill="#aecbfa" d="M 20 22 L 18 20 L 18 16 L 20 14 Z"/><path fill="#669df6" d="M 12 22 L 14 20 L 18 20 L 20 22 Z"/></g></svg>
 
 GCPEntityColoring(recommendations_ai)
@@ -9,3 +25,4 @@ GCPEntityColoring(recommendations_ai)
 !define recommendations_ai(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, recommendations_ai, recommendations_ai)
 !define recommendations_aiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, recommendations_ai, recommendations_ai)
 !define recommendations_aiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, recommendations_ai, recommendations_ai)
+!endif

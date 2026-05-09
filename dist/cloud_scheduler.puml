@@ -2,6 +2,27 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_scheduler_png [128x128/16z] {
+xPfdOWGh38F7niBS_yHlqeT4R13iwwD_M-0JO3h7Fq-tRjswTSky5BU_BRrxEUM-dNuzkP21a5vAVcgD_vdSVG_ljjRun82Evtpp4W3gAG0n-0in8E4vtmjE
+BEf5hryK9_NV6H3nhFqzwWE53ylWotYt2npreN2rK5WDhECTTKhu81apeECxkk1WR4376wea63MmYeygAzOC6C4xweBWn8297PyKNgm2qohWXri3AXSGhthm
+1_jH0mBVRHXu-5QJve6AGHYQmdVly4v76AEHKvXLxmouJyRV65_iGU9IGGq8Cwdx60_y7Z_SW300M74VbBuS4ohKW1VtwNN4--1LUyLCSjPZthEpGnE-5wEJ
+K0MGi1mFoRrXsq3Wca5ikKV8U2Vfr_rNLvDt-0TnJnQVr83gVhRqBK-r6luuZneItgQJdl1JUIhiOGoOmiTqyBxYtos4dWsNWniVyzyjb74rmjUAxySi_rHY
+F1jWgVXnAFoMrKObWQyK_z3uBTE7BQ07Fuh8FzKR2BqB1B6iyBFZw6E0D6nc8mP68QX67mw9ptk16e4WhQ_nMnQrENdr7wly77G1RUADLNxBuDtPfNdRb_aj
+ZKKWGXfyZWr-yF54QNxiy7EnICQYN-UtTDe3JEZzliKF5W3I_ics-9UgTg5EGvokieraB0136Fts-Eb2J3D-RFABLAZdysE9FmeLdG_Q0VzZVFojVAz3lCxN
+uozoXDVZJ-VRkF1w_zF_MiQ5rySVlQb0wDhugyy_FF2uCeKvNPX_IU1nFfJvbtkL0szz_I74IiaPV0ehUcdz2KhNrv_w-fi7dhR-rlOVQk2jxpzuQmc19-o_
+XFsd47ZY_bFVVnTE5_VVw-SFnekldZ-idxyOvSldB-ldJyuCwETFw-TlJff0Et_Jpny50_Bvetx-Qk06zFDN_VoPZmBY-VF--Rj5PZ9uXWdPAFSFn45dGRr_
+sBz_STIMdseLylsBVl_4dq0XGhr_qk_VolRzszzy__Zlkt_rhC-wVwxf2_YMpxf_pvQkurlBvxm_UCtAPJmn09HVwI1umK2_oixzzoUVERc0loJRUN_Jv-C2
+VcpW5ARV7_Mv-2I-Jugw_lwgmyyPyDvxbfttPvON_9G1woilVU_zdMNVX2QDkddYzzuV7fOfJSDap5r-VybUCGdLVy7Bxq-7MPh0Tx8g5UYqxeJsxwngxuzx
+cN2ewg1u_VqrDs2JqnVG_LDvVyuDO7u02f05d_J-di-BYFDFjsxTkdNhrgrRVm
+}
+
+GCPEntityColoring(cloud_scheduler)
+!define cloud_scheduler(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_scheduler_png, cloud_scheduler)
+!define cloud_scheduler(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_scheduler_png, cloud_scheduler)
+!define cloud_schedulerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_scheduler_png, cloud_scheduler)
+!define cloud_schedulerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_scheduler_png, cloud_scheduler)
+!else
 sprite $cloud_scheduler <svg viewBox="0 0 24 24"><g><path d="M20,21a1,1,0,0,1-.7-.29l-2-2a1,1,0,0,1,1.41-1.41l2,2a1,1,0,0,1,0,1.41A1,1,0,0,1,20,21Z" fill="#669df6"/><path d="M4,21a1,1,0,0,1-.7-1.71l2-2a1,1,0,0,1,1.42,0,1,1,0,0,1,0,1.41l-2,2A1,1,0,0,1,4,21Z" fill="#669df6"/><path d="m5.47 17.13-1.22 1.22a11.13 11.13 0 0 0 1.42 1.41l1.22-1.22z" fill="#4285f4"/><path d="M19.73,18.31l-1-1a1.19,1.19,0,0,0-.23-.16l-1.34,1.34a1.19,1.19,0,0,0,.16.23l1,1A11.13,11.13,0,0,0,19.73,18.31Z" fill="#4285f4"/><g><rect width="24" height="24" fill="none"/><path d="m12 21a9 9 0 1 1 9-9 9 9 0 0 1-9 9zm0-2a7 7 0 1 0-7-7 7 7 0 0 0 7 7z" fill="#669df6"/><path d="M12,17a5,5,0,0,0,5-5,5,5,0,0,0-5-5v5L7.92,14.91A5,5,0,0,0,12,17Z" fill="#4285f4"/></g><path d="M4,6.07a1,1,0,0,1-.71-1.71l2-2a1,1,0,0,1,1.42,0,1,1,0,0,1,0,1.41l-2,2A1,1,0,0,1,4,6.07Z" fill="#aecbfa"/><path d="M20,6.07a1,1,0,0,1-.71-.3l-2-2a1,1,0,0,1,0-1.41,1,1,0,0,1,1.42,0l2,2A1,1,0,0,1,20,6.07Z" fill="#aecbfa"/></g></svg>
 
 GCPEntityColoring(cloud_scheduler)
@@ -9,3 +30,4 @@ GCPEntityColoring(cloud_scheduler)
 !define cloud_scheduler(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_scheduler, cloud_scheduler)
 !define cloud_schedulerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_scheduler, cloud_scheduler)
 !define cloud_schedulerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_scheduler, cloud_scheduler)
+!endif

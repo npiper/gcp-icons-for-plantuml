@@ -2,6 +2,21 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $bare_metal_solutions_png [128x128/16z] {
+xTXNiXfH40L1FBt_5Mi3HQWLAV_k-SLauPcv_8ixEpixEvlhd-M70fod0ESfm7aAS9u2dBS0vpt0UNmJEay1pbE0ynJWF0KuJm7EKu3p5E0y1JXF0SvJWFCK
+u3m5E4y1pbE0ynJWF0KuJm7EKu3p5E0y1JXF0SvJWFCKu3m5E4y1pbE0ynZWl0Suxm7EUu3p7k2y1pZl0SvxWFCUqDU_0GcF1mA0Xm3W9S1v3t3U0vpt0ESz
+m7aFSDu3d7zD12W_i-Sd0fYVMVCHmFmwO2O3dFS0vod0UGjWNWEGzm3aFG1v3q3U0v3t0EGz07aFGDu3aFS0v3rWpRlU0Kj-vaNw9g3vA00z0XOy5CpCBg3v
+A32z0vhFlLNlWEQxGFGEQFvpWUWTqFpd0j0p8FXzWGVyCF-05o02Wb_eK101Q_vUchy9cszT2ZgW-TQbe0EQRzqAEc31wmcSNb-pTTWoOAbxGGU03WNVlS8L
+uG0gW7J_GxBIVUyF0Q9xmGLqBkW900MWGm7eK82w5wZk1QZxNgfxWUfUeBeNNFx9dPsTdPrz0m
+}
+
+GCPEntityColoring(bare_metal_solutions)
+!define bare_metal_solutions(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, bare_metal_solutions_png, bare_metal_solutions)
+!define bare_metal_solutions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, bare_metal_solutions_png, bare_metal_solutions)
+!define bare_metal_solutionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, bare_metal_solutions_png, bare_metal_solutions)
+!define bare_metal_solutionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, bare_metal_solutions_png, bare_metal_solutions)
+!else
 sprite $bare_metal_solutions <svg viewBox="0 0 24 24"><g transform="translate(3 3)" fill="#4285f4"><path d="m9 17.989-9-4.2752 4.5-1.4286 4.5 4.2857 4.5-4.2857 4.5 1.4286z"/><path d="m9 0 7.5 7.1429-7.5 7.1429-7.5-7.1429zm0 1.4286-6 5.7143 6 5.7143 6-5.7143z"/><path d="m15.841 9.2847 0.659 0.63-7.5004 7.2281-7.5006-7.2281 0.659-0.629 0.627 0.6-0.062052 0.059321 6.2767 5.8891 6.2767-5.8891-0.063299-0.059321z"/></g></svg>
 
 GCPEntityColoring(bare_metal_solutions)
@@ -9,3 +24,4 @@ GCPEntityColoring(bare_metal_solutions)
 !define bare_metal_solutions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, bare_metal_solutions, bare_metal_solutions)
 !define bare_metal_solutionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, bare_metal_solutions, bare_metal_solutions)
 !define bare_metal_solutionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, bare_metal_solutions, bare_metal_solutions)
+!endif

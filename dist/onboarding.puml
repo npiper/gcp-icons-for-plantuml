@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $onboarding_png [128x128/16z] {
+xPa9ajqm24I30BL_xd_Vx1bgcwx1LdkMhxx0ermFIu9ltUpixEpix8oOyNvqYqnW-llHCm5WZdUWU_u9y2uL_A4N7qYxKxjy2LuITflqMG4gSPTsh_0n_MPw
+yL4YQgKdV7K5HITy84qjFUS3OIhfERyI0kqwV4mNq1bV8699p_ZY2ZnfG9CcaBx11y84qZVuG0Yqw_0nNK1dV2vYNthELrH0w8pFMw4dVP_VQGKklOOFH4Cx
+1H_J6tG1lqGaqklul8AYI_b06fDUpmV2cFHwFX1KEpqVqmbToYyHtvT_7AR-_XmFUp__ZiS3C6N_SVht1m3J_Nyu_LTGVDt_b-DXxt3-UE5Xxt7-7Yzus7lS
+FtxnGVZo-zVnE0XVV_yy0C8NtR-pBXsWVFtxOnA-xFt5-Fht9-Fhtz-Khvy_CBvg_bBISxv-_iJvklaRIdh2ryyVELytVstnzVFdFd-CXVFtwFCZmXRj7to2
+yCd7TbkmVnaJECdFzFFxfw9Vu6UEA_itI-0YFsEStJzQ0DVvcM6dzgy1NEJp2lZ-sO5bVD8AhqZl4mlvf1KcaNuPlrg1fwHVooUjGAHVnISY4kaNyFiLEA3X
+yrOexPJyYXEwabyPL7ezFsCGwGLyAc80KZwlm04fduiu9dfylFN-bs_919hyKLcmX6iCdhhn1b-pXVS-dx-2rw-16wCVoH9Ui7fl3O70qgRtMw6vRrukOaDw
+IGK2wLkjq99Uq0eDwIMjq91UqWeDwIKYSkdr5JIabuZ8fTTNe9UUjmANNjyAN7fz1LnwVIjC9hq-rgRlxEpixEpixFm4
+}
+
+GCPEntityColoring(onboarding)
+!define onboarding(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, onboarding_png, onboarding)
+!define onboarding(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, onboarding_png, onboarding)
+!define onboardingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, onboarding_png, onboarding)
+!define onboardingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, onboarding_png, onboarding)
+!else
 sprite $onboarding <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <g transform="translate(0 2)"> <path fill="#5C85DE" d="M 21.2 7.6 L 21.2 14.8 L 23.3 14.8 L 23.3 6.4 Z"/><path fill="#3367D6" d="M 23.3 6.4 L 21.2 7.6 L 21.2 8.6 Z"/><path fill="#5C85DE" d="M 0.4 6.4 L 11.9 12.7 L 21.2 7.6 L 23.3 6.4 L 11.9 0.2 Z"/><path fill="#85A4E6" d="M 0.4 6.4 L 11.9 12.7 L 11.9 0.2 Z"/><path fill="#5C85DE" d="M 4.6 10.8 L 4.6 14.9 L 11.9 18.9 L 19.1 14.9 L 19.1 10.8 L 11.9 14.8 Z"/><path fill="#85A4E6" d="M 4.6 14.9 L 11.9 18.9 L 11.9 14.8 L 4.6 10.8 Z"/></g> </svg>
 
 GCPEntityColoring(onboarding)
@@ -9,3 +26,4 @@ GCPEntityColoring(onboarding)
 !define onboarding(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, onboarding, onboarding)
 !define onboardingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, onboarding, onboarding)
 !define onboardingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, onboarding, onboarding)
+!endif

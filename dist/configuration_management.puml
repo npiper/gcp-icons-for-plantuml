@@ -2,6 +2,21 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $configuration_management_png [128x128/16z] {
+xTa7SkGm34JH1gdGzx_mvZNeAeKHrHGSy2ivFu3ZoH2NPLcMPLb1Q5Oh8gk_ibY-1lB95qHLejVtIXJlMH3l1GmGEa5ZXWy0Ynl0sayYRWBAqDk3wUNBe0pm
+5_BukjsQyWDO-QkJMvTMrFhysuMRMEKbmFzTkNcH-VIgzz33iSAsslR00KnEk-yDzXTos_TidB-I-xvdOtnkLhSgUfyxrPsqFdUhkydyGdRu6vJr-1CFguVT
+NdyXUtpFRlapx_ertlTgHQYFQ1yVt4y__VJJJp_zzDEVWlqIx5kmZrj--kaRnju035YVAxpd_OaCybtiy9KyuKNuYFCfy1NhUu_wizGlWlM1VX-VsVTwVSJw
+flBHvqFcppq-T3wYVLpt8VNjgd_ZBQvrvnkRxVFQ0y0btsxva__R2zv_wtZ6vs0v6q1v-gwy_b2WOtlf078Uw_i1bkDhWVJisotVEBILCn-2-3O1JnyEwVdM
+M3O6MFPzg2fiiuER8ZdlXdVmNRNkpVJsvrFgUygAhLRt3V9SuE4F-EsDF3eVKEMVAc9QufRtqryH68dG2iQKPLcMPTbF
+}
+
+GCPEntityColoring(configuration_management)
+!define configuration_management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, configuration_management_png, configuration_management)
+!define configuration_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, configuration_management_png, configuration_management)
+!define configuration_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, configuration_management_png, configuration_management)
+!define configuration_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, configuration_management_png, configuration_management)
+!else
 sprite $configuration_management <svg viewBox="0 0 24 24"><path d="M5.76,8.64v3.88A8.16,8.16,0,0,0,12,20.29V5.73Z" fill="#4285f4"/><path d="M12,20.29l.66-.19a8.16,8.16,0,0,0,5.58-7.58V8.64L12,5.73Z" fill="#aecbfa"/><path d="M17.79,4.14a2.85,2.85,0,0,0-.29,0l.83-1-.57-.48-1.67,2,2,1.66.48-.57-1-.85a2.3,2.3,0,0,1,.26,0,2.64,2.64,0,0,1,2.64,2.64,2.58,2.58,0,0,1-.29,1.19l.55.56.09-.13a3.5,3.5,0,0,0,.4-1.62A3.39,3.39,0,0,0,17.79,4.14Z" fill="#aecbfa"/><path d="M5.67,17.7l-.61.44.76,1.06a2.48,2.48,0,0,1-.27,0,2.64,2.64,0,0,1-1.33-4.29l-.39-.68a1.14,1.14,0,0,0-.11.11,3.38,3.38,0,0,0,1.65,5.58,2.93,2.93,0,0,0,.29.05l-1,.74.44.61,2.11-1.5Z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(configuration_management)
@@ -9,3 +24,4 @@ GCPEntityColoring(configuration_management)
 !define configuration_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, configuration_management, configuration_management)
 !define configuration_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, configuration_management, configuration_management)
 !define configuration_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, configuration_management, configuration_management)
+!endif

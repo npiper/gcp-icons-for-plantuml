@@ -2,6 +2,18 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_interconnect_png [128x128/16z] {
+xTgr0KCX04117FQVE6tSlzzRu2gSy319agJOlcxRFf_FvvVFgbV-tCMD-dm-dn_pmzhZtlJvV3wVp-Vp-VnqrV_yTDLzVbpM_kUFgvRo-Nm-VtNpFv_Fv_Fv
+V3wV7zB3wkEy__7vV7vSqVylFf_FvqkI99q
+}
+
+GCPEntityColoring(cloud_interconnect)
+!define cloud_interconnect(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_interconnect_png, cloud_interconnect)
+!define cloud_interconnect(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_interconnect_png, cloud_interconnect)
+!define cloud_interconnectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_interconnect_png, cloud_interconnect)
+!define cloud_interconnectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_interconnect_png, cloud_interconnect)
+!else
 sprite $cloud_interconnect <svg viewBox="0 0 24 24"><g><path fill="#4285f4" d="M 2 13 L 6 13 L 6 11 L 2 11 Z"/><path fill="#aecbfa" d="M 15 17 L 5 17 L 5 7 L 15 7 Z"/><path fill="#4285f4" d="M 17.33 13 L 22 13 L 22 11 L 17.33 11 Z"/><path fill="#669df6" d="M 8 3 L 8 5 L 17 5 L 17 19 L 8 19 L 8 21 L 19 21 L 19 19 L 19 5 L 19 3 Z"/><path fill="#669df6" d="M 15 17 L 10 17 L 10 7 L 15 7 Z"/></g></svg>
 
 GCPEntityColoring(cloud_interconnect)
@@ -9,3 +21,4 @@ GCPEntityColoring(cloud_interconnect)
 !define cloud_interconnect(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_interconnect, cloud_interconnect)
 !define cloud_interconnectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_interconnect, cloud_interconnect)
 !define cloud_interconnectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_interconnect, cloud_interconnect)
+!endif

@@ -2,6 +2,21 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_asset_inventory_png [128x128/16z] {
+xTK5RWC150FH9bduzpznHM4NHd9TiaNXDw7Tbv--hkkwhkkwhZke6xSOFoC2zjbYl0ZOPq81C-U01puJC7CEUE0p0JCYuCpp0Cu70pIV3z1yFc0c5g3vU83c
+O_y2pJzS2mG8y8E0zGlvM83cOm6QYWLeA1QWcLY0Hc81-eIR2z1yF43pMon0y_1lwETPW9sd0MwU1_ZvsM20dqS1Vfu5s7aOi9Xv7c3cUO2Rvm5-_c0FqFmw
+cfz10NuU1hXv7E3b3G64tmMF0ymy3p3pFE13_WXuNy0YgT44yCMDrW3EMmCuRmtWl3M0yzO0pbi3E6yEeBmxuC1uUm3ZhG6STmPm7cq50O2t1d3U7y1vVm3d
+_G6GzmT0tXy0UNy0vFq1YES1ctnzoFi3CEyFuBm_WFF-0Cxx0pGV2j1y8W3oV9iAE5mzmMS319yD47mqGF2H0C5d0mGV3j1yFe3pF419XmH_3b3I8S6V0vHq
+IF3d02KT4lmvG4c7Z_Ykwxgkwxgkwru1
+}
+
+GCPEntityColoring(cloud_asset_inventory)
+!define cloud_asset_inventory(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_asset_inventory_png, cloud_asset_inventory)
+!define cloud_asset_inventory(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_asset_inventory_png, cloud_asset_inventory)
+!define cloud_asset_inventoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_asset_inventory_png, cloud_asset_inventory)
+!define cloud_asset_inventoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_asset_inventory_png, cloud_asset_inventory)
+!else
 sprite $cloud_asset_inventory <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><g transform="translate(2 4)" fill="#4285F4"><path d="M 12.114 0 L 11.14 0.9744 L 18.229 8.0455 L 12.114 14.16 L 6.0006 8.0455 L 8.9205 5.124 L 7.9553 4.1597 L 4.0695 8.0455 L 12.114 16.091 L 20.161 8.0455 Z"/><path d="M 10.123 9.8132 L 8.3553 8.0459 L 10.123 6.2777 L 11.89 8.0459 Z"/><path d="M 8.0454 0 L -1.68e-4 8.0455 L 8.0454 16.091 L 9.0088 15.127 L 1.931 8.0455 L 8.0454 1.9312 L 14.159 8.0455 L 11.239 10.966 L 12.205 11.932 L 16.091 8.0455 Z"/></g></g></svg>
 
 GCPEntityColoring(cloud_asset_inventory)
@@ -9,3 +24,4 @@ GCPEntityColoring(cloud_asset_inventory)
 !define cloud_asset_inventory(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_asset_inventory, cloud_asset_inventory)
 !define cloud_asset_inventoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_asset_inventory, cloud_asset_inventory)
 !define cloud_asset_inventoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_asset_inventory, cloud_asset_inventory)
+!endif

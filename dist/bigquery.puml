@@ -2,6 +2,25 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $bigquery_png [128x128/16z] {
+xPfhTYmX28IRWcAo_nNVS_Ds4gQRqhoxVi_nAvHc5DqQEdNgrAbJPcQ0cNq-6KxcAp4SdyOE9lDQpEJ7Up0VsQEOZ8-qW4ZcdkWVHMSU4kdssVHHJ5zCjyYM
+IAp4UxR5i6N1awa8Q_18KOmrSw-BDeqFrbd-9FB3re2iwE6m1y6TcVm80opOE5wPiHRFB3yiyuO13S-Tweve611Ipm_KQUQrJCA_dSqmxOEbWeSyZnQSDs0p
+jSJdzmISggMOJG7dN2ctkHKmOVvMZX1LzFeCcBvy0dvk4DPhf-UGgSvj4nLY65pr1wPDW1NhrXUaaK9mlNAeXQSf6ySIqdQRaxETWImiQselWEN1yErPHpE0
+tZrenY6VF9m1tPIrQVx6vWACVYL-dO5eBJz3uzSB4BsI1P5VVq-z3tOJ-NL2jTAFI_XW9m6hhq_dMtOIS2WNAhyUiiDFhE5p2AbHVMqvF-CB-F4h-0x_B_XN
+yPzqyZyh_x6SJ-_KlpuVJn9AQc5Mu3kWrV-Hdspp_K50jQEmrlPFvJjwEuhgroRpvVsF5TcYyvj7q2pigdmC0JNFx3A_F4-q4e0-d_zPnDCzC06D-7l7kL4i
+wiNn-67rQFgHtN2G3rGT6A7zWs45zlaZVgFG06Br2GBx_14F2lqVb1qGO8y_uZUj0LYt7u4T_eYF0G-fQJJQjfjymp35KDkuDrhdXblnMvt8TBbp367_FzV5
+PWuoXHyJju38NGFWRNvCDV5Zru3nPfieEDV4FtBvPmyw4hrFltVfZ60BBY13lm54Nki2yV92AM3n5dyd632cSW4DleE_ampaMxcrwV_ncW7aEmhhqV_Zbnf8
+kksyVHZqdxtOG39WL-yXSz0OlMx0iX0poVWl_aVluNK3J4qZNZUm1PVWTGEUaiWHhnimKk3x1j60FWLZcLXem49uVgaPc7VmGDSDr0xOeEi6QZcJ1zPzlO7n
+aHqRhwzB0xhWVFNiacJcy8_GC23B3ExnN-ueqRM1oyMsbUeRmFQ51lJuTGDw-EiDw7ZTW89VRq37pnjGyEiDwFXv0vUxYu1VQE1ByME7xDIfKwTE_GC
+}
+
+GCPEntityColoring(bigquery)
+!define bigquery(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, bigquery_png, bigquery)
+!define bigquery(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, bigquery_png, bigquery)
+!define bigqueryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, bigquery_png, bigquery)
+!define bigqueryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, bigquery_png, bigquery)
+!else
 sprite $bigquery <svg viewBox="0 0 24 24"><g><path d="m6.73 10.83v2.63a4.91 4.91 0 0 0 1.71 1.74v-4.37z" fill="#aecbfa"/><path d="M9.89,8.41v7.53A7.62,7.62,0,0,0,11,16,8,8,0,0,0,12,16V8.41Z" fill="#669df6"/><path d="m13.64 11.86v3.29a5 5 0 0 0 1.7-1.82v-1.47z" fill="#aecbfa"/><path d="M17.74,16.32l-1.42,1.42a.42.42,0,0,0,0,.6l3.54,3.54a.42.42,0,0,0,.59,0l1.43-1.43a.42.42,0,0,0,0-.59l-3.54-3.54a.42.42,0,0,0-.6,0" fill="#4285f4"/><path d="M11,2a9,9,0,1,0,9,9,9,9,0,0,0-9-9m0,15.69A6.68,6.68,0,1,1,17.69,11,6.68,6.68,0,0,1,11,17.69" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(bigquery)
@@ -9,3 +28,4 @@ GCPEntityColoring(bigquery)
 !define bigquery(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, bigquery, bigquery)
 !define bigqueryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, bigquery, bigquery)
 !define bigqueryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, bigquery, bigquery)
+!endif

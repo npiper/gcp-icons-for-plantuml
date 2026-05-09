@@ -2,6 +2,25 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_armor_png [128x128/16z] {
+xPi7akKW34HHQDt_nflNvPwW0c5m1Lx5JNuIhS6pyAULE1mEXuEyAZU4osjs3yGlND-mgyS5TBiTGS3sneu81k6oD_RFkEwAdTat28Q87DZ6s15cs34873lt
+gjWm2Ef9rfByuQhONJYQm891u6Vd4TS6eHuxyzqWoABOcTeWr6Dd2eDGZhrIDSAa47jvPviV1CL4ZlE302Jbr-D3woIFlJw-9J-ibL7C-g6pszUCtxLD8rRs
+Iti4gVhRGppbF_xZFtvHaVr-tazTt_7hzLArD_n2hyNzViGDsUvNyZlzaGEkY_qUnCqEn6yWI_q8GhxuHalt-paMsU_dgLZd5yuVrvv0BFEB6kcDqh_G9_si
+9nFegsAHd_Mt0W2v_5ZePxsP_xNVnyo2a4VzhF-D_y9k4c4_sWA_N7RLngZoLEW2Vwutk-czFUZlr9kHViRF6rgltipJYn0UZNw_zEfDvHVj6wJip_LoqpUY
+xESTJRkxRnbAhwR-WnFOTFVyk76_rlICHxUV5moptVCuwV21HJLxfluDiu_frSoaTlp2WFoTYsy8007zBitnaqCCw85hQYR6ZqkEVhs3te7ryUC1IFNwtN-D
+9kBdcj6fRwI7VPLbvUWOlL_tGJXLDXO_BvhqwIK894yQ2y2InU_mq_AN0aZqwVhNbvyRqWuzZJzFZTBo5m90bruzxYIFwO4Bxz6R8MzVouU6tgM_5s2Vsu-9
+soFfqfiX0k2hCgKDgRW0wDB_HdbRuFRh2w2TUccDKL3xvGNGWfusXSdhRw_fVI9zhjyhUgNTUExwig1lcB_2lFmOr_ja-_nQyr6zeR3p9qzn6T9hqF3D9n0o
+efUehNx-e7uzbJs5KW73UdtmirSOriCcvNo-2lcerxnxRqy0Bg1VZ_OCeDFTNAz1rSx3BONbUcFzWWBWt-i58FsI0i99pysJVbK1SD9JywH_4b059jdb4D2U
+X-yvk02-182t5R0ZN6wz4_QqcHFc5CJ0lmbfo_0W440W26yhKI0I06sBiKYmrNQUDkRLdq00sTT2GqyRqaRKwVFsRw2E291yDoAjmk5mE1n-0W
+}
+
+GCPEntityColoring(cloud_armor)
+!define cloud_armor(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_armor_png, cloud_armor)
+!define cloud_armor(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_armor_png, cloud_armor)
+!define cloud_armorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_armor_png, cloud_armor)
+!define cloud_armorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_armor_png, cloud_armor)
+!else
 sprite $cloud_armor <svg viewBox="0 0 24 24"><g><path fill="#aecbfa" d="M 9.76 20.6 L 8.72 19.55 L 14.17 14.07 L 15.21 15.12 Z"/><path fill="#aecbfa" d="M 7.03 18.32 L 5.99 17.27 L 13.34 9.88 L 14.38 10.93 Z"/><path fill="#aecbfa" d="M 5.34 14.98 L 4.3 13.93 L 9.18 9.03 L 10.22 10.08 Z"/><path d="M12,3.61l6.78,3v4.55A9.71,9.71,0,0,1,12,20.48a9.7,9.7,0,0,1-6.78-9.31V6.63l6.78-3M12,2,3.75,5.68v5.49A11.17,11.17,0,0,0,11.85,22L12,22l.15,0a11.17,11.17,0,0,0,8.1-10.78V5.68L12,2Z" fill="#669df6"/><circle cx="14.69" cy="14.62" r="1.42" fill="#669df6"/><circle cx="13.85" cy="10.45" r="1.42" fill="#669df6"/><circle cx="9.69" cy="9.6" r="1.42" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(cloud_armor)
@@ -9,3 +28,4 @@ GCPEntityColoring(cloud_armor)
 !define cloud_armor(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_armor, cloud_armor)
 !define cloud_armorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_armor, cloud_armor)
 !define cloud_armorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_armor, cloud_armor)
+!endif

@@ -2,6 +2,28 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $service_discovery_png [128x128/16z] {
+xLhdWi8y3Ak77Dx_XR_1SQESKb3D-4Rr2xeanuwTjSWuSE30WGDcvcvchoVsIDGF8CDV9SCJLQWhe0hfBo2lJJnLWWNg9X3s9FQiEv7sBFQtAOWI4G-DEg14
+08-BnAnTo0Tv7fZQY2fitBQb3wy9a17kxX69ci2V4NWefDjrHauK7X-62PPWxazFo0VJfslf6TcYb_EAvUC414YNbfC5eaUlnr8K4T3jU4fdDlIxeSszg4UE
+wVoODw6x4RtkSn-WwVou3d04Upnj8W3HQltu7HLOcGJyzdHqF829UAiY0W364n0zm5z5Jafn-0KnARg9lHwOnaxznBYWVc8Qmtk3RvuJJXVC-_hE1Y3Va_Zv
+yxlCpurkCJxenqQWvvu6s12zel_2rWjw0pZccWF4KgkxNe1BVP_tMe0mvTT5A5_ZC1vCQowigd6DUPNoLOk9qJURVsCr48fn6cCw_uOOWP0ZTeo_Uu5DxP4S
+O7BHY3DzjZx8eryrdqFh0ScUritd5gNK-wndFaiFYlkXczytoTNvSr7pPqN0x-_zy8xvF00Gj_bfMrc2v9V0HnKSs_d9X8oIDFb5dMKXwSB4o1lvMV0f67-m
+-cBCgxm-2Ic5F4hgAozil3xt-PEEEcvUp0R_-dKow3gDsKLcmFtyJ7xjuo_MW1B_u-slVu__GOTGy4_K3_W5woUx_Dlpoo2TainF9NxkAZw_zXKzcP_Je1Bu
+RNDzOHbZa3h5rYTCu0zCQgMviyB7bcBywg8BzOS-Ew_xwdpIfV6FNlVxGxhwXcQ-_abziCJDxm_fkBEoOJwr2A7DVnhcy-OtxN7V7lFhwyXQSnNu1mDZN9ll
+aU6teZzLlSRY0vUIjrxmHXKGs_vqrL-v4Pv9E8Y059kVZo7vx7XxXil7hbeFmDQwy1VkVC6a_LPQtERhhvp4XUZZB4jd_NCXohG6A7JuGM9PZO3Ot_uXUf-F
+U7rl_Fd-tNXYaj3_M6CrjfzWx8RTo3-6pWOKQYe0LJXVOlcNqnUQsuz6ImsvoEdBkjkltdkxl_qSqhkFs83ElQT937Z8GHZK6Y4OJs9F1tQSANAWHq-2cDT3
+pbxNM1emUln5EfytOka08CT_mZWveJ-TcWAIV1IN4vzs9ZQFH37oZrdAoASSlGFvIUZx0XobOKtV5x1aWxqXe7404SXn-e6kW2NauvT4G5C1wXvSrlu50QtZ
+lpn1SG5jU6ut0bRdyuY0Diop2foxLgjnWW0H5ecg0Yx4vpz9wu8WG8HvH9uHiJAx8Q2FVxu0Uw-0aSjR1GmiRnFGv-yB6BcyLS2mvKq2FiPYiRm9KQSnofVt
+mToMVmWE73XmuC2V
+}
+
+GCPEntityColoring(service_discovery)
+!define service_discovery(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, service_discovery_png, service_discovery)
+!define service_discovery(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, service_discovery_png, service_discovery)
+!define service_discoveryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, service_discovery_png, service_discovery)
+!define service_discoveryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, service_discovery_png, service_discovery)
+!else
 sprite $service_discovery <svg viewBox="0 0 24 24"><path d="m18.18 17.24a9 9 0 0 1-1.51 1.32l2.94 2.94a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41z" fill="#4285f4"/><path fill="#4285f4" d="M 14 15.5 L 9.19 15.5 L 13.19 7.5 L 10 7.5 L 10 6.5 L 14.81 6.5 L 10.81 14.5 L 14 14.5 Z"/><circle cx="14" cy="15" r="1.25" fill="#669df6"/><circle cx="10" cy="15" r="1.25" fill="#669df6"/><rect x="8" y="10.5" width="8" height="1" fill="#4285f4"/><path d="m12 4a7 7 0 1 1-7 7 7 7 0 0 1 7-7m0-2a9 9 0 1 0 9 9 9 9 0 0 0-9-9" fill="#669df6"/><circle cx="12" cy="11" r="1.25" fill="#669df6"/><circle cx="8" cy="11" r="1.25" fill="#669df6"/><circle cx="16" cy="11" r="1.25" fill="#669df6"/><circle cx="14" cy="7" r="1.25" fill="#669df6"/><circle cx="10" cy="7" r="1.25" fill="#669df6"/></svg>
 
 GCPEntityColoring(service_discovery)
@@ -9,3 +31,4 @@ GCPEntityColoring(service_discovery)
 !define service_discovery(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, service_discovery, service_discovery)
 !define service_discoveryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, service_discovery, service_discovery)
 !define service_discoveryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, service_discovery, service_discovery)
+!endif

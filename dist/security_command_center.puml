@@ -2,6 +2,25 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $security_command_center_png [128x128/16z] {
+xTdfcjii341X8P2Ex_-6kw-e91WPVqlz_WwSF4QT6LCvvV5uF1v5_abgo6zevTOwVHzCvHRLuOZz0rnbjzA0uuZzunFmkhTkN-A3_YUmSH3qMttG_mPCjntx
+yRB_3RZkEVQP_eP1AFQjFjE_V13KZcxtYNuOXFInp_VZ8EIFVRuV1Y5RJ_J382IEVRQV68Hmx8b-QX0gePxeXq6OElP4FpS8pX6iz2DyG__fF_sdVt1d7p3v
+ZG5tzJbCHt-Txkz3A-CVtDlxM96XOkpjGvMNAcpiuqNUACwsFYOJZ4rzcanfREbZCidOqCTacf7kZzScziZqYvnGhkxJv9H6eZ-zikWdHVu4Bksh1DhClx2c
+4cYYFxEmcF_2oiGsYNwLJlLE_CHrVP1EC-zOayvwdpxVnldn5x2mproVIBlPClV8-ayHJFLRiy_QB_edDD1l55J9YKy_di1-FYHtK1zIkK7peIOtC1-olw7l
+BppF__y__se-OFet_FoJjldn5-trhvW3fJkeNf4fxTtl_shkaTNkQz9hCYF-wRhszqyBswZCuPA__pnii_psXhwTmP1NbjyWsyHIDVCVp5Hwnl8hN67g_SVS
+xHDtqwKznfXyTbe_qSap9FFsIfLJAfdx2ushAN86SGVDBNSvmU9wajS7jAtBu_IkZq25vFsDME8Br9MhXpY14NKb7wTl_HRACZTF-GTmu6Nf-fagPmqseiaB
+ZS4gEKs7bxXL1ggFrbGvppdr7zcbEebxvwXm341u2DLW_7cL5SOnn37uWPsyEP_VTFgZK6HDlQPVPPMHx-Eo3h9zAB9E8TjNoMZ9FaroZ4mVbondlG-ILc2z
+NoHFb_keN45PwrFb6if2F-GJb1FzcCzJEDS7bIiLcE_7V5vnvljuaSiPitrCTgWmquScUwZple-hRDFWTHzCTbBdLHzNsQp1g0zDzYi6V-g35Rb5iOFO3_MD
+YlNzKD-iovsiFnwFn-CZ
+}
+
+GCPEntityColoring(security_command_center)
+!define security_command_center(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, security_command_center_png, security_command_center)
+!define security_command_center(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_command_center_png, security_command_center)
+!define security_command_centerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_command_center_png, security_command_center)
+!define security_command_centerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_command_center_png, security_command_center)
+!else
 sprite $security_command_center <svg viewBox="0 0 24 24"><g><path d="M13.31,6.85a5.23,5.23,0,0,1,3.75,3.75h3.53V5.24L13.31,2Z" fill="#4285f4"/><path d="M6.93,10.61a5.22,5.22,0,0,1,3.75-3.75V2L3.41,5.24v5.37Z" fill="#4285f4"/><path d="M10.69,17a5.23,5.23,0,0,1-3.75-3.75H3.63A12,12,0,0,0,10.69,22Z" fill="#4285f4"/><path d="M17.07,13.25A5.23,5.23,0,0,1,13.32,17v5a12,12,0,0,0,7.05-8.75Z" fill="#4285f4"/><circle cx="12" cy="11.92" r="2.63" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(security_command_center)
@@ -9,3 +28,4 @@ GCPEntityColoring(security_command_center)
 !define security_command_center(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_command_center, security_command_center)
 !define security_command_centerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_command_center, security_command_center)
 !define security_command_centerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_command_center, security_command_center)
+!endif

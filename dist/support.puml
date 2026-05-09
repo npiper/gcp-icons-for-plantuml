@@ -2,6 +2,19 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $support_png [128x128/16z] {
+xTVL0GCn30HH7LdU_WiEC_CckPa6tfSjAHwBgCjPcjKvz5ocPIPzuwjw-DGc1x_hoy7l-ZBmUxu-p-_xWzdNP_bZlvfzlPtlp7vUzjFiQyG-Fdx_Rhyn_p_n
+rNxx__CtYdd_2QFltp_z-xV__jXTWmpwic7NRyDHl_JxU3AYV30zcC77nyV7nyV7Vw1R_NXHVXyV7nyV7nyV7nyV7nyV7pzMVQUFZu-FZu-FZu-FZu-FZuzF
+H3G5
+}
+
+GCPEntityColoring(support)
+!define support(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, support_png, support)
+!define support(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, support_png, support)
+!define supportParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, support_png, support)
+!define supportParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, support_png, support)
+!else
 sprite $support <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <g transform="translate(2 1)"> <path d="m10-0.2c1.7 0 3 1.4 3 3s-1.3 3-3 3-3-1.3-3-3 1.4-3 3-3zm3.8 9.7v12h-3v-6h-1.6v6h-3v-12h-6.8v-3h21v3h-6.6z" fill="#5C85DE"/> <path d="m13.8 9.5v12h-3v-6h-0.8v-9h10.5v3h-6.7zm-3.8-3.7v-6c1.7 0 3 1.4 3 3s-1.3 3-3 3z" fill="#3367D6"/> </g> </svg>
 
 GCPEntityColoring(support)
@@ -9,3 +22,4 @@ GCPEntityColoring(support)
 !define support(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, support, support)
 !define supportParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, support, support)
 !define supportParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, support, support)
+!endif

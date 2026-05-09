@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $data_layers_png [128x128/16z] {
+xPS7ajqW40LXYFU_yEQWPwCgjeVwED0Lx4sQtoqK27yNXyFXS3WS3XRtZdyXR2EcD-AcwMRfZJq9B5s8s-Hn0h-y4ZV8xqaGqmrnWxmcY1lEl60Fb3Vv3qd0
+vNM-WGH8NaNJ1o4-8i5lDvpl-I7G15nUvWz-lXQpN-LrFah0vKVpqIhWyZeV9E3ou_bW5M1vdJ_nw-lbTJvDmELrFat0vNK-JS3bTRu_0P18bblB9lFz2UOl
+vLJw2oM1UanUiTRVgCQFmUL3Rls3bWDDmELhwryqd83BjtwXBKiGqm_bUGA__5o290ccvTE4_6I2D940oCC4SVRzUb9U4u33JgqMbPzAC3ucMu0gFvzWV0M2
+128_aO38Zp_nlBmck9S72KH-8W6K7wy2aPzDC5vAA47jhV-Grkj8dYJ8hIDQXlAQe7PC1VAIGEHX0hE04Nb4jS29fNKdhKI7_Gk-_lM5511MIfKF0CVNKYAJ
+_wJXwPya9Fz9QU3-ypaU9KZrIcRttrol92fVZ3v_h5GzpXnPvHtFNv10vMin_lu14WpayViNI33ykFpzSxoQW3nu_oO9KgaNohhzXnuttUUlLygg_PUEjt1F
+7AJY-y_nlUn7An3il-Skvtj00YxlJy3b_GcSylu4Ndb_0eSyl1LhWYfjm4sN9m0tykK9q9dd2RZymn9OgK2U9rWlpvSoF_FSYSlpLO1_Qts2zV90ZYzxdW3A
+hq_0pxm_0RzBAlJExdpK-HCGUSv0roNlJ-2JzoT0ydxIBdbDmENz92Y_Fa4fCMmXxP7NdRr7tay6ybiv70w7m-5mU0O
+}
+
+GCPEntityColoring(data_layers)
+!define data_layers(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, data_layers_png, data_layers)
+!define data_layers(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, data_layers_png, data_layers)
+!define data_layersParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, data_layers_png, data_layers)
+!define data_layersParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, data_layers_png, data_layers)
+!else
 sprite $data_layers <svg viewBox="0 0 24 24"><rect x="11.25" y="4.1" width="1.5" height="4.64" fill="#aecbfa"/><path d="M12,20.8,2.25,14.32,12,7.84l9.75,6.48ZM5,14.32,12,19l7-4.68L12,9.64Z" fill="#669df6"/><path d="M12,16.16,2.25,9.68,12,3.2l9.75,6.48ZM5,9.68l7,4.68,7-4.68L12,5Z" fill="#aecbfa"/><path d="M18.26,12,12,7.84,5.74,12,12,16.16Z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(data_layers)
@@ -9,3 +26,4 @@ GCPEntityColoring(data_layers)
 !define data_layers(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, data_layers, data_layers)
 !define data_layersParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, data_layers, data_layers)
 !define data_layersParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, data_layers, data_layers)
+!endif

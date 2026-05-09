@@ -2,6 +2,27 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $datashare_png [128x128/16z] {
+xTkBblEs2eRXZH2ytFyDxxRHgbU6LMU8XggdVF_vu3ooF376SlvNoIUVVFB99p9KfxaxW3__Wr-n-IV9vWHN0lxOTsktrPo5FWK_ue_faUHplanFzabV4txK
+bvdmi_vC-5bVatxM5q_wMLyX_aBVadxOTwBRbw6_Hgfyiw_EYiyIt-kBGwm0MZZshVv8DMk-v0VHu-SN12e3eDk7fRjviBOQzxmIlRxnq7NL4_9METxionBb
+shtN4o0HhVu26Mawh33zFRxnzN_9m-VEdzs-4y7C1pZanhTk7oBG9DpxyvH_TFujdryedFrwV4kSaZPBwVP7Uh_1wpEmqU9dqBvSrI6tldJxkaJc66hmRG6o
+xlhpEmfmRVGYqEldaWBoqX_Gu-SPMC4pdwED_eewLsQbx-hrLmSFk6cn-sZnzpFWh_6dflRlj4_g08_xUhsSmNaVdbxGuBp_lAaOSDX7R-v-dV63V7K-3E0z
+ty7dsFAV1f1ENxpX1u3hXd_JdyWQ0r3pVmlObX_S35nqcXDmvTRd6k267vYykWy-T4upSxCx_xhOi2r_TQprPD-6UfhAkh-2wm_ywreUDlq0fkpxrm36Zhy2
+DlRzzMhOXfycOTENX--x_WhWSspukTch-pa0flA-xydVl_A3DG_ozlvJy6lzBq3WRbF76FB8It_KZt-z_sLb7LfU-lwYsUsv0VFIdwdPhKJQV75sAf3HuRiv
+HDhzKWGwV8XKVgfHQF2tgkZAf6d_WR5t4ThXimfuvm3glisfqh_yL_StuJ5I_tlOdwJ5v-F-IDtdQT-V3eR3SP_vfVKBwF5bZ24Ldr5z1ABk3-CHruAFbFlV
+uBtrLq2_xtzTwW_WlBt-Ydtd1ox51v2WlluQf07S-d5RDuPEfzB_Mgxdh7nNaYU5kYb37_slknVNNsFrKMDT42BV-UiOL59SVzKlntT-xmTXqk1dq8Y0MlyR
+DdxiU_9MIoYroW-kyZC_Ty1h0hJcHm0sVk0BaRXPzVCGzlT_try1S1rxFcd-dGZ6Ll_hSyZErr-G-olPwNy1WjNzYiWxxpyhlFzMgBM_4QmKpp_pYGzcL_jt
+x-UAuYeYwbmRDIt0rv__kNvwtHGvpRv0lFNy5Pr-7W1aFcTs-YiJM3W-2dSWclsrYbE_c-hq-YiYvL9cjFZxcHpsSnJE-ZbYSDRFKJZivqpWl9z7SDRFKGyu
+xXTMe8_vQmW1dFHpHAVpo77__EUFwf-_OllpLvzyyiadd_m2
+}
+
+GCPEntityColoring(datashare)
+!define datashare(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, datashare_png, datashare)
+!define datashare(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, datashare_png, datashare)
+!define datashareParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, datashare_png, datashare)
+!define datashareParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, datashare_png, datashare)
+!else
 sprite $datashare <svg viewBox="0 0 24 24"><path d="M19.45,18.47a1.12,1.12,0,1,1,1.15-1.09,1.13,1.13,0,0,1-1.15,1.09Zm0,1A2.08,2.08,0,1,0,18,18.84a2.08,2.08,0,0,0,1.47.61Z" fill="#4285f4"/><path d="M19.46,4.33A2.07,2.07,0,0,0,18,7.87a2,2,0,0,0,1.47.6h0a2.08,2.08,0,1,0,0-4.15Zm.8,2.86a1.08,1.08,0,0,1-.81.31A1.11,1.11,0,1,1,20.6,6.42,1.14,1.14,0,0,1,20.26,7.19Z" fill="#4285f4"/><path d="M15.9,10h-.05v.95h.07a1.11,1.11,0,0,1,0,2.22h-.07v1h.07a2.08,2.08,0,1,0,0-4.15Z" fill="#4285f4"/><path d="M11.32,2C6.43,2,2.46,4,2.46,6.4s4,4.41,8.86,4.41h.1V2Z" fill="#4285f4"/><path d="M11.32,12.52a14,14,0,0,1-6.27-1.25A4.45,4.45,0,0,1,2.61,8.89H2.46V12h0c0,2.43,4,4.4,8.86,4.4h.1v-3.9Z" fill="#4285f4"/><path d="m11.32 18.1a14 14 0 0 1-6.27-1.24 4.45 4.45 0 0 1-2.44-2.38h-0.15v3.12c0 2.43 4 4.4 8.86 4.4h0.1v-3.9z" fill="#4285f4"/><rect x="13.64" y="2" width="2.22" height="20" fill="#669df6"/></svg>
 
 GCPEntityColoring(datashare)
@@ -9,3 +30,4 @@ GCPEntityColoring(datashare)
 !define datashare(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, datashare, datashare)
 !define datashareParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, datashare, datashare)
 !define datashareParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, datashare, datashare)
+!endif

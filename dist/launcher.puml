@@ -2,6 +2,26 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $launcher_png [128x128/16z] {
+xDX7biGm409GIwAA-vzuSXwnwG0JcgrvxplRfUFqt7BBGfIVHKJv8f7acoHoV1L98iO_-qICV_Q92F_k4n7-tIVC_5UVCFDVVSB8xtp2nkzzmiGhdx3msYSi
+lFO92wzzmi9hdx3msYSilFO92wzzmi9hdx3msYSilFO92wzzmi9hdx3msYSSVD6m0wNJf8x1hwmFLATypF6yUQmE-FDZOxbzVAcCilfhKpBwsBPy_hvcy-U-
+jam-LAyz_bIzvV67wWsFhuiM7xhOOR_-kT__uFupFt_-zq_-_Pl__kI_l_d_Z_p_L_x_C___dPy_ylFNEct-BCFytzIPXs40fywuc8zJ_0wl_wpB-UCKVnoN
+Y_QlT_hlspMtz5X240W7KSJzB_ZSvpkqOqq9p_4vuM-hm6vXMjTOWVN-NxTMaBp7zwpa-Is-buTKZXmJRW0__9h_aKFo-MwTLo0__8Odwq5UCBDg_pdIt5yP
+sUxeuN0LcW2q-cJvVr7anlZ0Lse0hRw-U4yOoHp2Q7N-C1Sm1aaVWtC3MFN9slWm3KGFmPLL8Ak-ll5X6kWn-609mAflHZvE0q5V5xNvbmRv_PYVkmI0JmqW
+rQU0Fs_a7yOD8DLdW3-k3B3ue5gPVox0Vwy1m0-L1FaukYB-NVxRGwbxVfH_EHI86p2f0P_DzRNMxQSvYjxO_1rNNrjdljtUSfvQtV8bo4-E7sB0zYf3VBGx
+1tovlMKODU2ukoY_NtyQDy3lH26ON0Fm-_KjmvwFUyT_okzOVcw0RQVv3Ny4-Ozykx_csMG6VAY-0VZu2-Z0PmPyKDS1NnBtxEq_EkTRUFKVos_aVzwbbTz_
+TS3Np3rttnFXHwqcuASQ7NlGJlcR_8l8JmomJJDb_B79xxck5E0FP831y1FmoVKBn8SFoEJtXFnmVz60Zlanl09-otLwhDhBDC1FzbgjsijTPtxFjjgApLHz
+yTCzMS0VDVbNkYcdPxw1EPklrt8FV-9dVa_tEa__6IEkiAAAPxuacitW0E1yNFvsbJedVa_mem0EvUS6HBva-NBYIxxRRp7xEN-l02-qfDixN_ByzixNGhVT
+zktp-eilG2VoSmCAXn-uV8xIkAK-IfWRNqlZZleWJJT-RTvLs7uuX9dyt02h3xBwyk8uyi7_Agy7lphnxNN-uFBpJlXNVSddhlVt-bu_0G
+}
+
+GCPEntityColoring(launcher)
+!define launcher(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, launcher_png, launcher)
+!define launcher(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, launcher_png, launcher)
+!define launcherParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, launcher_png, launcher)
+!define launcherParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, launcher_png, launcher)
+!else
 sprite $launcher <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <g transform="translate(1 1)"> <path fill="#5C85DE" d="M 8.8 20.8 L 13.2 20.8 L 13.2 19.2 L 8.8 19.2 Z"/><path fill="#3367D6" d="M 11 20.8 L 13.2 20.8 L 13.2 19.2 L 11 19.2 Z"/><path fill="#5C85DE" d="M 18.7 22.2 L 21.6 14.1 L 17.7 11.9 L 15.3 19.3 L 16.7 22.2 Z"/><path fill="#3367D6" d="M 17.7 11.9 L 15.3 19.3 L 16.7 22.2 Z"/><path fill="#85A4E6" d="M 3.3 22.2 L 0.4 14.1 L 4.3 11.9 L 6.7 19.3 L 5.3 22.2 Z"/><path fill="#5C85DE" d="M 4.3 11.9 L 6.7 19.3 L 5.3 22.2 Z"/><path d="m11 10.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm0-10.7-5.2 5.2v5.5l2.3 8h5.8l2.3-8v-5.5l-5.2-5.2z" fill="#85A4E6"/> <path d="M11-0.2v5.8c1.4,0,2.5,1.1,2.5,2.5s-1.1,2.5-2.5,2.5v8h2.9l2.3-8V5 L11-0.2z" fill="#5C85DE"/> </g> </svg>
 
 GCPEntityColoring(launcher)
@@ -9,3 +29,4 @@ GCPEntityColoring(launcher)
 !define launcher(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, launcher, launcher)
 !define launcherParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, launcher, launcher)
 !define launcherParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, launcher, launcher)
+!endif

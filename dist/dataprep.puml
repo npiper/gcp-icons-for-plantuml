@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $dataprep_png [128x128/16z] {
+xTk7hk8m44PXJ_bFxlk_y1O3mXB9ia7OR9bpU_qeAPCWshcgggegl_KPthPhVCZ_wdtIxvLV_hpABx_yyitSxT7lRNlfdReB0CMUlz_cx-DJN99ilMzYo9Rx
+edVxiDeF0VBRKg1Sx7Tq-9orlW7O-8KlzHtGU6CebleXo7OhWVoih_YlRly64ErI0DXQF-_Bl0EehVMDheQ70B1r_hZp4vSFiNx_5zoBJ-n_BH4Wv6svtxD8
+PVY9-OTryv_lP3N_lbZvvPVl4Mw_m3towzh6YHI_jxr74ehZFQ8OjhzdYgUySqkoeua4lbvgqtD-IFR8Qwflz9GNHxl7OoWroS_xrOwT1SQupeCsnxVEZyFt
+pjMtDiqFzQjtxOAD2OWspq-0SKt3snY0JVPrzrdlhx_-n_T_thI78y1FBVyvUVblkg__VhJ-o-RvHazniFrBNNyyoM-nSxvlJ08Gi_mMp_P_chV_wLaY8JZU
+_qjJ_76-2M-7UMI-E7_Ok-U_BKxaDV-UhVpoopVRyNkRXd8EdW8Kzlpycq_WaqiYHt-dVdZvxYHkIST-RuAVufwqslVEf_Mn01IB_Sx7C1cjzGqWnoNHb_eE
+uCDNYgL-2B3nriZ_odT0Faw-iNxvqyFvYCNhNuud1nRwu-D_7WBaI_tnUB3psTRwumNe_7g_kNJH5UltlprFIUbjmVnn_lWlX-9_c7_BBx_yyiilVzluFvz_
+rABtulElgggggky
+}
+
+GCPEntityColoring(dataprep)
+!define dataprep(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, dataprep_png, dataprep)
+!define dataprep(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dataprep_png, dataprep)
+!define dataprepParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataprep_png, dataprep)
+!define dataprepParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataprep_png, dataprep)
+!else
 sprite $dataprep <svg viewBox="0 0 24 24"><g><path d="M10.48,11a.91.91,0,1,1-.91.91.91.91,0,0,1,.91-.91Zm0-.8a1.71,1.71,0,1,0,1.7,1.71,1.7,1.7,0,0,0-1.7-1.71Z" fill="#669df6"/><path d="M4.57,11a.91.91,0,1,1-.91.91A.91.91,0,0,1,4.57,11Zm0-.8a1.71,1.71,0,1,0,1.7,1.71,1.7,1.7,0,0,0-1.7-1.71Z" fill="#669df6"/><path d="M7.61,16.31a.91.91,0,0,1,0,1.82.91.91,0,1,1,0-1.82Zm0-.79a1.71,1.71,0,1,0,1.2.5,1.7,1.7,0,0,0-1.2-.5Z" fill="#669df6"/><path d="M7.61,5.79a.91.91,0,1,1-.94.91.92.92,0,0,1,.94-.91Zm0-.8a1.71,1.71,0,1,0,1.2.5A1.7,1.7,0,0,0,7.61,5Z" fill="#669df6"/><rect x="10.66" y="2" width="1.68" height="20" fill="#4285f4"/><path d="M16.25,4.87H11.74a.37.37,0,0,0-.3.4V8.09a.36.36,0,0,0,.3.39h4.51a.36.36,0,0,0,.31-.39V5.28a.37.37,0,0,0-.31-.41Z" fill="#4285f4"/><path d="M20.57,10.16H12.25c-.31,0-.56.18-.56.39v2.82c0,.22.25.4.56.4h8.32c.31,0,.56-.19.56-.4V10.55C21.13,10.33,20.88,10.16,20.57,10.16Z" fill="#4285f4"/><path d="M14.66,15.44H11.13c-.13,0-.23.18-.23.39v2.82c0,.22.1.39.23.39h3.53c.13,0,.24-.18.24-.39V15.83C14.89,15.61,14.79,15.44,14.66,15.44Z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(dataprep)
@@ -9,3 +26,4 @@ GCPEntityColoring(dataprep)
 !define dataprep(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dataprep, dataprep)
 !define dataprepParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataprep, dataprep)
 !define dataprepParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataprep, dataprep)
+!endif

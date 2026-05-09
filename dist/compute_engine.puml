@@ -2,6 +2,19 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $compute_engine_png [128x128/16z] {
+xTa5RiDG44NHcfxU_ZTSRYTcL_cTATmh_dGYYkbXFo8YwgBDqOEbJL9q8yNWvj8H_vxmyV7nyV6dA0Rx6DnSUg_V3StwqJu-FZv-ftbJkz_lHVZu-FZu1tMR
+_d2Sj_TlrzvthUzQtxM-QttN-gxrNUkxrdS3l-ld3TTzd_Zzeas_rxpfikyptulQ-gxrNUkxrdUjBvNwUgxGrsjbljuhylMPexpxJobo_lL7iz9zBKhsjIhL
+rqQ9lZPByxLJag_TKdmTbE3hi6_tTTANVTv_uEFZuu-BsldJ8hx_uUFZur_BKGpsCRYvT8h1SXyV7nyV7n-_FY8YUW8
+}
+
+GCPEntityColoring(compute_engine)
+!define compute_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, compute_engine_png, compute_engine)
+!define compute_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, compute_engine_png, compute_engine)
+!define compute_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, compute_engine_png, compute_engine)
+!define compute_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, compute_engine_png, compute_engine)
+!else
 sprite $compute_engine <svg viewBox="0 0 24 24"><g><rect x="9" y="9" width="6" height="6" fill="#aecbfa"/><rect x="11" y="2" width="2" height="4" fill="#669df6"/><rect x="7" y="2" width="2" height="4" fill="#669df6"/><rect x="15" y="2" width="2" height="4" fill="#669df6"/><rect x="11" y="18" width="2" height="4" fill="#4285f4"/><rect x="7" y="18" width="2" height="4" fill="#4285f4"/><rect x="15" y="18" width="2" height="4" fill="#4285f4"/><rect transform="translate(8 32) rotate(-90)" x="19" y="10" width="2" height="4" fill="#4285f4"/><rect transform="translate(4 36) rotate(-90)" x="19" y="14" width="2" height="4" fill="#4285f4"/><rect transform="translate(12 28) rotate(-90)" x="19" y="6" width="2" height="4" fill="#4285f4"/><rect transform="translate(-8 16) rotate(-90)" x="3" y="10" width="2" height="4" fill="#669df6"/><rect transform="translate(-12 20) rotate(-90)" x="3" y="14" width="2" height="4" fill="#669df6"/><rect transform="translate(-4 12) rotate(-90)" x="3" y="6" width="2" height="4" fill="#669df6"/><path d="M5,5V19H19V5ZM17,17H7V7H17Z" fill="#aecbfa"/><path fill="#669df6" d="M 9 15 L 15 15 L 12 12 Z"/><path fill="#4285f4" d="M 12 12 L 15 15 L 15 9 Z"/></g></svg>
 
 GCPEntityColoring(compute_engine)
@@ -9,3 +22,4 @@ GCPEntityColoring(compute_engine)
 !define compute_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, compute_engine, compute_engine)
 !define compute_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, compute_engine, compute_engine)
 !define compute_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, compute_engine, compute_engine)
+!endif

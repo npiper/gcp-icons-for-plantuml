@@ -2,6 +2,25 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $app_engine_png [128x128/16z] {
+xPc9igGW34Nxtf3W_t_nj6-xfOQohK6fXJFhSpiGDWslYqmcaybaCY69WNhtYE0mlQtwy77LZoymI8_umcra-5T6Xd-50yE_KaQ6VsLO-0VsG8JmCU4N61B-
+eGqG6nxNqoFSO_rh_H-VzXSlnOmapOfxUOq5Znid04WIm00tpVY76V6Wd3JIDf1F5G4qMieJHG19QqBoziYVmVliCDefD0ofl226w0NvX5u7abDtwsbKcC7z
+c2JlrCijiB_YFZs9yz51tgLlZo_SD0h0J-j5ckZcJyBwP078L7z-CNfNdxpMLpfNdxnwVUVgN-ukVLi_UGCaeMcmQBZq2q2pyK4ZoRytBzHQaYBt6_lj-PR4
+gb-gxSkCRk4daiE2R_rIAtOtiL_lo_I2lhofaTpL9VnahXVV1M0QjUk0Q3_ex-3VNojL0S3sDXYkoSqZ8DFAKK_3PjqjNm606a1XY_323-Ki7XxXkvvyQ1Do
+tnon-alM0JpYeoA09RxO-IMJZeU0k1g0FFfN2l5XIalrs3T_qhFL0BKgHhgiA5NLJbRvCQK5jlnaCXxhyWQ9VrCpzrGFZu_ye0xec3h0ra_i_Qri5QFjLxJF
+_Jpr1w_xCTPFo7Mf_VdwB_-b_l_bJ_l_TNzOU_nlZyXMckFVujoFs53apsq6jSXX_gCTnx_0-VGJtbv8TsNQBa3Cvkt6y3k7JFoWFeAfJzz8fZ_oblL_dmJG
+ybUwhF_2sWkmKFHht_UV_5KIjURwfPgYriTFgYT9lzHY6ygttfD2zmk0z6-YcEonwEspH_NpjfR_Y_3o9VSlkzw-NzsI8FdN5A9--RwKLVyFgCawVe4dAHMN
+LIKfIRQaR_P5KowZrgqzgCix9o2OvPuibYeqfUA655YU_89vhExmpK4JlTDlvp55ScK7FaqiabsZBpvAyCCszDrvE2t1FWMDxljjxQqcG7RfxoY0e3O0JNBf
+UmCxmYzCIDyVa4EsNmGvH2zW7BVzfb7MXiPXsx_tsnK39d8Q7zxzbvfQRfu2bF_4FPbC9fF9P3APJ2QJoJy
+}
+
+GCPEntityColoring(app_engine)
+!define app_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, app_engine_png, app_engine)
+!define app_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, app_engine_png, app_engine)
+!define app_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, app_engine_png, app_engine)
+!define app_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, app_engine_png, app_engine)
+!else
 sprite $app_engine <svg viewBox="0 0 24 24"><g><path d="M14.3,10l-1.22,1.22A1.71,1.71,0,0,1,12,14.23a1.74,1.74,0,0,1-1.33-.64L9.45,14.81A3.43,3.43,0,1,0,14.3,10Z" fill="#4285f4"/><path d="M12,6.26a6.25,6.25,0,1,0,6.25,6.25A6.25,6.25,0,0,0,12,6.26M12,17a4.45,4.45,0,1,1,4.44-4.44A4.44,4.44,0,0,1,12,17" fill="#aecbfa"/><path d="M21.62,11.9l-2.56-.81a7.1,7.1,0,0,1,.17,1.53,7.62,7.62,0,0,1-.08,1.08h2.47a.44.44,0,0,0,.38-.42v-1a.44.44,0,0,0-.38-.42" fill="#669df6"/><path d="M12,5.52a7.48,7.48,0,0,1,1.5.15l-.92-2.55c-.07-.22-.21-.38-.42-.38h-.38a.45.45,0,0,0-.42.38l-.8,2.54A7.64,7.64,0,0,1,12,5.52" fill="#669df6"/><path d="M4.77,12.62a7.1,7.1,0,0,1,.17-1.53l-2.56.81a.44.44,0,0,0-.38.42v1a.44.44,0,0,0,.38.42H4.85a7.62,7.62,0,0,1-.08-1.08" fill="#669df6"/><path d="M12,10a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,10Zm0,3.75a1.25,1.25,0,1,1,1.25-1.25A1.25,1.25,0,0,1,12,13.76Z" fill="#aecbfa"/></g></svg>
 
 GCPEntityColoring(app_engine)
@@ -9,3 +28,4 @@ GCPEntityColoring(app_engine)
 !define app_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, app_engine, app_engine)
 !define app_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, app_engine, app_engine)
 !define app_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, app_engine, app_engine)
+!endif

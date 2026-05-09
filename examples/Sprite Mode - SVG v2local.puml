@@ -1,0 +1,30 @@
+@startuml Sprite Mode - SVG (v2 local)
+'Copyright (c) 2026 Neil Piper (fork maintainer)
+'Copyright (c) 2020 David Holsgrove
+'SPDX-License-Identifier: MIT (For details, see https://github.com/npiper/gcp-icons-for-plantuml/blob/master/LICENSE-CODE)
+
+' SVG sprite mode (default) - requires plantuml >= 1.2026.x with SAX SVG parser
+' No !define GCP_USE_PNG needed - SVG is the default
+
+!pragma svgparser sax
+!include ../dist/GCPCommon.puml
+!include ../dist/cloud_run.puml
+!include ../dist/cloud_build.puml
+!include ../dist/artifact_registry.puml
+!include ../dist/cloud_deploy.puml
+
+left to right direction
+
+actor "Developer" as dev
+
+cloud_build(build, "Cloud Build", "CI Pipeline", "Builds container image on commit")
+artifact_registry(registry, "Artifact Registry", "Container Registry", "Stores versioned images")
+cloud_deploy(deploy, "Cloud Deploy", "CD Pipeline", "Manages rollout to environments")
+cloud_run(service, "Cloud Run", "Serverless", "Runs container workload")
+
+dev --> build : git push
+build --> registry : push image
+registry --> deploy : trigger release
+deploy --> service : deploy revision
+
+@enduml

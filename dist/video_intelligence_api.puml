@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $video_intelligence_api_png [128x128/16z] {
+xThdpXiX48LXfZ6-_njEt_XOGknnOKcPzsymJpxS4BXTNrLLLLLLLLLLbJ2Hmr_WDVfv4UqePkFbULywKnYCt-33r1vR_6X7Etny1lH27sj7liVtyuV85DBt
+_FlZBPxtDPFr-PSWxtlUtlVX6M1yHF96-uhPU7wBPtpBlB5-m2YG1iy0xSStdVAH64fXW-yXd_lQl_6yhwC1Ky5Yzg-UttZUZy4CWsU0zIKEdVB7AnZewpE-
+vi6JlfyF8NnSUzx72SImZZdhImUTynrsEN6lFwISRmayuUFZjS_onwAF_02TzCF6dovyWczwpbUmO4NVz3Dlf2znTF_pUr_aSrcyxzzUzwNthRxlzMMq5V3h
+_1X-rCGId_-mbwly6E_ucY_o9RWPsogVtNDRRF6juNVYl0K-_4rYfxK5VZI-9RxkyB7TlcprmzfUl-tqSVNrjC_x-0qGApx_DCZLbqMV_uFDFBS3UDtdTryE
+NpyxzXzo-VwZ-N3rVSV-C-J8hjn_nzxzV-kRVOiBVV7VAR402p__8fW5uFsTvm-Pl0zn2n2FZNo9fFtH0dISzQNp9yzyqiS9rFoUTImQuSFPuwVF7uNmyGZi
+m-UlrcY_MIRbpnV0NZz_rfwCZybdpzyZ2P-_V_0syEV_kqp2XtIoFpox1fSXa4_v8PXsJ5-wV_AaVVu6TCNz5ty3lER-Zxy1tt7_YPT_6-v_yHSGbzz_u-hB
+__Vx2vpQjlXEZPTLlp_gpE-F0dm-PH9kUCFsLrLLLLLLLLLLLNq5
+}
+
+GCPEntityColoring(video_intelligence_api)
+!define video_intelligence_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, video_intelligence_api_png, video_intelligence_api)
+!define video_intelligence_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, video_intelligence_api_png, video_intelligence_api)
+!define video_intelligence_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, video_intelligence_api_png, video_intelligence_api)
+!define video_intelligence_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, video_intelligence_api_png, video_intelligence_api)
+!else
 sprite $video_intelligence_api <svg viewBox="0 0 24 24"><g><path fill="#669df6" d="M 16.33 4.83 L 10.81 4.83 L 12.28 7.16 L 14.33 7.16 L 14.33 8.49 L 11.41 8.49 L 9.08 4.83 L 2.01 4.83 L 2.01 9.16 L 4 9.16 L 5.26 6.83 L 7.83 6.83 L 8.69 8.16 L 6.12 8.16 L 4.86 10.49 L 2.01 10.49 L 2.01 13.08 L 4.86 13.08 L 6.12 15.49 L 8.69 15.49 L 7.83 16.83 L 5.26 16.83 L 4 14.49 L 2.01 14.49 L 2.01 18.83 L 9.08 18.83 L 11.41 15.16 L 14.33 15.16 L 14.33 16.49 L 12.28 16.49 L 10.81 18.83 L 16.33 18.83 L 16.33 12.49 L 9.92 12.49 L 9.09 13.83 L 7.25 13.83 L 8.51 11.83 L 7.25 9.83 L 9.09 9.83 L 9.89 11.16 L 16.33 11.16 Z"/><path fill="#4285f4" d="M 22 5.93 L 18 8.84 L 18 14.94 L 22 17.89 Z"/></g></svg>
 
 GCPEntityColoring(video_intelligence_api)
@@ -9,3 +26,4 @@ GCPEntityColoring(video_intelligence_api)
 !define video_intelligence_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, video_intelligence_api, video_intelligence_api)
 !define video_intelligence_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, video_intelligence_api, video_intelligence_api)
 !define video_intelligence_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, video_intelligence_api, video_intelligence_api)
+!endif

@@ -2,6 +2,29 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $apigee_api_platform_png [128x128/16z] {
+xPlROeCw30HhMzBc_t_ut0_ffeLH0e_iQ-lCWF4TldPovywTEtV6t_cWr9mJoc7colel6MkqYqL93qbwg69-21zHbgpiA8pGF-H_ex-J7oZCh9_9Ya75DlOp
+KiqJr-w9es9fS3CmSSYgW-pVpMbqZnHjV6GTPkqKq-CeoYO-0LyPlnQJ7eTfre7H-m9fT10WF0iGNl_cLU3zki-CYApAGu7KAxmoi_IGtde6bcDY_d_7nZeI
+I3azvbQip01QmN3wEEYIClRmjRnOsLz7k_BdGRzW0WbNkAJU8p3hcHpm3vNn4o-jtsxhTu49bszu432y_VgkWAfL-niU10Y_2JHkG5ZTzmJyvkyNM-8sM5ko
+-P2K2B-bdWBym-Eh9w07uRTCKGMijCid0SPxIj07fOtmAC1upnAq0B_zBE0z-wGouwaA_Fp2p5VyuZBQIenV_OnFcGTuV0207r-ST7w-KqGJ-Nqy29paCxul
+K5r-Tl4kqEO_1hI_1lu3WMUf0QFlGFo10BOO2OQ_N7ryNo2W_uF-7_0i8Eh_1mp_W0U11UCVZF-0Pm5PzTFaFnZV5_2IYixyRo9Utu82IvqLG1mBf8mUQuo_
+fCSACr0Uuwkv_9a7U2ddwxRBWS1ISw8G9h2F_oatQrzWgTr9rQv0xlm-_eFZ1TEAFO4KxkI4P0A6RyyIqmGCJ-qdx0uuVYjB2HU0UujLiBXjia2gkOLI9W3u
+ja2gEy-UCXhWcmAf_WvIcG3WUmBQMM3pj5oCPm6VPujA6XFnBA0tVoK5-BQ0uTlhd2N6zmNqy6XGiI74zmL-_XRpJ-1vFrrSIe3l9w_Ynmdy-VkloZY1F_ly
+gGe407-k_QcA1FhuVl_ZU1PWVB__TJm8CFxC-5D50enVdu-_iq00yT8wC_yW0SQVcd-H0EDFpJy_4GZ7dvz_ky02_9GC__7w0vOqUp7yHUil5-XN_bNhJnU8
+NlEHhbj_ky3eDPyBznzS83fZfzQL-oykCBZzAA_UVmfeWyqjiXJY-MoLJyZMzVkFVBeNSFadzryJAe0Ew5X0sTjP2Qh-q_llUBx1vtFNdp_K5k3NXUSl_VED
+AVYbi-TFSH6Vpz-kv_Fvusd-aDK_PC7fCzS_F_zzVDLyXy_dqv3vYcy8ZDf2_Tz2l1pV4PXml0O7T8070UZ_uGqHnhF0uFzxygkBbxgJwwmjtAQrclYCx0bC
+cm1Y1MZ0_spTJazWj2R0PG8jV4zWP6r9QDP70ajoV4V0yJMRwsUjlHRg-5U11Q-ijNVFbAwwwXN_kq3EetUvHt_FLQhjZVSPHyiC5wZSYetfz5plZQjwg3Ap
+jD4DlojGbH6HsNbpsbFm8h7XNO2JNvYn2LW0JmACxml8y7s1p9Exdx0yMVZEU3SXxTCrSOJdhmQu3hH3pt4aNdi9AyQPlnWqFcKPKGdVR7GpyyU7D9sB62ih
+uTgxcL7_VqTa7nAXGcm6kQZOzHzIyMTRT-xSkNFdJm
+}
+
+GCPEntityColoring(apigee_api_platform)
+!define apigee_api_platform(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, apigee_api_platform_png, apigee_api_platform)
+!define apigee_api_platform(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, apigee_api_platform_png, apigee_api_platform)
+!define apigee_api_platformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, apigee_api_platform_png, apigee_api_platform)
+!define apigee_api_platformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, apigee_api_platform_png, apigee_api_platform)
+!else
 sprite $apigee_api_platform <svg viewBox="0 0 24 24"><g><path d="M5.2,12l1.32-1.32L4.73,8.89a2.94,2.94,0,0,1,2.08-5,2.92,2.92,0,0,1,2.07.86l1.8,1.79L12,5.2,10.21,3.41a4.81,4.81,0,1,0-6.8,6.8Z" fill="#669df6"/><path d="M18.8,12l-1.32,1.32,1.79,1.8a2.94,2.94,0,0,1-4.16,4.15l-1.79-1.79L12,18.8l1.79,1.79a4.81,4.81,0,1,0,6.8-6.8Z" fill="#669df6"/><path d="m8.89 19.27a2.94 2.94 0 0 1-4.16-4.16l1.79-1.79 4.16 4.16zm6.23-14.54a2.93 2.93 0 0 1 5 2.08 3 3 0 0 1-0.86 2.08l-1.79 1.79-4.15-4.16zm-3.12 10.46a3.2 3.2 0 0 1-3.19-3.19 3.21 3.21 0 0 1 3.19-3.19 3.21 3.21 0 0 1 3.19 3.19 3.2 3.2 0 0 1-3.19 3.19zm6.8-3.19 1.79-1.79a4.81 4.81 0 1 0-6.8-6.8l-10.38 10.38a4.81 4.81 0 1 0 6.8 6.8l1.79-1.79z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(apigee_api_platform)
@@ -9,3 +32,4 @@ GCPEntityColoring(apigee_api_platform)
 !define apigee_api_platform(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, apigee_api_platform, apigee_api_platform)
 !define apigee_api_platformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, apigee_api_platform, apigee_api_platform)
 !define apigee_api_platformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, apigee_api_platform, apigee_api_platform)
+!endif

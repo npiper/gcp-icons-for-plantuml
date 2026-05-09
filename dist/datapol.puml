@@ -2,6 +2,24 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $datapol_png [128x128/16z] {
+xPjT3XiX48E3FJ3S_yBzRwb2wjL4Lid3VkyEyiGh8GCFoStDpSrDUy8kqG34tn0qIpJS0DmIxMN7AT4qS0SmIZHy2Pf1KhU_W4sY8OMRgiGGleLHKhTF0Wv9
+tVu213T0XI5yYyYTsKdV0AWPSoCfGJFON-HyflC2etso5-pN1m2GnG44B_6kNnq_wPp_SCw_dh_Obf-3D7w0WBQVEs6O_e82iCT6ZolxlW5u99f2aWeIHmJX
+acZ0Vs2JQ9f8aazIZw1HeXbl94b8gaJskfS6b_sMSqRT2s6oFtBE4JyW5jUVxSPxuSlvYyo20HkvrkU1vIEN_HEznzhU90witvVzVc1vBFkdmnS7bkVdX8y7
+ghxeumSvSrn8Z6KVyGV-0FqgVCJ6mzcrZLwM6Aj6CkeI6EqJpIkfRtPz4WrV0zGbpMYVT4aqf1X0MUAi6j4i4Wsze6gVYfulk6ewd5rRbhiEMgVVgrKZ0KFu
+n02wk-hIn6xVE02KkywaisjhzVaFNc6isZXcpYV2O7z1IUJEyCN_UW3n0eB6hgtWfI3nHD0aqG0oINM9wn-0TSjK7u1Hej5UwX9F1AqI3RZJeIMMyEsz6NyH
+ERG6JnIcBtwCyOinayMkx-5W6Ee7L__G7mS8G_tawf_6um0yq01zOWJ7QjyD_NkrW7th_04Gac84EtVWF7_H4SoZvqzZTfuyVyDuOuCZ9BvIfcoVT7PIW47o
+yUVlxV3z0oeYnqOEqZS0W8gS-SnqtZzfrCJSiDw_0SiNu88N6CAtY7edXG-wV-Q_VpVuNql1DFp_YalxMIX5xQLmlFh-kxKKrrvUuhEl1m0O9EVlNv-_Vwvf
+yEr_Jhy_EFp-ulZxa_FlRyw_Fph__khcvkRcvYi
+}
+
+GCPEntityColoring(datapol)
+!define datapol(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, datapol_png, datapol)
+!define datapol(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, datapol_png, datapol)
+!define datapolParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, datapol_png, datapol)
+!define datapolParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, datapol_png, datapol)
+!else
 sprite $datapol <svg viewBox="0 0 24 24"><g><rect x="9.65" y="3.87" width="8.29" height="1.87" fill="#4285f4"/><rect x="4.55" y="11.35" width="8.29" height="1.87" fill="#4285f4"/><rect x="9.65" y="18.21" width="8.29" height="1.87" fill="#4285f4"/><path fill="#4285f4" d="M 6.57 13.38 L 9.82 18.89 L 8.16 19.82 L 4.91 14.31 Z"/><path fill="#4285f4" d="M 6.8 10.91 L 10.05 5.4 L 8.44 4.49 L 5.19 10 Z"/><path fill="#aecbfa" d="M 7.48 7.66 L 5.82 4.85 L 7.48 2 L 10.79 2 L 12.44 4.85 L 10.79 7.66 Z"/><path fill="#aecbfa" d="M 13.21 15.14 L 11.56 12.34 L 13.21 9.48 L 16.52 9.48 L 18.18 12.34 L 16.52 15.14 Z"/><path fill="#aecbfa" d="M 3.65 15.14 L 2 12.34 L 3.65 9.48 L 6.96 9.48 L 8.61 12.34 L 6.96 15.14 Z"/><path fill="#aecbfa" d="M 17.04 7.66 L 15.39 4.85 L 17.04 2 L 20.35 2 L 22 4.85 L 20.35 7.66 Z"/><path fill="#aecbfa" d="M 17.04 22 L 15.39 19.19 L 17.04 16.34 L 20.35 16.34 L 22 19.19 L 20.35 22 Z"/><path fill="#aecbfa" d="M 7.48 22 L 5.82 19.19 L 7.48 16.34 L 10.79 16.34 L 12.44 19.19 L 10.79 22 Z"/></g></svg>
 
 GCPEntityColoring(datapol)
@@ -9,3 +27,4 @@ GCPEntityColoring(datapol)
 !define datapol(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, datapol, datapol)
 !define datapolParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, datapol, datapol)
 !define datapolParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, datapol, datapol)
+!endif

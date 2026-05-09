@@ -23,8 +23,13 @@ import re
 import sys
 import shutil
 import argparse
+import subprocess
+import tempfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from subprocess import PIPE
+
+from PIL import Image
 
 import yaml
 from scour import scour as _scour_lib
@@ -80,14 +85,19 @@ parser.add_argument(
 args = vars(parser.parse_args())
 
 config = {}
+JAVA_BIN = "java"  # resolved in verify_environment
 
 # ---------------------------------------------------------------------------
 # Environment verification
 # ---------------------------------------------------------------------------
 
 def verify_environment():
-    """Check working directory, config file, and source directory."""
-    global config
+    """Check working directory, config file, source directory, and Java."""
+    global config, JAVA_BIN
+
+    # Resolve java binary — respect JAVA_HOME if set
+    java_home = os.environ.get("JAVA_HOME")
+    JAVA_BIN = str(Path(java_home) / "bin" / "java") if java_home else "java"
 
     cur_dir = Path(".").absolute()
     if cur_dir.parts[-2:] != ("gcp-icons-for-plantuml", "scripts"):
@@ -114,6 +124,23 @@ def verify_environment():
             "source/official must contain product icon directories. "
             "See README for setup instructions."
         )
+        sys.exit(1)
+
+    # Verify plantuml.jar + java are available (needed for PNG sprite encoding)
+    plantuml_jar = Path("plantuml.jar")
+    if not plantuml_jar.exists():
+        print("plantuml.jar not found in scripts/ — required for PNG sprite encoding")
+        sys.exit(1)
+    try:
+        result = subprocess.run(
+            [JAVA_BIN, "-jar", "plantuml.jar", "-version"],
+            stdout=PIPE, stderr=PIPE
+        )
+        if result.returncode != 0:
+            raise RuntimeError(result.stderr.decode())
+    except Exception as e:
+        print(f"Error executing plantuml.jar with '{JAVA_BIN}': {e}")
+        print("Set JAVA_HOME to a Java 11+ installation and retry.")
         sys.exit(1)
 
     if args["check_env"]:
@@ -399,10 +426,69 @@ def _resolve_color(entry, category, cfg):
     return colors.get(color_name, color_name)  # return hex if already hex
 
 
-def generate_puml(target, svg_string, color, out_dir):
-    """Write a .puml file with an SVG sprite definition."""
+def _resize_png_for_sprite(src_path, max_size=128):
+    """Return a Path to a temp PNG resized to max_size (longest side), alpha stripped."""
+    try:
+        img = Image.open(src_path)
+        img.thumbnail((max_size, max_size), Image.LANCZOS)
+        # Strip alpha — plantuml sprites need an opaque image
+        if img.mode in ("RGBA", "LA", "P"):
+            bg = Image.new("RGB", img.size, (255, 255, 255))
+            if img.mode == "P":
+                img = img.convert("RGBA")
+            alpha = img.split()[-1] if img.mode in ("RGBA", "LA") else None
+            bg.paste(img, mask=alpha)
+            img = bg
+        elif img.mode != "RGB":
+            img = img.convert("RGB")
+        # Use system temp dir with same filename — plantuml derives the sprite
+        # name from the file stem, so keeping the original name is essential.
+        tmp = Path(tempfile.gettempdir()) / src_path.name
+        img.save(tmp, "PNG")
+        return tmp
+    except Exception as e:
+        print(f"WARNING: PNG resize failed for {src_path}: {e}")
+        return src_path  # fallback: encode the original
+
+
+def _encode_png_sprite(png_path):
+    """Call plantuml.jar -encodesprite 16z on a PNG and return the sprite lines."""
+    try:
+        result = subprocess.run(
+            [JAVA_BIN, "-jar", "plantuml.jar", "-encodesprite", "16z", str(png_path)],
+            stdout=PIPE, stderr=PIPE
+        )
+        output = result.stdout.decode("UTF-8").strip()
+        if not output:
+            print(f"WARNING: plantuml.jar produced no sprite output for {png_path}")
+            return None
+        return output
+    except Exception as e:
+        print(f"WARNING: PNG sprite encoding failed for {png_path}: {e}")
+        return None
+
+
+def generate_puml(target, svg_string, color, png_sprite, out_dir):
+    """Write a .puml with dual SVG (default) and PNG (!define GCP_USE_PNG) sprites."""
+    p = target + "_png"
+
     content = PUML_LICENSE_HEADER
     content += "\n"
+
+    if png_sprite:
+        content += "!ifdef GCP_USE_PNG\n"
+        # PNG sprite block — plantuml.jar emits e.g. "sprite $name [48z]\nABC...\n"
+        # Rename the sprite to {target}_png so both can coexist when needed
+        content += png_sprite.replace(f"sprite ${target} ", f"sprite ${p} ", 1) + "\n"
+        content += "\n"
+        content += f"GCPEntityColoring({target})\n"
+        content += f"!define {target}(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, {color}, {p}, {target})\n"
+        content += f"!define {target}(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, {color}, {p}, {target})\n"
+        content += f"!define {target}Participant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, {color}, {p}, {target})\n"
+        content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, {color}, {p}, {target})\n"
+        content += "!else\n"
+
+    # SVG sprite block (default)
     content += f"sprite ${target} {svg_string}\n"
     content += "\n"
     content += f"GCPEntityColoring({target})\n"
@@ -410,6 +496,9 @@ def generate_puml(target, svg_string, color, out_dir):
     content += f"!define {target}(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, {color}, {target}, {target})\n"
     content += f"!define {target}Participant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, {color}, {target}, {target})\n"
     content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, {color}, {target}, {target})\n"
+
+    if png_sprite:
+        content += "!endif\n"
 
     out_path = out_dir / f"{target}.puml"
     with open(out_path, "w") as f:
@@ -455,13 +544,20 @@ def main():
                 continue
 
             color = _resolve_color(svc, cat, config)
-            generate_puml(target, svg_string, color, out_dir)
 
             # Copy SVG and PNG (if present) into dist/ so they are versioned alongside the .puml
             shutil.copy2(svg_path, out_dir / f"{target}.svg")
             png_path = svg_path.with_suffix(".png")
+            png_sprite = None
             if png_path.exists():
-                shutil.copy2(png_path, out_dir / f"{target}.png")
+                dist_png = out_dir / f"{target}.png"
+                shutil.copy2(png_path, dist_png)
+                tmp_png = _resize_png_for_sprite(dist_png)
+                png_sprite = _encode_png_sprite(tmp_png)
+                if tmp_png != dist_png:
+                    tmp_png.unlink(missing_ok=True)
+
+            generate_puml(target, svg_string, color, png_sprite, out_dir)
 
             markdown += f"{target} | {target} | ![{target}](dist/{target}.svg) | {target}.puml\n"
             results.append((target, True))

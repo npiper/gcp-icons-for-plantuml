@@ -2,6 +2,21 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $dialogflow_png [128x128/16z] {
+xTXNRkGm48P1HLBtl_3cTRP_4pKPtUz6VJJPW33J7KvDJKrDpThQUarzRss70jTRamBNfS1rAN1T2boN0jUbm7KfSFqw1VEpdWlcS-bNAWWwt0BeNk2w5xZk
+1QvxWUjUuBeNkEu5yzPEFjjyRV-g___hlh_RtpylSDqBNFS2rxt0TV_-kEFlh_aStvy3HVk-yFVt-xyTyFiH2aRrtlisvFSU2iRqOVy81MFwSHoZVYZujjx-
+wED-AXZJn_s1Wg23dmgoJduk2BhwkI3evkU2UPxUp_9E1pyK11tyK11qzaD1qDqF1K5tFnG4tVrG47JtOq7GsSy5MNS_5onxqC7F1K57FnS47NoOU_JBBx_y
+yiilVpk7F_A3NEkdrjFnt_zeSbA-BTFOp3iKmE73DxKU_lANq3ly4hmTNVdTVWc6Iy33-oNqtuVtsKA1lZlVHL-wl8jwUBy4FRnV0YwTNu8kdUyYBfrVGkJ3
+kyE0Jk_EfzlIkHyEVps_DtXtuCFIWGzBPxujdVlsxjotfNFV3k--BPtxjdJkszAvRqldlhqxzstftBV3kszBvpujdOzzM_kiw_G0KrDJKrFp4m
+}
+
+GCPEntityColoring(dialogflow)
+!define dialogflow(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, dialogflow_png, dialogflow)
+!define dialogflow(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dialogflow_png, dialogflow)
+!define dialogflowParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dialogflow_png, dialogflow)
+!define dialogflowParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dialogflow_png, dialogflow)
+!else
 sprite $dialogflow <svg viewBox="0 0 24 24"><g><g><g><path d="M12,12,4,8v6.76a.49.49,0,0,0,.19.39L8.83,17.9a.32.32,0,0,1,.17.29V21.7a.17.17,0,0,0,.26.14l10.51-6.69a.5.5,0,0,0,.23-.42V8Z" fill="#4285f4"/></g></g><path d="M12,10l8-4L12.12,2.06a.25.25,0,0,0-.24,0L4,6Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(dialogflow)
@@ -9,3 +24,4 @@ GCPEntityColoring(dialogflow)
 !define dialogflow(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dialogflow, dialogflow)
 !define dialogflowParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dialogflow, dialogflow)
 !define dialogflowParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dialogflow, dialogflow)
+!endif

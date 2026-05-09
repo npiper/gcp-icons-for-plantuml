@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $os_inventory_management_png [128x128/16z] {
+xTW5pkOm38JXSER-5rvUgw1EAOv_y2jOIFGzPGgV9S_pF2_ZRzr4nx9ejUwIrSfB1hpL0dJOBW0ECkQHfl09X-buUHsMjOv5ULDIN5TPtmZQ6nwyQzEADX_0
+wmDuwXTeR85-sOyuIMNr8JCRpXfmXoEN6sZukFohtSf7b8bwFj_F77lik-----wxxxxx3_g-lllkk-----vBNzvttttyhP6FQOe--TpK02ag-498x4kQXezj
+YOoDzzkzZ-F3VM0V6If3VCwZaR4PFiXG6Uhtspv6-Speq_qzKepzPknNOpyP-dNMyLUDpxzmsuyJ_4Z69jv_6k4Lx_yWGssy7yagxg_Be_szGkvFAGpm-LaO
+oS9fFl-tutjx0e3-jTy_tA-zPpCVql5uL_Enh9CPEZwznACifxGmzVeVqhz_MRn_oU3oKXn6-utvcv-Glqzu_f5bqpt_4lF9BK_v-JVBu7v_OOAF_mycUJV_
+giyxzQNFw4TZFrZxzQKV_v_-ZVYiKvzFFCBatVIqKNuFqiDhCFS36Kti0dZUOr_8zGD9Z44Za9UinKj1LdkQPQ-Oc-UFe58cPpw2eYzb1eZVWr6PB9fPdkTv
+tay
+}
+
+GCPEntityColoring(os_inventory_management)
+!define os_inventory_management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, os_inventory_management_png, os_inventory_management)
+!define os_inventory_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, os_inventory_management_png, os_inventory_management)
+!define os_inventory_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, os_inventory_management_png, os_inventory_management)
+!define os_inventory_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, os_inventory_management_png, os_inventory_management)
+!else
 sprite $os_inventory_management <svg xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 24 24"><g><use fill="#4285F4" ns1:href="#a"/></g></svg>
 
 GCPEntityColoring(os_inventory_management)
@@ -9,3 +25,4 @@ GCPEntityColoring(os_inventory_management)
 !define os_inventory_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, os_inventory_management, os_inventory_management)
 !define os_inventory_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, os_inventory_management, os_inventory_management)
 !define os_inventory_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, os_inventory_management, os_inventory_management)
+!endif

@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_healthcare_api_png [128x128/16z] {
+xTk7Zjmw38LXjiFTzt_YEqK0WR5a32oBl4dqfMxzFPAxiNJ1jctRnWzKHKJr_QUahgADg50oRlL6bBE7_eD8GRve0LYqGvYIw431w5VCW0ubpdxT6Y0w93N3
+7_w9lWrbzDbFS7b_FJz12U13e0IAOLufGytm1uDtmIX7pSiF0k-0K1P5oSeNr0-KCWdW7W2XP8gQiG_cZL49_McKEZIZ__lGxxD3blT_NmPzTsDQYHN-0EL-
+_q4pJiHbt0Uag4_U6Cz6R0IDzTooPrIumoTCJO9WjZqr2JPVdvW4Xjy9u8dJt7dGYNp-2g2e6FlWTzAfamiJxhEVnlX8fhQzo8El7VyeXdxg6fSdZhyFEdbk
+frVFVtZcs6DVNTAmDhqAnz1Fz35n_DUrPxRZViXw_UkkBMhw0c-qe7_O_XFxnwEVPFUF5vVowQFVyA9RBEZUwOX-B2oCRru3-mxzO4AtC5pettarVhaFq2s0
+I_q7q2tiGl_M1H1SxIlTGymTdno7Fl3W7dZfupRkViJGsmWoh_yvbY2xty0RgUcJDrRIZoCNYlhirVrcOTUaig-Eaxui7dy1t4_wjhJFvWydVLdwH43Tp_ko
+yacm0AD-Z4w35KF_FSYAeVyUbWpzzxXcw1Uj_C14Fd_obIfNVd3MC-yZk4d6CsUyVBuD4wQmS1BaY_kVAoT13iy_isZDwm-Cre_HW50cmV7y9vSLzSC_tT_z
+tT_ztITjg4hyz4qHUQ1A4_bAsxPjsty
+}
+
+GCPEntityColoring(cloud_healthcare_api)
+!define cloud_healthcare_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_healthcare_api_png, cloud_healthcare_api)
+!define cloud_healthcare_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_healthcare_api_png, cloud_healthcare_api)
+!define cloud_healthcare_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_healthcare_api_png, cloud_healthcare_api)
+!define cloud_healthcare_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_healthcare_api_png, cloud_healthcare_api)
+!else
 sprite $cloud_healthcare_api <svg viewBox="0 0 24 24"><g><g><path fill="#aecbfa" d="M 12 22 L 11.17 21.23 L 11.17 6.67 L 12.83 6.67 L 12.83 21.23 Z"/></g><g><path d="M12,8a2.67,2.67,0,0,0,2.67-2.67H9.33A2.67,2.67,0,0,0,12,8Z" fill="#4285f4"/></g><path fill="#4285f4" d="M 12.83 18.87 L 11.17 18.87 L 11.17 17.33 L 12.83 17.33 Z"/><path fill="#4285f4" d="M 12.83 10.87 L 11.17 10.87 L 11.17 9.33 L 12.83 9.33 Z"/><circle cx="12" cy="4.67" r="2.67" fill="#aecbfa"/><path d="M16.67,10.17H6.83a1.17,1.17,0,0,0,0,2.33H10v1.67H6.83a2.84,2.84,0,0,1,0-5.67h9.84V7.33l3.33,2-3.33,2Z" fill="#669df6"/><path d="M12,7.33a2.67,2.67,0,0,0,2.67-2.66H9.33A2.67,2.67,0,0,0,12,7.33Z" fill="#669df6"/><path d="M13.36,16.5H14a1.17,1.17,0,0,0,0-2.33H12.83V12.5H14a2.84,2.84,0,0,1,0,5.67H10v1.16l-3.33-2,3.33-2V16.5Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(cloud_healthcare_api)
@@ -9,3 +26,4 @@ GCPEntityColoring(cloud_healthcare_api)
 !define cloud_healthcare_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_healthcare_api, cloud_healthcare_api)
 !define cloud_healthcare_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_healthcare_api, cloud_healthcare_api)
 !define cloud_healthcare_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_healthcare_api, cloud_healthcare_api)
+!endif

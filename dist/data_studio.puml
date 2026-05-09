@@ -2,6 +2,21 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $data_studio_png [128x128/16z] {
+xPi7ZiGm30CbMvJs_n--wkijkpAE2C3v0ELEEuoT2Y6444ACm24oip8ntJRYaSUeDx2lWdbK_VAEgh0z1AwKNnHOyejAWlpc7XXva_oYXZL1Jx-epUztG7Jr
+yJ_TV_c9iWwUNVsBj_HRtT-V08Edpsy_V_pxyx-AlVxP-nzt_q_s-SSz_uFhVt1o_xUOYQiBgAffk_29eoMy4cux6JE0-1r4u85Cn85vBuGGFWxZlbjxuhgN
+bOnL0kbWgQgmJJXmYxcjPMf8pgfVGFzgiGgWtIoghCj4ozV2cZGlTkNCvlUTDRAfdyJkxm-0a_M7tdMe_MzCVVxwu-y_Jjv_BSZdZoNt_BN1yXzy_xKOI9R_
+N0JFV_Fl7mjdtB-E8uGGJdr_vhw_3n2-FvmpVxE_WCdz_kRdpjyajVdAtzI9ypVAtoX_qzPN_kRK-KiRE7F-1jO7oSeVBq3qV_py-ShVWvI_NtZZ_mCYGWWX
+XBW7
+}
+
+GCPEntityColoring(data_studio)
+!define data_studio(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, data_studio_png, data_studio)
+!define data_studio(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, data_studio_png, data_studio)
+!define data_studioParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, data_studio_png, data_studio)
+!define data_studioParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, data_studio_png, data_studio)
+!else
 sprite $data_studio <svg viewBox="0 0 24 24"><g><g><path d="m19.5 16.17h-7.26a2.53 2.53 0 0 0-2.74 2.5 2.5 2.5 0 0 0 2.74 2.5h7.26z" fill="#669df6"/><circle cx="19.5" cy="18.67" r="2.5" fill="#4285f4"/><path d="M12,9.5H4.74A2.53,2.53,0,0,0,2,12a2.5,2.5,0,0,0,2.74,2.5H12Z" fill="#669df6"/><circle cx="12" cy="12" r="2.5" fill="#4285f4"/><path d="m19.5 2.83h-7.26a2.54 2.54 0 0 0-2.74 2.5 2.5 2.5 0 0 0 2.74 2.5h7.26z" fill="#669df6"/><circle cx="19.5" cy="5.33" r="2.5" fill="#4285f4"/></g></g></svg>
 
 GCPEntityColoring(data_studio)
@@ -9,3 +24,4 @@ GCPEntityColoring(data_studio)
 !define data_studio(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, data_studio, data_studio)
 !define data_studioParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, data_studio, data_studio)
 !define data_studioParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, data_studio, data_studio)
+!endif

@@ -2,6 +2,30 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $advanced_solutions_lab_png [128x128/16z] {
+xPi7Wgmu34HR9Plx7tcNu7b3_GGcRQ1-dARHiuGiPCAdGwzUlNhrAaBn8BuCVwl4KyxNOPQUuTUXwHdtXwQQJ_0J_yiZ_840F17-0h_6xVHKmY_Ak9KkPMOb
+_p9rOo5IZdW6a9Ea-qA_gDJ5-zJqHtU5FYLb4pzUdmPmfEzunXLNqebpQ8Irq8_Ko6j7062gFgEclsVFRNYdom8iJKvdZZ1z9VzrQQ1SMPxZCFi_Kndb1IFm
+oCx4nlym-oz9Wt2JCGCRVnvEU87GAN0FASdN-7pW1qld7dX6DCyu-7noOXfuBDrz-1w0_ZJ0GuNFkLaSRVXa1684pTnsbQ7MEXGBOXCe-Cp1dyoQnTncVAsS
+ruqE2RwFoh_RhDNTZMNn56wf9kDpL4mXbRrjyl2bAWnQyXcV3QwesDlOroFmFlUSpnQNcTl5_o28malu162hEsZxW3dApcSEcZIWhRElgMBE4CvdSBw3TY-J
+Y5Zwz4i8yBqoU1dU67xKXboi-7cAET-FZd9IQS7yR9LAhRLaKa4jmvplNw3-QkdJQzbN_cSr6zHOt3U-1yZwTAc3h_Wo4tPuZUy1uAoTdNpDfZW7ajxEzmcY
+MFNfNNofnP83QLQSJzWXpZ6JElXCDepYll5HeoTz-YUw-8738MtaH-D_hmXT_g_hcR3hV0-_dvG_lNmI7iE21zzQBczA-kBVe90y1sVxLcr95FRluPEzM0fV
+O9PIcgjKYb3Qxfry2lfiqXQOiJHgvVia3TmcV9rywXaXfHnfgCEYvDEs5_Edcqz1fwpZQHa6LFLLf0aRsTF9fvoqfWlpNtXErH3OAuxoWnc5GXfC3MLxVOxo
+Fxye_CuljXtt3_BZvuMt6h-Q1GPzW4_NuNitFF81ah87-PcR-67yK_odyCSU_zdhEF-dxKiutsy1C6aFyaKho6Qg3togZ-tLpQUVOmRuei8B4EvB1-iViv-s
+ciws69wp3sTB7Qt_3SpvHxdmLnMWLYvujQ35yVCVt6XdD5O3361Usx2DqHuw_xFWQH65C4dhXHtTIQxsYcw-N-aYmekYb5farogz_SrElb_fuf8gyWz2eboG
+FphQ_mktaFM_ldHas7t-aqRMLYFuI6Aiz4y7rdz1xcdZ-akvxaNLk_uMzDO4Rbb_ibDBd1w-6U9u_8w_eAW6KWS_Qws5g8jaZWthFwh1eZ9Qs_rWH_N8JHP_
+p-VxrEfSpCNk1plyybUpRdnptwl1tgSK2eLTFuqkWky3f2HZhUo__csRpBxnoL0KEHou_lsRox_69q4xhZzltu40m3VtNGUkVvCnxgBpsNRa_eFdNy6S-UXy
+JhOcPI7_ziy_QUlz3yyDFYIQ6nMr3aCTAgLtu_qV7ssq-ZFQsrH_Y5ggDLGocx-v_-NEpmuivdOB2ptt_uBgtIkCxB__oT3HyH20Wi-WEfpl204i-8pfHEVT
+cbTX-B5QeLhU7fS80PK6Ffs1hVrFKn02YX1yYf8xVr48SXJy77MLynu2NnS7xflpLuMWkTduSphWFFYhGj2gy0IBQJhWFB6_C0IQeBdy9RdpbuTWecQJEtzv
+22OsCkVl2C5AE7-397_-z2xd2O4zVulpzuM0XGqbvpR5-ldhUFJvz_Bmy__rONxvlxr_uU-V_1_Vl-b__-ZvzwzUlNhrwjLV
+}
+
+GCPEntityColoring(advanced_solutions_lab)
+!define advanced_solutions_lab(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, advanced_solutions_lab_png, advanced_solutions_lab)
+!define advanced_solutions_lab(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, advanced_solutions_lab_png, advanced_solutions_lab)
+!define advanced_solutions_labParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, advanced_solutions_lab_png, advanced_solutions_lab)
+!define advanced_solutions_labParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, advanced_solutions_lab_png, advanced_solutions_lab)
+!else
 sprite $advanced_solutions_lab <svg viewBox="0 0 24 24"><g><path d="M12,12.29,3.75,7.35,12,2.58l8.24,4.67ZM5.27,7.36l6.72,4,6.72-4.11L12,3.47Z" fill="#669df6"/><path d="M12,21.44,3.72,15.89,12,11.3l8.15,4.64Zm-6.8-5.5L12,20.5,18.7,16,12,12.18Z" fill="#669df6"/><rect transform="translate(-5.78 5.7) rotate(-28.8)" x="7.81" y="6.35" width=".77" height="15.52" fill="#4285f4"/><rect transform="translate(-4.27 21.3) rotate(-61.7)" x="7.99" y="13.84" width="15.4" height=".77" fill="#4285f4"/><rect transform="translate(-4.09 11.89) rotate(-60)" x=".87" y="9.1" width="14.76" height=".77" fill="#4285f4"/><rect transform="translate(-2.65 9.05) rotate(-29.69)" x="15.36" y="2.04" width=".77" height="14.95" fill="#4285f4"/><rect x="11.64" y="2.96" width=".77" height="17.94" fill="#4285f4"/><rect x="4.06" y="7.43" width=".77" height="8.66" fill="#4285f4"/><rect x="19.03" y="7.34" width=".77" height="8.66" fill="#4285f4"/><circle cx="12.03" cy="3.07" r="1.07" fill="#aecbfa"/><circle cx="19.42" cy="7.34" r="1.07" fill="#aecbfa"/><circle cx="4.58" cy="7.34" r="1.07" fill="#aecbfa"/><circle cx="12.03" cy="11.93" r="1.68" fill="#aecbfa"/><circle cx="19.42" cy="15.94" r="1.07" fill="#aecbfa"/><circle cx="4.58" cy="15.94" r="1.07" fill="#aecbfa"/><circle cx="12.03" cy="20.93" r="1.07" fill="#aecbfa"/><path d="M12,12.29,3.75,7.35,12,2.58l8.24,4.67ZM5.27,7.36l6.72,4,6.72-4.11L12,3.47Z" fill="#aecbfa"/><path d="M12,21.44,3.72,15.89,12,11.3l8.15,4.64Zm-6.8-5.5L12,20.5,18.7,16,12,12.18Z" fill="#aecbfa"/><rect transform="translate(-5.78 5.7) rotate(-28.8)" x="7.81" y="6.35" width=".77" height="15.52" fill="#aecbfa"/><rect transform="translate(-4.27 21.3) rotate(-61.7)" x="7.99" y="13.84" width="15.4" height=".77" fill="#aecbfa"/><rect transform="translate(-4.09 11.89) rotate(-60)" x=".87" y="9.1" width="14.76" height=".77" fill="#aecbfa"/><rect transform="translate(-2.65 9.05) rotate(-29.69)" x="15.36" y="2.04" width=".77" height="14.95" fill="#aecbfa"/><rect x="11.64" y="2.96" width=".77" height="17.94" fill="#aecbfa"/><rect x="4.06" y="7.43" width=".77" height="8.66" fill="#aecbfa"/><rect x="19.03" y="7.34" width=".77" height="8.66" fill="#aecbfa"/><circle cx="12.03" cy="3.07" r="1.07" fill="#669df6"/><circle cx="19.42" cy="7.34" r="1.07" fill="#669df6"/><circle cx="4.58" cy="7.34" r="1.07" fill="#669df6"/><circle cx="12.03" cy="11.93" r="1.68" fill="#669df6"/><circle cx="19.42" cy="15.94" r="1.07" fill="#669df6"/><circle cx="4.58" cy="15.94" r="1.07" fill="#669df6"/><circle cx="12.03" cy="20.93" r="1.07" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(advanced_solutions_lab)
@@ -9,3 +33,4 @@ GCPEntityColoring(advanced_solutions_lab)
 !define advanced_solutions_lab(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, advanced_solutions_lab, advanced_solutions_lab)
 !define advanced_solutions_labParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, advanced_solutions_lab, advanced_solutions_lab)
 !define advanced_solutions_labParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, advanced_solutions_lab, advanced_solutions_lab)
+!endif

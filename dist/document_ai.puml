@@ -2,6 +2,20 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $document_ai_png [128x128/16z] {
+xTTLWaCn34DH9mre_niUPWsdaGg-VmFEATSlJguiox9iWgBswVXLPXvUdlqE00SDptx3KrjVUUppM5toyI-_7Ek5KV_d7-sLYRFq-mx__xUwgFrXllznxNuZ
+NkNpt53wFDX3udCq9VPZWJzVF_tqqqy__OFPnpOVd-Rt-U6lBh_IxqG-tZRvcgWg_KyFKldCFwNn9n_pr66dp_64tAzcVnx5_sVi5xNVpFS_JigVMfy_Vmn-
+eNCqFfyK1f_saMlrkzcNxLySl3wSViLZqlsJQrv_XDMFSFeH6hyzrHzhhLgklxZpzmsbdtxwwQT_7jy_wTFEAVSvjuzYzk7s8VCvWyzdLBCFs-U_tnzcltdz
+YlkgowTvhO_N73xUflSBtbRaFjvtjZx7hVlfSsj-BF9-lwtvwn-WYtwihu3Krls7M_JNQsgV4_YUiYpBibi
+}
+
+GCPEntityColoring(document_ai)
+!define document_ai(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, document_ai_png, document_ai)
+!define document_ai(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, document_ai_png, document_ai)
+!define document_aiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, document_ai_png, document_ai)
+!define document_aiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, document_ai_png, document_ai)
+!else
 sprite $document_ai <svg viewBox="0 0 24 24"><g transform="translate(5 3)" fill="none"><g fill="#4285f4"><path d="m7 0v2h-4.9778v14h4.9778v2h-5.3458c-0.86626 0-1.5758-0.72698-1.6481-1.6453l-0.0060657-0.15473v-14.4c0-0.99 0.74813-1.8 1.6625-1.8z"/><path d="m4 12.5h3v1.5h-3z"/><path d="m4 9.5h3v1.5h-3z"/><path d="m4 6.5h3v1.5h-3z"/><circle transform="matrix(1 0 0 -1 0 33)" cx="11.5" cy="16.5" r="1.5"/><circle transform="matrix(1 0 0 -1 0 15)" cx="13.5" cy="7.5" r="1.5"/><circle cx="10.5" cy="2.5" r="1.5"/></g><path d="m8 7.5h0.81418c1.9157 0 1.6762-0.7033 1.6762-4" stroke="#4285f4"/><path d="m8 10.494h0.81279c3.7771 0 4.7333 0.22154 4.6855-1.9938" stroke="#4285f4"/><path transform="matrix(1 0 0 -1 0 29)" d="m8 15.492h0.51705c2.7806 0.0061472 3.011 0.2213 2.9806-1.9917" stroke="#4285f4"/></g></svg>
 
 GCPEntityColoring(document_ai)
@@ -9,3 +23,4 @@ GCPEntityColoring(document_ai)
 !define document_ai(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, document_ai, document_ai)
 !define document_aiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, document_ai, document_ai)
 !define document_aiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, document_ai, document_ai)
+!endif

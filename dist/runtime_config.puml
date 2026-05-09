@@ -2,6 +2,18 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $runtime_config_png [128x128/16z] {
+xTQr0KCn3431ZxRtNpXCKXFcUmjS9UXIagH-I3tR6sDJYvM_zFbyFl_-Af_Fv_DVkF_ReVb3VJwVp--6s5XYyzt-dVsqp-Vp-UETVRxFv_FvV3xV_yFdy_by
+FlyXJyUOQYd-BZwVp-Vp-Np-S4lt-VV7v_Fv_0kJ92q1
+}
+
+GCPEntityColoring(runtime_config)
+!define runtime_config(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, runtime_config_png, runtime_config)
+!define runtime_config(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, runtime_config_png, runtime_config)
+!define runtime_configParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, runtime_config_png, runtime_config)
+!define runtime_configParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, runtime_config_png, runtime_config)
+!else
 sprite $runtime_config <svg viewBox="0 0 24 24"><g><path fill="#aecbfa" d="M 2 8 L 8 8 L 8 2 L 2 2 Z"/><rect x="7" y="4" width="13" height="2" fill="#4285f4"/><rect width="24" height="24" fill="none"/><path fill="#aecbfa" d="M 15 13 L 3 13 L 3 10 L 15 10 Z"/><path fill="#aecbfa" d="M 13 20 L 3 20 L 3 16 L 13 16 Z"/><path fill="#4285f4" d="M 5 8 L 8 8 L 8 2 L 5 2 Z"/><path fill="#aecbfa" d="M 16 22 L 22 22 L 22 16 L 16 16 Z"/><path fill="#4285f4" d="M 19 22 L 22 22 L 22 16 L 19 16 Z"/><rect x="18" y="4" width="2" height="12" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(runtime_config)
@@ -9,3 +21,4 @@ GCPEntityColoring(runtime_config)
 !define runtime_config(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, runtime_config, runtime_config)
 !define runtime_configParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, runtime_config, runtime_config)
 !define runtime_configParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, runtime_config, runtime_config)
+!endif

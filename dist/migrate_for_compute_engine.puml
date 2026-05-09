@@ -2,6 +2,21 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $migrate_for_compute_engine_png [128x128/16z] {
+xTe5bkD038HXDTVzBxmx65BxsKfPFQJ_qM2-2gFyaA8eYg86OCXj6G2It0O0LJp2UtAjugsa_cYiyQ5-LF1U-5pXXnz--0bqmWJm_NG__F3bYNwe7tuVbyxm
+nwLclinplkwx--67Bsx--2MtVndJqYA_OwEwniTch1z--E7NVkaClr-gvjjjpjTzTp_yyCNFZzk_euLV1YwjzYkkhVSnQvcFhVR_Ol3-m7Prvu-wq3xtKXxj
+Owzd_7efao_syqU6vG4_7yVoyd4qokTvD0y_OLBEcENXJtaHPe3b7-kS5ycyBmUQy-O1lA-HlC07R0EQgwy7434-vBtYx7Sm0tWV80VmFZ-0z_a1l2ywSa0Y
+_Vc0zjhbcqjT_KI4zES3x9__u7ryhOyLVb7DU3TVD_-RSgfVh3o4yNKctj_NlBC_h3pdwmoyYs_Z-_tZXg8FIAnPUCXdGxtiK8pyha8y0JjZ02Q9HmKw0yz7
+FFrTEa3S8da-alSVCCIvJZwKvSDsigJ4wdoipfTyy2YAeYZw3m
+}
+
+GCPEntityColoring(migrate_for_compute_engine)
+!define migrate_for_compute_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, migrate_for_compute_engine_png, migrate_for_compute_engine)
+!define migrate_for_compute_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, migrate_for_compute_engine_png, migrate_for_compute_engine)
+!define migrate_for_compute_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, migrate_for_compute_engine_png, migrate_for_compute_engine)
+!define migrate_for_compute_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, migrate_for_compute_engine_png, migrate_for_compute_engine)
+!else
 sprite $migrate_for_compute_engine <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><path d="m10.189 2c0.18344 7.7434e-4 0.33644 0.13096 0.37242 0.3044l0.0080011 0.076726v1.9513h2.049l-2.944e-4 -1.9507c5.153e-4 -0.18403 0.13088-0.33735 0.3041-0.3734l0.076609-0.0080165 0.62186-2.9499e-4c0.18369 7.7434e-4 0.33673 0.13119 0.37251 0.30468l0.0079044 0.076739v1.951h2.049l-2.944e-4 -1.9507c7.729e-4 -0.18403 0.13117-0.33713 0.3042-0.37312l0.076513-0.0080038 0.62156-2.9498e-4c0.18369 7.7433e-4 0.33673 0.13096 0.37291 0.3044l0.0080989 0.076726-2.945e-4 1.951h1.8211c0.20781 0.0010488 0.38049 0.15103 0.41713 0.34906l0.007164 0.076313v1.8171h1.9404c0.18369 5.1623e-4 0.33696 0.13112 0.37299 0.30486l0.0080143 0.076848v0.62212c-5.153e-4 0.18429-0.1311 0.33787-0.30438 0.37378l-0.076622 0.0079323h-1.9404v2.0525h1.9404c0.18395 5.162e-4 0.33747 0.13112 0.37317 0.30506l0.0078332 0.076946v0.62183c-5.153e-4 0.18403-0.1311 0.33758-0.30438 0.37329l-0.076622 0.0078344-1.9404 2.95e-4v2.0528h1.9404c0.18395 5.163e-4 0.33747 0.13135 0.37317 0.30495l0.0078332 0.076764v0.62212c-5.153e-4 0.18403-0.1311 0.33758-0.30438 0.37329l-0.076622 0.0078344-1.9404 2.949e-4 -2.945e-4 1.8177c-7.852e-4 0.20846-0.1507 0.38172-0.3484 0.41827l-0.076182 0.0070998h-1.8202l-2.945e-4 1.9501c-2.576e-4 0.18429-0.13081 0.33809-0.30429 0.37406l-0.076718 0.007945h-0.62068c-0.18395-5.162e-4 -0.33747-0.13135-0.37317-0.30515l-0.0078332-0.076861-2.944e-4 -1.9501h-2.0487l-2.944e-4 1.9501c-2.576e-4 0.18429-0.13059 0.33787-0.30381 0.37398l-0.076609 0.0080297h-0.62127c-0.18395-5.162e-4 -0.33725-0.13135-0.37289-0.30515l-0.0078205-0.076861-5.889e-4 -1.9501-1.0122-3.627e-4 0.0015624 0.050182c0 2.6174-2.036 4.7526-4.5898 4.8661l-0.21398 0.0047458c-2.6531 0-4.8038-2.1807-4.8038-4.8708 0-2.6901 2.1507-4.8708 4.8038-4.8708 0.046574 0 0.092994 6.72e-4 0.13925 0.0020071l-0.0010234-0.86213h-1.9401c-0.18369-5.162e-4 -0.33696-0.13112-0.3726-0.30467l-0.0078199-0.076751-2.9444e-4 -0.62242c5.1527e-4 -0.18403 0.13065-0.33735 0.30382-0.3734l0.076597-0.0080164 1.9404 2.95e-4 -2.9444e-4 -2.0528h-1.9398c-0.18369-7.7433e-4 -0.33673-0.13119-0.37251-0.30448l-0.0079045-0.076641-5.8888e-4 -0.6233c7.7291e-4 -0.18378 0.13094-0.33706 0.30392-0.3733l0.0765-0.0081132h1.9404v-1.8171c7.8517e-4 -0.20846 0.15093-0.38149 0.34869-0.41798l0.076192-0.0070898h1.8205l-2.9444e-4 -1.9507c7.7291e-4 -0.18403 0.13094-0.33735 0.30411-0.3734l0.076597-0.0080165 0.62186-2.9499e-4zm-3.46 12.49-0.72788 0.73804 1.5436 1.5657-3.475-1.167e-4v1.0437l3.475 3.701e-4 -1.5436 1.5637 0.72766 0.73827 2.787-2.8241-2.7868-2.8256zm11.517-8.7303-9.8726 2.9499e-4 7.7356e-4 6.7644c1.4268 0.50049 2.5486 1.6636 3.0075 3.1264l6.8634-2.192e-4 8.833e-4 -9.8909zm-2.9421 2.5224c0.20807 5.2442e-4 0.38101 0.15092 0.41729 0.34904l0.0069991 0.076333v3.9959c-7.852e-4 0.20846-0.1507 0.38195-0.34861 0.41855l-0.07627 0.00711h-3.9882c-0.20807-0.0010489-0.38101-0.15127-0.4175-0.34934l-0.0070868-0.076324-2.945e-4 -3.9959c7.852e-4 -0.20846 0.1507-0.38172 0.3484-0.41806l0.076182-0.0070121 3.9891-2.9498e-4z" fill="#4285F4"/></g></svg>
 
 GCPEntityColoring(migrate_for_compute_engine)
@@ -9,3 +24,4 @@ GCPEntityColoring(migrate_for_compute_engine)
 !define migrate_for_compute_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, migrate_for_compute_engine, migrate_for_compute_engine)
 !define migrate_for_compute_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, migrate_for_compute_engine, migrate_for_compute_engine)
 !define migrate_for_compute_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, migrate_for_compute_engine, migrate_for_compute_engine)
+!endif

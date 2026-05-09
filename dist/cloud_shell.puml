@@ -2,6 +2,21 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_shell_png [128x128/16z] {
+xTf7Obj130JHGK4Czp-nLswdRpWssm6rLNWQ39H8ddEsRTksRQl2LjKtzSPQryX3cuCChs3aWrz0qI-96euV742_hBJ_CzUFUG5c7uecu-j3QAB-EGMaVBqN
+ELz3YFaQGiPND3bVGyZuYYRZgmAS_lmnkWQ_ttGDVpGQVKLpXY7uV8K-TDX5Yw_WwzS06FoVk0QhFrz30JPVCLv3u_RdxyT3u_RdHJY5tvyNmUehe3A-eYlZ
+AvgShqM8-0h8dZzv_rJk_cbI-w_1fto6FqViFkFVf6wVPluJmEdFWpVy_V4JWtVvDFFHhJxCHpVwy-0Rkgq-pNnqhq-Dtsvc7yQTy_ir33xartkSgnp-zT4f
+whCehrz0pujfz6c6rJJx9JtXb_20hwCdVEsSqH-ZkoF-NDwl_zHNN1Nss-xF_Nt-wPULza_M9_xwX-j2urT5XbSLMdvLqCw0CrVOL-_NkpqkkXr_yfzVjFxw
+fjPVVtrkwdxPJU7nxz-PoRz_T_-nl_xw_-RtVzs-jxVHtxPjsxRj7G
+}
+
+GCPEntityColoring(cloud_shell)
+!define cloud_shell(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_shell_png, cloud_shell)
+!define cloud_shell(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_shell_png, cloud_shell)
+!define cloud_shellParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_shell_png, cloud_shell)
+!define cloud_shellParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_shell_png, cloud_shell)
+!else
 sprite $cloud_shell <svg viewBox="0 0 24 24"><g><g><path d="M20.2,2.67H3.8A1.79,1.79,0,0,0,2,4.47v10.8a1.79,1.79,0,0,0,1.8,1.8H10v2.26H8v2h8v-2H14V17.07h6.2a1.79,1.79,0,0,0,1.8-1.8V4.47A1.79,1.79,0,0,0,20.2,2.67Zm-3.53,12h-4v-2h4Zm0-4.54L7.6,13.93V12.07l6.53-2.8L7.6,6.4V4.53l9.07,3.74Z" fill="#aecbfa"/><path fill="#4285f4" d="M 10 17.07 L 14 17.07 L 14 19.33 L 10 19.33 Z"/><rect x="8" y="19.33" width="8" height="2" fill="#669df6"/></g></g></svg>
 
 GCPEntityColoring(cloud_shell)
@@ -9,3 +24,4 @@ GCPEntityColoring(cloud_shell)
 !define cloud_shell(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_shell, cloud_shell)
 !define cloud_shellParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_shell, cloud_shell)
 !define cloud_shellParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_shell, cloud_shell)
+!endif

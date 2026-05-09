@@ -2,6 +2,22 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $cloud_deploy_png [128x128/16z] {
+xTZPRbmn38FXOycsplk_SFVMmFo0icdejZ5ls-HJGCvw_LivEJavEJaviRRNx-6R_PYsruyORQD_ttT4t-f_ly2t-ZTceFD_1JFG-fY1pbz12IeV9UXzbg3t
+yLZK-PY1sESCz3vdeFSv0xsFfsIPpnc8VSv0wZCnVOTVFuDkgV_q6SpHs-lz-iVYc7DwwkSpi09_ZCVVqYOEg2g1_lUW18zNNz0B_3axEdZz1LxWp-6F9Oo8
+LwwWmf-SWRrk1Z4A_6G6ah__Lvmp286F4Z03WP_CGE7dCr3u-GmKVZu3WRyo6cUWyFCP2Fny1bAVCnWXy552ZT_iGk0nlSvtNE3WcE5rlZzkklN9S0P5lhiP
+7jTZl7n0cUzkThtvWaf_bR3YIj-J6KZyP0OIFvc1n4zceFDP0cT0VvRu-GmK_efn1bgVC-W2Fol1XyXV5-prtTpAVSPn06PGwJFmKKAnpmgo4-fzfhcfVLuW
+zHapjSyPg7sMeFPvWTHdtkT7aR-UaEcdhtzR_Qj7RFNvHKozt-dpYnYzl-8HMtoMeFTN2Q7q6PyXzPaUeVSvWtf_93vcSCSezblY8nxbFZy5faAlyrSSVfPw
+_sfzZuyIvFwA3wtFkDPdMfVxc46fpyy1z3c3gpvy5vxyh-jfWQzECvFxB86-_e9hOypWgsS0Nvns_TCvEJavEJav-Ge
+}
+
+GCPEntityColoring(cloud_deploy)
+!define cloud_deploy(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_deploy_png, cloud_deploy)
+!define cloud_deploy(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_deploy_png, cloud_deploy)
+!define cloud_deployParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_deploy_png, cloud_deploy)
+!define cloud_deployParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_deploy_png, cloud_deploy)
+!else
 sprite $cloud_deploy <svg viewBox="0 0 24 24"><path fill="#4285f4" d="M 20.39 18.24 L 20.39 8 L 11.52 2.89 L 11.52 7.55 L 16.37 10.32 L 16.35 15.91 Z"/><path fill="#669df6" d="M 14.79 19.86 L 14.79 11.23 L 7.33 6.92 L 7.33 10.94 L 11.34 13.23 L 11.32 17.85 Z"/><path fill="#aecbfa" d="M 9.76 21.15 L 9.76 14.14 L 3.69 10.64 L 3.69 14 L 6.86 15.81 L 6.84 19.47 Z"/></svg>
 
 GCPEntityColoring(cloud_deploy)
@@ -9,3 +25,4 @@ GCPEntityColoring(cloud_deploy)
 !define cloud_deploy(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_deploy, cloud_deploy)
 !define cloud_deployParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_deploy, cloud_deploy)
 !define cloud_deployParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_deploy, cloud_deploy)
+!endif

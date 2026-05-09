@@ -2,6 +2,23 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
+!ifdef GCP_USE_PNG
+sprite $genomics_png [128x128/16z] {
+xTfRTWGj20HWgX2S_MyuzqnuwME8zE6_-6sWkbj5T4RkT1p7SHm723I6AqagPO4w55ADr4zKY5nJCtFpKH__HCYbOVx13CKVFv8hDAz3ULADIBaGu-SsNhp-
+vGU01_EnQtxdy9Vvz6W_VshCNyz05hn_D9dBHsd-d4oDV__yYn_0jk5o_K6kw3DT6khFLmKoTxsn_kfwev9o8FK3YSRzLmbf0q3-5uu33ALs3o1PKEexah99
+pTsDVwttfEo0cR-paOmlUW3_PaCNkDnkyuOb6X8Dhr_q0L8DsTH5kvk6N4CyjJb_tfa_r_7Oo5ytnB-C5zJbCp7_7OlZvju291RaYTH8TWn_PqP9s2q_4ORP
+KCaXGtm7AgbA4j84l3sz7rfx-d2bs03ASANOqc1sBhAj4h-Fr83iUFseOVGZeZV_v3VFl_xrr_e1_WVrjs7_wTv_-_kFVc1t5wlQDiZWdokC3hE1oYel2JJp
+TqDsN9vZiK3_OgEgniSFO7F1dumrhn-hh2sl8lo7rULJFlXy9F8TnVdh-8VVcSyvM_E5SsQ-VytyZ_CFCp7_HrsJ6RR-XN1lNDRa4VbxCpDKTPb4_kRGL3QH
+_7EF1VJ_ZjJlEFh_9j3_Dud-VuciN-lE4xswsw8TlFD6nSm_QNwx5TWsVqAstHNERVx3ilbSDtmL3J5urUuzelryvl9rpkryZvXhTqLdxVkZUVwbZvj2hsFi
+g3ymMvy7m1lhxt1pCzF5bMA8BmOTojzUAKAw03U77yTn7CVn2W
+}
+
+GCPEntityColoring(genomics)
+!define genomics(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, genomics_png, genomics)
+!define genomics(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, genomics_png, genomics)
+!define genomicsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, genomics_png, genomics)
+!define genomicsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, genomics_png, genomics)
+!else
 sprite $genomics <svg viewBox="0 0 24 24"><g><circle cx="12" cy="12" r="1.6" fill="#aecbfa"/><path fill="#4285f4" d="M 7.58 9.2 L 13.95 9.2 L 14.69 8.5 L 13.95 7.8 L 7.58 7.8 Z"/><circle cx="6.8" cy="8.5" r="1.23" fill="#669df6"/><circle cx="17.2" cy="8.5" r="1.6" fill="#aecbfa"/><path fill="#4285f4" d="M 9.36 15.5 L 10.1 16.2 L 16.38 16.2 L 16.38 14.8 L 10.1 14.8 Z"/><circle cx="6.8" cy="15.5" r="1.6" fill="#aecbfa"/><circle cx="17.2" cy="15.5" r="1.23" fill="#669df6"/><path fill="#4285f4" d="M 4.18 5 L 16.86 5 L 17.6 4.3 L 16.86 3.6 L 4.18 3.6 Z"/><circle cx="3.6" cy="4.3" r="1.23" fill="#669df6"/><circle cx="20.4" cy="4.3" r="1.6" fill="#aecbfa"/><path fill="#4285f4" d="M 6.4 19.7 L 7.14 20.4 L 19.84 20.4 L 19.84 19 L 7.14 19 Z"/><circle cx="3.6" cy="19.7" r="1.6" fill="#aecbfa"/><circle cx="20.4" cy="19.7" r="1.23" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(genomics)
@@ -9,3 +26,4 @@ GCPEntityColoring(genomics)
 !define genomics(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, genomics, genomics)
 !define genomicsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, genomics, genomics)
 !define genomicsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, genomics, genomics)
+!endif
