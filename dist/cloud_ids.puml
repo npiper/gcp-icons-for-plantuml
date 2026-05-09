@@ -3,19 +3,14 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_ids_png [128x128/16z] {
-xPe9aXiX34MbByIV-vyufR97XIU2mJQLjL_szFAGMBeRaD_9nSN5nSN5nSN51PfxCvN3QEkzktrhT-znOZSvIkCTanNc_Owx7AJpW_m8sDRwn9iSmtdpHn5M
-6UY1gSAZ09138DHnNsEKGrVXkqhGeW3diazs2JJyJIP4rFUWDJBHFb6Pe9XdIVFo25_l8MPH9kaVoZ9W4pkCd1oqdaJsvKwKPSVV-eYxbdOpVfGbKFS7l-_u
-unAjuW-ii8S_cZJPwk3J7yvi038XOhxV276Tte3xrnIemIpzjnBeb-3TeJSYPikUI9S9o3ZnE03OOmeGzj4VaAx5sK6Be77_smSXYme8R_CUZ2NB5AGz_Ga_
-74FmaYX3szrlVyeK7MiTLOqYxUaV87khMijdAmazLUQeUwKFuBsx8Us5_oQfXauZFmkeilC4geQSPadbJog7EXaq-HO5jFnlg_q5fGPca5THWstwipkU0s7V
-zcTtF6tVzsTtV1jD-xO_8JlaJSB-cZyWt_RRd-g__02CmU_m0mQecZKd-QlzCAWaSFAN-e6Vdo-_qg_LHmP_bHzIePs_nW-PqFbB_393VuKVAbF0N-0V0_xQ
-5ftl-XMFGIwo3-_kxjqnhG6olEyS01O0jH-evafibe3qvstnZJv5LljrFLU2scye0fZgOSW2pDAFGJ--y9E5Fox4HW7oC3BKMUlp_e3N5K1ctIC3N8IVWZnn
-KltQlw1oenN-uKAi4e2XDuKjOfnKltsDtuPFlG76iQ7UT3L-FjGlrlxPz0HAFr0ujlpjb_dh_BVp-RTdsX_mLllpkltjzp_5M_tFzllV62moJOgtnX_ay0V3
-zW0udlRU-AlrVVUVF_BEyuTTTfy_q-Sai7h-zhvw_j9dzzr7yVhx1o7lyyRx5-K0mFxxPv7-jr6y-lvDo0bU_VuWvGYArxw_Q7A65xy_AOTGlFBzpIQdU6N-
-WPHZA9wVVw79EV3q_1ExdEHvlyf95C_vQN8Mu1a_NKxpZ9zTphFl9rNEexj-4ZBXV1laSRt282MRVfklQsrl5F7YLEk-uMTtA-GjtrHNQC-5GYkN9WrhFrck
-rgDSoAzVeEu3EilrLmDMVlhdUQK-M1MWC_Jkjp-rN7zMmynFMhd-B7rSr_RrFfNs-JB3sVexKFf9rthztSABF0If6JS7n7qvst-Wm4z-icEs_o3rkSMX9eBM
-uJjollz20Gp-i5lHMf9CkbOLKEqDyS6VmHVhaWmv7KLl6MbZKrZ5FpR5ElZ78Z12LqacAV0TVsTsUusuV6F_KOD-k_zec1_1Al-vKIctJ9t1Kwg-6WCrAe2c
-QZttgPpWlfqjxZjFVqvUXJhAuNACviLCsQG6Wl1tEOZxMfyOxpGvYdNlEImlCS_jBoTHQ-uDyZkvkBYukBYukBYu-04
+sprite $cloud_ids_png [72x72/16z] {
+xPPjUl8w34IZaMU6_Q_uDY9vmFPDCVJzoUbtcvoEBSLe-wTy-V8bjfbe4lCTIxFD63MYHBPrZUoRxK544f4YLZLfPq3M44UxECdsG_R_12swQxFzOE_POmWK
+AYyaxWXFbink7y32hclgovIdaVa3gHQdPVVSRE8in_qQLHxu5h_iJuhxTr6MtNExsS8UcCfpVnhIrb0laa_r0gK4a7bwoaGzAa4NCRK3k_vf5UN9KoRhSLzg
+x9-PACdWATnYlTyJUUdngWbb6JsTggruSiAtKVI91sdxpnuaGDd-amSu-rh-YoUUVktFFLs1uGyzYF78MV94nE0vcf8yWicTfsuOGGAe17qSY19LJZnx0W0I
+ymC59F8vJ_rU1oMr7vxgY7djsCq08hfbDQgudoWyFH4uRiZ1a_TKJJervQ4EU7WAIqUIlFQq3ptZkl1wNJhN5SZBVGPUxdERztckU-1btVEYxdrRlUx3w6wu
+0Y-U2sjR8d3nd3wMjSQBSyFR8i1lvvZRjiflvwgzBHEuFkUTspguVZtLzWuvU8PLhNFbmVOc63oBccYoyYaFPu-7AyGsQLpmCLQf0Rt7QYJFH8qKoPYcuKIp
+ivlh4WzFJHaWZqYWCi0XKTnNtgn-paIYFBOPtPnvDuGqFeF75nRePgfkTW8BgQwHOiWJbSV_EuTZdiF97F8KiX3fzQO_zuTplMv-f-bhRLICXQUjzbR7KrME
+YTZ-AL--VFaF
 }
 
 GCPEntityColoring(cloud_ids)
@@ -24,11 +19,11 @@ GCPEntityColoring(cloud_ids)
 !define cloud_idsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_ids_png, cloud_ids)
 !define cloud_idsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_ids_png, cloud_ids)
 !else
-sprite $cloud_ids <svg viewBox="0 0 24 24"><path d="M6,7.85v3.78a6.3,6.3,0,0,0,0,.75A7.58,7.58,0,0,0,8.4,17a7.34,7.34,0,0,0,3.43,1.86l.17,0V15.12a3.12,3.12,0,0,1,0-6.24V5.06Z" fill="#aecbfa"/><path d="M20.22,11.22a.78.78,0,0,1,0,1.56.78.78,0,0,1,0-1.56m0-.75A1.53,1.53,0,1,0,21.75,12a1.53,1.53,0,0,0-1.53-1.53Z" fill="#aecbfa"/><path d="M12,5.06V8.88a3.12,3.12,0,0,1,0,6.24v3.76l.17,0A7.34,7.34,0,0,0,15.6,17a7.58,7.58,0,0,0,2.34-4.6,6.3,6.3,0,0,0,0-.75V7.85Z" fill="#4285f4"/><path d="M20.22,4.71a.78.78,0,1,1,0,1.56.78.78,0,0,1,0-1.56m0-.75a1.53,1.53,0,1,0,1.53,1.53A1.52,1.52,0,0,0,20.22,4Z" fill="#4285f4"/><path d="M3.78,17.73a.78.78,0,0,1,0,1.56.78.78,0,1,1,0-1.56m0-.75A1.53,1.53,0,1,0,5.3,18.51,1.53,1.53,0,0,0,3.78,17Z" fill="#4285f4"/><path d="M3.78,11.22a.78.78,0,0,1,0,1.56.78.78,0,0,1,0-1.56m0-.75A1.53,1.53,0,1,0,5.3,12a1.53,1.53,0,0,0-1.52-1.53Z" fill="#aecbfa"/><path d="M18.75,11.63H18a6.3,6.3,0,0,1,0,.75h.81A1.65,1.65,0,0,1,18.7,12,1.5,1.5,0,0,1,18.75,11.63Z" fill="#669df6"/><path d="m5.25 12.38h0.81a6.3 6.3 0 0 1 0-0.75h-0.81a1.5 1.5 0 0 1 0 0.37 1.65 1.65 0 0 1 0 0.38z" fill="#669df6"/><path d="M6.87,5.11H5.25a1.58,1.58,0,0,1,0,.38,1.5,1.5,0,0,1,0,.37h1.4l1.5,1L9,6.48Z" fill="#669df6"/><path d="M18.75,5.11H17.13L15.05,6.48l.8.38,1.5-1h1.4a1.5,1.5,0,0,1-.05-.37A1.58,1.58,0,0,1,18.75,5.11Z" fill="#669df6"/><path d="M9,17.49A7.19,7.19,0,0,1,8.4,17L6.65,18.14H5.25a1.5,1.5,0,0,1,0,.37,1.58,1.58,0,0,1,0,.38H6.87Z" fill="#669df6"/><path d="M18.75,18.14h-1.4L15.6,17a7.19,7.19,0,0,1-.59.51l2.12,1.4h1.62a1.58,1.58,0,0,1-.05-.38A1.5,1.5,0,0,1,18.75,18.14Z" fill="#669df6"/><path d="M12,10.38A1.62,1.62,0,1,0,13.62,12,1.63,1.63,0,0,0,12,10.38Z" fill="#669df6"/><path d="M20.22,17.73a.78.78,0,1,1,0,1.56.78.78,0,0,1,0-1.56m0-.75a1.53,1.53,0,1,0,1.53,1.53A1.53,1.53,0,0,0,20.22,17Z" fill="#669df6"/><path d="M3.78,4.71a.78.78,0,0,1,0,1.56.78.78,0,0,1,0-1.56m0-.75A1.53,1.53,0,1,0,5.3,5.49,1.52,1.52,0,0,0,3.78,4Z" fill="#669df6"/></svg>
+sprite $cloud_ids <svg viewBox="0 0 24 24" width="72" height="72"><path d="M6,7.85v3.78a6.3,6.3,0,0,0,0,.75A7.58,7.58,0,0,0,8.4,17a7.34,7.34,0,0,0,3.43,1.86l.17,0V15.12a3.12,3.12,0,0,1,0-6.24V5.06Z" fill="#aecbfa"/><path d="M20.22,11.22a.78.78,0,0,1,0,1.56.78.78,0,0,1,0-1.56m0-.75A1.53,1.53,0,1,0,21.75,12a1.53,1.53,0,0,0-1.53-1.53Z" fill="#aecbfa"/><path d="M12,5.06V8.88a3.12,3.12,0,0,1,0,6.24v3.76l.17,0A7.34,7.34,0,0,0,15.6,17a7.58,7.58,0,0,0,2.34-4.6,6.3,6.3,0,0,0,0-.75V7.85Z" fill="#4285f4"/><path d="M20.22,4.71a.78.78,0,1,1,0,1.56.78.78,0,0,1,0-1.56m0-.75a1.53,1.53,0,1,0,1.53,1.53A1.52,1.52,0,0,0,20.22,4Z" fill="#4285f4"/><path d="M3.78,17.73a.78.78,0,0,1,0,1.56.78.78,0,1,1,0-1.56m0-.75A1.53,1.53,0,1,0,5.3,18.51,1.53,1.53,0,0,0,3.78,17Z" fill="#4285f4"/><path d="M3.78,11.22a.78.78,0,0,1,0,1.56.78.78,0,0,1,0-1.56m0-.75A1.53,1.53,0,1,0,5.3,12a1.53,1.53,0,0,0-1.52-1.53Z" fill="#aecbfa"/><path d="M18.75,11.63H18a6.3,6.3,0,0,1,0,.75h.81A1.65,1.65,0,0,1,18.7,12,1.5,1.5,0,0,1,18.75,11.63Z" fill="#669df6"/><path d="m5.25 12.38h0.81a6.3 6.3 0 0 1 0-0.75h-0.81a1.5 1.5 0 0 1 0 0.37 1.65 1.65 0 0 1 0 0.38z" fill="#669df6"/><path d="M6.87,5.11H5.25a1.58,1.58,0,0,1,0,.38,1.5,1.5,0,0,1,0,.37h1.4l1.5,1L9,6.48Z" fill="#669df6"/><path d="M18.75,5.11H17.13L15.05,6.48l.8.38,1.5-1h1.4a1.5,1.5,0,0,1-.05-.37A1.58,1.58,0,0,1,18.75,5.11Z" fill="#669df6"/><path d="M9,17.49A7.19,7.19,0,0,1,8.4,17L6.65,18.14H5.25a1.5,1.5,0,0,1,0,.37,1.58,1.58,0,0,1,0,.38H6.87Z" fill="#669df6"/><path d="M18.75,18.14h-1.4L15.6,17a7.19,7.19,0,0,1-.59.51l2.12,1.4h1.62a1.58,1.58,0,0,1-.05-.38A1.5,1.5,0,0,1,18.75,18.14Z" fill="#669df6"/><path d="M12,10.38A1.62,1.62,0,1,0,13.62,12,1.63,1.63,0,0,0,12,10.38Z" fill="#669df6"/><path d="M20.22,17.73a.78.78,0,1,1,0,1.56.78.78,0,0,1,0-1.56m0-.75a1.53,1.53,0,1,0,1.53,1.53A1.53,1.53,0,0,0,20.22,17Z" fill="#669df6"/><path d="M3.78,4.71a.78.78,0,0,1,0,1.56.78.78,0,0,1,0-1.56m0-.75A1.53,1.53,0,1,0,5.3,5.49,1.52,1.52,0,0,0,3.78,4Z" fill="#669df6"/></svg>
 
 GCPEntityColoring(cloud_ids)
-!define cloud_ids(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_ids*2, cloud_ids)
-!define cloud_ids(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_ids*2, cloud_ids)
-!define cloud_idsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_ids*2, cloud_ids)
-!define cloud_idsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_ids*2, cloud_ids)
+!define cloud_ids(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_ids, cloud_ids)
+!define cloud_ids(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_ids, cloud_ids)
+!define cloud_idsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_ids, cloud_ids)
+!define cloud_idsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_ids, cloud_ids)
 !endif

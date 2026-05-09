@@ -3,10 +3,7 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_tasks_png [128x128/16z] {
-xSsr0SH03031VtF_5JioCzDiU2TfVXzDaYH9alvL_Ozzhqls9qhAehx7f7QqUbom_ssVp-Vp-Nm-dy_dy_byFf-VbSLzZrdr65IF2_O_uFFvV3wVp-Vp-Nm-
-dy_dyqzFaYH9afG3
-}
+sprite $cloud_tasks_png [72x72/16z] xSod0S0m0CJ0a9Jz5uxB24_SJaZehZH9UdhPp-zmE1mEv-i5FwF3uN0ud3H9AW
 
 GCPEntityColoring(cloud_tasks)
 !define cloud_tasks(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_tasks_png, cloud_tasks)
@@ -14,11 +11,11 @@ GCPEntityColoring(cloud_tasks)
 !define cloud_tasksParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_tasks_png, cloud_tasks)
 !define cloud_tasksParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_tasks_png, cloud_tasks)
 !else
-sprite $cloud_tasks <svg viewBox="0 0 24 24"><g><g><rect width="24" height="24" fill="none"/><rect x="11" y="5" width="2" height="7" fill="#669df6"/><rect x="11" y="12" width="2" height="7" fill="#4285f4"/><g><rect x="15" y="5" width="2" height="7" fill="#669df6"/><rect x="15" y="12" width="2" height="7" fill="#4285f4"/><rect x="19" y="5" width="2" height="7" fill="#669df6"/><rect x="19" y="12" width="2" height="7" fill="#4285f4"/><rect x="7" y="5" width="2" height="7" fill="#669df6"/><rect x="7" y="12" width="2" height="7" fill="#4285f4"/><rect x="3" y="5" width="2" height="7" fill="#669df6"/><rect x="3" y="12" width="2" height="7" fill="#4285f4"/></g></g></g></svg>
+sprite $cloud_tasks <svg viewBox="0 0 24 24" width="72" height="72"><g><g><rect width="24" height="24" fill="none"/><rect x="11" y="5" width="2" height="7" fill="#669df6"/><rect x="11" y="12" width="2" height="7" fill="#4285f4"/><g><rect x="15" y="5" width="2" height="7" fill="#669df6"/><rect x="15" y="12" width="2" height="7" fill="#4285f4"/><rect x="19" y="5" width="2" height="7" fill="#669df6"/><rect x="19" y="12" width="2" height="7" fill="#4285f4"/><rect x="7" y="5" width="2" height="7" fill="#669df6"/><rect x="7" y="12" width="2" height="7" fill="#4285f4"/><rect x="3" y="5" width="2" height="7" fill="#669df6"/><rect x="3" y="12" width="2" height="7" fill="#4285f4"/></g></g></g></svg>
 
 GCPEntityColoring(cloud_tasks)
-!define cloud_tasks(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_tasks*2, cloud_tasks)
-!define cloud_tasks(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_tasks*2, cloud_tasks)
-!define cloud_tasksParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_tasks*2, cloud_tasks)
-!define cloud_tasksParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_tasks*2, cloud_tasks)
+!define cloud_tasks(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_tasks, cloud_tasks)
+!define cloud_tasks(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_tasks, cloud_tasks)
+!define cloud_tasksParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_tasks, cloud_tasks)
+!define cloud_tasksParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_tasks, cloud_tasks)
 !endif

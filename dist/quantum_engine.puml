@@ -3,9 +3,9 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $quantum_engine_png [128x128/16z] {
-xTe53iCm40NHDIhtFt65tuLjc3CZD3vHkVO_8Y8ABNTsOElYKikTzRTUpyV7nyUlMvHNyV7nyV7nqyJz-7tXXwJgLzOQyatztD8fV7nyV7o_JVniwbm-FZu-
-Vb2R-2KfNd_myV7n_Hn_MiFF__Zu-FZu_lF_S77gxnMTEfMFZu-FRr5junTb0stYvpuH7v__F-3Zu-Fdhsehg-9CEbjLijbrBNTsOAiwkO-FZu-_VKH4z08
+sprite $quantum_engine_png [72x72/16z] {
+xTOr0e0m40LH7Ev_OUHtkCTsfi5V0oJ9uezAjRSVY8FJt2n01oTJaJgbMjnmjAywvSh1MNRNoPGR1oUnxv3_w-BduTx1ATNTUR1JRXmS0-kekDQzECiwTRIl
+73WuKKS3
 }
 
 GCPEntityColoring(quantum_engine)
@@ -14,11 +14,11 @@ GCPEntityColoring(quantum_engine)
 !define quantum_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, quantum_engine_png, quantum_engine)
 !define quantum_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, quantum_engine_png, quantum_engine)
 !else
-sprite $quantum_engine <svg viewBox="0 0 24 24"><g><rect x="7.01" y="2" width="2" height="3" fill="#aecbfa"/><rect x="11.01" y="2" width="2" height="3" fill="#aecbfa"/><rect x="15.01" y="2" width="2" height="3" fill="#aecbfa"/><rect x="7.01" y="19" width="2" height="3" fill="#4285f4"/><rect x="11.01" y="19" width="2" height="3" fill="#4285f4"/><rect x="15.01" y="19" width="2" height="3" fill="#4285f4"/><rect x="19" y="15" width="3" height="2" fill="#4285f4"/><rect x="19" y="11" width="3" height="2" fill="#4285f4"/><rect x="19" y="7" width="3" height="2" fill="#4285f4"/><rect x="2" y="15" width="3" height="2" fill="#aecbfa"/><rect x="2" y="11" width="3" height="2" fill="#aecbfa"/><rect x="2" y="7" width="3" height="2" fill="#aecbfa"/><g><path d="M11,13H9V7H7v8h4v3h2V15h4V7H15v6H13V6H11ZM4,20V4H20V20Z" fill="#669df6"/></g></g></svg>
+sprite $quantum_engine <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="7.01" y="2" width="2" height="3" fill="#aecbfa"/><rect x="11.01" y="2" width="2" height="3" fill="#aecbfa"/><rect x="15.01" y="2" width="2" height="3" fill="#aecbfa"/><rect x="7.01" y="19" width="2" height="3" fill="#4285f4"/><rect x="11.01" y="19" width="2" height="3" fill="#4285f4"/><rect x="15.01" y="19" width="2" height="3" fill="#4285f4"/><rect x="19" y="15" width="3" height="2" fill="#4285f4"/><rect x="19" y="11" width="3" height="2" fill="#4285f4"/><rect x="19" y="7" width="3" height="2" fill="#4285f4"/><rect x="2" y="15" width="3" height="2" fill="#aecbfa"/><rect x="2" y="11" width="3" height="2" fill="#aecbfa"/><rect x="2" y="7" width="3" height="2" fill="#aecbfa"/><g><path d="M11,13H9V7H7v8h4v3h2V15h4V7H15v6H13V6H11ZM4,20V4H20V20Z" fill="#669df6"/></g></g></svg>
 
 GCPEntityColoring(quantum_engine)
-!define quantum_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, quantum_engine*2, quantum_engine)
-!define quantum_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, quantum_engine*2, quantum_engine)
-!define quantum_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, quantum_engine*2, quantum_engine)
-!define quantum_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, quantum_engine*2, quantum_engine)
+!define quantum_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, quantum_engine, quantum_engine)
+!define quantum_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, quantum_engine, quantum_engine)
+!define quantum_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, quantum_engine, quantum_engine)
+!define quantum_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, quantum_engine, quantum_engine)
 !endif

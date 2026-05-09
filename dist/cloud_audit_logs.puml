@@ -3,17 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_audit_logs_png [128x128/16z] {
-xTk7RkCm40HGRi____3TnOMuh4Mlm14Z6D00GOdB6rh5AdIRoPKhLwvS8JhHPX7-_Zkd0pFBBSnymk25fOT__oEGb9DvuTzUzR9F9ms_vwJXzz09_aaBWBTy
-Nh6HgpBYYvdID2zkxcOqwtFSehEy-Jqqj_mfukixeHZlEhVz-Osl2jIyUyjXgNU0zDKJ2l2Z1L1__Ad0DE_r6iZS1kCl2zIy5PjWujFohmhKFBVD0WNV9D8d
-CCdBy0Y4x_Xerwz50OZlQo4d7IoGUMr0B1K0URm0oEC5S1ulWFDu0Pmd5hsbElJnGG64PpLtyrlCtOJm0hoN9_7NC5p0z_6alXdQMo1YU_ZxUF51zFydlIyW
-WwLVysGsygtrMDYx0g4Zl-RTQzyZmlChFVRx8vxzJVJ7KCCf5zZlqmHltFcRyRAGBIg_s9OeYzz__KMIU6s8N_DzdqEiPie5Z_lsGyyxl887_RnprgHNFEvJ
-iQyjUDXNXCTzWdZSLuZ7VU_H2HxssNicUDpNV3QYMl37-dducgI2HtrAIr-ZlqdYr_Zyyn6zSrRok9yVekxt0YMF-_gw-7k1BPvM-TPIWSJtPoiTwLlsUm5_
-vStwabhdzm8ll5f_wehFFnV8V4jlSlJwbmjaddfLMRRzzG8RRyU7ZRz-KubRfAXw_FwtHrGbAMbHONxzhiEcjkxxDwT-ulhZZpnyfzyz_ihBoTgXlWuU7Bs5
-oRhZRsexJizNddzGoPl0Vavv_YNfMiZIyy-MGveAhZx_VgCRVlvP5Z1NfWSkDhWIjVpwY_sBU-O9yCiLl0urrDSsNy06F7cikFwOzO8l_A90tn7N5o6Bww_p
-rv_PR3nuBlcRByZrzoPkcxfBsyS7UFk3n3PuQGMVXu_VVx7Ryy3xB-C2Kax2qN_fKmy0lYXG1E210W0F5S1vl03EumLm7fz_m2BC1F100UBd_0icW5yt_yGA
-Vl7y6_eg-CNpZoGAVl7yAut39e3HpFmpYSHF5x2v-NSH28_FFvJeF3J_acVdNshSegVDFoKrK_gW-RVu_EFFzzVFF__y-VSD6FwQ0kV-_aJeqtz_W__-w9D-
-VtNbofKhL_u2
+sprite $cloud_audit_logs_png [72x72/16z] {
+xTS7ZcGX30JGjKsPV_yJBnAUgKvqWJO7A_tuoEdBtnN_mpp2xPiPznZX_ZsORuUic6yjcjFnRt4Y68T_0g6SrZi4qv29M9QhcElgAPa1lQ_dFfm1IIQnQ7Sw
+1Gac5lsGvNeBjPnCK-C2Rw46CY88AMOVqeNQXtHkl06PGFWQqamWFmBn06L1k7luYd4CXb4fsYFqx91X7XasYvEFa3qvhnbWLj5aEcl4f4C6sS8zWFR9sATp
+QSSdawnTCjiEAzuMpAuJd3yMp9wJWjbq_BFd-OBPSzf7TgAt1RFbe7fbz3uWCliERp6AP3aXCcQdJWvdGY0Jmpzt9dJrVXNZ64uxBrT1nLItmcazrzVe7SRd
+9qwx_zxkyXdxZhDWpzEZIsTrNs7rz5l6AMid3kUDHyZ0HyVp6EieIlOZXzCpMhX7IsuXZXn2GvW85oOnpujrXxErM7V4EWZuAwRlhSie915oNHw1nNR3Ox5F
+IEuJTY26PZIa6GrfHaFSP-uoXFI-5sG49FRXWYb8dmiaCw2DSmgwOaQqrEScz8vlECVz1kTAesE_mRcxe6zdE2x-hlWVNm4
 }
 
 GCPEntityColoring(cloud_audit_logs)
@@ -22,11 +17,11 @@ GCPEntityColoring(cloud_audit_logs)
 !define cloud_audit_logsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_audit_logs_png, cloud_audit_logs)
 !define cloud_audit_logsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_audit_logs_png, cloud_audit_logs)
 !else
-sprite $cloud_audit_logs <svg viewBox="0 0 24 24"><g><g><path d="M12.77,12.72a1.07,1.07,0,0,1-1.52,0L9.76,11.23l.76-.76L12,11.93l4.2-4.2.81.79Z" fill="#4285f4"/><path d="M16,11.59a.91.91,0,0,0-.81.81,3.21,3.21,0,0,1-2.86,2.76,3.25,3.25,0,0,1-1.84-.36,3.19,3.19,0,0,1,1.2-6,3.07,3.07,0,0,1,1.21.13.9.9,0,0,0,1-.28h0a.91.91,0,0,0-.4-1.45A5,5,0,0,0,7,12.49,5,5,0,0,0,12.48,17,5,5,0,0,0,17,12.63a.91.91,0,0,0-1-1Z" fill="#669df6"/><path d="m12 18a2 2 0 1 1-2 2 2 2 0 0 1 2-2" fill="#aecbfa"/><path d="m12 2a2 2 0 1 1-2 2 2 2 0 0 1 2-2" fill="#aecbfa"/><rect width="24" height="24" fill="none"/></g><path d="M18,20a1,1,0,0,1-.71-1.7L20,15.59V8.41L17.31,5.7a1,1,0,0,1,0-1.41,1,1,0,0,1,1.42,0l3,3A1,1,0,0,1,22,8v8a1,1,0,0,1-.29.7l-3,3A1,1,0,0,1,18,20Z" fill="#4285f4"/><path d="M6,20a1,1,0,0,1-.71-.3l-3-3A1,1,0,0,1,2,16V8a1,1,0,0,1,.29-.71l3-3a1,1,0,0,1,1.42,0,1,1,0,0,1,0,1.41L4,8.41v7.18L6.69,18.3a1,1,0,0,1,0,1.42A1,1,0,0,1,6,20Z" fill="#669df6"/></g></svg>
+sprite $cloud_audit_logs <svg viewBox="0 0 24 24" width="72" height="72"><g><g><path d="M12.77,12.72a1.07,1.07,0,0,1-1.52,0L9.76,11.23l.76-.76L12,11.93l4.2-4.2.81.79Z" fill="#4285f4"/><path d="M16,11.59a.91.91,0,0,0-.81.81,3.21,3.21,0,0,1-2.86,2.76,3.25,3.25,0,0,1-1.84-.36,3.19,3.19,0,0,1,1.2-6,3.07,3.07,0,0,1,1.21.13.9.9,0,0,0,1-.28h0a.91.91,0,0,0-.4-1.45A5,5,0,0,0,7,12.49,5,5,0,0,0,12.48,17,5,5,0,0,0,17,12.63a.91.91,0,0,0-1-1Z" fill="#669df6"/><path d="m12 18a2 2 0 1 1-2 2 2 2 0 0 1 2-2" fill="#aecbfa"/><path d="m12 2a2 2 0 1 1-2 2 2 2 0 0 1 2-2" fill="#aecbfa"/><rect width="24" height="24" fill="none"/></g><path d="M18,20a1,1,0,0,1-.71-1.7L20,15.59V8.41L17.31,5.7a1,1,0,0,1,0-1.41,1,1,0,0,1,1.42,0l3,3A1,1,0,0,1,22,8v8a1,1,0,0,1-.29.7l-3,3A1,1,0,0,1,18,20Z" fill="#4285f4"/><path d="M6,20a1,1,0,0,1-.71-.3l-3-3A1,1,0,0,1,2,16V8a1,1,0,0,1,.29-.71l3-3a1,1,0,0,1,1.42,0,1,1,0,0,1,0,1.41L4,8.41v7.18L6.69,18.3a1,1,0,0,1,0,1.42A1,1,0,0,1,6,20Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(cloud_audit_logs)
-!define cloud_audit_logs(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_audit_logs*2, cloud_audit_logs)
-!define cloud_audit_logs(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_audit_logs*2, cloud_audit_logs)
-!define cloud_audit_logsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_audit_logs*2, cloud_audit_logs)
-!define cloud_audit_logsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_audit_logs*2, cloud_audit_logs)
+!define cloud_audit_logs(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_audit_logs, cloud_audit_logs)
+!define cloud_audit_logs(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_audit_logs, cloud_audit_logs)
+!define cloud_audit_logsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_audit_logs, cloud_audit_logs)
+!define cloud_audit_logsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_audit_logs, cloud_audit_logs)
 !endif

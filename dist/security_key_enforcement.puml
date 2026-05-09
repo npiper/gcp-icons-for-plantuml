@@ -3,14 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $security_key_enforcement_png [128x128/16z] {
-xPa7TYGX34H7W5Iw_uKtEl4Q1hPGRxBAsHE-8l6nfLGgbKh93sqy4Y-fQe03xe2syl6nggRsGzgAt05l1W3-8W20VZIXD7kHcjPW4ugzi3i1gBs9xoOqYQLx
-fxK55cT10tmkM9S5jNVL8EVzgO3MMVlELpqFGGLy9MZt2lkWSXnxtn1CkeWHEI3mdG6FYG5QO_2y0NmAwWo_hW4Dg041V5_JBZ0Z-GR_1G6Td_P1BJZvOm6F
-oK2aXOy-dG4zp82-uDa0o5aJIeV__G5e31znen1c2Bny6mbr5W0D6Ne0QqL4gcByk4q78M6hRzpYecC39AW2WQLtM2R0w0J84Zys04eFmkltba6EzWkW77OV
-sawGw0vSkxPNfBC2j7OszS6sieHo5t_mUl41FwG1iCS7qO2HV2VuRFm7hoyWuXzOVuseFxx_P61bVF_DFTEDyFjy3LYFnzyoBj9vbXez_efV1SWo-j2W5HYm
-ME6BqVCll_g5olDjEIHe0LZW8y6jrTgieq_JR_pww_7an0VTOtJuuzVVVVVLinqO4Bl_k3y06BdF7uAm-qy--xqgJjnlvwTWofy_zBtV7fpuynVfeq-gqETF
-IWmzf07yoCVN837laYgB6bXj-tJiFM_0klGqzW1S50iwAd7u77K43wYCBq1Ko-Fk6n2Wgw-wE7Uc9MCBqDDLcT3pGm4W4Lt7RmagiTc878g4kFO9z9-OS4Fz
-nxt-9p_voKz-yfEV_FQP_2_r8lsTVCDL_blvlb0iF_d9Jtxoav_yv2TVSPNd-ZVz_xpyvECvN--k_ukcrmzw0r_ALRF7b_XKAfLAVGK
+sprite $security_key_enforcement_png [72x72/16z] {
+xPK7aeGm30HNbaVZ_t_u0bgVeN31N4vqfOsDakNRd-2Yr0WoKClzFI80Bw-JW8Ee_KF44zLKYu5i0vAUNtWiL36ORXaG_Gdn1A24v4CpODp_McEX29esWt5B
+e8bAQiv5TknXUYQmjoqzEDJKr4pXfaHmFHpEcnQ9McGsSkFbfa8uA7MmTKYtPR1NdZwEE1b7utvWd69YywRJzgKdUzY9dPU7c0NPJ2jGvROKIL3g_DopUXO4
+p_lY4UeJIds4Vet48FThiF9qKPNdPpxFZIXc7WVph9uljgQSBttz98I-WFp8etKhYTDzw3WE9x6p_MoHcBpevneecXJnlPh4TZNYQ9LudoQLt0QJlR5nFaLi
+kfPZGRKaeDXltLE4fQDuNF1yO3oNv_BO2-_oL3OcgNY7PuVkkJoNP_0UZoCwRFzhRyJhFLmOznUcyUYjAuBdjt7n2
 }
 
 GCPEntityColoring(security_key_enforcement)
@@ -19,11 +16,11 @@ GCPEntityColoring(security_key_enforcement)
 !define security_key_enforcementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_key_enforcement_png, security_key_enforcement)
 !define security_key_enforcementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_key_enforcement_png, security_key_enforcement)
 !else
-sprite $security_key_enforcement <svg viewBox="0 0 24 24"><g><path d="M7.78,16.6V12.85c0-.15-.29-.34-.49-.43a5.46,5.46,0,1,1,7.44-6.83A5.4,5.4,0,0,1,12,12.38a.82.82,0,0,0-.54.9V22H7.78V20.25H4.17V16.6Zm3.64-9.11a1.82,1.82,0,1,0-3.64-.06,1.83,1.83,0,0,0,1.8,1.85h0a1.84,1.84,0,0,0,1.83-1.79Z" fill="#4285f4"/><path d="M19.52,5.59A5.44,5.44,0,0,0,13.2,2.15a5.44,5.44,0,0,1,1.13,10.23.84.84,0,0,0-.55.9V22h2.43V13.29a.83.83,0,0,1,.55-.9A5.4,5.4,0,0,0,19.52,5.59Z" fill="#669df6"/></g></svg>
+sprite $security_key_enforcement <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="M7.78,16.6V12.85c0-.15-.29-.34-.49-.43a5.46,5.46,0,1,1,7.44-6.83A5.4,5.4,0,0,1,12,12.38a.82.82,0,0,0-.54.9V22H7.78V20.25H4.17V16.6Zm3.64-9.11a1.82,1.82,0,1,0-3.64-.06,1.83,1.83,0,0,0,1.8,1.85h0a1.84,1.84,0,0,0,1.83-1.79Z" fill="#4285f4"/><path d="M19.52,5.59A5.44,5.44,0,0,0,13.2,2.15a5.44,5.44,0,0,1,1.13,10.23.84.84,0,0,0-.55.9V22h2.43V13.29a.83.83,0,0,1,.55-.9A5.4,5.4,0,0,0,19.52,5.59Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(security_key_enforcement)
-!define security_key_enforcement(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, security_key_enforcement*2, security_key_enforcement)
-!define security_key_enforcement(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_key_enforcement*2, security_key_enforcement)
-!define security_key_enforcementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_key_enforcement*2, security_key_enforcement)
-!define security_key_enforcementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_key_enforcement*2, security_key_enforcement)
+!define security_key_enforcement(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, security_key_enforcement, security_key_enforcement)
+!define security_key_enforcement(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_key_enforcement, security_key_enforcement)
+!define security_key_enforcementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_key_enforcement, security_key_enforcement)
+!define security_key_enforcementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_key_enforcement, security_key_enforcement)
 !endif

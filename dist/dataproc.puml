@@ -3,17 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $dataproc_png [128x128/16z] {
-xPffsjiW30QjUH7u_YTkd2xKNsJguaRTFB-oCWAnFORbB3StDpStDpS6w07Oxv0Bq1CGbb_r7IWn0XIGbmPGJ4e0faCWmI_zrW0q1ClCVNu0njxsH3loMXzX
-3n1P3M24uzso6k2mgvFI0CQBFeeie_Cpc9KocdyG6_PsFuo_V0ysx6Eytz_JF_psT_lrxzS_od-cdz_S_qem_bBzbZN_n7xNO6LCM7wgE9h-8STFh1UMuI_g
-Wy10wYnfVWb0EpkMulSlDj07bYn_p9BZhmh1VgiVbYn_EQ7FzjkIv_Sezrb-_DNlB5b-M5Htyk9jRMvv_iMyUYbFzoRVQAsa-HzGszeUh9tMoF9lw8ky-rsa
--JTARLrUYpP8ys-WuXkbw0l84lrzzU-0PVatJ444QVxuWImYpnydGPRW7oV14lpZ21BydJ092Vw4RX3x4xl1s3y-784t-NEx0LvYVnpezGWClayXRVNk7s6w
-dWH3qF-CRVwrdYaAhwu0ktR2fxQjyZ_qKrIyHX70fMCML9y1ZClnAkaPGPaE01JZZm3gg1XQrHUY263wXAy7uCUbg3LrYdkP240Q1z344eBQkXUMrm1iLjy3
-yAFrhww-bw5IX7RCvRxJrafeLrdRpYxiTL62dvYxa924EazBF5Fjgmy7w-BG7wrS-oE-JHEjEH-hRmUj2cUhRt5MIlDmpQrh3VfPKC39rVCmiEhXdgEjFgZa
-ERywnnKe7drSrhKC74RODET_rFtogBbyRPSFoE1K1KgmsTgbdya3ac41NLMYpMRh_ka3AfqwuN7lxzxbFqvEgTMZVMwhIl1l-bfUxMn_uPoV2twlrSlHzl9S
-_sFMl-bR_EJruz-7us-w_vSQsS5UX-_C0Tcu0aO9DvMoKoUKWyvvBaXvdFXO0aUp9qmTiLAwVM2vU455Hnb0aTr-zGKT3W9bcFWENBoWj5E4-v_n0ouDBcX5
-UHrN8Dh_ZJkHeJ6ps-znuZimVpykha2S-Aa0uFeLFp5RGDVF1m3szWkgC6Nl6DUUGi54udUOY2AV-7i7vcve0-hsoGWGDdTD6x3vA-P8GE_qgPW1OVpptDpS
-tDpStDpSV08
+sprite $dataproc_png [72x72/16z] {
+xPO7igGm34JTtNAu_uKtUBP0g2ZCYCt_z-G1dfLn-MNwrAT0VHFvZ49HKtn48hM9GjwQWvW4RTVJWT9EKSwx1-R0GOcqEV7dsue6ACc9rv4vns8Puo_WI3-B
+yvFYR27lQOuH3aDcELKKIT6vbUDeSgQ8DATf5rdod8XvpdamnKYPfgpsYZm71TQ-gOyn-h07d58uATyuJKIUyqqmgsRp3oBBcGAPpLeel1qaf3dH96GvKz1E
+IdFY3PPFE0MtmmHm-ezkZXDCMeQ9ufJ8CUe9XzPisRcGMytwg96ZIbcjTWqYTL0V8GO_kj_i4WGgg3VFWRffYjlRMGGLpv5rEWfRqqlmgvvxHVhqDdFvjc67
+oi6vGTk_ZchcVjKU321F8eJmfrvoQUmjHZPmdG7XD-bAk5TdiRzclIsevegXssqEZt-qPgx50KQExjXZhHvx2JoB3nVnCKSHt5fu9rymYvIuTm4lweU-nc8B
+mUqNG5xMiu22ao7Z3U9yNVUNA34ElGZIM_rESJ5R5lDdTT9gH4CtfY_ssLkMypbI8ee4ogL0TzA7rQS-zHK
 }
 
 GCPEntityColoring(dataproc)
@@ -22,11 +17,11 @@ GCPEntityColoring(dataproc)
 !define dataprocParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataproc_png, dataproc)
 !define dataprocParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataproc_png, dataproc)
 !else
-sprite $dataproc <svg viewBox="0 0 24 24"><g><rect x="2" y="2" width="20" height="20" fill="none"/><path fill="#aecbfa" d="M 17.85 14.2 L 7.67 20.08 L 6.69 18.4 L 16.88 12.51 Z"/><path fill="#aecbfa" d="M 7.63 18.16 L 7.63 6.4 L 9.5 6.4 L 9.5 16.75 Z"/><path fill="#aecbfa" d="M 9.56 9.69 L 9.3 7.33 L 19.49 13.2 L 18.52 14.88 Z"/><path d="M14.39,10.26,9.3,7.33l.26,2.36,1.51.86a4,4,0,0,0,3.32-.29Z" fill="#4285f4"/><path d="M8.13,8.29h0a3.78,3.78,0,1,1,3.27,1.89A3.8,3.8,0,0,1,8.13,8.29ZM13,5.49a1.84,1.84,0,0,0-1.59-.92A1.83,1.83,0,0,0,9.57,6.4a1.84,1.84,0,1,0,3.67,0A1.8,1.8,0,0,0,13,5.49Z" fill="#aecbfa"/><path d="m7.63 12.94v5.22l1.87-1.41v-1.63a3.29 3.29 0 0 0-1.87-2.18z" fill="#4285f4"/><path d="m13.33 16.81 4.52-2.61-2.21-1-1.25 0.8a4.23 4.23 0 0 0-1.06 2.86z" fill="#4285f4"/><path d="m2.51 18.7a3.77 3.77 0 0 1 1.38-5.16 3.72 3.72 0 0 1 2.86-0.38 3.78 3.78 0 1 1-4.24 5.54zm4.85-2.81a1.79 1.79 0 0 0-1.11-0.89 1.83 1.83 0 0 0-2.06 2.69 1.83 1.83 0 1 0 3.17-1.84z" fill="#aecbfa"/><path d="M14.33,18.36h0a3.79,3.79,0,0,1,0-3.77,3.79,3.79,0,0,1,5.16-1.39,3.78,3.78,0,0,1,1.38,5.16,3.78,3.78,0,0,1-6.54,0Zm4.86-2.81a2,2,0,0,0-.67-.67,1.85,1.85,0,0,0-2.51.68,1.86,1.86,0,0,0,0,1.83,1.83,1.83,0,0,0,2.07.85,1.82,1.82,0,0,0,1.11-.85,1.88,1.88,0,0,0,0-1.84Z" fill="#aecbfa"/><path d="M9.49,16.15s-2.34,2-2.8,2.25l2.86-1.65a4.07,4.07,0,0,0-.06-.6Z" fill="#669df6"/><path d="M10.15,10S9.56,6.72,9.56,6.4V9.69a3.47,3.47,0,0,0,.59.27Z" fill="#669df6"/><path d="M15.3,13.47s2.76,1.15,3.22,1.41l-2.86-1.64a1.69,1.69,0,0,0-.36.23Z" fill="#669df6"/></g></svg>
+sprite $dataproc <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="2" y="2" width="20" height="20" fill="none"/><path fill="#aecbfa" d="M 17.85 14.2 L 7.67 20.08 L 6.69 18.4 L 16.88 12.51 Z"/><path fill="#aecbfa" d="M 7.63 18.16 L 7.63 6.4 L 9.5 6.4 L 9.5 16.75 Z"/><path fill="#aecbfa" d="M 9.56 9.69 L 9.3 7.33 L 19.49 13.2 L 18.52 14.88 Z"/><path d="M14.39,10.26,9.3,7.33l.26,2.36,1.51.86a4,4,0,0,0,3.32-.29Z" fill="#4285f4"/><path d="M8.13,8.29h0a3.78,3.78,0,1,1,3.27,1.89A3.8,3.8,0,0,1,8.13,8.29ZM13,5.49a1.84,1.84,0,0,0-1.59-.92A1.83,1.83,0,0,0,9.57,6.4a1.84,1.84,0,1,0,3.67,0A1.8,1.8,0,0,0,13,5.49Z" fill="#aecbfa"/><path d="m7.63 12.94v5.22l1.87-1.41v-1.63a3.29 3.29 0 0 0-1.87-2.18z" fill="#4285f4"/><path d="m13.33 16.81 4.52-2.61-2.21-1-1.25 0.8a4.23 4.23 0 0 0-1.06 2.86z" fill="#4285f4"/><path d="m2.51 18.7a3.77 3.77 0 0 1 1.38-5.16 3.72 3.72 0 0 1 2.86-0.38 3.78 3.78 0 1 1-4.24 5.54zm4.85-2.81a1.79 1.79 0 0 0-1.11-0.89 1.83 1.83 0 0 0-2.06 2.69 1.83 1.83 0 1 0 3.17-1.84z" fill="#aecbfa"/><path d="M14.33,18.36h0a3.79,3.79,0,0,1,0-3.77,3.79,3.79,0,0,1,5.16-1.39,3.78,3.78,0,0,1,1.38,5.16,3.78,3.78,0,0,1-6.54,0Zm4.86-2.81a2,2,0,0,0-.67-.67,1.85,1.85,0,0,0-2.51.68,1.86,1.86,0,0,0,0,1.83,1.83,1.83,0,0,0,2.07.85,1.82,1.82,0,0,0,1.11-.85,1.88,1.88,0,0,0,0-1.84Z" fill="#aecbfa"/><path d="M9.49,16.15s-2.34,2-2.8,2.25l2.86-1.65a4.07,4.07,0,0,0-.06-.6Z" fill="#669df6"/><path d="M10.15,10S9.56,6.72,9.56,6.4V9.69a3.47,3.47,0,0,0,.59.27Z" fill="#669df6"/><path d="M15.3,13.47s2.76,1.15,3.22,1.41l-2.86-1.64a1.69,1.69,0,0,0-.36.23Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(dataproc)
-!define dataproc(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, dataproc*2, dataproc)
-!define dataproc(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dataproc*2, dataproc)
-!define dataprocParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataproc*2, dataproc)
-!define dataprocParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataproc*2, dataproc)
+!define dataproc(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, dataproc, dataproc)
+!define dataproc(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dataproc, dataproc)
+!define dataprocParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataproc, dataproc)
+!define dataprocParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataproc, dataproc)
 !endif

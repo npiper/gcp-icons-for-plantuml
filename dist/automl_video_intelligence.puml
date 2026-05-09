@@ -3,14 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $automl_video_intelligence_png [128x128/16z] {
-xPg9SjqW34MjA-3o_p_SlLN8M0rewF0QwyoMzLtBvh2PwoL9aYH9agGieplZAzUHVV52zbLOz-KtzdM8NV5W3y2sAv_i4QYRsZvx279l-OUQOBNu4qrGsCDG
-jxbtoW2m7xtzP3o-dd3Fe1pe-0sMi-xnSxh7ENQufmmelH5ohz9nz-9Ann5kLZhkNbpfE610wOsq0utlnTsJ9xj7NcVTqwUub-xrbtElf7i_4VpctRUOAGqn
-zzhRZr1yHty5uZSwLLhSFSl_1MJu7fSXxcf28-xLwovVVtuMxBjVI5MtD8R6lVjyU-I0MZwQamzQBK7tnleXD_cbUlcDLap8FSi70BLCovVQcfEljBOSSs_C
-XohmBX-jkVdaXmE9UEuPOdNh07xTV2-_q3vmeNxY9X-mIndorQrVE3EH4D9pRsn_OkhDvJVBvtpx9-K-ttc8RZuuEPYHddjZlgpbavE3EUYx5yzNJazc6cyQ
-dtF_vIr3lbl-d8F-TGgiV0KC_Kj-vS9ihj1vJc7_X4kJUN9mRxB_KR__QLoQK2d7lrdeVtN8Zwuc6eTxj3B-w4q-LnTJu7Y9A-ElLCiFhoOgHqUMvX_5ygEx
-QCBn4jVcNpharyXAld1qRst-2Nmmev7h8vnBN9z_jzXYokdVLzOVldiFsi8zkvANmxjezTcxQEtHksZfNhu-UQfx-UeoNrtkTw-qIVe_SG-SvLEU15BsC9Gd
-dmGYvUnHc7AsyV7_FuQ6C-uPbIVSCuGRt3lW7tds531rLxxoIECp6dd0FGDSfruRARMsDQfShqYI94cI95y1
+sprite $automl_video_intelligence_png [72x72/16z] {
+xPQ7aWCX34Dj6T3-_mzV9STj1ZpAJ7hoqflMAzaGEpDltY33P9mPRYgDt9QmcaXmoo1CWynrcaaKRZaCqUHSHdIwdgSSf3AwFMteS0vEp9nbIgYPvpQecISs
+w3ZrhiqprwP8pppjDJrp5akGCoSjGyySzvMvdpDpHqJ0pO28mEpGDSkSjA4JOMReZsR0_j2UPHx_TNv_YT-7gB01o2Patki9F-XuRHNxGpFMvM3eu4yDOLRs
+Ei59eu4Zyw7JNUwd5tiTSjRuZVlCUoKsED8fdFQ8SmoMekDSB0o51vFtvnM_u4YdSZL3PCzSyHdh8GhszvBS6uGbfd7KEE_3KY4iCHYUhUOYe6mhTMIOpEd3
+RYllRIMUPrjfPyrSDnanvLIJdNE6ELHjo97_jkQmgRsMGpzFESNEKG-fjqa6Gs_Rt6GLPmPC1f5WP-RDcqy
 }
 
 GCPEntityColoring(automl_video_intelligence)
@@ -19,11 +16,11 @@ GCPEntityColoring(automl_video_intelligence)
 !define automl_video_intelligenceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_video_intelligence_png, automl_video_intelligence)
 !define automl_video_intelligenceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_video_intelligence_png, automl_video_intelligence)
 !else
-sprite $automl_video_intelligence <svg viewBox="0 0 24 24"><g><path d="M6.83,19.46l1,1.65h9.48L22,12.89,20.1,9.6l-4.74,8.21H7.78Z" fill="#4285f4"/><path d="M17.17,4.54l-1-1.65H6.74L2,11.11,3.9,14.4,8.65,6.19h7.58Z" fill="#4285f4"/><path fill="#669df6" d="M 15.47 9.99 L 14.14 10.98 L 14.14 13.06 L 15.47 14.06 Z"/><path fill="#aecbfa" d="M 10.79 12.3 L 10.41 12.99 L 9.5 12.99 L 10.07 12.01 L 9.5 11.01 L 10.41 11.01 L 10.79 11.65 L 13.29 11.65 L 13.29 9.62 L 11.26 9.62 L 11.69 10.3 L 12.44 10.3 L 12.44 11.04 L 11.22 11.04 L 10.31 9.62 L 8.53 9.62 L 8.53 14.38 L 10.31 14.38 L 11.22 12.96 L 12.44 12.96 L 12.44 13.7 L 11.69 13.7 L 11.26 14.38 L 13.29 14.38 L 13.29 12.3 Z"/></g></svg>
+sprite $automl_video_intelligence <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="M6.83,19.46l1,1.65h9.48L22,12.89,20.1,9.6l-4.74,8.21H7.78Z" fill="#4285f4"/><path d="M17.17,4.54l-1-1.65H6.74L2,11.11,3.9,14.4,8.65,6.19h7.58Z" fill="#4285f4"/><path fill="#669df6" d="M 15.47 9.99 L 14.14 10.98 L 14.14 13.06 L 15.47 14.06 Z"/><path fill="#aecbfa" d="M 10.79 12.3 L 10.41 12.99 L 9.5 12.99 L 10.07 12.01 L 9.5 11.01 L 10.41 11.01 L 10.79 11.65 L 13.29 11.65 L 13.29 9.62 L 11.26 9.62 L 11.69 10.3 L 12.44 10.3 L 12.44 11.04 L 11.22 11.04 L 10.31 9.62 L 8.53 9.62 L 8.53 14.38 L 10.31 14.38 L 11.22 12.96 L 12.44 12.96 L 12.44 13.7 L 11.69 13.7 L 11.26 14.38 L 13.29 14.38 L 13.29 12.3 Z"/></g></svg>
 
 GCPEntityColoring(automl_video_intelligence)
-!define automl_video_intelligence(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, automl_video_intelligence*2, automl_video_intelligence)
-!define automl_video_intelligence(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_video_intelligence*2, automl_video_intelligence)
-!define automl_video_intelligenceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_video_intelligence*2, automl_video_intelligence)
-!define automl_video_intelligenceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_video_intelligence*2, automl_video_intelligence)
+!define automl_video_intelligence(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, automl_video_intelligence, automl_video_intelligence)
+!define automl_video_intelligence(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_video_intelligence, automl_video_intelligence)
+!define automl_video_intelligenceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_video_intelligence, automl_video_intelligence)
+!define automl_video_intelligenceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_video_intelligence, automl_video_intelligence)
 !endif

@@ -3,17 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $profiler_png [128x128/16z] {
-xPg7bgGw34IHIgNk___X5pPpfhm8ommlS3S7k98icnxZxOY7XuU71ozpZPvPX7w9FylSxN_yZ__ntx_-tB_-ti_3Wzsh3-9UVIRkrMVYNdqcRjIl3y0SGNwv
-Dyc0srY_EW3pO2Rp5vZ9S9FwjG4Oc4m9ax3Vw9DessCd5o64ZVJzpmKUMI3y6hr55WcxG8yy0LRhdSmJaF5QgKUUvlL-lLRfWpd1-_rN2A--tfITNwly5_po
-Mrs2zvSObkkPXDjkDMPo5C3xXOvUvEwcLcKPm7fzs7Y5K5tOqrFQwn7qzDjUJzfnmCmTM3ZnCB5MH4CFpYnXhXww_TwZJJQDBHbyTgxiLvyJeJT7u2W7So3S
-tUoe0ltUjm_ouBTrs1rm-rtlCBhDvyEz67p1WG__fTc28UQmw6zymn5Uk44TCVXgWS4FF31kWLRp-xWl4hyIen4W6dEVuX-q7p6yHwFxNDrJ-y5H2zfq-QcB
-h_q87InZjlnq5TRO3xrbokdogxyU-x5xJCqEW5DEtIZueIyW9XSVr-cF_JJPWJ4v-qHKqgyBC3a3zMLPytEGI1sJm-OivkzombZTxtBsHJ5_X8pPwtuTDQj-
-wafs_LdsMzCVgckixfT1nwVvmw_m-p_GJpJy_Ve7q1t_UlzRLG_QPym_Oa1__hjy_8L8NXBwJjtr7nJ92mBTzTzarvX8Na6JDRFsyvybFTX__kkmdQBsSlRh
-GjO1PTloE7c0m_lKCLqtbycFqzyuDVpZ3yuHE28EFiRNYC70uGWMxbB01mMm8xqNleYia8FGpSk3lqLZ0o16hMDblNLsW6ou_s7k8_s-nzdQ0EBuF8yCm0FZ
-yq9ix7-9yCtXsE60bQwlGp42kmZSyOKllrhXyaO1GlpxJxz8B_exqC7v3InGD7zh0nYp-imb9zw8IJrzpUiNHlEo_kidctZxmMtXsp-SVrLjAmzTadxoFRsl
-FdKPVkQ0XczTGFdwj_G2cDZwG9ro-R3QGvsCmMK7Rvd9W7y1GNq0m2y-USlTBnUUmZKoJqBQjX3aIR2jnSXMydrGZO0w-Jv8bkosNOI1X_gLTht4Sfnw-7Ov
-vY7cF3F3RVia3C5TlmTi-tJCpDrimlpmyF3my2S
+sprite $profiler_png [72x72/16z] {
+xTQ7Sg0m30HGQwLTyly_V5Lpc8XWSM5AoavByJpaxl4fyXrIP-5THs_as_aRwZtZ_9s8HnWdun56kW4PF2X938STcJu4IbI64d5W97gdzDtOBRU94QsjL6bY
+begHUZFRrcKm5v3X1Brisrt6OJbn1-XbapNMHYOERIrsgC6WAbLQCwOChZx2fSFhXiRUP3aBKw3EKdxTVKEGxh3IyKuv69aG9Ra3EuL6GJbJ-HjoMVllmF4F
+_vDrEVPg1NWc8LiMnBaSQ7PcA5PJfhaSLIUNfYtM8kRl1Ai3d-l6vV3GoyNiKq6rOKrCdt6UEOwfyBWUPjlDuY3c6RiUvicizKHfkN3ql1Dt7PxrYvuf3blZ
+N9awplrv3yyqvxqkhr9CNOUzVL6AAVkYjq_fXzHzsZmt3CNfdXjW5bIXUewXVQwQftJpNAtdF1nmlt_EZtBjMZhbtddy7dp-Nhx_Jf2DHzuj6ACFrNTKY-c_
+wp1w0Q_UcLmmlNSlQUD6_5pYOjtq9AeedI2EunCO_njua18PZl69yfsV
 }
 
 GCPEntityColoring(profiler)
@@ -22,11 +17,11 @@ GCPEntityColoring(profiler)
 !define profilerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, profiler_png, profiler)
 !define profilerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, profiler_png, profiler)
 !else
-sprite $profiler <svg viewBox="0 0 24 24"><g><g><rect x="8" y="2" width="8" height="2" fill="#669df6"/><path d="M16.54,7.43l-.13.13L18,9.16,18.12,9A8,8,0,0,0,16.54,7.43Z" fill="#669df6"/><path fill="#669df6" d="M 20.61 6.55 L 19.01 4.95 L 16.6 7.36 L 19.11 8.05 Z"/><path d="M16.6,7.36l-.06.07A8,8,0,0,1,18.12,9l1-1Z" fill="#4285f4"/><circle cx="12" cy="14" r="4" fill="#669df6"/><path d="M12,18a4,4,0,1,0,0-8v4L8.73,16.32A4,4,0,0,0,12,18Z" fill="#aecbfa"/><path d="m12 22a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-2a6 6 0 1 0-6-6 6 6 0 0 0 6 6z" fill="#669df6"/></g></g></svg>
+sprite $profiler <svg viewBox="0 0 24 24" width="72" height="72"><g><g><rect x="8" y="2" width="8" height="2" fill="#669df6"/><path d="M16.54,7.43l-.13.13L18,9.16,18.12,9A8,8,0,0,0,16.54,7.43Z" fill="#669df6"/><path fill="#669df6" d="M 20.61 6.55 L 19.01 4.95 L 16.6 7.36 L 19.11 8.05 Z"/><path d="M16.6,7.36l-.06.07A8,8,0,0,1,18.12,9l1-1Z" fill="#4285f4"/><circle cx="12" cy="14" r="4" fill="#669df6"/><path d="M12,18a4,4,0,1,0,0-8v4L8.73,16.32A4,4,0,0,0,12,18Z" fill="#aecbfa"/><path d="m12 22a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm0-2a6 6 0 1 0-6-6 6 6 0 0 0 6 6z" fill="#669df6"/></g></g></svg>
 
 GCPEntityColoring(profiler)
-!define profiler(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, profiler*2, profiler)
-!define profiler(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, profiler*2, profiler)
-!define profilerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, profiler*2, profiler)
-!define profilerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, profiler*2, profiler)
+!define profiler(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, profiler, profiler)
+!define profiler(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, profiler, profiler)
+!define profilerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, profiler, profiler)
+!define profilerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, profiler, profiler)
 !endif

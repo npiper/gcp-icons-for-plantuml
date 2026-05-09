@@ -3,9 +3,9 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_storage_png [128x128/16z] {
-xTY55SCm40JHas4l_JSSPgPx6vZVm3oo9MrO000009ss-WhZPElF-sdkozcdBsUVVfhxgkx7HhFqOu-X7mTE-whjXxj_vDL-tF1eFyrzEVlqzMY_tL3PVvo_
-twx-VrAIy_-hETFvKz_VsjKj_QsJlfnz-cdkozcdhsjz-ctOQXNwOIi00Ep_xF_qsT_P_zd_sV_P_zd_wRF_i_-p_xF_lmTzzd_wxF_i_m000C0C
+sprite $cloud_storage_png [72x72/16z] {
+xTNL0O0m30JGO4VtNnZd1wSkzmQeHCKn8iAY-Kaj8Zi7UPu3lNDaPdwEh4pFaTsNS-JauHp4U8vvV00x-GACwiVed3FLMpe7UPu31-V4ZxYNkPUvbxcNkPUv
+byqHqGW
 }
 
 GCPEntityColoring(cloud_storage)
@@ -14,11 +14,11 @@ GCPEntityColoring(cloud_storage)
 !define cloud_storageParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_storage_png, cloud_storage)
 !define cloud_storageParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_storage_png, cloud_storage)
 !else
-sprite $cloud_storage <svg viewBox="0 0 24 24"><g><rect x="2" y="4" width="20" height="7" fill="#aecbfa"/><rect x="20" y="4" width="2" height="7" fill="#669df6"/><path fill="#4285f4" d="M 22 4 L 20 4 L 20 11 Z"/><rect x="2" y="4" width="2" height="7" fill="#669df6"/><rect x="6" y="7" width="6" height="1" fill="#fff"/><rect x="15" y="6" width="3" height="3" rx="1.5" fill="#fff"/><rect x="2" y="13" width="20" height="7" fill="#aecbfa"/><rect x="20" y="13" width="2" height="7" fill="#669df6"/><path fill="#4285f4" d="M 22 13 L 20 13 L 20 20 Z"/><rect x="2" y="13" width="2" height="7" fill="#669df6"/><rect x="6" y="16" width="6" height="1" fill="#fff"/><rect x="15" y="15" width="3" height="3" rx="1.5" fill="#fff"/></g></svg>
+sprite $cloud_storage <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="2" y="4" width="20" height="7" fill="#aecbfa"/><rect x="20" y="4" width="2" height="7" fill="#669df6"/><path fill="#4285f4" d="M 22 4 L 20 4 L 20 11 Z"/><rect x="2" y="4" width="2" height="7" fill="#669df6"/><rect x="6" y="7" width="6" height="1" fill="#fff"/><rect x="15" y="6" width="3" height="3" rx="1.5" fill="#fff"/><rect x="2" y="13" width="20" height="7" fill="#aecbfa"/><rect x="20" y="13" width="2" height="7" fill="#669df6"/><path fill="#4285f4" d="M 22 13 L 20 13 L 20 20 Z"/><rect x="2" y="13" width="2" height="7" fill="#669df6"/><rect x="6" y="16" width="6" height="1" fill="#fff"/><rect x="15" y="15" width="3" height="3" rx="1.5" fill="#fff"/></g></svg>
 
 GCPEntityColoring(cloud_storage)
-!define cloud_storage(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_storage*2, cloud_storage)
-!define cloud_storage(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_storage*2, cloud_storage)
-!define cloud_storageParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_storage*2, cloud_storage)
-!define cloud_storageParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_storage*2, cloud_storage)
+!define cloud_storage(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_storage, cloud_storage)
+!define cloud_storage(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_storage, cloud_storage)
+!define cloud_storageParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_storage, cloud_storage)
+!define cloud_storageParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_storage, cloud_storage)
 !endif

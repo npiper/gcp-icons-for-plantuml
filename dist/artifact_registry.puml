@@ -3,18 +3,13 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $artifact_registry_png [128x128/16z] {
-xTg7lgGi30LmGaBA-p_mLzqv_hpWP12tUhQNwr-8WZ2MhtdovCcJ9q_ennv0xAflKgR3QjTzKovJgMgsmZVJEb6tPhRADslqSU5jfMyc7tRzKXz5o7RzQZzV
-11ApjJuYxy-0pTRx22SAVwTlMXE5N-zdBWCnkzD7P53ukts4pmkFw5L_TDnwMdYSv-MmzTDeN7ZShWj2myEVrwZLp4YT-a-3xXtxoLcRMd9KPVtGbrp7viia
-UJ_P9ldmR5lMr_hvPSsfMJtbSqRNgUk5t_kIRyXCjycvxvxLPy_0VUnxHEJq-JE821_u7j_73p_uq2Fkxly8d07yJOU__Fg3ZpE07v7pHUdD_IUQyoFWUwHz
-ZtOs_h2xPVrm_5tQZmYNqVXRBIBoVipv4Swz-QTgnFVn8wmUvrzg4T_FZz2jqHN_y5ryP3T9iyTtzt4XiaLyJnznAgLen8_our_VVx1lVuZ_-8_Fxtszqo_L
-pdsNSekFi9_uhPGxVTeUWWQ-KhdJfsP2cEkFljPjDj9wXq-oUzGYFVh6kmVJLfVxSdZGhRRtNGuFvesM-go6l3hws_pdqbdXopg_QdzhIFpVNqsflyt4Q_pQ
-pdVFQBY_elMoFzuQb45zEXqrxvFOE9nP4xTwnQzsajTmq-maSgt_PQXpPadUwEhrHv9f5kkmy-TzmNtTtnaMBeMs9lBeygzjrbUtsklVRwAxb4AluKTwzI4D
-d_KRvZJMBysoYFZFnuAuWHSSmYxuMEVniLcn-LWGOwoI_Kpjr_nz_vfWiGr_F_rMtTKdOeMF_cKqwukFZa9zrlZeNpHhxoDRqL6VopwYX6QDV5o84Qjyf66n
-VVGH8_JGOZzAgJ7syLSMj_WExDpNkAlzjBpzZ__uvWFVt_bymNTx-UPTlxInZuc9xTnNwlfkEz_CUtuX7VlOW1Nl-vWu4EXx7sVGtN20FsXM6_ZEvH3esS-_
-s7R-g5dKEhvBzlElBTxnqR_mZNkBHFYepvT0t_c8K-cbmH_lyLI3FzeC8UZm4vyZaxxyThetjCq_LaVh-86FQ1srhfIAPlKZBgMOS-9pG_Z9rmzgALJBcr0j
-fIPVG81_Z9Jb4REyRyfhTLRB-bWxBWcM9NaVYvXRNq1Aldvr_mjOuzVFwbLzVEJSMLxrypqhty-Nn01ndzyeKQobVlwIuhjzJjsiw_tya4BjBhzHzfvTvy-D
-9RBUvuanUvtVQ6BEMkBFpwMiQ_pvPmbPuKkP3xMhVh_mJvuyUVBaRm
+sprite $artifact_registry_png [72x72/16z] {
+xTS7pgmm30JWSUpOdliV-1M4rZyAP0Elbr6tDf_O0Q800F_pFs9OY0dcqOWL9q8nIVDOTS8RBY8zOjs9w8ApMCGz9y8mH3tkE-4w5lF0gPggc2TErLJ5bB-G
+klwggNkKeXWZWbcV4Tutvm2FYaNOcMIrxkZqoQ_jydahPrACnYjwMjFWvAI3INTvT9ASNCpaaiWi9qboKi2aFlAhj3cUF7LSWLPLDg3vgSFSvi5p9nbjatP5
+d3nt61Ddcxi0pVshqadcKuVis6B9RtEO1cYIt-gGGF9Rd5eSluEJeyCdJXyTV-AWnT49nNsdzGPeb9C6YBLxZlJznRJS7SC-RCjERPacGF_gkDImowAZKJ50
+01c6xntrE4GlXtEd7PUuNWtdJjiNrGAv6CuT-bP6jTCf-z2hdSxsnjct7DllbYKfo9FXMsT_v5JsVMTpXk5Rfrw15cGvPDPmrI4TdJmusz38Uqx0HoTh-4rE
+eFzunzyxl7PgV-lnqT7WqKbz3Sj90yfvdJUo7C3ovTG2pO-E0UNan_DF9YhzvNGfVdSEGsJM-MSyt8XlZijnZsJ2qzjmH2fdEDWrWpKCUpPCpqw_vKm-FEQV
+DULuL6oTiQZui6UwBX33eZRIqLUO7gT_GlgpxvInrERFdF7qhaySnHYnkux9v8bOTEPFM_DLnnkcqJN7y4VdVpu3
 }
 
 GCPEntityColoring(artifact_registry)
@@ -23,11 +18,11 @@ GCPEntityColoring(artifact_registry)
 !define artifact_registryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, artifact_registry_png, artifact_registry)
 !define artifact_registryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, artifact_registry_png, artifact_registry)
 !else
-sprite $artifact_registry <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <path fill="#5C85DE" d="M 6 2.4 L 0.8 5.4 L 0.8 19.1 L 6 22.1 L 6 19.5 L 3 17.8 L 3 6.7 L 6 5 Z"/><path fill="#3367D6" d="M 0.8 8 L 0.8 16.5 L 3 17.8 L 3 6.7 Z"/><path fill="#3367D6" d="M 0.8 8 L 3 7.5 L 3 6.7 Z"/><path fill="#5C85DE" d="M 18 2.4 L 18 5 L 21 6.7 L 21 17.8 L 18 19.5 L 18 22.1 L 23.2 19.1 L 23.2 5.4 Z"/><path fill="#3367D6" d="M 21 17.8 L 23.2 16.5 L 23.2 8 L 21 6.7 Z"/><path fill="#3367D6" d="M 21 7.5 L 23.2 8 L 21 6.7 Z"/><path fill="#3367D6" d="M 21 17.1 L 21 17.8 L 23.2 16.5 Z"/><g transform="translate(6.86 6.5)"> <g transform="translate(4.54)"> <path fill="#5C85DE" d="M 0.6 -1 L -2.4 0.6 L 0.6 2.2 L 3.6 0.6 Z"/><path fill="#3367D6" d="M 1 5.9 L 3.9 4.3 L 3.9 1.2 L 1 2.8 Z"/><path fill="#3367D6" d="M 0.3 2.8 L -2.7 1.2 L -2.7 4.3 L 0.3 5.9 Z"/></g> <g transform="translate(0 7.9762)"> <path fill="#5C85DE" d="M 1.7 -3.1 L -1.2 -1.5 L 1.7 0.1 L 4.5 -1.5 Z"/><path fill="#3367D6" d="M 1.9 3.8 L 4.8 2.2 L 4.8 -1 L 1.9 0.6 Z"/><path fill="#3367D6" d="M 1.4 0.6 L -1.5 -1 L -1.5 2.2 L 1.4 3.8 Z"/></g> <g transform="translate(9.36 7.9762)"> <path fill="#5C85DE" d="M -0.7 -3.1 L -3.6 -1.5 L -0.7 0.1 L 2.2 -1.5 Z"/><path fill="#3367D6" d="M -0.4 3.8 L 2.5 2.2 L 2.5 -1 L -0.4 0.6 Z"/><path fill="#3367D6" d="M -1 0.6 L -3.9 -1 L -3.9 2.2 L -1 3.8 Z"/></g> </g> </svg>
+sprite $artifact_registry <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <rect width="24" height="24" fill="none"/> <path fill="#5C85DE" d="M 6 2.4 L 0.8 5.4 L 0.8 19.1 L 6 22.1 L 6 19.5 L 3 17.8 L 3 6.7 L 6 5 Z"/><path fill="#3367D6" d="M 0.8 8 L 0.8 16.5 L 3 17.8 L 3 6.7 Z"/><path fill="#3367D6" d="M 0.8 8 L 3 7.5 L 3 6.7 Z"/><path fill="#5C85DE" d="M 18 2.4 L 18 5 L 21 6.7 L 21 17.8 L 18 19.5 L 18 22.1 L 23.2 19.1 L 23.2 5.4 Z"/><path fill="#3367D6" d="M 21 17.8 L 23.2 16.5 L 23.2 8 L 21 6.7 Z"/><path fill="#3367D6" d="M 21 7.5 L 23.2 8 L 21 6.7 Z"/><path fill="#3367D6" d="M 21 17.1 L 21 17.8 L 23.2 16.5 Z"/><g transform="translate(6.86 6.5)"> <g transform="translate(4.54)"> <path fill="#5C85DE" d="M 0.6 -1 L -2.4 0.6 L 0.6 2.2 L 3.6 0.6 Z"/><path fill="#3367D6" d="M 1 5.9 L 3.9 4.3 L 3.9 1.2 L 1 2.8 Z"/><path fill="#3367D6" d="M 0.3 2.8 L -2.7 1.2 L -2.7 4.3 L 0.3 5.9 Z"/></g> <g transform="translate(0 7.9762)"> <path fill="#5C85DE" d="M 1.7 -3.1 L -1.2 -1.5 L 1.7 0.1 L 4.5 -1.5 Z"/><path fill="#3367D6" d="M 1.9 3.8 L 4.8 2.2 L 4.8 -1 L 1.9 0.6 Z"/><path fill="#3367D6" d="M 1.4 0.6 L -1.5 -1 L -1.5 2.2 L 1.4 3.8 Z"/></g> <g transform="translate(9.36 7.9762)"> <path fill="#5C85DE" d="M -0.7 -3.1 L -3.6 -1.5 L -0.7 0.1 L 2.2 -1.5 Z"/><path fill="#3367D6" d="M -0.4 3.8 L 2.5 2.2 L 2.5 -1 L -0.4 0.6 Z"/><path fill="#3367D6" d="M -1 0.6 L -3.9 -1 L -3.9 2.2 L -1 3.8 Z"/></g> </g> </svg>
 
 GCPEntityColoring(artifact_registry)
-!define artifact_registry(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, artifact_registry*2, artifact_registry)
-!define artifact_registry(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, artifact_registry*2, artifact_registry)
-!define artifact_registryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, artifact_registry*2, artifact_registry)
-!define artifact_registryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, artifact_registry*2, artifact_registry)
+!define artifact_registry(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, artifact_registry, artifact_registry)
+!define artifact_registry(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, artifact_registry, artifact_registry)
+!define artifact_registryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, artifact_registry, artifact_registry)
+!define artifact_registryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, artifact_registry, artifact_registry)
 !endif

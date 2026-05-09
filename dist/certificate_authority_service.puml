@@ -3,18 +3,13 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $certificate_authority_service_png [128x128/16z] {
-nPk7TYij48DfW-3z7_YlFfV40ojl11kTVai-JGMJuo0frvg289KE03N_2ZmM0EqV0IZnQNgo_-5DSA3JXz0iFLdsvaGQONlPVyL1j0LTQ0Ibx5w0fPDbvm9g
-Ea07eGkD83JT4usGh3au5s1n2vsKNMX5eUc4Hf3BBZU2Fksw0vsEQgNaN8fLzY-RfRrbX-LlCSLSQIFiAtlDSVg_I1coTCGCUbfdZJQ2l6kkeyYW6q6RTgFP
-4mudIcyvK6M-ay92Z8wFvZXH0uHFy5IHD069d-6vuX7-m5Eb0_mKRYXlvvTmIxQPNyDDOIy_tUNdhNnR7z6eyvrQ9Jxl_TBw7o7FPW02duMVqBy9tY64-5dr
-I-_jAxxrxbAG-ov-zNWlRw3rJVpY8flgFKksYn_Vr_kStxpDBNoyJrPlKtmltgVCzzqV-qhlYKBlNUNxyji8doJ0zl3pUrilXScOwFn4qZ_KPdCYy-DY-EW8
-ffUhhVnoczyrFjxvRStFKtx_vVZxxzN_fOVwVsrLualp_zBE_JT4zz_GjlsVRkt_eNtdtofy2rULsdV-a-sxIjIF-VcdzvytRRl_sOVtltTHFYd0pVklrxRx
-VtuB3g_aipQzvlC43DaN1wq4fzGtyctnMlPw2mr3R4e9doJ0ARg_O5lgWb-XV_xdfqGppjVVFtgxppTiU__fNfnV83-_-U9xVc5ySWnHnNR9ppzylQvRy7rT
-oOGzxx_zMf4ytAw59BIUEwQzW6jyCyv79-b7MCf80XoVx5qoVaxb2Nu9IwKd-EbgSXxWN_vddEPVRn4xpo_XGkaudvnZv_daV-CidnqY-JG_axFhD9_-Tvpa
-ypCyd-Ndm7IItrgWCXpaMw1A9_anS5LeVD9zLEaEFqN79xkN2_YOdtnAAxbvSUMF-MaILBqnVEBdy3pBQYNXImamXtSFJvM5huo0pLzNC-MFyAKHC8Tt1Yff
-VYa1jdg2Aun_xmKZ4lx0EmDLM7tqauYjVmLgWq-kdS8CciCx0rLflg44pFW3xrMN_EQoprMMVCpnhLV79zddC-3vSU2d1ghM-qCHcF1Z6tXl09xlio-iuUBm
-pa0LDW-zYbM7TmRWedV55rgW4od5rmtmoTTxy2u-1aK9JJ30Md-_0Txwke7FwGGl653m-b4aulKfsDhvNB72yPMrewzYYhUmLmKW1iZELvNgnmOQaahZDLZJ
-cuKpoW0tq92FVltG6H225xyDDg7NzE2tJnsTf7wx0v6kL-5hvdDuKAa0G6ilUBCKdbOs0F_3XT1L2ohyRm
+sprite $certificate_authority_service_png [72x72/16z] {
+fTW73kKW40DG6ChOzp_mrWX-SDW_PAsUyZGuJKhwcjAxfUEeukxUotyXkRex0BXxpQ-LveuhxoKRog3Gx4qja4XHmLh2KbmvBSeQ156gsN4jxlrnevqelUHh
+iQLhKT5QMhxVJe6Yz6w1JcwkHTqb4mKjFQH1f1jamjIKGX34aMcsKDpfQHi_SVBUiGEdtIuaSBiiBU38liOhaxQmCzjn4YG9ycDZr1atV2Tu1NEYofWpTXbl
+6Pk3ZiznHcu3WI6dp-Dl6RwJ9qxcFVXm673QpiaV3b-jI-SXupqxRrdyk5C9Ze1bMUyt1pO7mcG6NtZbczF6PXAy66IzhRuuFhT3BbRAuCY_7PGqqa2IQ6ca
+yYEBanqwq1KhvIfCnb4d-7eUxOpeFBAonrHvM6xn5R9dfgoCBzCw10emNByiJHnaPOnhrYQBElRaO7NgSaJGMID7lNNajl0tZdx0wpkdfYNvdPEJBkpSWIT9
+UUEKf7dZf8SqFtNGdfoySxoB8otBGEeusHyT35y6KYSx0RewEeuED9qCWWGzYoFjRDvcDXWIH5uS86rJ5iV-81CokNS2AxFxQPmRPicHbMNZ4ZDv8dQn2JMk
+cPl6NH6fYDjWNuw-Y1nxfgQHIDSxfgKKXlREOC9Bmqj6owP4kebTVkd6Jl_PF3deEHscN2F9RVFsDz9KcWmJb_ml157EfDhTIS2hA8Un5lgVzHC
 }
 
 GCPEntityColoring(certificate_authority_service)
@@ -23,11 +18,11 @@ GCPEntityColoring(certificate_authority_service)
 !define certificate_authority_serviceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, certificate_authority_service_png, certificate_authority_service)
 !define certificate_authority_serviceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, certificate_authority_service_png, certificate_authority_service)
 !else
-sprite $certificate_authority_service <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <g transform="translate(3)"> <path d="M9,0l-9.7,4.4v6.5C-0.8,17,3.4,22.6,9,24c5.6-1.4,9.7-7,9.7-13.1V4.4L9,0L9,0z" fill="#4285F4"/> <path d="m18.7 12c-0.1 0.8-0.2 1.6-0.4 2.2-0.2 0.9-0.5 1.6-0.7 2.1-0.1 0.3-0.2 0.5-0.3 0.7-0.2 0.3-0.3 0.6-0.5 0.9-0.4 0.7-0.8 1.2-1.2 1.7s-0.9 1-1.5 1.6c-0.6 0.5-0.7 0.7-1.4 1.1s-1.1 0.7-2.4 1.2c-0.3 0.2-0.7 0.3-1.3 0.5l-3.2-4.4v-13.6h7.9l5 6z" fill="#2879EA"/> <path d="m9 3.3c3 0 5.4 2.4 5.4 5.5 0 1.8-0.8 3.4-2.2 4.4v6.5l-3.2-3.1-3.2 3.1v-6.5c-1.3-1-2.2-2.6-2.2-4.4 0-3.1 2.4-5.5 5.4-5.5zm0 8.2c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.8-2.7-2.8-2.7 1.2-2.7 2.7 1.2 2.8 2.7 2.8z" fill="#fff"/> </g> </svg>
+sprite $certificate_authority_service <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <g transform="translate(3)"> <path d="M9,0l-9.7,4.4v6.5C-0.8,17,3.4,22.6,9,24c5.6-1.4,9.7-7,9.7-13.1V4.4L9,0L9,0z" fill="#4285F4"/> <path d="m18.7 12c-0.1 0.8-0.2 1.6-0.4 2.2-0.2 0.9-0.5 1.6-0.7 2.1-0.1 0.3-0.2 0.5-0.3 0.7-0.2 0.3-0.3 0.6-0.5 0.9-0.4 0.7-0.8 1.2-1.2 1.7s-0.9 1-1.5 1.6c-0.6 0.5-0.7 0.7-1.4 1.1s-1.1 0.7-2.4 1.2c-0.3 0.2-0.7 0.3-1.3 0.5l-3.2-4.4v-13.6h7.9l5 6z" fill="#2879EA"/> <path d="m9 3.3c3 0 5.4 2.4 5.4 5.5 0 1.8-0.8 3.4-2.2 4.4v6.5l-3.2-3.1-3.2 3.1v-6.5c-1.3-1-2.2-2.6-2.2-4.4 0-3.1 2.4-5.5 5.4-5.5zm0 8.2c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.8-2.7-2.8-2.7 1.2-2.7 2.7 1.2 2.8 2.7 2.8z" fill="#fff"/> </g> </svg>
 
 GCPEntityColoring(certificate_authority_service)
-!define certificate_authority_service(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, certificate_authority_service*2, certificate_authority_service)
-!define certificate_authority_service(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, certificate_authority_service*2, certificate_authority_service)
-!define certificate_authority_serviceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, certificate_authority_service*2, certificate_authority_service)
-!define certificate_authority_serviceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, certificate_authority_service*2, certificate_authority_service)
+!define certificate_authority_service(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, certificate_authority_service, certificate_authority_service)
+!define certificate_authority_service(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, certificate_authority_service, certificate_authority_service)
+!define certificate_authority_serviceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, certificate_authority_service, certificate_authority_service)
+!define certificate_authority_serviceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, certificate_authority_service, certificate_authority_service)
 !endif

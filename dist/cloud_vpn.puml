@@ -3,11 +3,10 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_vpn_png [128x128/16z] {
-xTk5TeH038NXiUJc_L-u4kISOOVg42hthwv-QpYagJ7662lZedZ5E8dXinbi43J8T_t_-FJfqwTFdpvz-lGnvAFyXArDzkByqfPaTMKzdLDiMPVIJPMR_KoV
-Fdtw7ua-_TnaL2j1lkAaT58L1LJgFDy6dVaDUssIRyE6VlPh0_0_MeBzWerV_ocXVbvLQKsm_5y2VRygK9DNuQS2_UfWxZuBQ76-Uxb_Eu2hV9DZPePsV45C
-fM-QhuVm-A80Pj2-Atrewf9eNr9NkzcNcrz_lTINFhLjyDlAUBpQD1_rc9b1Zc-_jThLBXx_bBHN_DKF6_-vPwZzoNAyqdL-4XV5oRoU29t-gvk0Aip_rHJg
-hrS607C-1_kflShhDsJ6_1y-vQSiM9EIPlY2SVhsghwIPot_b75S_gDFdpvz-lIv_Ibw-sFyzjVuxS_S_a-VFdtwzEdJfqy__lYR-EEFue-_OemnzWm
+sprite $cloud_vpn_png [72x72/16z] {
+xTXLWiCm34LH2v_tl-5oAmrxN4vq_mevON9RTfKZPTCCzL0wS8KJlRzJJZcusedpz8W0rgwAV1TTHOJJ5k6KGwah70T-EjvPpOG67Q2dA4-4GphX81p2BlSE
+s8IJr_Um96I0ZZeHqoa1z0BIAHvs_1mkoyQ8RoUSs2pekCRngnppG_PnlSoZ_-rtpjlvclrkWD7ESq0cZyCuOUA07d1or2B58Mb3ZdaexYr7BC8lUHqhfnng
+qVEUewYZddlBAUUASO0hnYNUf6eB
 }
 
 GCPEntityColoring(cloud_vpn)
@@ -16,11 +15,11 @@ GCPEntityColoring(cloud_vpn)
 !define cloud_vpnParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_vpn_png, cloud_vpn)
 !define cloud_vpnParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_vpn_png, cloud_vpn)
 !else
-sprite $cloud_vpn <svg viewBox="0 0 24 24"><g><rect x="14.73" y="11.28" width="4.18" height="1.38" fill="#669df6"/><rect x="17.95" y="6.12" width="1.38" height="11.71" fill="#669df6"/><rect x="16.3" y="17.32" width="4.68" height="4.68" rx=".28" fill="#4285f4"/><rect x="16.3" y="2" width="4.68" height="4.68" rx=".28" fill="#4285f4"/><rect x="6.98" y="11.28" width="4.28" height="1.38" fill="#669df6"/><rect x="3.03" y="9.63" width="4.68" height="4.68" rx=".28" fill="#4285f4"/><path d="m13 14.17a2.2 2.2 0 1 1 2.2-2.2 2.19 2.19 0 0 1-2.2 2.2zm0-3.57a1.38 1.38 0 1 0 1.33 1.4 1.37 1.37 0 0 0-1.33-1.4z" fill="#4285f4"/></g></svg>
+sprite $cloud_vpn <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="14.73" y="11.28" width="4.18" height="1.38" fill="#669df6"/><rect x="17.95" y="6.12" width="1.38" height="11.71" fill="#669df6"/><rect x="16.3" y="17.32" width="4.68" height="4.68" rx=".28" fill="#4285f4"/><rect x="16.3" y="2" width="4.68" height="4.68" rx=".28" fill="#4285f4"/><rect x="6.98" y="11.28" width="4.28" height="1.38" fill="#669df6"/><rect x="3.03" y="9.63" width="4.68" height="4.68" rx=".28" fill="#4285f4"/><path d="m13 14.17a2.2 2.2 0 1 1 2.2-2.2 2.19 2.19 0 0 1-2.2 2.2zm0-3.57a1.38 1.38 0 1 0 1.33 1.4 1.37 1.37 0 0 0-1.33-1.4z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(cloud_vpn)
-!define cloud_vpn(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_vpn*2, cloud_vpn)
-!define cloud_vpn(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_vpn*2, cloud_vpn)
-!define cloud_vpnParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_vpn*2, cloud_vpn)
-!define cloud_vpnParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_vpn*2, cloud_vpn)
+!define cloud_vpn(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_vpn, cloud_vpn)
+!define cloud_vpn(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_vpn, cloud_vpn)
+!define cloud_vpnParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_vpn, cloud_vpn)
+!define cloud_vpnParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_vpn, cloud_vpn)
 !endif

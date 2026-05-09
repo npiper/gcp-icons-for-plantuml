@@ -3,16 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_sql_png [128x128/16z] {
-xPfTqjj020Ip85ZV_yBvJ_Q1JoEijkmNSO1qfqepXgtlswcvvvvxxhbdV9JkERSFqYDopkcVeLj4PZuUSwP_WfwPl_c_3UozzB5bBZum8FJ5_sqGzbRwuY-3
-yGQwPnR-VuFjQeE_zC9V1XS7Nl0R1ZpmbLyD_5gwvej2edNJuUiwu96hV620wPcpeFjrmEcHSmaKWqTm0qynlxwpJHZeGkBqt__uE31WTRC_wxysGXeu2Boa
-hx7N6smfwSKsbK4-p_SjzkXHegqDPkPudkzV6qIOs8Rdb_IJVFTDqkju4PWpp_AhGOGVVZPp5lf9VZMeT6tmcqxvxb4-UZ6ha1OTyjsZIL-5jEY4lyPGUt2-
-so3R2kUx6VZ5vdntSpj1ftnjeEcSNmr6Sr_WV6sWzmNEDzyriD6WStx3eBsjd5g0pBi65lrjfJz36vIFNcqhp424KTE3leeCbmQGpWqatLi0Og3u3JeF8_le
-kS5bT1-jEcZHFPxNMHKZmoW3lwhn1DzR1WLUwU3txzZWW3us-ljhEemby8LE-TgW1BxG0Rzi73MCXLvs8ShN1YLoXGxusc3nAptYXNmLXK8lkn3bQuEiTLFW
-YAyDl0G-hjs_hN5-NCftQz8vNnjeEkURFtK2oKqi-SQX3VHJRV5zgK7_gPOTWJMCaCvFe05FBsx0JYzk4EZuuGS8EtwumGuzDPqRQBxplv9nQzL1vwCVsxd-
-7Gs3HkGypzuVrQ14eK4dzuUFWp0U1DuZ2D_TJ1kKm9T54F0R1f8EzuzgKCEuMpSZNhh_xzN12hnQXZX_hmxs0f-StpBGTCxNQvzvx0J-PNnjC0ezuWA-Y48D
-_8NyQg3fdDyti097VBtsFNVzH5pnzjwdsoLlxrswAmOt69vg2XqPr3f0T7u5ijkB6p0w3oEZyp2oouyRiC3pA30wDs1rmmrOu7aOsKCJDs2HuyzIZCx3oEZS
-WDKDDs21vs7C987d1e3-mRddddlkkUS7
+sprite $cloud_sql_png [72x72/16z] {
+xTK9SWGn20F0M0ps_l_5MNAf65mkyEHEU43lWOGVVjdyJpkqlOVI-nYN9UdtkTt6EDebHP-T9sbRKLDU79DaHu4fT2XjAkOGwYWfXd36hIXnrTunY99YIr4W
+IAsgwFE7Ir6IgM8ZX19naiCfRis7INJwqX6XH2L8e_UrOsDBrovjzk-PP4h6CUcWuYKTfYGTYVadr2iEq1PAtX48vk7AEvI2adRWfRQ8wBeNc4lIDGPzBKcK
+HBt2Y5OaAWnwRk0bhsHUZZQLfWhM-w94QAPeNpj02wlZPNnLZaGEWNC8k6e6Cf5do4aAIi9XQ2ZT6NdBHBPVKP8kB8Sc7KgWv1xyl4CfFjMSJ92ZX4KvyXA8
+fCi1Y9Uuwg3KRX015-kobBvW1APIK59zZzVCFVYvlWic4gyfbKpVpzUCWQdqtIWV9wwwt7TGWcXGCawKg4YvfxmS72fN-YxVgkzQRcgKQbU3i-mxbVs-vwz6
+hk-RqhuI-ywhiI_vgx4lCNON1iA-NvIe_9RvdqS
 }
 
 GCPEntityColoring(cloud_sql)
@@ -21,11 +17,11 @@ GCPEntityColoring(cloud_sql)
 !define cloud_sqlParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_sql_png, cloud_sql)
 !define cloud_sqlParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_sql_png, cloud_sql)
 !else
-sprite $cloud_sql <svg viewBox="0 0 24 24"><g><path fill="#aecbfa" d="M 4.67 10.44 L 4.67 13.45 L 12 17.35 L 12 14.34 Z"/><path fill="#aecbfa" d="M 4.67 15.09 L 4.67 18.1 L 12 22 L 12 18.99 Z"/><path fill="#669df6" d="M 12 17.35 L 19.33 13.45 L 19.33 10.44 L 12 14.34 Z"/><path fill="#669df6" d="M 12 22 L 19.33 18.1 L 19.33 15.09 L 12 18.99 Z"/><path fill="#4285f4" d="M 19.33 8.91 L 19.33 5.9 L 12 2 L 12 5.01 Z"/><path fill="#669df6" d="M 12 2 L 4.67 5.9 L 4.67 8.91 L 12 5.01 Z"/><path fill="#aecbfa" d="M 4.67 5.87 L 4.67 8.89 L 12 12.79 L 12 9.77 Z"/><path fill="#669df6" d="M 12 12.79 L 19.33 8.89 L 19.33 5.87 L 12 9.77 Z"/></g></svg>
+sprite $cloud_sql <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#aecbfa" d="M 4.67 10.44 L 4.67 13.45 L 12 17.35 L 12 14.34 Z"/><path fill="#aecbfa" d="M 4.67 15.09 L 4.67 18.1 L 12 22 L 12 18.99 Z"/><path fill="#669df6" d="M 12 17.35 L 19.33 13.45 L 19.33 10.44 L 12 14.34 Z"/><path fill="#669df6" d="M 12 22 L 19.33 18.1 L 19.33 15.09 L 12 18.99 Z"/><path fill="#4285f4" d="M 19.33 8.91 L 19.33 5.9 L 12 2 L 12 5.01 Z"/><path fill="#669df6" d="M 12 2 L 4.67 5.9 L 4.67 8.91 L 12 5.01 Z"/><path fill="#aecbfa" d="M 4.67 5.87 L 4.67 8.89 L 12 12.79 L 12 9.77 Z"/><path fill="#669df6" d="M 12 12.79 L 19.33 8.89 L 19.33 5.87 L 12 9.77 Z"/></g></svg>
 
 GCPEntityColoring(cloud_sql)
-!define cloud_sql(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_sql*2, cloud_sql)
-!define cloud_sql(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_sql*2, cloud_sql)
-!define cloud_sqlParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_sql*2, cloud_sql)
-!define cloud_sqlParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_sql*2, cloud_sql)
+!define cloud_sql(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_sql, cloud_sql)
+!define cloud_sql(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_sql, cloud_sql)
+!define cloud_sqlParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_sql, cloud_sql)
+!define cloud_sqlParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_sql, cloud_sql)
 !endif

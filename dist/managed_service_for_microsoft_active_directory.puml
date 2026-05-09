@@ -3,16 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $managed_service_for_microsoft_active_directory_png [128x128/16z] {
-xPk7UgH038F7yXJU_ualZPWZsYhlS0LTJVtPaN_QHyhVbJDdpfmvOzqFvRS-S22-jh4CEmplhR_n-r5ujFx6NqOx2D_x1tyPzGYyjPM_33zazB_vom4IrBxb
-3vjktfO_NG9lVSkVBG7wTpxeaoMmmDTr0MPAq5PwS-lBce7f-5hGnh9caWGr-AKWHd2I1Bx55uG38S6aqRSu24oJm0AFs9nbbWIs6VqI_6aIxF4h_tKI6E1l
-0ImEEc-fkt5uaGHmh7p0lCVex_WlaS0SlWcyhdZRyLyY0U3xr31lny-N072IrRmTFry2E4_lNWW_MmB0BwGMmi-Mm2xYOOIVBe5V2U4J2H9NV_yMuITBy3iF
-SFWcbCybqDk7aVSGVgO4GC1--WXmlYu1OHbP4yBFbS0Zz9s4doe1NsfSv6iIw7nD0dtzHGdq-TCbqFtJ9T3tFrm2VVyRTBh_rIJGZp-Q1FhnLvH0F__8bm3W
-UA0mVhu4b_Y5y_Cb0EYhP_m94WIUyFCbuDTVLZW_MG9-_HdL4two1Fpw-o9Va408uQiIw7nT0fslIw3pUGF39l0b2NI-Be7EroNG-Re4Eb-NGEVhHm8pWH_u
-PoGmm1suU030CtXxW8uuziEUvY-HqPu-0G64_T_3uszEOen_FtuCQ6VWCC9FhfxZ-GP0hvx7BuRmxwo-Pjp-1GW_jNg--hm1f5RFNpwmUvFozUfv-u2znS4d
-0ABrF8OVgmtG0f1S_Hu6yFS5NwkU1zVllr6-NZr10JSs2gBr-lrFlNgThrUlzwzN7m7O_LUwABdL1sj_n3Vd_cTMpuz-s3NYJlYy-Xp--XUfl-29wjNZ7-6p
-wgNubVHA-Rpw_0LelJKBVbxrN47-20A2JwlN0rp6lyM3Jwf_rGPWnVTMWq-hrsC_w5vxfDdAJwu-0Y3e0EBXjtK8a5azrm0VSOVjXU-rM2FLfyOC02oEGotu
-hRfGlVe0eb2z5cVyqIRHzQUkz5WBlb2zFWH3g5wB1t-q_-pd3s88XbQzFWHAzNgyjt9eb1T_vioPCsT-0G
+sprite $managed_service_for_microsoft_active_directory_png [72x72/16z] {
+xPV1hjqm24G1x77-_ukhNAWG6ulRMRLziyhgo9wJ427_L7xYBXagXcF2Hu5pLEXiu3aGDWl0muFM_d2UipXL6y5vZbEgtYoyd6ECAc0lmVc0b505R14421H6
+HNvNX3zN1PKFvppVIbCpTpDnl349Je9yhkZ5k9k_dEqId0JDfGKbih6aE5z9yvR492UbJKzJCMkSbBOd5Njsam_QEIbjUXmLqNOWPARImfJMqHfdBiq_QS_5
+QT9eJahZxbNIGFJSfH7UkpJYFPnBynPfdA-acVNJ56SihS-DmXHdBgtccCgDW_bul7DI6iafQIIdfD6SbCPpKXhFEVSv6zxldC8S9zx3kDN5c0ObI7hXdC10
+YU-qC8kQ6rKDDSUg6cgkLZNCdAzgwFzELiDmUZNpUoLdKCsevq4rS--zci61Aci7Q5fDnLk0RScPLfDHh-yqTXGFphMQ-znmv7eXbsec_o-BnM3hYs4s7jqf
+AgjXri7aq0lXoybgY4H9Pr3DfAHM3LEI_8FvoIy
 }
 
 GCPEntityColoring(managed_service_for_microsoft_active_directory)
@@ -21,11 +17,11 @@ GCPEntityColoring(managed_service_for_microsoft_active_directory)
 !define managed_service_for_microsoft_active_directoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, managed_service_for_microsoft_active_directory_png, managed_service_for_microsoft_active_directory)
 !define managed_service_for_microsoft_active_directoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, managed_service_for_microsoft_active_directory_png, managed_service_for_microsoft_active_directory)
 !else
-sprite $managed_service_for_microsoft_active_directory <svg viewBox="0 0 24 24"><g><path fill="#669df6" d="M 11 2 L 11 22 L 21 14 Z"/><path fill="#4285f4" d="M 11 2 L 10.02 3.17 L 18.87 13.78 L 10.07 20.83 L 11.01 22 L 21 13.99 Z"/><path d="M11,2,7,6.75a3.11,3.11,0,0,1,1.11,1L11,4.34V2Z" fill="#669df6"/><path d="M8.35,18a2.93,2.93,0,0,1-.92,1.19L11,22h0V20.08Z" fill="#669df6"/><path d="m6 10a1 1 0 1 1 1-1 1 1 0 0 1-1 1m0-4a3 3 0 1 0 3 3 3 3 0 0 0-3-3" fill="#aecbfa"/><path d="m6 18a1 1 0 1 1 1-1 1 1 0 0 1-1 1m0-4a3 3 0 1 0 3 3 3 3 0 0 0-3-3" fill="#aecbfa"/></g></svg>
+sprite $managed_service_for_microsoft_active_directory <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#669df6" d="M 11 2 L 11 22 L 21 14 Z"/><path fill="#4285f4" d="M 11 2 L 10.02 3.17 L 18.87 13.78 L 10.07 20.83 L 11.01 22 L 21 13.99 Z"/><path d="M11,2,7,6.75a3.11,3.11,0,0,1,1.11,1L11,4.34V2Z" fill="#669df6"/><path d="M8.35,18a2.93,2.93,0,0,1-.92,1.19L11,22h0V20.08Z" fill="#669df6"/><path d="m6 10a1 1 0 1 1 1-1 1 1 0 0 1-1 1m0-4a3 3 0 1 0 3 3 3 3 0 0 0-3-3" fill="#aecbfa"/><path d="m6 18a1 1 0 1 1 1-1 1 1 0 0 1-1 1m0-4a3 3 0 1 0 3 3 3 3 0 0 0-3-3" fill="#aecbfa"/></g></svg>
 
 GCPEntityColoring(managed_service_for_microsoft_active_directory)
-!define managed_service_for_microsoft_active_directory(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, managed_service_for_microsoft_active_directory*2, managed_service_for_microsoft_active_directory)
-!define managed_service_for_microsoft_active_directory(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, managed_service_for_microsoft_active_directory*2, managed_service_for_microsoft_active_directory)
-!define managed_service_for_microsoft_active_directoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, managed_service_for_microsoft_active_directory*2, managed_service_for_microsoft_active_directory)
-!define managed_service_for_microsoft_active_directoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, managed_service_for_microsoft_active_directory*2, managed_service_for_microsoft_active_directory)
+!define managed_service_for_microsoft_active_directory(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, managed_service_for_microsoft_active_directory, managed_service_for_microsoft_active_directory)
+!define managed_service_for_microsoft_active_directory(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, managed_service_for_microsoft_active_directory, managed_service_for_microsoft_active_directory)
+!define managed_service_for_microsoft_active_directoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, managed_service_for_microsoft_active_directory, managed_service_for_microsoft_active_directory)
+!define managed_service_for_microsoft_active_directoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, managed_service_for_microsoft_active_directory, managed_service_for_microsoft_active_directory)
 !endif

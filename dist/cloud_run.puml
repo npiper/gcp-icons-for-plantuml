@@ -3,14 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_run_png [128x128/16z] {
-xPF1Zkim3CGgAOdw_r_ytisx8M33MF3ckGh8J4dtypyd9oSd9oSd4TEhtvyvAIb_GDLaGMRQ_PcJ1L6Pke2giO1qIdOGLVLQ03ho0tWj01rtG2OMS5t83s0i
-uBfo4KJzJ0RM2GE0c01u3VC1ZF1QBe90FwuO80g8sJNq_aeAA1T1hWJ80o9N0bm7WNyWyBW8gXO2v06v5E0wY5mAK174Ke0y0FqyCo4-09uz12ISFBi3OYt0
-TL2r5A0XO44c1RW38fS2L0Un8K11KBKIu0x87G5Co0-00e30VG2H9GuWuEIzL0Uv8S104BaKe0u8V8i2L0TLQm4cWbmBK0T4hWMO3Y8t11W82lqOg0xW0-10
-pm5_Nqu66WWYrmBK0LLh0QQ3D_zD0KGW230710bIWEWW-nNixztKJl_Ltrzf_Fp-xgIVlIVu_FvytvzNxjwglpvxUNsTy7RgmNwPVFS7y7ligRyVulVOKpy_
-qGBxYVu4VeyzzNTluUV_ve_w-PKMsLD_4x_0VgAV-3tsrD_4BxAd_YxW5zbJVmVmU-o9jn_SHVRKtnVmY-oflnFuFVRKtmty0lk9_XluHVRKtyGligT-uZVP
-Kp_n2-md-WluHVRK_mtCyzXJVp_0RxAd_WluHVRasucpnvxwku7VP4_zD_2BxAcV-4tsB21-i1yB1VqFy8ligHzissHF_Ty07ONzo0e_sPlwBwm3UrL_OXtO
-Y_gxWH_iHVqiQR0tzJVnWxselvkl7rWq_TqF6BV07Wri7_W5zcmOxS3VWxsaVxGptOEzfd-q4qvtVjJqQ6VkmLxJFzgPlZvoQcOt_yx-vEJavEJav1y
+sprite $cloud_run_png [72x72/16z] {
+xTA7ZiD040BG3DYU_FyFNxyZ6Hafh4xTgAQn-uXl_v8hLwhc6uizuFClWRKYyhcfWAKhWQE9PAt1I08b69Ti_8cALRlMepSYcnoVWM0_qfM19eovhGmijf5d
+CDdIWJ1WgQrWORAjmt8RQM1X4HnCjdmWDIj0Ef2Qyo8nCDv9RJ2mu4fYE5ZmJ9RE7B3GHXfOQ8E1fKK50mjjvM4pGFG42HOLGKKMflYclN-o_TsdVMXx-lwT
+_ZkAVJzFDpohVx_pzzRHfcQ_-MmzlrJdDSQamrzZzJ5CPXx3CYO_po5MP9hpKApeVvhpb6V9v6DOaUbndasio3JdWLYnIR_gFcUrxldQFBjOaMdEGrqmCirv
+n9gcQ9v3hC2a69PCuJmbLcZIF9CbKppFzln6xvMqQ1w89LCyJxTOCiNpT5CicS9v7XNLYKdfyJlAb0JpzEEGAGY7eKBJUgvSUGS
 }
 
 GCPEntityColoring(cloud_run)
@@ -19,11 +16,11 @@ GCPEntityColoring(cloud_run)
 !define cloud_runParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_run_png, cloud_run)
 !define cloud_runParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_run_png, cloud_run)
 !else
-sprite $cloud_run <svg viewBox="0 0 24 24"><g><path fill="#aecbfa" d="M 8.9 2.63 L 12.02 12 L 21.38 12 Z"/><path fill="#4285f4" d="M 21.38 12 L 12.02 12 L 8.9 21.38 Z"/><path fill="#4285f4" d="M 3.44 21.38 L 6.57 19.81 L 8.9 12 L 5.78 12 Z"/><path fill="#aecbfa" d="M 3.44 2.63 L 5.78 12 L 8.9 12 L 6.57 4.19 Z"/></g></svg>
+sprite $cloud_run <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#aecbfa" d="M 8.9 2.63 L 12.02 12 L 21.38 12 Z"/><path fill="#4285f4" d="M 21.38 12 L 12.02 12 L 8.9 21.38 Z"/><path fill="#4285f4" d="M 3.44 21.38 L 6.57 19.81 L 8.9 12 L 5.78 12 Z"/><path fill="#aecbfa" d="M 3.44 2.63 L 5.78 12 L 8.9 12 L 6.57 4.19 Z"/></g></svg>
 
 GCPEntityColoring(cloud_run)
-!define cloud_run(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_run*2, cloud_run)
-!define cloud_run(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_run*2, cloud_run)
-!define cloud_runParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_run*2, cloud_run)
-!define cloud_runParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_run*2, cloud_run)
+!define cloud_run(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_run, cloud_run)
+!define cloud_run(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_run, cloud_run)
+!define cloud_runParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_run, cloud_run)
+!define cloud_runParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_run, cloud_run)
 !endif

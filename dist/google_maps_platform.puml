@@ -3,18 +3,13 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $google_maps_platform_png [128x128/16z] {
-rTi7ijWy20HW48Z5zp_mQ_fhv2BjyDgNEYsB4PRRH3ZDUY2F3uderkJBD8yy9XdUlYAyvt4fNELJ6OuR039CFetdSIVV0PzLWUNn5F-95JGSznBvdmfKQlLZ
-CNu0N0efZYV8_wjiWHrRyGFGodh_ACyKhK4myNm1VFmC_QlZ-GBuU7nU0NuGeryt0vP9TB_iDDHymySFW0ffT9PV_04X7C-1Zn_WTFS7Fdw0qjqVwCKV4Dpi
-FnM0N0IZ3l-XWbm6q8V_3ov-G3Xz-F-WPcy897_uvmKatYNmyPU7eyVsEHXvNq0cqAtfE_Eugs2K1-RSloxWZ-UCre7B-CWtQCJMTrd1V4Arm5ryejFJDnSG
-AZF7-UBd0BRzSm5TJXdEPsz0uze_2xdGS1sVwDJqpxfSCfoD_lu2v0tS5exJ-47fvL_-LnGdexyz09RNN6uvJaP_W1UCNrUHrGO4UolUyyBHJOQ52G3Okv38
-2s6F-OOfVffSTlU3MPC73LDyLJxSJUK9flZj4p3FkRalv6F4b-TtStTPpC_Q_16_b1_8H7r-cBzRMdyWg_Cnuf_dJszk1vMUV_YmSlu1MPxlDlBDv85VnuFU
-_xh_Ott_vVFxjEkxBov0gtWAzTFH7soZTFRwP_FeBpQWeU8rX9wC_je414eUmgVH7nvFWGxcpcqMq-WlhO3VneEv_-_comKOgbx2j7dqdvV02b-4_c_qP-PJ
-2zIHzzhsup_yqXztOcgFyP0DDet-nDoQgeXgCpT7xKl8UVHdPlRF7v4Fq6H77wE_AghVmBMCZVXU_mQo-uPy1Dcavilm6Q_0YVZID-3DYDdZ3tz6nDEhppUW
-Vzu742kAJmX5hMJs4aquPYNnNLX4FD5zUWM2-FPJk0AHrTsVCQC_Tv-dHiVFTrsbkn2Is7dgTY4GYyynVlOW1TJ8-8HAXMRaw9lKCAFYNQeOCtiXPNG_FY65
-rBRZcrHgjZdw9hNCjcQlIpNRYGyffrCylV7mCmZYebUc6OZPA-J4x9KA41UzGWfYzYePYCMlr44iVgMdVFba3SHLfv8Jh_XB0SIfLwY1w7ub1z7zIY1clr83
-qVrA0UAUev22sFShTH0RRo45SVYLEeZ3BwGW3hzI1t7uXHg8SxyIYAslaeFO-GifyMcxL83OUWivYFONKgBzfG94-mivYFONKgBzfG94-mifGFp_ga8jCgF9
-DrALt-qL
+sprite $google_maps_platform_png [72x72/16z] {
+lPO7qZCg24KHq4lsl-6NpZDyQ8Wp_vcUSWQk3LhHPC0kLmn36lr6KrmcVbBnk7nW07hLr2z1SmDGAY0MDKy0FYZ6FOMIHg9vWNweST61fYXIopNEDYCsixrc
+lsgmAtkFOMowkXCqrSxinKvZmBAS838y21hqVJakig72p3g03uzXkLYpoCJFFsQDGIYXsuS8qxSmzooNB8H0pYI2-TUH5ZKpW7Tr9TkBOZCSyeDh5bj8RQ9J
+071DVbhx5F8G2dIu9Wzwp1gcWC0CLl504m-ivD740ojvL5M40ffuifoxNf5rnRb7NnbtqIln5MxuwfQMzrAf_bbG__3eyhX37uIa1JQHtj6pvaeBfsAYqMB1
+zF_mGWEihjK-UUGLTXDyVzEtnr9DYCeLTKqUZpCW6X5H7QKNZ3LXM012EQ9_qYq2Mj0aryHogWN1adHg1S4YO5h3acHS7QJa6mreIzjdR6YqXsMh4Ve64VTO
+9Pmy8bH6kZmYLCB9Tz6msiw9iAGQfGeYsWyoTaIJARL8EylO4IGRi4h7KJWES1HE_c8n_OOYsJbLWD3LSMTW-fsEixMAkn6DJkW8vHmb1AOp1l8xi7xC87H8
+yn7kZ87JjlnmGEcOPe0rEeV7OFfd_0S
 }
 
 GCPEntityColoring(google_maps_platform)
@@ -23,11 +18,11 @@ GCPEntityColoring(google_maps_platform)
 !define google_maps_platformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, google_maps_platform_png, google_maps_platform)
 !define google_maps_platformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, google_maps_platform_png, google_maps_platform)
 !else
-sprite $google_maps_platform <svg viewBox="0 0 24 24"><g transform="scale(1.03) translate(3.5)"><path transform="translate(-3.91 -.4)" d="M14.45.78A8.09,8.09,0,0,0,5.8,3.29L9.63,6.51Z" fill="#1a73e8"/><path transform="translate(-3.91 -.4)" d="M5.8,3.29a8.07,8.07,0,0,0-1.89,5.2,9.06,9.06,0,0,0,.8,3.86L9.63,6.51Z" fill="#ea4335"/><path transform="translate(-3.91 -.4)" d="M12,5.4a3.09,3.09,0,0,1,3.1,3.09,3.06,3.06,0,0,1-.74,2l4.82-5.73a8.12,8.12,0,0,0-4.73-4L9.63,6.51A3.07,3.07,0,0,1,12,5.4Z" fill="#4285f4"/><path transform="translate(-3.91 -.4)" d="M12,11.59a3.1,3.1,0,0,1-3.1-3.1,3.07,3.07,0,0,1,.73-2L4.71,12.35A28.67,28.67,0,0,0,8.38,17.6l6-7.11A3.07,3.07,0,0,1,12,11.59Z" fill="#fbbc04"/><path transform="translate(-3.91 -.4)" d="M14.25,19.54c2.7-4.22,5.84-6.14,5.84-11a8.1,8.1,0,0,0-.91-3.73L8.38,17.6c.46.6.92,1.24,1.37,1.94C11.4,22.08,10.94,23.6,12,23.6S12.6,22.08,14.25,19.54Z" fill="#34a853"/></g></svg>
+sprite $google_maps_platform <svg viewBox="0 0 24 24" width="72" height="72"><g transform="scale(1.03) translate(3.5)"><path transform="translate(-3.91 -.4)" d="M14.45.78A8.09,8.09,0,0,0,5.8,3.29L9.63,6.51Z" fill="#1a73e8"/><path transform="translate(-3.91 -.4)" d="M5.8,3.29a8.07,8.07,0,0,0-1.89,5.2,9.06,9.06,0,0,0,.8,3.86L9.63,6.51Z" fill="#ea4335"/><path transform="translate(-3.91 -.4)" d="M12,5.4a3.09,3.09,0,0,1,3.1,3.09,3.06,3.06,0,0,1-.74,2l4.82-5.73a8.12,8.12,0,0,0-4.73-4L9.63,6.51A3.07,3.07,0,0,1,12,5.4Z" fill="#4285f4"/><path transform="translate(-3.91 -.4)" d="M12,11.59a3.1,3.1,0,0,1-3.1-3.1,3.07,3.07,0,0,1,.73-2L4.71,12.35A28.67,28.67,0,0,0,8.38,17.6l6-7.11A3.07,3.07,0,0,1,12,11.59Z" fill="#fbbc04"/><path transform="translate(-3.91 -.4)" d="M14.25,19.54c2.7-4.22,5.84-6.14,5.84-11a8.1,8.1,0,0,0-.91-3.73L8.38,17.6c.46.6.92,1.24,1.37,1.94C11.4,22.08,10.94,23.6,12,23.6S12.6,22.08,14.25,19.54Z" fill="#34a853"/></g></svg>
 
 GCPEntityColoring(google_maps_platform)
-!define google_maps_platform(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, google_maps_platform*2, google_maps_platform)
-!define google_maps_platform(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, google_maps_platform*2, google_maps_platform)
-!define google_maps_platformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, google_maps_platform*2, google_maps_platform)
-!define google_maps_platformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, google_maps_platform*2, google_maps_platform)
+!define google_maps_platform(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, google_maps_platform, google_maps_platform)
+!define google_maps_platform(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, google_maps_platform, google_maps_platform)
+!define google_maps_platformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, google_maps_platform, google_maps_platform)
+!define google_maps_platformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, google_maps_platform, google_maps_platform)
 !endif

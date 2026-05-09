@@ -3,14 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_jobs_api_png [128x128/16z] {
-xPc7pYCX38Jn09vz_oS-hPGpsHyHKd2uuayzxHjC3PkU90Y280YaL9rHuUUlfjyI85TzXkhcr-Vmz8S__1XDp__17_wwrq_cVNxoECR-s_jU_g8yUU3doOT-
-GVO1ibMVaP_nPp-0lVuS_X7X3t_umn_-y8S__FZDz_t0gOUS0CZ0b_sIBeWWmzK_HpBs-0q1jlcj1dly1h3NdyJRRvvILQbQ2wGBuEoNeWVlq9pkWBCVbUHn
-3yaYoN3rIoMF7hAqZpZwyytUGnKB02z_vJ64p6qQ-lYLL-79qMXzuEDNNjogjIeFiWyW7lxAPjS2KodPTG6mt5zCVvlm1hG549k4Y_sWISfuMb2j08lzJPzJ
-Zv0_mYrkVpOzaj47Q3s0jNwoQ_qWGFra4SAu-VRhiuzyqW5uFFN9wV9W5S92l_HZhmStltum0p2lxRm0aavaeR-oc_d3b3P35jQVzikF44kvq6y_V2B96CTa
-TVAJwPdZ0NMrtqRsStxw-CFFYL-T-b-E9yU_ap_nU6h-N_OemRhdRyhsosFoPGC2rZq0hS-l_rQbZ3SOj-pv_UyMKbud3U4nBq3hfFNK-Vcdj46w7k7i189s
-0lUWJiw_e5_phG3Z2e27L_Fxlr_bqPkIdD3c-562VFUMdrzuPw7z_qMXlU4R01SDgISqkt-0_CFKkVqhqFk-6a2KOwrd0AEGWqONqZz0ku3iBq35Du0XXRnN
-sVMhUm03HNaR_tOLrWVmHN1Ybaa0T_e04K2Z0ji3fAq1oBGr095s1R23shu0HDg6aARVWcH9Rn04GH3y0W
+sprite $cloud_jobs_api_png [72x72/16z] {
+xTI7aiCm20HGiKZi_VyNtv24D9m2ryjEYPkUiS8mVb7-8njfCDDorgmxjXdv5OxAMRJjB8opo5Sxf5uvPCs9j-iuMuTbPXWF9K2BmPOfq6g0t-xyE__E4GBU
+viYfChIS756qd1n0-uu0a3ZkEhheUM6CPNGSTM8NaYR3qt3MGU61qcYfaYFcw_sRFBlZ6PjTSVQCgRYfTe9gzQpTGXsHIIyEZgBW89PTNV6ZIZt6gEOOZKl0
+quxucfLsZ3I_-RmptP4h1xvbVb6VTeo-5zVn9j2IGyPdNUkpxCoj1dyVfrMF9STgzKJx-45g1kndxAta_ptQC3U3u4ualJfzM5ohn793hwYn4iISE36TSc9k
+6CArc2FLx1VI9g3JOiIY1xdayKCFEr3C-I3OhKYDP226sOO65jsWJHpttg56H20oF0dgvlqX-MPGSdeGTRn39Z5-MVxp2W
 }
 
 GCPEntityColoring(cloud_jobs_api)
@@ -19,11 +16,11 @@ GCPEntityColoring(cloud_jobs_api)
 !define cloud_jobs_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_jobs_api_png, cloud_jobs_api)
 !define cloud_jobs_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_jobs_api_png, cloud_jobs_api)
 !else
-sprite $cloud_jobs_api <svg viewBox="0 0 24 24"><g><rect x="2" y="2" width="20" height="20" fill="none"/><path d="M6.45,18.24a3,3,0,1,1,3-3A3,3,0,0,1,6.45,18.24Zm3.63-.4A4.43,4.43,0,1,0,2,15.32a4.91,4.91,0,0,0,0,.67,3.43,3.43,0,0,0,.09.44l.06.21a4.59,4.59,0,0,0,.34.79,4.24,4.24,0,0,0,.76,1l.15.15.33.27a4.16,4.16,0,0,0,.73.44A4.44,4.44,0,0,0,9,19l2.93,2.93a.33.33,0,0,0,.47,0l.66-.65a.33.33,0,0,0,0-.47Z" fill="#4285f4"/><path d="M11.8,16.58A5.41,5.41,0,0,0,12,15.07,5.53,5.53,0,0,0,6.39,9.65,5.82,5.82,0,0,0,4.47,10V5.83a.62.62,0,0,1,.62-.62H21.28a.63.63,0,0,1,.63.62V16a.63.63,0,0,1-.63.63Z" fill="#aecbfa"/><path d="M15.58,5.21V3.73H11.14V5.21H9.65V2.87a.63.63,0,0,1,.63-.62h6.16a.62.62,0,0,1,.62.62V5.21Z" fill="#669df6"/><path fill="#4285f4" d="M 15.58 5.21 L 17.06 4.74 L 17.06 5.21 Z"/><path fill="#4285f4" d="M 9.64 5.21 L 11.13 4.67 L 11.13 5.21 Z"/></g></svg>
+sprite $cloud_jobs_api <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="2" y="2" width="20" height="20" fill="none"/><path d="M6.45,18.24a3,3,0,1,1,3-3A3,3,0,0,1,6.45,18.24Zm3.63-.4A4.43,4.43,0,1,0,2,15.32a4.91,4.91,0,0,0,0,.67,3.43,3.43,0,0,0,.09.44l.06.21a4.59,4.59,0,0,0,.34.79,4.24,4.24,0,0,0,.76,1l.15.15.33.27a4.16,4.16,0,0,0,.73.44A4.44,4.44,0,0,0,9,19l2.93,2.93a.33.33,0,0,0,.47,0l.66-.65a.33.33,0,0,0,0-.47Z" fill="#4285f4"/><path d="M11.8,16.58A5.41,5.41,0,0,0,12,15.07,5.53,5.53,0,0,0,6.39,9.65,5.82,5.82,0,0,0,4.47,10V5.83a.62.62,0,0,1,.62-.62H21.28a.63.63,0,0,1,.63.62V16a.63.63,0,0,1-.63.63Z" fill="#aecbfa"/><path d="M15.58,5.21V3.73H11.14V5.21H9.65V2.87a.63.63,0,0,1,.63-.62h6.16a.62.62,0,0,1,.62.62V5.21Z" fill="#669df6"/><path fill="#4285f4" d="M 15.58 5.21 L 17.06 4.74 L 17.06 5.21 Z"/><path fill="#4285f4" d="M 9.64 5.21 L 11.13 4.67 L 11.13 5.21 Z"/></g></svg>
 
 GCPEntityColoring(cloud_jobs_api)
-!define cloud_jobs_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_jobs_api*2, cloud_jobs_api)
-!define cloud_jobs_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_jobs_api*2, cloud_jobs_api)
-!define cloud_jobs_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_jobs_api*2, cloud_jobs_api)
-!define cloud_jobs_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_jobs_api*2, cloud_jobs_api)
+!define cloud_jobs_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_jobs_api, cloud_jobs_api)
+!define cloud_jobs_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_jobs_api, cloud_jobs_api)
+!define cloud_jobs_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_jobs_api, cloud_jobs_api)
+!define cloud_jobs_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_jobs_api, cloud_jobs_api)
 !endif

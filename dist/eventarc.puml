@@ -3,19 +3,13 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $eventarc_png [128x128/16z] {
-xPk9kgig38MR5PBu_Yzy1_puLciL2Ptku7_cqy9FCAJePj-6kRYukBYu46WnzwYuMr78rzngiOURVduCA3NePOSwXe9FHbxetYS2RnK-X6wK7n7wnWohjBo2
-Ktv8-4ulK0KaQqVpGsN77d-p1F-eBszc7mfTGMu4W2e1BE8fqHYK0BgcfMzYq7iagIVGk9VRVfAZ6ExrkW78wabfyiL7CqoVW6JrnDRGnoTHTq2g9TflbLWY
-DBLys0io0m3ktupMjD2U2b_kCn4otb8sQJHNFHZKO0hATgG2_aTw1V4_HgCGRD-eC_vjk8AK7zZ4ChHwUsFknz-poRHVEoFwGVp_WkjF7ROjtvF_trd_z6NN
-F-C5X9MBBRFrh_QY74wcAIitMwRhFzWBa6fAyhjxAqgIGHGywP7LHqm7WR0tw9TGabf17eizs5NI-hfPAah6jy0QQzjMzXItlBuI1e2Rw45YRUq2SDHJUfUw
-VdEz83etCYbzK9h0Osty8xqm_2_gIM7uNzSp-q9_ecVsoSVqa87AuH_JQzZxfbzKIr78i1uU4GFPFoGlvcRkPcv5HlImYFwrrJLy6z0NTsAk0z7xwUJQwFIB
-cM-8LdHVY8vFKVh0TmZgzv6psY9B9L9w4jHtFzgEqtDizOaVG7qt0N1oWSg9t_m86IhkElCwWG_uy_4n_J4Rljj8TGyxkJuoT_Kv0RFvvSpFOzGwVlI7llJz
-4GEV_SKxdAGk2q3sPMBUmLxrdvSV_oVx_Gt-7yv__DJFzJUV_zdrbwy_y0v8rvzy_VKE-VgR__mfvWTOINp-P5ydYV0pyN5-9lscO_UsECdFEEjbQl6nliZS
-1er1n8IUqnlJ-s_EuOwT-idzDz_XNNsbNtdoqN668Wod-d0OtUP5RkV4Sdfr8y9fx-ZNSmWjxy_jdDpeJv7U1lKLWT1zWWzK5o2XdtkoH4CIwd_mP6bMJuBJ
-_mkzilXzNy_m_KTwpMUV082yg1S182AHR2zGL1GYq_hM2RJuMUqzF3e2zJczA9IK6Ev0T8FFw05z91QCpltp069QJsp-w8ZFwmbINpfL0Enaey_qmhzAQlOX
-0WMRpeGFXO0Z61yuiEbexkk_meHEdN-X3zFdN-XZhzywVm3gPiwVA3PzPVrlF7-2xvm_-Rt_z_DFlyexyu_B-Clh3vjJPKXKBg4-Mt_KbS9a_H5j85MwYGPF
-C401A3GnYQ0K-HCOelKiRcWZ7uJkC1gwHJk_e2GRX7QFZk3WVXEhl678wWdGEO3YxVonIDlZGf-EnSTIqde21UruVeeIGNZ-cjJRU07c3z5m_trmAy902Utw
-i8jdvYMGoiwDJ9_D8mnsyXOGSIAFGjtxWKNl-o_2y44vrrbBmEfjS5t-mx__vkBYukBYuay
+sprite $eventarc_png [72x72/16z] {
+xPW5OiCm34KZzlrFlEGdARYoDUOtAlm-OpEvo-_Y7o9ceZSfMCsZnKeBD-NNIInWE8WDUi4Wzgpuvi0tm0szZT748hmY3ClP1xSLnyqpnZiZ4xC05c_eY-ir
+IwnotfATWGZFyoxRD5h6Sj7H1ZmQQBoAoQWTtEW2IOmGopl4V3xC28mzpCSBXfub3-JDmVXU_NdR_E3MQC5aWuvbNOPmlbxv_bd6QBb_LEOR5NXO4Ojcmc2g
+QSsdCTaIn_jzgWcRljzZHN2hqEWqmj4YtgvPB2BqvHhgGric7p8H3JKQoR0yiuZvYWab6l48xiJviCZC3t1fArza0NK7-GsF3N54MB_gBLajyriqsReHyqU0
+t7bC5Z1hdLespTwHxWIwyqGBcyqEeCTDru9cCmROEWzd7dwnnr9FFIvsh_lJwBtckLvtzJiqN_Tw7_9ykT2wpsSUUCot8LQdVfzwj1iHDDMBe9RiicLkArZp
+1pmPHEZWwaV3VzEKBGxbcXcQRTvQawuwlrqZH-avlgXJeK4CioFZseQ5AyqUqsXHrRqp3Sc9pUeM96OQ95YAkdTbIorW5glhNdv-tRlygBgNtrhtydlLlKm4
+3GzNosK3iK5pN1Mq2sb4SwbYt1_GH6_wnUeDfqH5R5QjSrVGzkTA73LTQ8_9x8GAoy4sYjjpxcxfOZLqxKCxVCQl_Hm07S4lKtwFpoL-5_yy0G
 }
 
 GCPEntityColoring(eventarc)
@@ -24,11 +18,11 @@ GCPEntityColoring(eventarc)
 !define eventarcParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, eventarc_png, eventarc)
 !define eventarcParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, eventarc_png, eventarc)
 !else
-sprite $eventarc <svg viewBox="0 0 24 24"><path fill="#4285f4" d="M 17.98 7.06 L 7.26 17.75 L 6.35 16.84 L 17.06 6.14 Z"/><circle transform="translate(-5.01 11.71) rotate(-43.97)" cx="12" cy="12.06" r="2.82" fill="#669df6"/><path d="M21.75,12a9.69,9.69,0,0,1-1.91,5.79,1.54,1.54,0,0,0-1-.78,8.43,8.43,0,0,0,1.28-7.48,4.13,4.13,0,0,0,1.15-.67A9.62,9.62,0,0,1,21.75,12Zm-4,7.84a9.73,9.73,0,0,1-8.93,1.39,4.13,4.13,0,0,0,.67-1.15A8.43,8.43,0,0,0,17,18.8,1.54,1.54,0,0,0,17.79,19.84ZM15.14,2.77a4.13,4.13,0,0,0-.67,1.15l-.05,0A8.46,8.46,0,0,0,7,5.2a1.57,1.57,0,0,0-.78-1,9.73,9.73,0,0,1,8.93-1.39ZM5.2,7a8.43,8.43,0,0,0-1.28,7.48,4.13,4.13,0,0,0-1.15.67A9.73,9.73,0,0,1,4.16,6.21,1.54,1.54,0,0,0,5.2,7Z" fill="#4285f4"/><path d="m19.52 5.51a1 1 0 1 0-1 1 1 1 0 0 0 1-1zm1.36 0a2.38 2.38 0 1 1-2.38-2.38 2.38 2.38 0 0 1 2.38 2.38z" fill="#aecbfa"/><path d="m19.52 18.55a1 1 0 1 0-1 1 1 1 0 0 0 1-1zm1.36 0a2.38 2.38 0 1 1-2.38-2.39 2.39 2.39 0 0 1 2.38 2.39z" fill="#aecbfa"/><path d="m6.46 18.55a1 1 0 1 0-1 1 1 1 0 0 0 1-1zm1.36 0a2.38 2.38 0 1 1-2.37-2.39 2.38 2.38 0 0 1 2.37 2.39z" fill="#aecbfa"/><path d="m6.46 5.51a1 1 0 1 0-1 1 1 1 0 0 0 1-1zm1.36 0a2.38 2.38 0 1 1-2.37-2.38 2.37 2.37 0 0 1 2.37 2.38z" fill="#aecbfa"/></svg>
+sprite $eventarc <svg viewBox="0 0 24 24" width="72" height="72"><path fill="#4285f4" d="M 17.98 7.06 L 7.26 17.75 L 6.35 16.84 L 17.06 6.14 Z"/><circle transform="translate(-5.01 11.71) rotate(-43.97)" cx="12" cy="12.06" r="2.82" fill="#669df6"/><path d="M21.75,12a9.69,9.69,0,0,1-1.91,5.79,1.54,1.54,0,0,0-1-.78,8.43,8.43,0,0,0,1.28-7.48,4.13,4.13,0,0,0,1.15-.67A9.62,9.62,0,0,1,21.75,12Zm-4,7.84a9.73,9.73,0,0,1-8.93,1.39,4.13,4.13,0,0,0,.67-1.15A8.43,8.43,0,0,0,17,18.8,1.54,1.54,0,0,0,17.79,19.84ZM15.14,2.77a4.13,4.13,0,0,0-.67,1.15l-.05,0A8.46,8.46,0,0,0,7,5.2a1.57,1.57,0,0,0-.78-1,9.73,9.73,0,0,1,8.93-1.39ZM5.2,7a8.43,8.43,0,0,0-1.28,7.48,4.13,4.13,0,0,0-1.15.67A9.73,9.73,0,0,1,4.16,6.21,1.54,1.54,0,0,0,5.2,7Z" fill="#4285f4"/><path d="m19.52 5.51a1 1 0 1 0-1 1 1 1 0 0 0 1-1zm1.36 0a2.38 2.38 0 1 1-2.38-2.38 2.38 2.38 0 0 1 2.38 2.38z" fill="#aecbfa"/><path d="m19.52 18.55a1 1 0 1 0-1 1 1 1 0 0 0 1-1zm1.36 0a2.38 2.38 0 1 1-2.38-2.39 2.39 2.39 0 0 1 2.38 2.39z" fill="#aecbfa"/><path d="m6.46 18.55a1 1 0 1 0-1 1 1 1 0 0 0 1-1zm1.36 0a2.38 2.38 0 1 1-2.37-2.39 2.38 2.38 0 0 1 2.37 2.39z" fill="#aecbfa"/><path d="m6.46 5.51a1 1 0 1 0-1 1 1 1 0 0 0 1-1zm1.36 0a2.38 2.38 0 1 1-2.37-2.38 2.37 2.37 0 0 1 2.37 2.38z" fill="#aecbfa"/></svg>
 
 GCPEntityColoring(eventarc)
-!define eventarc(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, eventarc*2, eventarc)
-!define eventarc(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, eventarc*2, eventarc)
-!define eventarcParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, eventarc*2, eventarc)
-!define eventarcParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, eventarc*2, eventarc)
+!define eventarc(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, eventarc, eventarc)
+!define eventarc(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, eventarc, eventarc)
+!define eventarcParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, eventarc, eventarc)
+!define eventarcParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, eventarc, eventarc)
 !endif

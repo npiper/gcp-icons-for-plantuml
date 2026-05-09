@@ -3,7 +3,7 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $trace_png [128x128/16z] xTPN0O1G3C30bkrVCGhOctTd8By907B1rVbkNgElhw-lhw-lhw__KG00aDqUmnuH-lhw-lhw-lhw-lKUtHxnTW00a9Vyjxw-lhw-lhw-llxr01W1
+sprite $trace_png [72x72/16z] xTEr0S104C2mQmBxJvm-p4_I0EuS1Q9VqD7PePC9eDyrxWgT9HsTH817d-hew1I82G
 
 GCPEntityColoring(trace)
 !define trace(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, trace_png, trace)
@@ -11,11 +11,11 @@ GCPEntityColoring(trace)
 !define traceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, trace_png, trace)
 !define traceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, trace_png, trace)
 !else
-sprite $trace <svg viewBox="0 0 24 24"><g><g><rect width="24" height="24" fill="none"/><path fill="#4285f4" d="M 12 14 L 22 14 L 22 10 L 12 10 Z"/><g><path fill="#4285f4" d="M 12 22 L 22 22 L 22 18 L 12 18 Z"/><path fill="#669df6" d="M 8 22 L 12 22 L 12 18 L 8 18 Z"/></g></g><rect x="2" y="2" width="6" height="4" fill="#669df6"/><rect x="2" y="10" width="10" height="4" fill="#669df6"/></g></svg>
+sprite $trace <svg viewBox="0 0 24 24" width="72" height="72"><g><g><rect width="24" height="24" fill="none"/><path fill="#4285f4" d="M 12 14 L 22 14 L 22 10 L 12 10 Z"/><g><path fill="#4285f4" d="M 12 22 L 22 22 L 22 18 L 12 18 Z"/><path fill="#669df6" d="M 8 22 L 12 22 L 12 18 L 8 18 Z"/></g></g><rect x="2" y="2" width="6" height="4" fill="#669df6"/><rect x="2" y="10" width="10" height="4" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(trace)
-!define trace(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, trace*2, trace)
-!define trace(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, trace*2, trace)
-!define traceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, trace*2, trace)
-!define traceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, trace*2, trace)
+!define trace(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, trace, trace)
+!define trace(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, trace, trace)
+!define traceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, trace, trace)
+!define traceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, trace, trace)
 !endif

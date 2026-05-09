@@ -3,11 +3,9 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_ekm_png [128x128/16z] {
-xTTLWWCn38DXXHhV_yBBFA0bEGlwN-FwAxU3rJddd8kqVgzltxvz-_Rjs-y5g6E9F_6gPBzWKy_pAtQx9FauBCCVE4dlLvmsnNu1QKhz0PhK1tX2_s2-uLKo
-lnnEjnGVpxMpbIB__AiEpqsrtyXIYJ_PfDZ7KtIWQtq-8VLZYJ_vN57w7NnEwPV5FlwqpnlyrlWymAjyULNwuCiZn-zBVBwznMC3WYxnM5lmyFd-KFeSQF5K
-G-8TsF81lHydHmsgZhv4w-P0qzox6YlnEWWBNeEoO4re2nBKiKU_yWvKP5JZ86GrYQvlC5rV8xWy-_RjsxTlFwdoiWL-RB9ltxu--_x-js_VVkiFBV9dRB9l
-txvzV__R_nKvvvox1W
+sprite $cloud_ekm_png [72x72/16z] {
+xTK53iDG30FG_FBzBppcBNBc31h95l-uhznQmIXB8hzmvCWPhOrf9rev1LJ29T08jp0Jgq4csFF7xRxyjZEV1W_r6JZEz7c5SgQiSpejH6F7FCVgEFu3XzPm
+Eizfp9-num_7tmex6E8PkxyR_S8w-5l2GyO5C2naYMILvFsM8oVqBCifSz_bpE7x9IUJrkrIuFcf7sKB
 }
 
 GCPEntityColoring(cloud_ekm)
@@ -16,11 +14,11 @@ GCPEntityColoring(cloud_ekm)
 !define cloud_ekmParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_ekm_png, cloud_ekm)
 !define cloud_ekmParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_ekm_png, cloud_ekm)
 !else
-sprite $cloud_ekm <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><path d="m22 2v7.5h-5.761l-0.0013567 0.046919c-0.11025 1.8086-1.3573 3.354-3.1078 3.8515l-0.20418 0.052701v8.5489h-1.774v-0.79266h-1.697v-1.7286h1.697v-1.652h-2.548v-1.7286h2.548v-2.62c-1.9457-0.39505-3.322-2.0641-3.394-3.9777l1.7442 3.6286e-4c-0.0036239-0.054857-0.0054646-0.1102-0.0054646-0.16598 0-1.3689 1.1087-2.4785 2.4764-2.4785 1.3677 0 2.4764 1.1097 2.4764 2.4785 0 0.055775-0.0018407 0.11112-0.0054646 0.16598h-4.9419c0.085316 1.2915 1.159 2.3126 2.471 2.3126 1.312 0 2.3856-1.0211 2.471-2.3126l1.7953-8.8162e-4 0.006283-0.16289c-6.683e-4 -2.1539-1.626-3.9502-3.7539-4.1955l-0.20746-0.018851-0.20814-0.0088521-0.20632 0.0011624c-2.0533 0.061002-3.7963 1.5929-4.0762 3.6586-0.033164 0.24475-0.044529 0.48768-0.035529 0.7268l-5.7577-5.1876e-4v-7.5h20z" fill="#4285F4"/></g></svg>
+sprite $cloud_ekm <svg version="1.1" viewBox="0 0 24 24" width="72" height="72"><g fill="none"><path d="m22 2v7.5h-5.761l-0.0013567 0.046919c-0.11025 1.8086-1.3573 3.354-3.1078 3.8515l-0.20418 0.052701v8.5489h-1.774v-0.79266h-1.697v-1.7286h1.697v-1.652h-2.548v-1.7286h2.548v-2.62c-1.9457-0.39505-3.322-2.0641-3.394-3.9777l1.7442 3.6286e-4c-0.0036239-0.054857-0.0054646-0.1102-0.0054646-0.16598 0-1.3689 1.1087-2.4785 2.4764-2.4785 1.3677 0 2.4764 1.1097 2.4764 2.4785 0 0.055775-0.0018407 0.11112-0.0054646 0.16598h-4.9419c0.085316 1.2915 1.159 2.3126 2.471 2.3126 1.312 0 2.3856-1.0211 2.471-2.3126l1.7953-8.8162e-4 0.006283-0.16289c-6.683e-4 -2.1539-1.626-3.9502-3.7539-4.1955l-0.20746-0.018851-0.20814-0.0088521-0.20632 0.0011624c-2.0533 0.061002-3.7963 1.5929-4.0762 3.6586-0.033164 0.24475-0.044529 0.48768-0.035529 0.7268l-5.7577-5.1876e-4v-7.5h20z" fill="#4285F4"/></g></svg>
 
 GCPEntityColoring(cloud_ekm)
-!define cloud_ekm(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_ekm*2, cloud_ekm)
-!define cloud_ekm(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_ekm*2, cloud_ekm)
-!define cloud_ekmParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_ekm*2, cloud_ekm)
-!define cloud_ekmParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_ekm*2, cloud_ekm)
+!define cloud_ekm(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_ekm, cloud_ekm)
+!define cloud_ekm(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_ekm, cloud_ekm)
+!define cloud_ekmParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_ekm, cloud_ekm)
+!define cloud_ekmParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_ekm, cloud_ekm)
 !endif

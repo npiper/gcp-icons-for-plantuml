@@ -3,19 +3,14 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $phishing_protection_png [128x128/16z] {
-xThjahCs30LWIzOvulwlk27lb14gNZcqSRyuVtV88yl13Cgs-JnvykJ9aoTFdcW7w4xJlqFlu1v_nsIrJl2TxHrtMyeRoE2_ufHbke3C_kQ-h00m-EiBC5xw
-ctFL5p_w8Mk-XEJ8trnMBv_kYnl061WyLk1VvoNgsbxHK83hmlRZzvBSrss0ySYnLlLrjs1S_f6Z0Uxh_D1g_FlzzVrV__rRV_-jFtyMdx_TU7e0B7t-m7e7
-tTS-W0-zxpaz15tQeWR0-g_4nx1RMn43-X4USUUgzvuGXgnu2n7joOz1_wv-u0EVeCcQfKT_HHCYdlslDq46kWR_YqtG0QxIf8FWHM3VyIF-pgY4h_aHlop1
-_Nj-n0Sb-BRvr_oCvn9s_XN_bb_TA3k_n_6d_Nx3RpkV_NkL66_usFtKVt7SMJqmzci--dUcOqeMwo_uw6_UF-I5XL_moTzSF-DH-2MVVPTFVB3mQpxwdxuP
-6Gk_vhE_EQRvZjAl-UX_zdAWPE4FUUyO-hCtWR3onxmsZltDTOglVN34_-oxr3vg7-uOy0D_VZnWjRzpZYk-ykkRGC7AHxYT4b_vzNUGB7tri9J0fmz0l_Iz
-w7xffm8IBmE_te5uTVRby5LY0IS-Vu9clvuHs8mV2uXydex8m4Uz_EotVlZQOW6HpojeoQyRq57uUrei8FEDHp3qhJvwigzf0-BKBVBA8tRsmnd0kltMSV95
-umR40jnrD1sDlXkys83pTySG_Rm1UmIRkrC6nqUBlgE9LsUGdVREW4jVmy9KPRG2YxvZhysBEm3deyDu7W0ScJezDVfli5T3SgPRLzkm0VNnqK9wVWnEFlXZ
-LCitK2cc7uU_oS-NersaXzItxvMGxjWS_TbNBNR0KCm-UDEF3HZlG6U8_CL-FOJGOlPL-rBuhSV8Y1zVxxC-XqF041dorElBgoTW-e1g3ALfxwl1cuRxhpx_
-wXqu3by59xhVh3h_hFm8qLo1Q0VFaLPjFylddyuLq8CUUbUqtwq-FwSdiRDyevS_4e97TBQ0n5khb--plwtM1MI_jr5cVgELcUbrjpi-VUO5mEe2bCJ87y_P
-CFSAAkLMwgy_NVgxuRtWm_AB1X0o_3l-wFjmUSB8O_xzbttyScwzQ_13VrCBn3poBlFl_mHDut0_1btt0a32u5ia_BXA546VcK4Pc09xPMTuSSoBoF7rZXKu
-yGezw9D3G70kqaBaO4890IzE_Xi5QDgtO8KK_Fq2T7I-rdmTmsTytO5F1y3yAO2CVdeQvxFVG1JWC7tOD_SXJxtv3yuva3QCqltMukjfJ3wFnXNa4kx_UxWQ
-YO2ZozH5_ixcluBUxaUw0II0hlB1HUHE4pttwycJ9q-UF7dov3S
+sprite $phishing_protection_png [72x72/16z] {
+xTU9SgCm40HGpT4p_FyNhn5D8JoOMYjxhpjtedgw1wVz1Vda4p541lIBYiSZ-KZ8LnZ4ckMHJ9rt8kXqI6OPfvCR59EC19E4TCunT4MRM7O7SmwPJYOdDk-q
+dkxaRtVglERNsSXmdQVttPqRdpf_3k5cjXsXZFbRwhOcUb9c6JKRd8395AB618DmVLCv45CB47ftKAO7ejB4S528Dvm1sR9J6V6ser8hzR9ydoE3qqg6sw6t
+ZE7EGQxCvgJVC0elJc4s9r9lBjITWypEx4xAJQ4OdJAQp1YTU7ajRnmabTrvUN4TrT4JqyxETK4oH76GDZBFpf9sLRIAuvbf0rETkjQuS2GsY0mT74vT8Zqv
+odb9hf3lZ9oS3R8odD5P8PKEBKc6dR79zKDVoC2FIgZQEdGqzjv4ToSx96MpO4fdE422J3zr9dJKwfOvMnXsXmEgZTWYl4cMXnhs5d8gyMNkd1ORSiv3kCQb
+abrinNC1o5j7z7bcrXtOMqujhHPSdI5H79GsN27L4nFIXcHnl3RI7PBM58WogoRr81hOgaAc5WoyZV5S7QzxIdfFVIwtCNBrOWPrfPiCJfttNZdAVIyGmWVd
+kI1ZlE-r_iZfVmkuAPr-ThKnGYPhFMHS-wvxR86g0SwobJ1fJHJ9d_MwFjUmeURIaydtfSogG8NXAzyIxdc1NZ64yadXQ6e4616ud5Tmb79Oz1f5W4X0wu0p
+zuIrsuWv-dvBkuWwLWIkxG_C9vzy0m
 }
 
 GCPEntityColoring(phishing_protection)
@@ -24,11 +19,11 @@ GCPEntityColoring(phishing_protection)
 !define phishing_protectionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, phishing_protection_png, phishing_protection)
 !define phishing_protectionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, phishing_protection_png, phishing_protection)
 !else
-sprite $phishing_protection <svg viewBox="0 0 24 24"><g><path d="M3.27,12.39l1.81-2.18a.1.1,0,0,1,.18.07V15a.1.1,0,0,1-.17.07l-.8-.8a3.31,3.31,0,0,0,.28,3.56A3,3,0,0,0,6.64,19a2.92,2.92,0,0,0,2.26-.68,3,3,0,0,0,.69-.84l.12-.2.13.19a7.57,7.57,0,0,0,1.06,1.26l.1.09-.08.11A4.88,4.88,0,0,1,7,21a5.08,5.08,0,0,1-5-5.16A5.26,5.26,0,0,1,3.27,12.39Z" fill="#669df6"/><path d="M20.73,12.39l-1.81-2.18a.1.1,0,0,0-.18.07V15a.1.1,0,0,0,.17.07l.8-.8a3.31,3.31,0,0,1-.28,3.56A3,3,0,0,1,17.36,19a2.92,2.92,0,0,1-2.26-.68,3,3,0,0,1-.69-.84l-.12-.2-.13.19a7.57,7.57,0,0,1-1.06,1.26l-.1.09.08.11A4.88,4.88,0,0,0,17,21a5.08,5.08,0,0,0,5-5.16A5.26,5.26,0,0,0,20.73,12.39Z" fill="#4285f4"/><path d="M11,6a1,1,0,0,1,1-1V3a3,3,0,0,0,0,6V7a1,1,0,0,1-1-1" fill="#669df6"/><path d="m15 6a3 3 0 0 0-3-3v2a1 1 0 0 1 0 2v2a3 3 0 0 0 3-3" fill="#4285f4"/><path d="M12,17c-1.19,0-3-2.21-3-4.16V10l3-1V7L7,9v3.84C7,15.55,9.43,19,12,19h0Z" fill="#aecbfa"/><path d="M17,12.84V9L12,7V9l3,1v2.84C15,14.79,13.19,17,12,17v2h0c2.57,0,5-3.46,5-6.16" fill="#669df6"/><path d="M12.38,14.39a1.07,1.07,0,0,1-1.52,0L9.37,12.9l.76-.76,1.49,1.49,4.27-4.26.76.76Z" fill="#4285f4"/></g></svg>
+sprite $phishing_protection <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="M3.27,12.39l1.81-2.18a.1.1,0,0,1,.18.07V15a.1.1,0,0,1-.17.07l-.8-.8a3.31,3.31,0,0,0,.28,3.56A3,3,0,0,0,6.64,19a2.92,2.92,0,0,0,2.26-.68,3,3,0,0,0,.69-.84l.12-.2.13.19a7.57,7.57,0,0,0,1.06,1.26l.1.09-.08.11A4.88,4.88,0,0,1,7,21a5.08,5.08,0,0,1-5-5.16A5.26,5.26,0,0,1,3.27,12.39Z" fill="#669df6"/><path d="M20.73,12.39l-1.81-2.18a.1.1,0,0,0-.18.07V15a.1.1,0,0,0,.17.07l.8-.8a3.31,3.31,0,0,1-.28,3.56A3,3,0,0,1,17.36,19a2.92,2.92,0,0,1-2.26-.68,3,3,0,0,1-.69-.84l-.12-.2-.13.19a7.57,7.57,0,0,1-1.06,1.26l-.1.09.08.11A4.88,4.88,0,0,0,17,21a5.08,5.08,0,0,0,5-5.16A5.26,5.26,0,0,0,20.73,12.39Z" fill="#4285f4"/><path d="M11,6a1,1,0,0,1,1-1V3a3,3,0,0,0,0,6V7a1,1,0,0,1-1-1" fill="#669df6"/><path d="m15 6a3 3 0 0 0-3-3v2a1 1 0 0 1 0 2v2a3 3 0 0 0 3-3" fill="#4285f4"/><path d="M12,17c-1.19,0-3-2.21-3-4.16V10l3-1V7L7,9v3.84C7,15.55,9.43,19,12,19h0Z" fill="#aecbfa"/><path d="M17,12.84V9L12,7V9l3,1v2.84C15,14.79,13.19,17,12,17v2h0c2.57,0,5-3.46,5-6.16" fill="#669df6"/><path d="M12.38,14.39a1.07,1.07,0,0,1-1.52,0L9.37,12.9l.76-.76,1.49,1.49,4.27-4.26.76.76Z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(phishing_protection)
-!define phishing_protection(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, phishing_protection*2, phishing_protection)
-!define phishing_protection(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, phishing_protection*2, phishing_protection)
-!define phishing_protectionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, phishing_protection*2, phishing_protection)
-!define phishing_protectionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, phishing_protection*2, phishing_protection)
+!define phishing_protection(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, phishing_protection, phishing_protection)
+!define phishing_protection(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, phishing_protection, phishing_protection)
+!define phishing_protectionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, phishing_protection, phishing_protection)
+!define phishing_protectionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, phishing_protection, phishing_protection)
 !endif

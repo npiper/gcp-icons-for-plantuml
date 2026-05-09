@@ -3,10 +3,7 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $virtual_private_cloud_png [128x128/16z] {
-xTe34iH05431ZEV-5rxRPhzoyBiKPv0aXPtYTk5Xa-BXdT9skMvNBlVJJdMdh_BvV3w_zbNrJ6TzFf_Fvxl-yFby_X1NvMbbhgxAb_jnPrJT6JMSgQyxQrqy
-gksi-K2Vp-VppvwgRncLN-dp-Nm-dy_dy_byFf_F__ptptm-dy_t_mEVp-UtLVbCL_YkFtm-d__A94bZ
-}
+sprite $virtual_private_cloud_png [72x72/16z] xTR55O0m401H7Ffl6EU2nNtclE_Z95M2KNirNAbCXdTmfhtXaLy79_tt4ETgsgiU_K-6Sd1-d_Z_PFeE3WuE3kix-taSzlCu2KOB
 
 GCPEntityColoring(virtual_private_cloud)
 !define virtual_private_cloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, virtual_private_cloud_png, virtual_private_cloud)
@@ -14,11 +11,11 @@ GCPEntityColoring(virtual_private_cloud)
 !define virtual_private_cloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, virtual_private_cloud_png, virtual_private_cloud)
 !define virtual_private_cloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, virtual_private_cloud_png, virtual_private_cloud)
 !else
-sprite $virtual_private_cloud <svg viewBox="0 0 24 24"><g><rect x="16" y="2" width="6" height="6" fill="#aecbfa"/><rect x="19" y="2" width="3" height="6" fill="#669df6"/><rect x="16" y="16" width="6" height="6" fill="#aecbfa"/><rect x="19" y="16" width="3" height="6" fill="#669df6"/><rect x="2" y="2" width="6" height="6" fill="#aecbfa"/><rect x="5" y="2" width="3" height="6" fill="#669df6"/><rect x="2" y="16" width="6" height="6" fill="#aecbfa"/><rect x="5" y="16" width="3" height="6" fill="#669df6"/><rect x="8" y="4" width="8" height="2" fill="#669df6"/><rect x="8" y="18" width="8" height="2" fill="#669df6"/><rect x="18" y="8" width="2" height="8" fill="#669df6"/><rect x="4" y="8" width="2" height="8" fill="#669df6"/><rect x="4" y="8" width="2" height="2" fill="#4285f4"/><rect x="18" y="8" width="2" height="2" fill="#4285f4"/><rect x="8" y="4" width="2" height="2" fill="#4285f4"/><rect x="8" y="18" width="2" height="2" fill="#4285f4"/></g></svg>
+sprite $virtual_private_cloud <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="16" y="2" width="6" height="6" fill="#aecbfa"/><rect x="19" y="2" width="3" height="6" fill="#669df6"/><rect x="16" y="16" width="6" height="6" fill="#aecbfa"/><rect x="19" y="16" width="3" height="6" fill="#669df6"/><rect x="2" y="2" width="6" height="6" fill="#aecbfa"/><rect x="5" y="2" width="3" height="6" fill="#669df6"/><rect x="2" y="16" width="6" height="6" fill="#aecbfa"/><rect x="5" y="16" width="3" height="6" fill="#669df6"/><rect x="8" y="4" width="8" height="2" fill="#669df6"/><rect x="8" y="18" width="8" height="2" fill="#669df6"/><rect x="18" y="8" width="2" height="8" fill="#669df6"/><rect x="4" y="8" width="2" height="8" fill="#669df6"/><rect x="4" y="8" width="2" height="2" fill="#4285f4"/><rect x="18" y="8" width="2" height="2" fill="#4285f4"/><rect x="8" y="4" width="2" height="2" fill="#4285f4"/><rect x="8" y="18" width="2" height="2" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(virtual_private_cloud)
-!define virtual_private_cloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, virtual_private_cloud*2, virtual_private_cloud)
-!define virtual_private_cloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, virtual_private_cloud*2, virtual_private_cloud)
-!define virtual_private_cloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, virtual_private_cloud*2, virtual_private_cloud)
-!define virtual_private_cloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, virtual_private_cloud*2, virtual_private_cloud)
+!define virtual_private_cloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, virtual_private_cloud, virtual_private_cloud)
+!define virtual_private_cloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, virtual_private_cloud, virtual_private_cloud)
+!define virtual_private_cloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, virtual_private_cloud, virtual_private_cloud)
+!define virtual_private_cloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, virtual_private_cloud, virtual_private_cloud)
 !endif

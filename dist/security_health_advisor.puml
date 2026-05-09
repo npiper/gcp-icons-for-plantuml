@@ -3,16 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $security_health_advisor_png [128x128/16z] {
-xPg7Tkqw20LX8z3v_n--9MN7YOsNaeFiLpIhtPenWrkAV8l5Oh5OB1OBDAZSXdc4uQOZK8k_c1aCDuIFL-mli6iZm2FeVmDwMNYF3up0z0fxYq_O1XWk29_v
-vvy839_ukOPfuLF_x3M0zjIVhw4-F740HgQiGIqoceee35c4cU73EQ4Q9gq1djjbWm9s2A05DxeTRPTMOSKdWfwj_OZY8q0QFY5T0mhyIVYnDHJua_3f6khd
-z-4n52ZtEoGXMqEXFm-VK-c7_03zR_gNV_bnix_RhNxlSQSVlNUxqT_xeyTzVk-FnwFZBZ_-waS2A8hzhF-NZW4_NYZrjnVzM00Y9NxMPu1PvFxeVzMT0Ixs
-jrSpBu5B_JptLHZWGZ_hj_mUW14KF_GtZgt70T17o3TtxjUt-lbDC7f_3F13F-jd0K3x37-ZCWiGC_rW_UC07FzWtr_1eM_t_mX_zr8_2n2V_mJsGclDL3I_
-7uzlZ_ComFuF_E3vPtBEk1_PUm1_h_mzAlsidmNW-4_uIG9T1m4uFe4H6G9Vi0_mWega0VWROWHIp7vanY1AFMRvkNAEdxt-pGx0yPFrpmwm7r_iUR-290dZ
-BG37FygFvx_wx7vop-X-C3wiOFtnmMc0uFWb-Oa7iRERvdvyHSNLRq5SqW0lxCOlo2yQ7-0amDdu9a_GHWFasuSy0KO3vDjNUGOV2v2FR_8K5YENGFtu93Qa
-0Kh7pmEqBC3dyO7AHsyCt0Hhnyy3U1P0Di1AnYUURe3eb_f42a1imCXNtOfVV7pW522s0LA2nWQNKs1rzOd5XdQgBptvY0yU02QCpmsGTfcUM58WrqEbafOK
-IFMGMZosk9xh3LACncUGt7Qu_Da7q7G_F56f1zdFGcZoymRL87Pu0sosdY3ss1xghpY0I_H4FVTJFnDrF_C3CXixzSjyu8aVKBa4E_B3LAv2ZNxQ8PTYJZzW
-KBaSHNFtxwvziLWi5el5uZS
+sprite $security_health_advisor_png [72x72/16z] {
+xPS7Rkim40MvRvllVs4N-iDFAmW4AVsUJ1fQHhCcrTe_mJVVm23NBUeHYeicqNYXgb1S62ZUg7RJkIXu13sTTPEe1r6AL5Oi5biC2gK9ImFHyYhOcMHkdOdh
+fn4qJUm3zp9GcRP6ZJrre48TRzBZUbmkYWMFOx2OcFUq8V-1HtwEH-EdU2GJFyFZcV4JF9gtsr4G5ZtvyaHRfteydznIBdhmSbYcN_HafZNP1Y6FYA6dJzN_
+C2YUqZvhvoCwqaXqf6dsfTe68VdFf7ho2O_L_wQrLe8YquRxXnust_fn6DHpij63iOU0czfBZj0p3OFm-iCB8fOy369E0-_Gwq5SDtxCGvpN-MqGbqqmvR6t
+Q1Vq96Kx5iOMxiGQzDHukVf8cneiR1V478urHW-3c3EzMd4Kj9h381HtMInWuHfKbwpi7PrzPEPa5QpjPO-E7ZzgADea4cymU69PcQoAvCGpj0L7ssdGLd0-
+99QDezIiYKAbnr2pXdXyK8LISrx4n-zs1gE7cYklJdpLEOl-y82May3S5P3s3_3DDmy
 }
 
 GCPEntityColoring(security_health_advisor)
@@ -21,11 +17,11 @@ GCPEntityColoring(security_health_advisor)
 !define security_health_advisorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_health_advisor_png, security_health_advisor)
 !define security_health_advisorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_health_advisor_png, security_health_advisor)
 !else
-sprite $security_health_advisor <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <g transform="translate(16 4.0008)"> <path fill="#AECBFA" d="M -9 22 L 8 22 L 8 -6 L -9 -6 Z"/></g> <g transform="translate(6.6667 4.0008)"> <path fill="#669DF6" d="M -6.7 22 L 10.3 22 L 10.3 -6 L -6.7 -6 Z"/></g> <path fill="#4285F4" d="M 7.8 12 L 2 12 L 2 13 L 8.3 13 L 10 10.5 L 13 16.6 L 15.3 12 L 22 12 L 22 11 L 14.7 11 L 13 14.4 L 10.1 8.5 Z"/><rect width="24" height="24" fill="none"/> </svg>
+sprite $security_health_advisor <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <g transform="translate(16 4.0008)"> <path fill="#AECBFA" d="M -9 22 L 8 22 L 8 -6 L -9 -6 Z"/></g> <g transform="translate(6.6667 4.0008)"> <path fill="#669DF6" d="M -6.7 22 L 10.3 22 L 10.3 -6 L -6.7 -6 Z"/></g> <path fill="#4285F4" d="M 7.8 12 L 2 12 L 2 13 L 8.3 13 L 10 10.5 L 13 16.6 L 15.3 12 L 22 12 L 22 11 L 14.7 11 L 13 14.4 L 10.1 8.5 Z"/><rect width="24" height="24" fill="none"/> </svg>
 
 GCPEntityColoring(security_health_advisor)
-!define security_health_advisor(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, security_health_advisor*2, security_health_advisor)
-!define security_health_advisor(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_health_advisor*2, security_health_advisor)
-!define security_health_advisorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_health_advisor*2, security_health_advisor)
-!define security_health_advisorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_health_advisor*2, security_health_advisor)
+!define security_health_advisor(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, security_health_advisor, security_health_advisor)
+!define security_health_advisor(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_health_advisor, security_health_advisor)
+!define security_health_advisorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_health_advisor, security_health_advisor)
+!define security_health_advisorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_health_advisor, security_health_advisor)
 !endif

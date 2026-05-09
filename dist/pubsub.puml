@@ -3,16 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $pubsub_png [128x128/16z] {
-xPe7Tkiw34GvWqBjVyDn4-EZ4jg42txHVIyvJU8r1s6JN48S71mS721HJRb2vDZP_2JIEfyK0IaBo8JUvoKWEoIadnM0I6e0a5sGyDUNKW3k-_a_zwVNFtly
-_M_yO4xy-VD_8rbVa3NvDa3UvMJJvqI0aW5DLKJLFg87WGV-QPfgFV_2mr9XLAv-mQJhFyilr6xhOdv1CQ1Ndp5ZppyzzDFCP-HvlVaTHlsjymtJCNq3SJ-z
-iQXc7_WIY_lDbs2e-0r6_Lpxdwg0hz6eNttDKFmDY_hDVRm0V9_VD_2z_dhLlxV_6F9V_pFkxz_L7xOGuWm5_TcdtvF7Tw44GQSd7No1QGcZDZBy6Xp8RAYM
-BCCVm0ozW2zqBp0RqJTWizsrUmZW5I5witbh2sK0gfqH_6qNoY_iNcXdbF-bvsyWyqx_-UTFoYvCUFoHKGBvawzrFpC0wP3ryAc1N3-HK_u6-J_mIwR_o1yz
-FxBddrm_FspsLe1U_FwX5EZpIOlTxhDMv_lji7h6UW7Sh7wz3k-EVZxhyj7x3yvdOdt33fD4YxuTzVtFEO2j--rAhbeQW78pa88v-kb6rVxxP_szi5Q_t7jl
-YHrXvsX1dQvjjcPbRmTEubwcHfsKoqDAR89hJIuB2zby_w7v6tMJKKGlMkzsm-OKGc8vJExwoFmiMsoEywc1JQzpmLIsn9OtRwKV6QiUMY1b3vtgq8ZMou1H
-sIEskexEQB2fXbPexlkDPH3Qlf_VUhKDXlpoMRzazp_T7qgj18XLydtxkbXF68h_sIZ9KDbAY5YGvBjEzOYTZyXu-lqioV4J7WKb30BwnUQAv9k-92eanf8Z
-Ezb_eIK4t96Mua3QG_eCe3wZID2pyuhi2y0zzGEOBx0lwsc-XD_rgw_Gx_fzmrVr-EVvaPn_ml1B781YdLVx6GKegHEGiNmRiQJq6tBtIya0jmXCKB806P8V
-71mS79m
+sprite $pubsub_png [72x72/16z] {
+xPQ9aiCW34EnX0t__yMRa-cwXBHrzjutTw8HGcI8q-_Y7m49IL40JW0f1XiNf8aduWsnZXkHhd6HZto03o_g6L_v_JI4u0GeAGXUs9HqrcMPOCTT3bsogPgA
+zwdL-uZEofpwgDg2dEKHMr1DFQYsaizyTg6o6yTsplPbEzr0rf2nZrZZAP-9Ptpo8Arlm3VPMqQHJe2wuFwrcgdH-mDUJvkLXmiASwOu4sA2a7lbInSGv1lS
+ptn7y9gF_y7e-4gVrdAyQS6Nx-lwywBD6_Frs9EPOAMW1MfnM8hXeMOnhofQ9kn-ZYepAatO1niifTPQYixFzl_fRAFhYqfi35i5IvqeHZ-lqjOtt9KO7qwU
+q-JK8S-9yl08UODLbTH5j1fl67-y6UaGPFSjl7fb0G_x831y3j8E6eYCt6G3WL_3cL88tywu8L2ErW56QRnoeEW6bNFXERaD5Y5KsoWOWTf6mH2s4miarf1O
+daOAeS5z-L5GSSc1ALCKPDMCzBluvmq
 }
 
 GCPEntityColoring(pubsub)
@@ -21,11 +17,11 @@ GCPEntityColoring(pubsub)
 !define pubsubParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, pubsub_png, pubsub)
 !define pubsubParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, pubsub_png, pubsub)
 !else
-sprite $pubsub <svg viewBox="0 0 24 24"><g><circle cx="18.97" cy="8.21" r="1.72" fill="#669df6"/><circle cx="5.03" cy="8.21" r="1.72" fill="#669df6"/><circle cx="12" cy="20.28" r="1.72" fill="#669df6"/><g><rect transform="matrix(.5 -.87 .87 .5 -4.59 20.53)" x="14.69" y="10.22" width="1.59" height="8.04" fill="#4285f4"/><rect transform="translate(-5.98 6.17) rotate(-30)" x="4.49" y="13.45" width="8.04" height="1.59" fill="#4285f4"/><rect x="11.2" y="4.19" width="1.59" height="8.04" fill="#4285f4"/></g><circle cx="12" cy="12.23" r="2.78" fill="#aecbfa"/><circle cx="5.03" cy="16.25" r="2.19" fill="#aecbfa"/><circle cx="18.97" cy="16.25" r="2.19" fill="#aecbfa"/><circle cx="12" cy="4.19" r="2.19" fill="#aecbfa"/></g></svg>
+sprite $pubsub <svg viewBox="0 0 24 24" width="72" height="72"><g><circle cx="18.97" cy="8.21" r="1.72" fill="#669df6"/><circle cx="5.03" cy="8.21" r="1.72" fill="#669df6"/><circle cx="12" cy="20.28" r="1.72" fill="#669df6"/><g><rect transform="matrix(.5 -.87 .87 .5 -4.59 20.53)" x="14.69" y="10.22" width="1.59" height="8.04" fill="#4285f4"/><rect transform="translate(-5.98 6.17) rotate(-30)" x="4.49" y="13.45" width="8.04" height="1.59" fill="#4285f4"/><rect x="11.2" y="4.19" width="1.59" height="8.04" fill="#4285f4"/></g><circle cx="12" cy="12.23" r="2.78" fill="#aecbfa"/><circle cx="5.03" cy="16.25" r="2.19" fill="#aecbfa"/><circle cx="18.97" cy="16.25" r="2.19" fill="#aecbfa"/><circle cx="12" cy="4.19" r="2.19" fill="#aecbfa"/></g></svg>
 
 GCPEntityColoring(pubsub)
-!define pubsub(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, pubsub*2, pubsub)
-!define pubsub(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, pubsub*2, pubsub)
-!define pubsubParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, pubsub*2, pubsub)
-!define pubsubParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, pubsub*2, pubsub)
+!define pubsub(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, pubsub, pubsub)
+!define pubsub(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, pubsub, pubsub)
+!define pubsubParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, pubsub, pubsub)
+!define pubsubParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, pubsub, pubsub)
 !endif

@@ -3,13 +3,10 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_deployment_manager_png [128x128/16z] {
-xTe7iY8n38HXINRBtF_4orHfSmDJLjdUeFy2Nxy04-K_hwgggggg1bySscjT0LyUeAzy-9OWlBxBxzptRL7UzldsnY-_VFG5uRwliY2zxziAtrRwvPTVlhMZ
-lbbhX_pWdvtnWxywu0SVxVU3Zv3tC_mOIFiP_Z4SMJ_3Ftr7qi_mb-zOv9lfEnwFSVan8EqpolGrB-BXnu2ipoZJr_mr87n7qkTy3E3ybO_m7IcVyp60yf5_
-2oa_OfGRvIF08sZQvzzmReGdDnAGz_atd1lXsO2ypx_Xt0ZF1cZQvzzmtgn59X4VCETptleZVFTEVdewOChdl4WV8tplXAS39dp21zM_-Tu9pmRC-Po_1WoF
--cyy6m2Ry3aV0zoZBd9Zm8JF-QY1VC7H0LdV-8UiWV1qGCRdV0mWF1sGy2aVDSBp0VC-vwD6U3vWmYVyT7tIrpGVTUHyasGzvPlaI_WcHtsJexx9KT_af6yc
-1trH_T_kFvPVVldbwmfV_uxdh-ihltoIxlDLM7qNtuMcktmz_FxPuVVlyc4yVcqCIAA47_s7Vldbbrz--UMF3Rvs-CVGTHNly1l15mqWEWzBU4sTuEOptELX
-iYAxssU-gggg-W8
+sprite $cloud_deployment_manager_png [72x72/16z] {
+xTS7aaGX28HXH1ky_ucNoTCRjFIvsVy0NmKZydFQxHGs5PGPcuuWs7HuTkn0Fz-HmJx5sKxEIvmSBN0q6Crp3ZEHOT9XngjXs4dwch7gPXXqKbObHYLvE8Qk
+mqmEY1W9o29q7MQYGen8mWNgESoKQfaOWXeECLfgDHJL2yDGqs56irSp0p44TPmh8vBT8kYLOQZbC1EGMLJa4aDDXvdBkuOaRw2Umqoak3CCeUqm4-c3OQZj
+CCCnr768wTHmc9btY3da_AVtQpjJ_LHd_VzPCSteilcYNtAlrzpbG5xlBNByIvpjr0bdvVv91VOcb3JguCfmm4hdzxTx0G
 }
 
 GCPEntityColoring(cloud_deployment_manager)
@@ -18,11 +15,11 @@ GCPEntityColoring(cloud_deployment_manager)
 !define cloud_deployment_managerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_deployment_manager_png, cloud_deployment_manager)
 !define cloud_deployment_managerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_deployment_manager_png, cloud_deployment_manager)
 !else
-sprite $cloud_deployment_manager <svg viewBox="0 0 24 24"><g><rect x="10" y="17" width="4" height="4" fill="#4285f4"/><path fill="#669df6" d="M 19 10.84 L 14.66 6.51 L 13.65 7.52 L 19 12.85 Z"/><path fill="#4285f4" d="M 15.67 9.53 L 13.65 7.52 L 14.66 6.51 L 15.67 7.52 Z"/><path fill="#aecbfa" d="M 10.94 12.24 L 9.93 11.23 L 14.66 6.51 L 15.67 7.52 Z"/><path fill="#669df6" d="M 10.94 12.24 L 8.08 9.39 L 9.1 8.38 L 11.95 11.23 Z"/><path fill="#4285f4" d="M 10.08 11.38 L 8.08 9.39 L 9.1 8.38 L 10.08 9.36 Z"/><path fill="#aecbfa" d="M 5.44 13.99 L 10.08 9.36 L 9.07 8.35 L 5 12.41 L 5 13.99 Z"/><path d="M22,4.05a1.24,1.24,0,0,0-1-1H3a1.24,1.24,0,0,0-1,1V17a1.19,1.19,0,0,0,1,1H21a1.19,1.19,0,0,0,1-1V4.05ZM20,16H4V5H20Z" fill="#669df6"/><path d="M8,22c0-.69.31-1,1-1h6c.69,0,1,.31,1,1Z" fill="#669df6"/></g></svg>
+sprite $cloud_deployment_manager <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="10" y="17" width="4" height="4" fill="#4285f4"/><path fill="#669df6" d="M 19 10.84 L 14.66 6.51 L 13.65 7.52 L 19 12.85 Z"/><path fill="#4285f4" d="M 15.67 9.53 L 13.65 7.52 L 14.66 6.51 L 15.67 7.52 Z"/><path fill="#aecbfa" d="M 10.94 12.24 L 9.93 11.23 L 14.66 6.51 L 15.67 7.52 Z"/><path fill="#669df6" d="M 10.94 12.24 L 8.08 9.39 L 9.1 8.38 L 11.95 11.23 Z"/><path fill="#4285f4" d="M 10.08 11.38 L 8.08 9.39 L 9.1 8.38 L 10.08 9.36 Z"/><path fill="#aecbfa" d="M 5.44 13.99 L 10.08 9.36 L 9.07 8.35 L 5 12.41 L 5 13.99 Z"/><path d="M22,4.05a1.24,1.24,0,0,0-1-1H3a1.24,1.24,0,0,0-1,1V17a1.19,1.19,0,0,0,1,1H21a1.19,1.19,0,0,0,1-1V4.05ZM20,16H4V5H20Z" fill="#669df6"/><path d="M8,22c0-.69.31-1,1-1h6c.69,0,1,.31,1,1Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(cloud_deployment_manager)
-!define cloud_deployment_manager(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_deployment_manager*2, cloud_deployment_manager)
-!define cloud_deployment_manager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_deployment_manager*2, cloud_deployment_manager)
-!define cloud_deployment_managerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_deployment_manager*2, cloud_deployment_manager)
-!define cloud_deployment_managerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_deployment_manager*2, cloud_deployment_manager)
+!define cloud_deployment_manager(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_deployment_manager, cloud_deployment_manager)
+!define cloud_deployment_manager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_deployment_manager, cloud_deployment_manager)
+!define cloud_deployment_managerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_deployment_manager, cloud_deployment_manager)
+!define cloud_deployment_managerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_deployment_manager, cloud_deployment_manager)
 !endif

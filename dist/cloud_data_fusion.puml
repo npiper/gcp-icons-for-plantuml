@@ -3,10 +3,9 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_data_fusion_png [128x128/16z] {
-xSu7TGH04CFGgthXZpW0KhRDd5Ca0Fw-l2GpCxlsBTydI_jaVI3fa_N9-cHziZvPdwpFsB_FjUKpz6_tHf-nVs_q6VltHf-iJzOdwvFroVfaVR8-hVwut-hh
-w-lhtpxhXVuGqDVNrzVVwTpNrzVNrzVNrzVNlttQw_otJzCV-Vhw-lhw-lhw-knLvRDRZSz-5JuddVkSTUfpsfdFUIS-5UtxrBJhKzMUJrqxFfMj-zIswbFT
-cazzApuTpVlqDEj3tu7ds8V60vTXTFR8yd3vGPcPsJi
+sprite $cloud_data_fusion_png [72x72/16z] {
+xT675SCm30DHLoJxJvpNq-uPAMwIS0DyYMHNQMdardAqZgDr7AtZQ1r7RyxWZy6CvFvi7QtZQ1r7wpXQnz6t3gVJE74wg4Gd3hUM4oTEdEj3NpfnuiIPjDZi
+76OOyiuasyKwp3343Z0UOeSPRbvmW34GEC0OY1rW78GEC1OY1nWFaQCVwiejtG
 }
 
 GCPEntityColoring(cloud_data_fusion)
@@ -15,11 +14,11 @@ GCPEntityColoring(cloud_data_fusion)
 !define cloud_data_fusionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_data_fusion_png, cloud_data_fusion)
 !define cloud_data_fusionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_data_fusion_png, cloud_data_fusion)
 !else
-sprite $cloud_data_fusion <svg viewBox="0 0 24 24"><g><path d="M6,8h4V4H3A1,1,0,0,0,2,5V21a1,1,0,0,0,.28.68L6,18Z" fill="#aecbfa"/><path d="M16,18l3.72,3.72A1,1,0,0,0,20,21V14H16Z" fill="#4285f4"/><path d="M21.71,2.28,18,6h0v4h4V3A1,1,0,0,0,21.71,2.28Z" fill="#669df6"/><path d="M18,6l3.72-3.72A1,1,0,0,0,21,2H14V6Z" fill="#aecbfa"/><path fill="#669df6" d="M 2 22 L 6 18 L 16 18 L 20 22 Z"/></g></svg>
+sprite $cloud_data_fusion <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="M6,8h4V4H3A1,1,0,0,0,2,5V21a1,1,0,0,0,.28.68L6,18Z" fill="#aecbfa"/><path d="M16,18l3.72,3.72A1,1,0,0,0,20,21V14H16Z" fill="#4285f4"/><path d="M21.71,2.28,18,6h0v4h4V3A1,1,0,0,0,21.71,2.28Z" fill="#669df6"/><path d="M18,6l3.72-3.72A1,1,0,0,0,21,2H14V6Z" fill="#aecbfa"/><path fill="#669df6" d="M 2 22 L 6 18 L 16 18 L 20 22 Z"/></g></svg>
 
 GCPEntityColoring(cloud_data_fusion)
-!define cloud_data_fusion(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_data_fusion*2, cloud_data_fusion)
-!define cloud_data_fusion(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_data_fusion*2, cloud_data_fusion)
-!define cloud_data_fusionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_data_fusion*2, cloud_data_fusion)
-!define cloud_data_fusionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_data_fusion*2, cloud_data_fusion)
+!define cloud_data_fusion(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_data_fusion, cloud_data_fusion)
+!define cloud_data_fusion(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_data_fusion, cloud_data_fusion)
+!define cloud_data_fusionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_data_fusion, cloud_data_fusion)
+!define cloud_data_fusionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_data_fusion, cloud_data_fusion)
 !endif

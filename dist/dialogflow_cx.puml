@@ -3,12 +3,10 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $dialogflow_cx_png [128x128/16z] {
-xTa7RWCn34HHrIsw_ttJam4icE426ayAFshg4-M-Ih-lA8gYgBvMfFfhMQIZX-kvtYGQ7XM1Bjc2Kk-c6Xw9T9H5EbBnIAIZ8j8Hw-dEdsfu9D9H9ZtT-LCD
-ZxZwESPPxGfFx-EjNkrOZxdn5UD6yEXe-GAoIqTdDLix_WuNzQLF1VxXqS8DA5TqjCo_fgEJwn_ZsphFRyCLon_kAFwuq5_qTz7-8pTFyclpwGJVVIEqIl6H
-u-cFuYDhwua-QeREyxUNZDU1lUBtEil72iPDqs-H_ArDAvXqgez_tcyVSssZ-WWVF_2Omo_mVG3df5Dzr8mValtPQ9l0Xx8XgZ-7xmjyz6VzyCCFF_pmm-yN
-U8RlNq1RwoFlzAjzvD49FceEdUZRTuFElFwB_CEZjSSFXYxos-AZm7pDNty2TCMdd08MhqyxX7JvRRsE3DyxV64S_DEt7Xa-LKTt_Cu-_qTrYZYy_x78rv5A
-Ho8U5P6EdBhIBqdg9seENUZd9FKJFusE35tfboJrqyCoT96VazHFZqsZeqdN-IL9_IG9kjBFIUedOGHTKXH5KVGC
+sprite $dialogflow_cx_png [72x72/16z] {
+xTO5SiKm40HHMMlK_UyRxk2uujK4FdMHyPcXN5Yt8gBwIesd_9qXL_6b8SY2GkGhv2jaC-GhrATiBI_L81hRGqiIYY-rbo8Z3KgXX1CVMo6qTDHfN-fncYpj
+j9t-oubPAVF_d6SIIjQPvqyIKxFEG-yXfkKTLa8PvpxdAJ4XwH2Z_GunOZYKSsxEpPbiXxIISKWeAKTBOnnsQj3NivJwKzXriZz1mj7AKBv9EFuVsPHNjEGe
+GBhwn__Xv2haAkGov2haAYGU0jSfJgv2A6umRYXsKIwtM_S
 }
 
 GCPEntityColoring(dialogflow_cx)
@@ -17,11 +15,11 @@ GCPEntityColoring(dialogflow_cx)
 !define dialogflow_cxParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dialogflow_cx_png, dialogflow_cx)
 !define dialogflow_cxParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dialogflow_cx_png, dialogflow_cx)
 !else
-sprite $dialogflow_cx <svg viewBox="0 0 24 24"><g transform="translate(4.3125 1.9688)"><path d="m8.3377 0.18539 6.2532 3.6601c0.42397 0.23213 0.68949 0.6737 0.69481 1.1555v8.0329c-0.0067685 0.48136-0.27189 0.92226-0.69481 1.1555l-9.9635 5.8258c-0.16124 0.095032-0.36928 0.042465-0.46552-0.11762-0.029796-0.050476-0.04651-0.10754-0.048636-0.16606v-3.5356l-3.4184-2.0065c-0.42292-0.23321-0.68804-0.67411-0.69481-1.1555v-8.0329c0.005319-0.48177 0.27084-0.92333 0.69481-1.1555l6.2532-3.6601c0.42995-0.24719 0.95966-0.24719 1.3896 0z" fill="#aecbfa"/><path d="m3.8795 7.5108c-0.20714 0-0.37579 0.16482-0.38196 0.37047l-1.7484e-4 0.011683 1.1686e-4 3.9331 0.0012473 0.041112c0.01404 0.23992 0.14561 0.45831 0.35248 0.58264l0.014555 0.0085205 1.9237 1.0978v1.5408l0.0010482 0.02852c0.014588 0.19773 0.17964 0.35362 0.38109 0.35362 0.062073 0 0.12313-0.01512 0.17793-0.04395l0.013566-0.0074923 5.1039-2.9554 0.035146-0.021365c0.20177-0.13056 0.32681-0.35276 0.33287-0.59404l2.294e-4 -0.016864v-3.9463c0-0.066763-0.017491-0.13236-0.05073-0.19026-0.10302-0.17945-0.32953-0.24371-0.51085-0.14714l-0.010824 0.0059873-3.3942 1.9486-0.029081 0.016384c-0.1142 0.057937-0.2505 0.054927-0.3624-0.0090292l-0.012331-0.007355-3.395-1.9493c-0.057907-0.033247-0.12351-0.050739-0.19029-0.050739z" fill="#669df6"/><path d="m7.9325 3.0945c-0.14162-0.081195-0.31453-0.084288-0.4586-0.0090796l-0.01385 0.0075226-3.7422 2.1129c-0.059729 0.033724-0.10928 0.082903-0.14345 0.14238-0.10309 0.17941-0.044453 0.40744 0.13032 0.5154l0.010626 0.006332 3.7416 2.1499c0.14371 0.082575 0.31957 0.084586 0.46477 0.006241l0.013954-0.0078326 3.6841-2.1496c0.057762-0.033703 0.10567-0.081975 0.13893-0.13999 0.10292-0.1795 0.044067-0.40748-0.13081-0.51527l-0.010632-0.0063219z" fill="#185abc"/></g></svg>
+sprite $dialogflow_cx <svg viewBox="0 0 24 24" width="72" height="72"><g transform="translate(4.3125 1.9688)"><path d="m8.3377 0.18539 6.2532 3.6601c0.42397 0.23213 0.68949 0.6737 0.69481 1.1555v8.0329c-0.0067685 0.48136-0.27189 0.92226-0.69481 1.1555l-9.9635 5.8258c-0.16124 0.095032-0.36928 0.042465-0.46552-0.11762-0.029796-0.050476-0.04651-0.10754-0.048636-0.16606v-3.5356l-3.4184-2.0065c-0.42292-0.23321-0.68804-0.67411-0.69481-1.1555v-8.0329c0.005319-0.48177 0.27084-0.92333 0.69481-1.1555l6.2532-3.6601c0.42995-0.24719 0.95966-0.24719 1.3896 0z" fill="#aecbfa"/><path d="m3.8795 7.5108c-0.20714 0-0.37579 0.16482-0.38196 0.37047l-1.7484e-4 0.011683 1.1686e-4 3.9331 0.0012473 0.041112c0.01404 0.23992 0.14561 0.45831 0.35248 0.58264l0.014555 0.0085205 1.9237 1.0978v1.5408l0.0010482 0.02852c0.014588 0.19773 0.17964 0.35362 0.38109 0.35362 0.062073 0 0.12313-0.01512 0.17793-0.04395l0.013566-0.0074923 5.1039-2.9554 0.035146-0.021365c0.20177-0.13056 0.32681-0.35276 0.33287-0.59404l2.294e-4 -0.016864v-3.9463c0-0.066763-0.017491-0.13236-0.05073-0.19026-0.10302-0.17945-0.32953-0.24371-0.51085-0.14714l-0.010824 0.0059873-3.3942 1.9486-0.029081 0.016384c-0.1142 0.057937-0.2505 0.054927-0.3624-0.0090292l-0.012331-0.007355-3.395-1.9493c-0.057907-0.033247-0.12351-0.050739-0.19029-0.050739z" fill="#669df6"/><path d="m7.9325 3.0945c-0.14162-0.081195-0.31453-0.084288-0.4586-0.0090796l-0.01385 0.0075226-3.7422 2.1129c-0.059729 0.033724-0.10928 0.082903-0.14345 0.14238-0.10309 0.17941-0.044453 0.40744 0.13032 0.5154l0.010626 0.006332 3.7416 2.1499c0.14371 0.082575 0.31957 0.084586 0.46477 0.006241l0.013954-0.0078326 3.6841-2.1496c0.057762-0.033703 0.10567-0.081975 0.13893-0.13999 0.10292-0.1795 0.044067-0.40748-0.13081-0.51527l-0.010632-0.0063219z" fill="#185abc"/></g></svg>
 
 GCPEntityColoring(dialogflow_cx)
-!define dialogflow_cx(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, dialogflow_cx*2, dialogflow_cx)
-!define dialogflow_cx(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dialogflow_cx*2, dialogflow_cx)
-!define dialogflow_cxParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dialogflow_cx*2, dialogflow_cx)
-!define dialogflow_cxParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dialogflow_cx*2, dialogflow_cx)
+!define dialogflow_cx(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, dialogflow_cx, dialogflow_cx)
+!define dialogflow_cx(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dialogflow_cx, dialogflow_cx)
+!define dialogflow_cxParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dialogflow_cx, dialogflow_cx)
+!define dialogflow_cxParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dialogflow_cx, dialogflow_cx)
 !endif

@@ -3,12 +3,10 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $stream_suite_png [128x128/16z] {
-xTX7OYGn20LG4R_kV-79OpgiYiR2WRTpf8n5AArtCCOOOumnnXYYgnC1JgkFOmEokYZsBx2c533sR-aKi9bVPhp-0_PVqDpXoV3rdxs5z-JXmRuAeCX-V2vv
-UAw3F6SVd3iyI8Itv-p3LaOgFABn8JwNOPdiHwRfnUmhCgBCF5LwGTMkq-Up2-zgV7-1UiPEb6C3-o3PHq_syL6oRwj1el5Lg6fyP1bIrlWS6LJL-2mrzRYg
-yN5gwcbLwH4IyKitldrT-yPNbNr6XfSrFhKC-eYDhq6YyPMPZG-VUEERZKypfApn6JAugl59QkUGHEEh7Ffr6ryYV6BZAn_wpusluvh7NztuKieQdte6H_Rc
-LNTUTJ4RtobpnqSigi9D6nyR_cffV6GnhIgpdv-LiDxmw7Z13U26OTCJdoDy90BUC6ktUyDTGunwMeiTXqSFuwxW28V_0OBxOQCuMO0Hpn_oSJe-7lDnElzy
-Lmx0wVC7kdiSFrv_K9Pe1dg-_G9esBq8-nciOTyD03Lid4-NC0qFqFFIQK37Nn_O0U1l2HYj1gmE0AwqFhunnXXZZ376Jm
+sprite $stream_suite_png [72x72/16z] {
+xTD7aiKm20PX5Fk__uKdFjihCLJXoVhMZgAnlstRjcAtQ7IxGK7CQgxMFUytJmIOf-8gzg8ZGJKFQEbnRmM9OPw1rXxtWWJcQMWDhbTHp5DSZmEKHBSia9YM
+DP2Wv4EMHBEa4XXvcwpDyGZvmv6NOCYYccUYDLeyPC-8ZhnCpt13Zlld8LTNF6HSyP3HqcqXztj2dk6HDrSqv1roGkrZ3EICFA8C02I1kQAPKyqLp1pIqG39
+xncFZUhaZXaU_mEP2A_R9uBSCLFDQd8fEfBqoB1dym5bbwkX1vfbD402ckMKFe5HxBVRjkqP
 }
 
 GCPEntityColoring(stream_suite)
@@ -17,11 +15,11 @@ GCPEntityColoring(stream_suite)
 !define stream_suiteParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, stream_suite_png, stream_suite)
 !define stream_suiteParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, stream_suite_png, stream_suite)
 !else
-sprite $stream_suite <svg version="1.1" viewBox="0 0 24 24"><g fill="none"><g transform="translate(2 5)"><path fill="#4285F4" d="M 5.734 1.007 L 16.09 1.007 L 14.958 2.6183 L 4.5653 2.6183 Z"/><path fill="#4285F4" d="M 3.4513 4.2967 L 13.807 4.2967 L 12.675 5.908 L 2.2826 5.908 Z"/><path fill="#4285F4" d="M 1.1687 7.5864 L 11.525 7.5864 L 10.392 9.1977 L -4.2633e-14 9.1977 Z"/><circle cx="10.339" cy="13.226" r="1.5441" stroke="#4285F4" stroke-width="1.6113"/><path transform="translate(15.36 6.1109) rotate(-55) translate(-15.36 -6.1109)" fill="#4285F4" d="M 8.4832 5.2942 L 22.238 5.2903 L 22.238 6.9275 L 8.4827 6.9314 Z"/></g></g></svg>
+sprite $stream_suite <svg version="1.1" viewBox="0 0 24 24" width="72" height="72"><g fill="none"><g transform="translate(2 5)"><path fill="#4285F4" d="M 5.734 1.007 L 16.09 1.007 L 14.958 2.6183 L 4.5653 2.6183 Z"/><path fill="#4285F4" d="M 3.4513 4.2967 L 13.807 4.2967 L 12.675 5.908 L 2.2826 5.908 Z"/><path fill="#4285F4" d="M 1.1687 7.5864 L 11.525 7.5864 L 10.392 9.1977 L -4.2633e-14 9.1977 Z"/><circle cx="10.339" cy="13.226" r="1.5441" stroke="#4285F4" stroke-width="1.6113"/><path transform="translate(15.36 6.1109) rotate(-55) translate(-15.36 -6.1109)" fill="#4285F4" d="M 8.4832 5.2942 L 22.238 5.2903 L 22.238 6.9275 L 8.4827 6.9314 Z"/></g></g></svg>
 
 GCPEntityColoring(stream_suite)
-!define stream_suite(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, stream_suite*2, stream_suite)
-!define stream_suite(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, stream_suite*2, stream_suite)
-!define stream_suiteParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, stream_suite*2, stream_suite)
-!define stream_suiteParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, stream_suite*2, stream_suite)
+!define stream_suite(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, stream_suite, stream_suite)
+!define stream_suite(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, stream_suite, stream_suite)
+!define stream_suiteParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, stream_suite, stream_suite)
+!define stream_suiteParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, stream_suite, stream_suite)
 !endif

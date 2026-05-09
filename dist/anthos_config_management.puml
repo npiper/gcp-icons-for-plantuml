@@ -3,14 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $anthos_config_management_png [128x128/16z] {
-xTg7akCW3CPnWK3e_P_uKZJZO2VSjqJ05NxJh-mVMsmgz5FRjctR5fX5Q1c-aPjbTUjBfkaY7_sRiE3YhMzMrArlvjVhlgIPWpTIeU6ubkHaQftrHaxcrIde
-3R7KUDI3RIsGzOdaPCh5qz47Lk1Uh_hN5UJnzRfFIMfnrE0ZNVl04Bml_kW3At2ij_eKVBT1lDRR_Uis27uN7mde0qDmkFLL7rY1HntkNxS1EmmUx9iiDPV1
-utry2FYjn_lVFIG3TQnFKMeT3xU16lIkK4D77xruAceYke980B0UzGLXAqW4WEga9zJ0NNsqRZ8r-FP5tmfp-a4_cj7Nfj5z_PqqifyKCAvl0K66uDzN0moY
--FVpaMzHyy_sy-9--S_llmgm_mVrZULNzStw_kxRtypibnVq9EMm-l7ld-xllgaZPTdlNtZcz-FVxYUwMTUFz32elnz_LD6-IPxzf73_uDVN5-MzjxlKfwy0
-Qx7MolVzyl9OhqrIZX696lwkpwUnA-3oID3VlquoGlLw1PtzSzqKu67mjDRIrR_-J8D-x76ijVJt2xs1V_3qRP_UOw1kklkS5VZmtJ1zb5Iaguz_0bwe8KbV
-7ry1jVpykr26Lv3HkY6qZty3bF6wH8yl7t4iDPSlNt5IIsJch41E78xREDN7tuA87K7mNu7_IHoknK6t7jy6r9Q1-hWX1E01nta5-AtttmRZw_X3SiBh_aF0
-pxluhm2_zVxR0AaFtGR0UQ_1Gm0UR9sr-ZH3-DHVU_uyBZr_dscoka_pXQDFQrYVQHdcdi5lsxPjsoy
+sprite $anthos_config_management_png [72x72/16z] {
+xTS5aWKX30JGuBd_XTVPhXeiz7Vfqh4t3ebqyyux8UHy3kNRELaArScdATNv3g_0uILV5L5r5Kgy8g8gyYz5xfRapn79DPG2Ho1H2Xn8YM7W0ChR2fnMiYjm
+x18OBpD7qWB2nVGTP0eD5TLMca0JfI_P7QUAEDhHGpX7EzbtYdwbnSgcSpmxrkuxSYOddidHvc4J3d9lJhDuxlV5ExUyBoIbEtplhguymtDEsuus3bRRdQHz
+fpvtewFVAUtpnMgBWs-c3TQl7FsEdu_pNh-pTh3A3-OTYsER1-6SULu-Vvq0oCaq0OonZaBeYenGJ4LPlnGZBgcfUodf31Lzer1zof69TFT5F1YYZwFwIZvm
+RjvtGnefxxpp2G
 }
 
 GCPEntityColoring(anthos_config_management)
@@ -19,11 +16,11 @@ GCPEntityColoring(anthos_config_management)
 !define anthos_config_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, anthos_config_management_png, anthos_config_management)
 !define anthos_config_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, anthos_config_management_png, anthos_config_management)
 !else
-sprite $anthos_config_management <svg viewBox="0 0 24 24"><path d="M16.39,14V9.47l-4-2.29V3.78h-.86v3.4l-4,2.29V14l-3,1.75.43.74,3-1.75H8l4,2.28,4-2.28,2.93,1.69.43-.74Zm-2.33.88a.83.83,0,0,1-.69-.39H9.13v-.85h4.24a.83.83,0,0,1,.69-.39.82.82,0,0,1,0,1.63Zm.81-2.49H12.7a.81.81,0,0,1-1.4,0H9.13v-.86h2.19a.81.81,0,0,1,1.36,0h2.19Zm0-2.11H10.63a.83.83,0,0,1-.69.39.82.82,0,0,1,0-1.63.83.83,0,0,1,.69.39h4.24Z" fill="#4285f4"/><path d="M20.56,7.56v8.87a.87.87,0,0,1-.44.76l-7.68,4.44a.88.88,0,0,1-.44.12V20.16l7.07-4.08V7.92L12,3.84V2.25a1,1,0,0,1,.44.11L20.12,6.8A.89.89,0,0,1,20.56,7.56Z" fill="#669df6"/><path d="M3.44,7.56v8.87a.87.87,0,0,0,.44.76l7.68,4.44a.88.88,0,0,0,.44.12V20.16L4.93,16.08V7.92L12,3.84V2.25a1,1,0,0,0-.44.11L3.88,6.8A.89.89,0,0,0,3.44,7.56Z" fill="#aecbfa"/></svg>
+sprite $anthos_config_management <svg viewBox="0 0 24 24" width="72" height="72"><path d="M16.39,14V9.47l-4-2.29V3.78h-.86v3.4l-4,2.29V14l-3,1.75.43.74,3-1.75H8l4,2.28,4-2.28,2.93,1.69.43-.74Zm-2.33.88a.83.83,0,0,1-.69-.39H9.13v-.85h4.24a.83.83,0,0,1,.69-.39.82.82,0,0,1,0,1.63Zm.81-2.49H12.7a.81.81,0,0,1-1.4,0H9.13v-.86h2.19a.81.81,0,0,1,1.36,0h2.19Zm0-2.11H10.63a.83.83,0,0,1-.69.39.82.82,0,0,1,0-1.63.83.83,0,0,1,.69.39h4.24Z" fill="#4285f4"/><path d="M20.56,7.56v8.87a.87.87,0,0,1-.44.76l-7.68,4.44a.88.88,0,0,1-.44.12V20.16l7.07-4.08V7.92L12,3.84V2.25a1,1,0,0,1,.44.11L20.12,6.8A.89.89,0,0,1,20.56,7.56Z" fill="#669df6"/><path d="M3.44,7.56v8.87a.87.87,0,0,0,.44.76l7.68,4.44a.88.88,0,0,0,.44.12V20.16L4.93,16.08V7.92L12,3.84V2.25a1,1,0,0,0-.44.11L3.88,6.8A.89.89,0,0,0,3.44,7.56Z" fill="#aecbfa"/></svg>
 
 GCPEntityColoring(anthos_config_management)
-!define anthos_config_management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, anthos_config_management*2, anthos_config_management)
-!define anthos_config_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, anthos_config_management*2, anthos_config_management)
-!define anthos_config_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, anthos_config_management*2, anthos_config_management)
-!define anthos_config_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, anthos_config_management*2, anthos_config_management)
+!define anthos_config_management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, anthos_config_management, anthos_config_management)
+!define anthos_config_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, anthos_config_management, anthos_config_management)
+!define anthos_config_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, anthos_config_management, anthos_config_management)
+!define anthos_config_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, anthos_config_management, anthos_config_management)
 !endif

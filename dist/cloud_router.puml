@@ -3,12 +3,10 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_router_png [128x128/16z] {
-xDQtSGGm54D1UMt_5IkN9_5dS8QlWKM8XsliT3gTJfHvoZnbdZ9FcQVCK-OfyvHvoZnbdZ9FcQVCK-OfyvHvoZnbdZ9FcQVCK-OfyvHvKlDvSSvBndtrJVas
-VJE-RT-4B_3bliYN-a9VvejzYK_ks_UD-7PzGxuztvXlnpVeM_UD-bPzmxurtxXlnRVXF_kZkRkovylut9VnkI_ZSr_6vxwCptqPd_ioFlTbVExB-DptqPvP
-75WKGr7e6Uc_vDaEtvrDQ82ud7j5_oi_hPzs_6dN7-t-epr_QCzVslk7zlwbVN_mtVVNUXYkwuzBRDSRSF2FCSOhxs6--Vw-xwVzVz3-lsZ_dxJ_RzhyWJP_
-eSsVQFCtsloHDd-bpPzfytVQ-WDj_MMzVjzVz8_3nFMtlIq0xcq1z5W-JQ0tWTu4UXFeJQ0tWTu4UXFeJQ0tj_Lb0rX-Gw0tWTu4UXFeJQ0tWTv8No1zWVG5
-qXT8N_2IlcSocKmcVm
+sprite $cloud_router_png [72x72/16z] {
+vTX7LW0n30HHKijr_nEp9NhwGH7Twtb_iYtfve0Sbed3G1m6uZ0GXu5FEg10O433iyHXuE53p083Mc102mneWG4jCA1RDldMxv1qpd3XaCOPBXroxGo5GwwS
+eNB8tXbAX-oSeNROET0xlE-mSugljZgIrqcnj3KEAPZ68GNJEAHW6eSKZEVuz-K_P_-zjvyprdyX_AV2kg6iOzgwggtp-hxZxuF-lkpNgrRTCk0KP5Cm7TGn
+FTGpFVIWzGK65ArlCY2jhrIWQ7st0SMQInoGm_88
 }
 
 GCPEntityColoring(cloud_router)
@@ -17,11 +15,11 @@ GCPEntityColoring(cloud_router)
 !define cloud_routerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_router_png, cloud_router)
 !define cloud_routerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_router_png, cloud_router)
 !else
-sprite $cloud_router <svg viewBox="0 0 24 24"><g><g><path d="M19,14v3l-5-5,5-5v3h3v4ZM5,10H2v4H5v3l5-5L5,7Zm9,7V14H10v3H7l5,5,5-5ZM14,7v3H10V7H7l5-5,5,5Z" fill="#4285f4"/></g></g></svg>
+sprite $cloud_router <svg viewBox="0 0 24 24" width="72" height="72"><g><g><path d="M19,14v3l-5-5,5-5v3h3v4ZM5,10H2v4H5v3l5-5L5,7Zm9,7V14H10v3H7l5,5,5-5ZM14,7v3H10V7H7l5-5,5,5Z" fill="#4285f4"/></g></g></svg>
 
 GCPEntityColoring(cloud_router)
-!define cloud_router(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_router*2, cloud_router)
-!define cloud_router(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_router*2, cloud_router)
-!define cloud_routerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_router*2, cloud_router)
-!define cloud_routerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_router*2, cloud_router)
+!define cloud_router(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_router, cloud_router)
+!define cloud_router(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_router, cloud_router)
+!define cloud_routerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_router, cloud_router)
+!define cloud_routerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_router, cloud_router)
 !endif

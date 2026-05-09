@@ -3,16 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $key_management_service_png [128x128/16z] {
-xPk7Skmm24K10LV__yEl93jurah1ML2c-4nBFmBTO2c5ViBDpStD3VElsjLXGh-4cBjFm0VJTdYO-J_cdC3s9eZwW_a6u6DdwHxC1m2KDsNE_60UxDW62VVY
-xsy23pznyaSMkpBtZJ-os9EvZ3-seIzpgx-t2HBkXB-w2JpSFEalps9aBkzVju6hCxVwEveWaRcqlp2BOfu3Cq5aiI9pWRcx0HD0OWaplmrc6RaDUQk9HNqY
-qmHAaj2VOisQw46XN-aCAxRvFzv90VRuZUb3sB73R_GfZaf_NXy0xNwcBv1klmqwuA46Lw43HRF_V2W101SAW1R_MluuvZ-WnvjR_NvuxEd-S_IbrHzrykdv
-YsYCeT4louSi3vVHwMTwHvRpHqI0E_jF3tJrEpq0slosViJwrNs3tuCPyE_wiTDlYVetvmyRykSSq-_iZmd8M-RFMd-CXaQ_APqRS2wVjBD-ez3Omt-QFeHE
-lyjv0GyzRth-6WN3xTqF60NUwtSvtSzFz-k1xlCdFS4YJw-YtQ_q1Tvn_iqlm33x_JOI-fVywWlB55hXq1VwynVWWU_q1Vv0cPwGfVW5E2KPvjzZWwFpwi2i
-yqluSxk0i7y5BEtt78T_9e1I4hxgdnamA4kFNoYBjVWfZJRuuPH6hC5lb8OxwX-KfyFFb4VB_G05LHFuaj-8IWAW4d3uqzjVT0KAydwwnB1QFumkmLxi5xg6
-5Vlf8bBgXz9LQlrCLnbMvuVJTGhd3uIketb_H_d4-VbVMdwWQNzf-G5N-OL-nh2A_OTHK3K4xOsadoae6eBq38f7tu7c_ENX2rxtCxs2fFprtG_KClxwxWUl
--PbUXN_kHqoUuWYCTpZykJDltHYqVoppBvkzygC84dEty9iW6FmFOK52Nxo00412txU0n4ElDGFT-c1Sy4Ef7idwWK4Ti5d63mWreGa_REUVVtkYzwqjEDcD
-gHan-yoFcCZxLh2nzGV3xEG7eBIH2EBkV_y8MEtDZ-t__XA8cdV8-___wkRcvkRcBm
+sprite $key_management_service_png [72x72/16z] {
+xTU7ZkH020JGJbNb___X3OFKyWcZC_ZoRIbjc7wYWKdj7yjN1ZWV8ts2bBJw8sKH98z34iQ32rcEpqYSlN8XWcUdLDHO9foSNLIkjzwn-9x7fO21Oz61SRkt
+iMFNM_rURtTiV-IakESJzC4SOyn5oHU5QsTTA6DVc1xYNMUrKvQgpcpDGGLdLzER1Ievk_kIaRtYmCu2h-SxkzsiK8-T1CbzfXSSExZtMQyDaD8Eh3dRUVtE
+ehFuhOFVLO_lpxJ-5EU5n_F2FE-FtFxKzhdlSkhFhvvzVk7Pypr-FPm1On7kEa1thuSLPuzjKZgSiwwTmSliFNREl7OwhuBO6UqwoNgE7ZX8EL8BCf5ou82W
+qI09XCviKLo7BO7JGsSb7B656HbdjZX8E97X9xPUyKxyf8XN4Rnq57KvViwRaoWds6ddHBiSZmpz8-OaXkLVNU7cvNOdJk0aRcNfttEaaVgUOniqpSarnm_V
+zWTo8yz2N0kKUzafG5If6eDuob5XVBEPcrIya9j1RuKCuEn8inKpJT8dOfsfImGbiQ3uRxrhj7yhNta7
 }
 
 GCPEntityColoring(key_management_service)
@@ -21,11 +17,11 @@ GCPEntityColoring(key_management_service)
 !define key_management_serviceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, key_management_service_png, key_management_service)
 !define key_management_serviceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, key_management_service_png, key_management_service)
 !else
-sprite $key_management_service <svg viewBox="0 0 24 24"><g><path d="M11.32,17.06H10v1.4h1.37v.63h1.43V12.18a3.47,3.47,0,0,0,2.67-3.34,3.42,3.42,0,1,0-4.1,3.36v2.12H9.26v1.4h2.06ZM12,2l8.21,3.42v5.63c0,5.06-3.5,9.8-8.21,11-4.71-1.15-8.21-5.89-8.21-10.95V5.42Zm0,5a1.88,1.88,0,0,1,.72,3.62A1.88,1.88,0,1,1,12,7Z" fill="#669df6"/><path d="M12,19.09h.75V12.18a3.47,3.47,0,0,0,2.67-3.34A3.42,3.42,0,0,0,12,5.42V2l8.21,3.42v5.63c0,5.06-3.5,9.8-8.21,11V19.09ZM12,7a1.88,1.88,0,0,1,.72,3.62,1.09,1.09,0,0,1-.72.15Z" fill="#4285f4"/></g></svg>
+sprite $key_management_service <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="M11.32,17.06H10v1.4h1.37v.63h1.43V12.18a3.47,3.47,0,0,0,2.67-3.34,3.42,3.42,0,1,0-4.1,3.36v2.12H9.26v1.4h2.06ZM12,2l8.21,3.42v5.63c0,5.06-3.5,9.8-8.21,11-4.71-1.15-8.21-5.89-8.21-10.95V5.42Zm0,5a1.88,1.88,0,0,1,.72,3.62A1.88,1.88,0,1,1,12,7Z" fill="#669df6"/><path d="M12,19.09h.75V12.18a3.47,3.47,0,0,0,2.67-3.34A3.42,3.42,0,0,0,12,5.42V2l8.21,3.42v5.63c0,5.06-3.5,9.8-8.21,11V19.09ZM12,7a1.88,1.88,0,0,1,.72,3.62,1.09,1.09,0,0,1-.72.15Z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(key_management_service)
-!define key_management_service(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, key_management_service*2, key_management_service)
-!define key_management_service(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, key_management_service*2, key_management_service)
-!define key_management_serviceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, key_management_service*2, key_management_service)
-!define key_management_serviceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, key_management_service*2, key_management_service)
+!define key_management_service(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, key_management_service, key_management_service)
+!define key_management_service(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, key_management_service, key_management_service)
+!define key_management_serviceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, key_management_service, key_management_service)
+!define key_management_serviceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, key_management_service, key_management_service)
 !endif

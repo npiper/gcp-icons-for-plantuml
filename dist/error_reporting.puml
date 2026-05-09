@@ -3,13 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $error_reporting_png [128x128/16z] {
-xDG5Ri0m34RX1Hpt_XSUarjPUfht3sDnwNkbtEIpPy-UFNjQJwQr_BZsQVombOprzyTr2_k6d5-HFySDCH-1bkpNyJCSQ4cWYby97mDql8K39tX5IjvM5g3X
-LwETeyBpFmy4Y7aUm7d-u_C0plCVdmVK-SLv7i1vGtyU3-2yFKsBHrud2QZodPxUGO201m4IdWSeUHwWvta0voK1d9S4S5uIm7b90ETb0PpN1pJ6nnL_n5qm
-e2MjX9_-RbROjNp2goO-uu_dSRSJxo00-8m_BdT_74a0y-iy201-WGS1m2_m803wzW4-3R2Yp_cd086F-HXGzpaV0-e-vvE0ki_vFA3kZ_1vnpkxya_Ze-Xd
-IBopxfxu9l11WCW70L8V14Xz4A3syu3chlP1WDG70L8V1UXz7k1wFmcG-2n0wODNy4Tz_lp_xFV7U9sFUA5FUAKFUAaFUAaFUAaFUAtFURqV-RlsxQK00204
-WUZ-jtzZM_Wka4APeVl-_hlX_m3_5_W_mVzj-WVVl_Z-oVTlld_q_Qlldtt_xlc3vY-QFs7-XlaZvg-OFsF-Zlq3x5zW_mJxDzW_mluLzi-mVuVzG-nVOlyK
--xVOF_R-jVVFlN_lzmT-V-7t9tv_u_T7Vd-L94cI5
+sprite $error_reporting_png [72x72/16z] {
+xTY7Se0m30DGmDZE__zmPnZcT3dKghkw6SPZayJJZyz_pECKjxxOlRHPPksBLoymoOGNPeDu1YrsevdvTV5oMMmS4niJbxXHpFAwU8uWeCguXzl6UFXh43Hc
+p6pfonVR0o7CR2yDpWeWZa7l4S5G46Pu23CyX1aU2iJCaI-ntlGPGL4SpBIdvBet0q7O6J6jG4F7BqoUcLOW7pXk8wP2vZSSS55jWmW7Cnjqt-dCjabdDkY-
+azd0-NGd2QUr0KGv6E8T3BtTAH3l323UgPSsHRx7IShHNvV-FcE6Tp3JrD-5_ZlL_pVq_p4C9VrV7K3WFy_tEudx7RuVJD0FIljbrJX1DMuHZQD4uphHE5C-
+xjMFm_bvWNoUefytyVCu-RnIFy_bvzsYEe2gBl7Zyvz7
 }
 
 GCPEntityColoring(error_reporting)
@@ -18,11 +16,11 @@ GCPEntityColoring(error_reporting)
 !define error_reportingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, error_reporting_png, error_reporting)
 !define error_reportingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, error_reporting_png, error_reporting)
 !else
-sprite $error_reporting <svg viewBox="0 0 24 24"><g><path fill="#669df6" d="M 7 2 L 2 7 L 2 17 L 7 22 L 12 22 L 9.5 19.14 L 8.25 19.14 L 4.86 15.75 L 4.86 8.25 L 8.25 4.86 L 9.5 4.86 L 12 2 Z"/><path fill="#669df6" d="M 14.5 2 L 12 4.86 L 15.75 4.86 L 19.14 8.25 L 19.14 15.75 L 15.75 19.14 L 12 19.14 L 14.5 22 L 17 22 L 22 17 L 22 7 L 17 2 Z"/><path fill="#4285f4" d="M 12 17 L 9.5 14.5 L 12 12 L 9.5 9.5 L 12 7 L 9.5 7 L 7 9.5 L 7 14.5 L 9.5 17 Z"/><path fill="#4285f4" d="M 14.5 7 L 12 9.5 L 14.5 12 L 12 14.5 L 14.5 17 L 17 14.5 L 17 9.5 Z"/></g></svg>
+sprite $error_reporting <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#669df6" d="M 7 2 L 2 7 L 2 17 L 7 22 L 12 22 L 9.5 19.14 L 8.25 19.14 L 4.86 15.75 L 4.86 8.25 L 8.25 4.86 L 9.5 4.86 L 12 2 Z"/><path fill="#669df6" d="M 14.5 2 L 12 4.86 L 15.75 4.86 L 19.14 8.25 L 19.14 15.75 L 15.75 19.14 L 12 19.14 L 14.5 22 L 17 22 L 22 17 L 22 7 L 17 2 Z"/><path fill="#4285f4" d="M 12 17 L 9.5 14.5 L 12 12 L 9.5 9.5 L 12 7 L 9.5 7 L 7 9.5 L 7 14.5 L 9.5 17 Z"/><path fill="#4285f4" d="M 14.5 7 L 12 9.5 L 14.5 12 L 12 14.5 L 14.5 17 L 17 14.5 L 17 9.5 Z"/></g></svg>
 
 GCPEntityColoring(error_reporting)
-!define error_reporting(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, error_reporting*2, error_reporting)
-!define error_reporting(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, error_reporting*2, error_reporting)
-!define error_reportingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, error_reporting*2, error_reporting)
-!define error_reportingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, error_reporting*2, error_reporting)
+!define error_reporting(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, error_reporting, error_reporting)
+!define error_reporting(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, error_reporting, error_reporting)
+!define error_reportingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, error_reporting, error_reporting)
+!define error_reportingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, error_reporting, error_reporting)
 !endif

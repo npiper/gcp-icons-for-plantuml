@@ -3,15 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $google_kubernetes_engine_png [128x128/16z] {
-xPi7bkCm34E7e6Jw_XVU5ZzEOGhMWQ8jmlI9mayJTA9doMz_ePQMbfQMpDqcqW5tO5O6WFyICAVqy4DmpA6duFPguxy8i9SQNmLCAJrlWfxEcQ0tVbO6XVxI
-De332S7jHSOZVmpFm72DOd1tkvOPRA3n-PhxYr-SqRR1xV39lvcWH3VAc_nx1kcDpxZ99_8yhzlqv1C-YOqlV29TdV65pzYbVuzFFfMrqFZAPp9usdZF48LV
-13_tQi0VGEKJRQ0nllBvA0hZAv-leZ5yphdq6NmN0GoVVOezDXOumUSiCu0RTPuFlnUNhXBEyksUyVpPTP8FOmw9AvQIRm0_zzVp0RyjZER3mSpzzVngF662
-af_6ande-N1AS3K_1H1qIElFMv046Lzm_K77jnn0N7-1gVcsjKTjW1pROm1_sxoqmLNZFM8Vmk_TIXiKux75le_W_r9xvrmrtdh4FewV9kJ8MlfzBBztlCT5
-BVrG_bSJp4lfn_BJXAAMz87yOa8f_M1-DI5BFvfVvANqh-NtRbdw6VojUvxpS_YuyFUX_CLV_CN7R_43Ohvl53yLhkIZTvAVYWqglhKaylmzefk0dtIU7x77
-vMTxdf_6-niwnOzmwt5auC_nq_YMoTpbvq5ZEnBOS9gVfUyTfHKg_-3P-rGys-0Ktzkdj_bwAbH-XDSPQKJpK_n-VQxhr_bP-Zejt9xWDoiZh5L-dczbMXod
--TuEGX5w_ygFk3xK8_hvwzytn_j7VhoNlWhww-zfmi7Vevlq-Zlr5FJk5_u6EfXq_SKlnzy4wo_29Ln-_KcrSiP74Qq_Igl8hx_IWbUwu004vHCQg3TUi9Al
-tOO2ef82rmG19SRp1HNO9MW3WV6YDj3ll-B2ymaER0FUU7qRSCOFR0C1VTh-q_dxR-VlFvw__th-_dFHtE3_kV-Wtd_nNzr_KjR__eFxZxHQMbfQMleE
+sprite $google_kubernetes_engine_png [72x72/16z] {
+xTXPUiCm20JW04Bo_KzSoIN1weVhCN7tyjRjjsQweTn-s_mFynKA2RFGqqf7-Z3J1SgpaYaFALsCJCD2kKWkUBYimWFXfBHLkYdzFHwIJnNZrNQ7PflmI9vX
+EC47CCKVwyvyK8ABSLh2o6WnWGFLD9ywSg2QQE_3949x7OPEV5osBmYF7ZdX8zXhd-R0OGgU6vwJ67Iy1-yjvRZY4kw4Xt68SCUXWCdqmpBt8ub-2db5st98
+ppcrYeVpIDAMiqvLjX-XHoIkhRMpJXyB9sAHMbkMZ7CFzzhOKBAEZd0MgID9ny9Pf2ST5SjqYRDid7-7ohwZ13jYHE2qFWLpM6kjfKHEQweTgdpiq51qvVIj
+qm7xPLLwtv5IjTv_5qGdfpMnztTeKJbmwkQ3QxZLwQF-jxaSEb9eUgVQUTP8Fbnars6Hu5yXQncEnBl0YJs1g6E4x0dmjeMjTxC4R6m4xdN1R1TfVCy4aeFv
+mMA0ce1Yy9g0Um5K4rrpuyaf-NjS_bwPl-Vc9LE-nUi0LjFjjyt_l
 }
 
 GCPEntityColoring(google_kubernetes_engine)
@@ -20,11 +17,11 @@ GCPEntityColoring(google_kubernetes_engine)
 !define google_kubernetes_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, google_kubernetes_engine_png, google_kubernetes_engine)
 !define google_kubernetes_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, google_kubernetes_engine_png, google_kubernetes_engine)
 !else
-sprite $google_kubernetes_engine <svg viewBox="0 0 24 24"><g><path fill="#4285f4" d="M 14.68 13.06 L 19.23 15.69 L 19.23 16.68 L 14.29 13.83 Z"/><path fill="#669df6" d="M 9.98 13.65 L 4.77 16.66 L 4.45 15.86 L 9.53 12.92 Z"/><rect x="11.55" y="3.29" width=".86" height="5.78" fill="#aecbfa"/><path d="M3.25,7V17L12,22l8.74-5V7L12,2Zm15.63,8.89L12,19.78,5.12,15.89V8.11L12,4.22l6.87,3.89v7.78Z" fill="#aecbfa"/><path fill="#aecbfa" d="M 11.98 11.5 L 15.96 9.21 L 11.98 6.91 L 8.01 9.21 Z"/><path fill="#669df6" d="M 11.52 12.3 L 7.66 10.01 L 7.66 14.6 L 11.52 16.89 Z"/><path fill="#4285f4" d="M 12.48 12.3 L 12.48 16.89 L 16.34 14.6 L 16.34 10.01 Z"/></g></svg>
+sprite $google_kubernetes_engine <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#4285f4" d="M 14.68 13.06 L 19.23 15.69 L 19.23 16.68 L 14.29 13.83 Z"/><path fill="#669df6" d="M 9.98 13.65 L 4.77 16.66 L 4.45 15.86 L 9.53 12.92 Z"/><rect x="11.55" y="3.29" width=".86" height="5.78" fill="#aecbfa"/><path d="M3.25,7V17L12,22l8.74-5V7L12,2Zm15.63,8.89L12,19.78,5.12,15.89V8.11L12,4.22l6.87,3.89v7.78Z" fill="#aecbfa"/><path fill="#aecbfa" d="M 11.98 11.5 L 15.96 9.21 L 11.98 6.91 L 8.01 9.21 Z"/><path fill="#669df6" d="M 11.52 12.3 L 7.66 10.01 L 7.66 14.6 L 11.52 16.89 Z"/><path fill="#4285f4" d="M 12.48 12.3 L 12.48 16.89 L 16.34 14.6 L 16.34 10.01 Z"/></g></svg>
 
 GCPEntityColoring(google_kubernetes_engine)
-!define google_kubernetes_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, google_kubernetes_engine*2, google_kubernetes_engine)
-!define google_kubernetes_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, google_kubernetes_engine*2, google_kubernetes_engine)
-!define google_kubernetes_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, google_kubernetes_engine*2, google_kubernetes_engine)
-!define google_kubernetes_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, google_kubernetes_engine*2, google_kubernetes_engine)
+!define google_kubernetes_engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, google_kubernetes_engine, google_kubernetes_engine)
+!define google_kubernetes_engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, google_kubernetes_engine, google_kubernetes_engine)
+!define google_kubernetes_engineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, google_kubernetes_engine, google_kubernetes_engine)
+!define google_kubernetes_engineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, google_kubernetes_engine, google_kubernetes_engine)
 !endif

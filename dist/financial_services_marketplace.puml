@@ -3,14 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $financial_services_marketplace_png [128x128/16z] {
-xPddWkKW24O3ya7U_ubtTOJRd9PDsCRvCtFhGMpetRv9KHH5GIo0cYaQvTjPT603SAwTH2UsTyoK4lLD0xDzODRIz0At0sesGp19rWlFSOZTHW38IJxUxBG5
-14lB0EcWFGLbtMzylHz3xwAd0FHoFUEkzNmNYem0Mahp4Oqs2wLQGW98ExJoyqW09mn-t7Vwz7i2vFhqewtzBQ43FFqhF_T7bk3VrdxQEtIbdfP-nznV_lJn
-v_rl2SiV_xxv9zqlQp_i-Xg0jRFqKye6DFnjvPVXpwb-wDNFGo-NgcC6mdF-4y_-y5F_JwwnArea05Fha4RpnIwenHcHTsW7_F2o3RtEONXs13oSFlFko-y1
-p_BNUdWw_zTsjjstVe8_aiPDOEPwhqDd17pYKS_X4O17S7_yKVAEE362i0VyU00qTyaM-i0CV9hTuVaAjFEcsK6-7ZWH0Prnp0rYzQC6F__xMKoUzPwPOmXq
-2IAfnDpOsyUwqXy_b_9QxtCl2FjIV_ng0FeHaD5mxmfp-mhJa_qEW345FhGVBShrIvYxF-92_uVoV7z-_h_4iUd_5VHBR7yPHT6-X7o98tx5QVD_F-B7Nx7-
-xV_i-e_qzJ-VeiYlF_BhhulyjVwMVs1E62U_x8-RHXTwBSDt_ZXWmuNiNs9d-zj7Vd4__It-yfU__EKlV_dBN_xobx_yvIz_-SjVViL4TVd4z3tV1kh4Sk-V
-TiScV-3zM_dhzw-YA8hY1m
+sprite $financial_services_marketplace_png [72x72/16z] {
+xPO70giW44HXTsV6-v_u2swwAM9-zwNONuOMA7y81zNCzak2f2JiKmKRQg2C0v1miw0cSK-QKtbC6XOPYDhgg7z9yZ4FI5kYv4PZJKMYN3o5kTsAatRjSIa6
+QxbUF7sBxtl6osM3vJBIhpqX-PxsydnUckg0fLUGBxbiYSDIjfeSKIgRA759jK2npGAopXiobZP37nPLquPAicRfbUDz6-2atbZKDANfGqkA32Ie6LfgceXl
+JHMyW3gR0XGnMspHfEbDXJCzITJB3oWrQNhJz-v1k7k0QRc8R8CdaKwM2_AN7gnwLdZjgR46rh3oDr4_fcnlhodPtLxVygnXvQzdlRr6wbaFVA-znlhFUSoh
+yOa74G4s8lVQq-TSkVFEaoimyZGBedcMwQRdo4delSTlF37gMSzpU0xFuJayu_y_TNyURid3C7TdmyqDx1xwZAPcT7TyuY40Tf1xbrdYiZSwVzrvz6lMcSNM
+y1Mibj_0mGy
 }
 
 GCPEntityColoring(financial_services_marketplace)
@@ -19,11 +17,11 @@ GCPEntityColoring(financial_services_marketplace)
 !define financial_services_marketplaceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, financial_services_marketplace_png, financial_services_marketplace)
 !define financial_services_marketplaceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, financial_services_marketplace_png, financial_services_marketplace)
 !else
-sprite $financial_services_marketplace <svg viewBox="0 0 24 24"><rect x="4.98" y="10.96" width="7.02" height="1" fill="#669df6"/><rect x="12" y="10.96" width="7.02" height="1" fill="#4285f4"/><path d="M5,13v9h7V13Zm2.76,7.78H6.23V14.22H7.74Zm3.09,0H9.32V14.22h1.51Z" fill="#669df6"/><path d="m12 13v9h7v-9zm2.68 7.78h-1.51v-6.56h1.51zm3.09 0h-1.51v-6.56h1.51z" fill="#4285f4"/><path d="M18.48,8.15l-3-1.52A3.71,3.71,0,0,1,12.06,9H12v1h7V9A1,1,0,0,0,18.48,8.15Z" fill="#4285f4"/><path d="M11.94,9A3.71,3.71,0,0,1,8.51,6.63l-3,1.52A1,1,0,0,0,5,9V10h7V9Z" fill="#669df6"/><path d="M12,2v.91h0a2.25,2.25,0,0,1,2.25,2.25v.07A2.25,2.25,0,0,1,12,7.47h0v.92A3.2,3.2,0,0,0,12,2Z" fill="#4285f4"/><path d="M12,7.47A2.25,2.25,0,0,1,9.72,5.23V5.16A2.25,2.25,0,0,1,12,2.91h0V2h0a3.2,3.2,0,0,0,0,6.39h0V7.47Z" fill="#669df6"/><rect x="11.54" y="3.71" width=".91" height="2.96" fill="#4285f4"/></svg>
+sprite $financial_services_marketplace <svg viewBox="0 0 24 24" width="72" height="72"><rect x="4.98" y="10.96" width="7.02" height="1" fill="#669df6"/><rect x="12" y="10.96" width="7.02" height="1" fill="#4285f4"/><path d="M5,13v9h7V13Zm2.76,7.78H6.23V14.22H7.74Zm3.09,0H9.32V14.22h1.51Z" fill="#669df6"/><path d="m12 13v9h7v-9zm2.68 7.78h-1.51v-6.56h1.51zm3.09 0h-1.51v-6.56h1.51z" fill="#4285f4"/><path d="M18.48,8.15l-3-1.52A3.71,3.71,0,0,1,12.06,9H12v1h7V9A1,1,0,0,0,18.48,8.15Z" fill="#4285f4"/><path d="M11.94,9A3.71,3.71,0,0,1,8.51,6.63l-3,1.52A1,1,0,0,0,5,9V10h7V9Z" fill="#669df6"/><path d="M12,2v.91h0a2.25,2.25,0,0,1,2.25,2.25v.07A2.25,2.25,0,0,1,12,7.47h0v.92A3.2,3.2,0,0,0,12,2Z" fill="#4285f4"/><path d="M12,7.47A2.25,2.25,0,0,1,9.72,5.23V5.16A2.25,2.25,0,0,1,12,2.91h0V2h0a3.2,3.2,0,0,0,0,6.39h0V7.47Z" fill="#669df6"/><rect x="11.54" y="3.71" width=".91" height="2.96" fill="#4285f4"/></svg>
 
 GCPEntityColoring(financial_services_marketplace)
-!define financial_services_marketplace(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, financial_services_marketplace*2, financial_services_marketplace)
-!define financial_services_marketplace(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, financial_services_marketplace*2, financial_services_marketplace)
-!define financial_services_marketplaceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, financial_services_marketplace*2, financial_services_marketplace)
-!define financial_services_marketplaceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, financial_services_marketplace*2, financial_services_marketplace)
+!define financial_services_marketplace(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, financial_services_marketplace, financial_services_marketplace)
+!define financial_services_marketplace(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, financial_services_marketplace, financial_services_marketplace)
+!define financial_services_marketplaceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, financial_services_marketplace, financial_services_marketplace)
+!define financial_services_marketplaceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, financial_services_marketplace, financial_services_marketplace)
 !endif

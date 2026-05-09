@@ -3,15 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $automl_tables_png [128x128/16z] {
-xPf7Ul0m24HX41hV_y9_sP62RVaZ8KLlbVwimBXWoPTaizbiDflDMCQa4ESwAcKeUQn2bp8cZtK8AG8y7i0fHP374sXImk3n2B9s-Kqjw47Vq8BAup6qiknr
-9G0yMl_zv7EzDsGlG2qyyQ_3qPiz_ipiyHuLsJEkHBeUig2dIxD7bqz3MT3JjTcZoQU1vkLFBbnFojdPktizqURikVLcpzqXnM2X-NnET-tBdi__Z8_Edikf
-VrQs0OyiUxb_kkFJinVz_nZQSDtp6R2Fprxklow2eYHxgj7lCt1UXC6Ix2aGFXdp5PfNbgCYUmgpS0Hml-Tt7jJbwnwfx_ajVDLE_R6oz8BiAUmVWBvV13sh
-BFLfzbxxBIk2dbMMSpLxoFnP4VJqh4giBNzAvdzT10l-lBBaqlgff_vO1FY9NtddPAPaaht47ujWqP-lZBpV_wGa_WXmkNumMTDv_cbt_0PS-IVpckQdVr9g
-_CQafy-Fb2ZoC_flPv1J2loXgnPRa5hZLouzI9FXn5_XdrnwaZQ6dodmBpp9n-EbBVejyS_LGGPu5fBKBnRyZvxauycIMFOBtD_wkJx8K1vqMVUBs1k_FvcY
-3L8bHms9NzHTB-zeLAxWa5E0n2zYUjLyGow1NA10z3TCqLB_TVFLeC2LVoJPAqA3lsUA1cJ-F7irn2W2ZHDi8F4d9_vor83U2JQmaBroAh9NZxPDiFFiZH_v
-zgWXUz_ozGb-qwlBdvYzCMzoV4ZsmBlyo9r0rhGLvlll12ArTolCw6q-VlzjQEZ8NiJPaBs0iY1x3VaZUtS1qwG8OqFpHIPPcBrrm7LS2XdkSmrN-OfiDflD
-PhFv2m
+sprite $automl_tables_png [72x72/16z] {
+xPS9ii8m34DhkR7-_K_y9smUS2WQoWxl0A-Db7MwCJz-O0bTOrp2P4-GVsTXKpMUbX64wE45JsYQEJLZw6B85pIS5DfjVWUfMHLFf8TZe7MUbdc8YvrBCUYT
+CrPeBCCHbf7IETiA3QZDDRrppaUfbJ7AdH_xetGdTeuJJskuGUVHcMrrvx75h-xSTfuMdJ8uQsBdkyF1vjXn-caiTUxP8DosmjQg1woBnuSXkpkmDNdr1EjY
+Zc7dtjaFBZtvQN8SJuQSdjtWYeVCYLz_Y5OytRJprEb6gzEd-7rFzHZFR0oDsRdWQQnvvdZfeWU3VZD_nYHwwXQJ18bpdjrSNDXY4fJC7Edf5OL9nqgpiWca
+fuFhZnKWFQCj1fE8UJVTubW1ZZsuzfGpk72iA40vLf8llah4awuIy252oD9J9SEX7CCDNXb-eriqBthiDhypt-RfH7cQ24-LrNqnRlJKnIG3Ns2wCJz-_0C
 }
 
 GCPEntityColoring(automl_tables)
@@ -20,11 +16,11 @@ GCPEntityColoring(automl_tables)
 !define automl_tablesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_tables_png, automl_tables)
 !define automl_tablesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_tables_png, automl_tables)
 !else
-sprite $automl_tables <svg viewBox="0 0 24 24"><g><line x1="19.74" x2="20.05" y1="10.23" y2="9.68" fill="#4285f4"/><path d="M6.82,19.46l.95,1.65h9.49L22,12.89,20.1,9.6l-4.74,8.21H7.77Z" fill="#4285f4"/><path d="M17.18,4.54l-.95-1.65H6.74L2,11.11,3.9,14.4,8.64,6.19h7.59Z" fill="#4285f4"/><path fill="#669df6" d="M 13.61 13.32 L 15.04 14.23 L 15.04 9.99 L 11.65 7.98 L 11.65 9.94 L 13.61 11.1 Z"/><path d="m12.68 16v-4.22l-3.39-2v4.08z" fill="#aecbfa"/></g></svg>
+sprite $automl_tables <svg viewBox="0 0 24 24" width="72" height="72"><g><line x1="19.74" x2="20.05" y1="10.23" y2="9.68" fill="#4285f4"/><path d="M6.82,19.46l.95,1.65h9.49L22,12.89,20.1,9.6l-4.74,8.21H7.77Z" fill="#4285f4"/><path d="M17.18,4.54l-.95-1.65H6.74L2,11.11,3.9,14.4,8.64,6.19h7.59Z" fill="#4285f4"/><path fill="#669df6" d="M 13.61 13.32 L 15.04 14.23 L 15.04 9.99 L 11.65 7.98 L 11.65 9.94 L 13.61 11.1 Z"/><path d="m12.68 16v-4.22l-3.39-2v4.08z" fill="#aecbfa"/></g></svg>
 
 GCPEntityColoring(automl_tables)
-!define automl_tables(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, automl_tables*2, automl_tables)
-!define automl_tables(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_tables*2, automl_tables)
-!define automl_tablesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_tables*2, automl_tables)
-!define automl_tablesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_tables*2, automl_tables)
+!define automl_tables(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, automl_tables, automl_tables)
+!define automl_tables(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_tables, automl_tables)
+!define automl_tablesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_tables, automl_tables)
+!define automl_tablesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_tables, automl_tables)
 !endif

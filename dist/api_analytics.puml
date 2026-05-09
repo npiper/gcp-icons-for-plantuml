@@ -3,16 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $api_analytics_png [128x128/16z] {
-xC610000082W_QaNgG800000fiOwi2DMGjWY1l3zB_pxhZuy1jlfKRedGY1mcmJfyLNoYWtqQwg7Re2liG3OoEFnDG2-I5wWwozeZIpQG5hkKdcZjbeGlkGa
-WRo-F0YxdmCi8WuYud2a10PvzKeEmwtQBSXd54UoTpFvy9PirprG1YX1LXd2PlHiIzQByfQzIt-vC85ENZoE7S8koJD243n4BTRFd2AHZpWIsU_8HvX2_cqr
-JGqc863pgtmSlY1_Gorur2_BHon99rIy5gGOm8IY9yDU2twnzs6oNN8QaCltBHbSEfdyOLOreiJ8vTj4Niy4TD9_Ag1THKGU0O6oV0G7P9zzn22_A3ycuFyt
-WEvJVWg-jl8IPnPfIH00cgLnjaBcyiFAJKobng01gVnA_fiBgTsDDNUV-SboStVp9SMYGtRUFGOovWb0gG1c_eJIWBw6LOxhYsg6uX46-rc-k1Ech3Cre8H-
-oPix8PoHeG4UAR9vWZH2XEGhWsJkor8cto0dfzR4e4jeUwVClNNFOZy0SdGX26cLihF2yeVa3nd63xiGcWPWjRD3x_haTHX0fDpW5OiszVeqTda5gF5BzKsl
-wwkzIN_kFwRvMpdva_xBM-R_COnGFNft_ddv3tkqDTXwvjMM8DcLLSZOd_-4vqNBCSfDYhJsofRbo_NFnki_sWI4Kp9S_tdpQEMLBZKGXYukcWbrQeZ-rY9c
-x1p9G_lhxP4pO5fFqZY__p_KsFl1kr936Gy182N5leF6bHqvHllv3tR_4OxEw0avulpnVvqymjeK7WDvJ93snXeZXEp6b_FJa8VkCyPGePsymYZN1p9p7sC4
-xh_2sVp-LtEROuHhsT8vVuLzgUGCGFAwlliH4RuKW2w_-Whl9F_D5H6azt-xj_qIJ_28tzayuO-v-ddxYOZp0cmWZxql_Nfp1DrnNKPU3H8rGD2-6Qibw-CM
-r0-6uGxiERZxIlBX-huDO5-uHyRoEDww_Kk8011v3_dFzk100000W67G_QaFicfT000007
+sprite $api_analytics_png [72x72/16z] {
+xPG7SXqX44GzcVkVs8Psrr-OTQvidhBqjgT7KF_BFtAvN2wNYwWzKFdh8DL7ZFvX1NVJ7eGO6lxpSfPL89H1Uum6ZRGVRf5LOr9ZL0KcCWTTO42grFSoqwd7
+9sZ8GMRLA03ZhPBNB18c8kgvFEMXgI1craZNZ-5d2cQbxEM4cwt0gcS5pKBddId5y-2cbkixivMN74HMKD-geYLZkk5pVoghRLQKnDpHNVax4SPYYsa8DXrZ
+ZpRErepC2EKufQ4ih36DL6nnd5aKWYKJo0glykVYUXh2S99LkV8IXDCw9tbGmR9uZl291BH6PPz4cDvpK1hyAETZ27F-j4_rFicSm-BsOVt_W-jjDFoSnDEG
+fSUIefsguOVTK9vekntYqt9Uw24qf3WQ1gRYCf3jjeggmDzB9wyg3TxuTg5BZehRC6s65A8tyj2iphiQqz2tLuGMNluzIMAsoJPgmC3QPq7sdbgbcqVMYZaa
+IHhc0Pj6qqPDbXDTYQgFmK4THm9SUpDi6WlUd5V4icPE1LCQ5Z3oC1hoZJym_WykbylbyXK
 }
 
 GCPEntityColoring(api_analytics)
@@ -21,11 +17,11 @@ GCPEntityColoring(api_analytics)
 !define api_analyticsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, api_analytics_png, api_analytics)
 !define api_analyticsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, api_analytics_png, api_analytics)
 !else
-sprite $api_analytics <svg viewBox="0 0 24 24"><g><path d="M3.47,15.68a4.31,4.31,0,1,1,6.07-.4,3.68,3.68,0,0,1-.39.4A4.32,4.32,0,0,1,3.47,15.68Zm5.2-5.2a3.07,3.07,0,1,0-.4,4.33,3,3,0,0,0,.4-.4,3.07,3.07,0,0,0,0-3.93Z" fill="#4285f4"/><path d="M14.86,15.68a4.31,4.31,0,1,1,6.07-.4,3.78,3.78,0,0,1-.4.4A4.31,4.31,0,0,1,14.86,15.68Zm5.2-5.2a3.07,3.07,0,1,0-.4,4.33,3,3,0,0,0,.4-.4,3.08,3.08,0,0,0,0-3.93Z" fill="#4285f4"/><circle cx="6.31" cy="12.44" r="1.69" fill="#669df6"/><circle cx="17.69" cy="12.44" r="1.69" fill="#669df6"/><path d="M14.39,7.81a.31.31,0,0,0-.18-.56H9.79a.31.31,0,0,0-.18.56,5.73,5.73,0,0,1,2.13,2.92.28.28,0,0,0,.36.16.29.29,0,0,0,.17-.17A5.67,5.67,0,0,1,14.39,7.81Z" fill="#aecbfa"/></g></svg>
+sprite $api_analytics <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="M3.47,15.68a4.31,4.31,0,1,1,6.07-.4,3.68,3.68,0,0,1-.39.4A4.32,4.32,0,0,1,3.47,15.68Zm5.2-5.2a3.07,3.07,0,1,0-.4,4.33,3,3,0,0,0,.4-.4,3.07,3.07,0,0,0,0-3.93Z" fill="#4285f4"/><path d="M14.86,15.68a4.31,4.31,0,1,1,6.07-.4,3.78,3.78,0,0,1-.4.4A4.31,4.31,0,0,1,14.86,15.68Zm5.2-5.2a3.07,3.07,0,1,0-.4,4.33,3,3,0,0,0,.4-.4,3.08,3.08,0,0,0,0-3.93Z" fill="#4285f4"/><circle cx="6.31" cy="12.44" r="1.69" fill="#669df6"/><circle cx="17.69" cy="12.44" r="1.69" fill="#669df6"/><path d="M14.39,7.81a.31.31,0,0,0-.18-.56H9.79a.31.31,0,0,0-.18.56,5.73,5.73,0,0,1,2.13,2.92.28.28,0,0,0,.36.16.29.29,0,0,0,.17-.17A5.67,5.67,0,0,1,14.39,7.81Z" fill="#aecbfa"/></g></svg>
 
 GCPEntityColoring(api_analytics)
-!define api_analytics(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, api_analytics*2, api_analytics)
-!define api_analytics(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, api_analytics*2, api_analytics)
-!define api_analyticsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, api_analytics*2, api_analytics)
-!define api_analyticsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, api_analytics*2, api_analytics)
+!define api_analytics(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, api_analytics, api_analytics)
+!define api_analytics(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, api_analytics, api_analytics)
+!define api_analyticsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, api_analytics, api_analytics)
+!define api_analyticsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, api_analytics, api_analytics)
 !endif

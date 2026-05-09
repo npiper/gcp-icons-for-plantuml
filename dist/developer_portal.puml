@@ -3,13 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $developer_portal_png [128x128/16z] {
-x9Y7ZkqW34InFHxk___mwo-IXJG9MbXjuQYavr1CRPh3uN0u70w7m-5mE9W7aBy0mksTtP7i1MROUyd1ro_Zg_3x1c7xxPwluYvfUANljGUhV4m2OsFUBxjC
-WM_IezX52h0fyrNpct9oiQC8elSQQinm-uD7iWPbxx6yx4lEXzPkaQKK5jT1zZ74TUFekL3llOzrgsEaTzyG-hSL6zUBsD3sEgtTOEn5lp80EoRUN0qUDwhO
-qmEXw1M1jf_3mJpspJtXsXr9CfEydNjQjdcGfYUXoOiaJFenhwVgQuC38VmaPlMf_4WE99IVcDRJPlHaGlc9MJrDwmSIoa_Cw8K_Ik2LC0pb9-RqDFMpVqBt
-Apdtd-2XNluCbmnsjSN_GFeJCtgQphuFpV7scyI4dYPhtyjT6G4sXAZMLqCbIqaFjPBQJ-AnNcE3uY5OeH_p-VnBhD3741Vp2PZFWeWDd_Wwt-pFqSyP_mSe
-_myIVnLmI_khUWMueV_nej_H__f4_xjX_F69yUTZZh_Li67-KVKQb9-fdYwPMNebuIzw3RXu_gdr8-3Y-RVMZu0RrX_hrb-UoKAcJw-_D9dM1C4IXj4Mh3yh
-wKqIu3yGJUBPzc3-2sk2m-43xBz-yFtdZx___hDTEnO000004EPl7SQUfb6WFu3-0leJw6-WFuB-Ylkpx-_-F_3_XVzF_7_Z_oF_NstRjctR0W
+sprite $developer_portal_png [72x72/16z] {
+xPO7ZWCX34MnZJzp_mkdCAD1_0Mjd4LjmqkdlD1nkjbiDXjvyLU5EShnei3jOvdXAALgZle5zfdbxMYUzojk4fo6SdF-GgntMiefGJOLKSieLv96-dJzUvQM
+9lbgKw1lkLGB9rVJEpaW6ew4eDeZ8X-dU_xg_MKws670O7UffJdgIbuuAWxZedEH0TedE6wedW8srq1PCnDfIo3CoIDdTHNHKoYTfnEH1iefELKoLnDg8lN1
+fF5EyNHHVqZ3khwoXcdpfyC2B39CaAuVluhC5tWMz6lrECVdNLapNuU9rs4YptH1aqUTnuhtnVfzIlMKJmU_B3zpB7AErIQDkg2MeeYaVqFy7epVowlZXFLn
+o_euAXxNhOyput7lcZXyQToosMmsJm
 }
 
 GCPEntityColoring(developer_portal)
@@ -18,11 +16,11 @@ GCPEntityColoring(developer_portal)
 !define developer_portalParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, developer_portal_png, developer_portal)
 !define developer_portalParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, developer_portal_png, developer_portal)
 !else
-sprite $developer_portal <svg viewBox="0 0 24 24"><g><path d="m12 6.4a5.59 5.59 0 0 1 4 1.6l1-1a7.07 7.07 0 0 0-10 0l1 1a5.59 5.59 0 0 1 4-1.6z" fill="#4285f4"/><path d="m12 17.6a5.59 5.59 0 0 1-4-1.6l-1 1a7.07 7.07 0 0 0 10 0l-1-1a5.59 5.59 0 0 1-4 1.6z" fill="#4285f4"/><path d="M12,15.07a3.06,3.06,0,0,1-3-2.34H5.11v2.38L2,12l3.11-3.1v2.38H9a3.06,3.06,0,0,1,3-2.34h0a3.06,3.06,0,0,1,3,2.34h3.91V8.89L22,12l-3.11,3.12V12.73H15A3.06,3.06,0,0,1,12,15.07Zm0-4.68A1.61,1.61,0,1,0,13.61,12h0A1.61,1.61,0,0,0,12,10.39Z" fill="#669df6"/></g></svg>
+sprite $developer_portal <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="m12 6.4a5.59 5.59 0 0 1 4 1.6l1-1a7.07 7.07 0 0 0-10 0l1 1a5.59 5.59 0 0 1 4-1.6z" fill="#4285f4"/><path d="m12 17.6a5.59 5.59 0 0 1-4-1.6l-1 1a7.07 7.07 0 0 0 10 0l-1-1a5.59 5.59 0 0 1-4 1.6z" fill="#4285f4"/><path d="M12,15.07a3.06,3.06,0,0,1-3-2.34H5.11v2.38L2,12l3.11-3.1v2.38H9a3.06,3.06,0,0,1,3-2.34h0a3.06,3.06,0,0,1,3,2.34h3.91V8.89L22,12l-3.11,3.12V12.73H15A3.06,3.06,0,0,1,12,15.07Zm0-4.68A1.61,1.61,0,1,0,13.61,12h0A1.61,1.61,0,0,0,12,10.39Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(developer_portal)
-!define developer_portal(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, developer_portal*2, developer_portal)
-!define developer_portal(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, developer_portal*2, developer_portal)
-!define developer_portalParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, developer_portal*2, developer_portal)
-!define developer_portalParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, developer_portal*2, developer_portal)
+!define developer_portal(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, developer_portal, developer_portal)
+!define developer_portal(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, developer_portal, developer_portal)
+!define developer_portalParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, developer_portal, developer_portal)
+!define developer_portalParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, developer_portal, developer_portal)
 !endif

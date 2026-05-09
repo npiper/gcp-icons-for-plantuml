@@ -3,17 +3,13 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $connectors_png [128x128/16z] {
-xPg7Ukuy28E3C5Rk_uR_SJfucfRMyiVPKVTyiOmJ1toiwzQjMxTktJ8p0EvESiuO3ljnRBW3JtZdoHU5smzYUuhdYvvYmFUb9_l2pnY6VI-uFy4BVeOmyVs6
-NlDJvFHkUi9hVghPWuIN_Al8i2QwkS1FaTw2Hq77_t9-Kp4BqxxFp0FVtfcPkVk8cJ4qMs3u20wpTxytvaSXS3Hx3qTfAk9z28msVC9h-II59D3m5tfjma80
-EXvO_Rjv2O3sE1xApTN9jmuyZiUXoA88O1EVWz-pWF78kWSENJOfN0VwyAct0RZaNe7N5DnS1429rmFGSz04l130qDslyNeEaAQxd_Y60AQU-yLFByu0fLr6
-PW1GtRV2d7N-uQ81Xcho4tMT6dps5q7f8k0Nzoi-Llb7pW0f3Tzw-Ava093yOvDVhm5EmNxhueDfWAqE7pZs-RK1OtduHnyVoUTozZNnhmPWqNxhv7loGx2_
-ZNyadqjye9SVN5a1LjclNt_h3FI5wK_xnVjVERZanuRz6TSOyQGnFByP7topM07a2jykVnqpdZHJ4V7-oPylkc16aG35wh_oIzNrdp81iC0_Lldd8jyM4X2j
-_6eNmF4b7-ZdPmB6J-47lzm3mFluvvK_aYyilpw-Cvtvg_ddJ-VVy_zhhZ_WE_BZf_7rwwzx0r-__rZ9ZyVll_aJ5xQV-_ofxp_g1JXqVbJxhzCszfyXypVs
-dtK2cZv-K_RV-mcWRpzzv_bhXCWVqlDNyii94FdOUlw4F05hgy-J7tlr1sXyxDKV3dVH0FNYmztwawtpIIpKdrG3HYppOw7-fjSVL_caK7yKwg-snYTDgByg
-zMUiyL5s0CZ7wkzOuDCVgxyVg5Fmm5TyqeN-Wzv_iIZunSexZCNCRFQVRDHyCkopza-qzDyGyI6Vf2lzj_t-eqVo2thYa-zz_LUCv3_1muN-QqF_sJ2I7sv2
-_xcf_suyITONTPFwxte0zlcM2do37mtdBsg-UFv23m2G-1Rj1s3SrldE4hy_1LZcs_Sv02Nm-m-0wVpQV3s0VJwZuVpXFf-Zx_obpYVHT_vKvtDQs_bRdK_w
-qIIPdtkX7XaWyVlFe1iWyASVxR9rFhhPwlt_n_BFWl-dZ_z5Al_MhLktRjtw5m
+sprite $connectors_png [72x72/16z] {
+xTVRcgGW30JWIGKet_-9zzDEjt6HQXdtl5CtS_ud1CNuyS_bAp2x1nXy3PU5h0MVDl1o5gwfc5SUHZWHilcS4aXsvgM30ZX9PiakAUPu6Ii3b5fRiaYVAGOE
+ozylRPVgPGQEljBobDWkCg4C9ROh333-ZQOXpUHKlkkH1MDwxIMWuQvvObISt21JgygCheXDh2hrnWnuVWa0Pgb7uvLr-uqryQkEC2FRhf7Z9dVhtFz9TZ0i
+gDjnvSJAI57EDSSU1U5qiu3BJXHKpxlySTsnVM6TWmadjWmdxO4T7PTEsPnoTYq_7QzhsfR79zpIrfIyzQogFQMs7BwEBvBxNsuE9vmbXIp71lKE89q8wy5P
+xAuJLz1zfwIDlryF_fXrrK6V_JFx9QyVLqvHro6G7JJX-F6-KFUf2MSnTP_QSM7YlcZgtD0DwjgJ3jOtv-ge7lBDkMeO5vGTxyvv_TmvTzZqSoSNr4Cxmy5p
+K3oNhNOEcmsUot9EAFNei9gO4yJSuhM-79AkvXOzHtaDXys_dwD8cvZhR9kQQMAkkpPdRWp5d2aX6pbe7ICWny01EJNGmqREt0k6TeBHCOTsqfMa0oY7pIRU
+AqVEv1lgQDzDA3hXt0wtt7SCY6xzG_dADm
 }
 
 GCPEntityColoring(connectors)
@@ -22,11 +18,11 @@ GCPEntityColoring(connectors)
 !define connectorsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, connectors_png, connectors)
 !define connectorsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, connectors_png, connectors)
 !else
-sprite $connectors <svg viewBox="0 0 24 24"><rect x="8.999" y="7.013" width="2" height="4" fill="#aecbfa"/><rect x="12.999" y="7.013" width="2" height="4" fill="#aecbfa"/><path d="m8 18.93a7.993 7.993 0 0 1 4-14.917v-2a10 10 0 0 0-4 19.159z" fill="#aecbfa"/><rect x="10.999" y="17.012" width="2" height="5" fill="#4285f4"/><path d="M16.99,10.013H7V12.95a5,5,0,1,0,10.008,0Z" fill="#4285f4"/><path d="m12 18.012a5.039 5.039 0 0 1-5-5.062v-2.937h5" fill="#669df6"/><path d="m12 2.012a10 10 0 0 1 4 19.163v-2.244a7.994 7.994 0 0 0-4-14.919z" fill="#4285f4"/></svg>
+sprite $connectors <svg viewBox="0 0 24 24" width="72" height="72"><rect x="8.999" y="7.013" width="2" height="4" fill="#aecbfa"/><rect x="12.999" y="7.013" width="2" height="4" fill="#aecbfa"/><path d="m8 18.93a7.993 7.993 0 0 1 4-14.917v-2a10 10 0 0 0-4 19.159z" fill="#aecbfa"/><rect x="10.999" y="17.012" width="2" height="5" fill="#4285f4"/><path d="M16.99,10.013H7V12.95a5,5,0,1,0,10.008,0Z" fill="#4285f4"/><path d="m12 18.012a5.039 5.039 0 0 1-5-5.062v-2.937h5" fill="#669df6"/><path d="m12 2.012a10 10 0 0 1 4 19.163v-2.244a7.994 7.994 0 0 0-4-14.919z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(connectors)
-!define connectors(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, connectors*2, connectors)
-!define connectors(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, connectors*2, connectors)
-!define connectorsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, connectors*2, connectors)
-!define connectorsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, connectors*2, connectors)
+!define connectors(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, connectors, connectors)
+!define connectors(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, connectors, connectors)
+!define connectorsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, connectors, connectors)
+!define connectorsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, connectors, connectors)
 !endif

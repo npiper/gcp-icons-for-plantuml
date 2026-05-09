@@ -3,12 +3,10 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $my_cloud_png [128x128/16z] {
-xPdPOaCX24HHZFp_7xTlNUOkDiXqc_FO9XuWxjePGWWXX112226448zunp0gCm1U31wdi5D7d6n7kjKHIv3jY9Fr25cFCFJjQaJMwh6N3mYWKB_qeJ9zvdDv
-VLjUbA92RpVidmSQw9S3s9x-vi_NDBVLFw0rMW3zwG6zOpK-cMv91KZEw4b_UaNhcG16fFsMy4T6ZmL8wlFDRD4xoH_0zFPAOjL8w1ybUmRE_k6P7WIv9mY4
-kd9683EXBvp5q5ztJ2_Lumo8BFXRfJ_kwsMb_aXEcFc-oFLZDVgbdt1xmKqV0vXi__q0PrmZNlK02AqsWF_fjn_Z7z_iZzF_j6_sJojatFl32kbWmSYu-MC1
-_9idWFXkVoFu_IesHlT3g2yeXdZvArO7FxS0D-stubUqhpqWLEhT-06iDDquBoZhxwkpzla82G9s1LcFJAuUQMGzGjOZFMfmMsKGaYVy2icfX90w3o644488
-8SGB
+sprite $my_cloud_png [72x72/16z] {
+xTO5ZiD034RXqCJtF_5k-IzOLl9Shfyuy8KyQhibLLLLLQCTwhE8cfWosqqpOCmjgoZ8j6vNGv1xpdfeqWaUtrRUJh03C1XgqR4BXzjEnKSidk3uKh7ZJ1ku
+eUOmu8Oc8MFVSySEWM67Ws4AC2fQ_G4JE-OnnB70mSiGC1eLu0GhMZ3-BG2l9vxj-KxEa7EQm-PUq5tlnwXp_SUYnmwweUYqFh721cVHJN2XAfD466Kmt-UC
+oZ8ggoYWV4fLLVq3
 }
 
 GCPEntityColoring(my_cloud)
@@ -17,11 +15,11 @@ GCPEntityColoring(my_cloud)
 !define my_cloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, my_cloud_png, my_cloud)
 !define my_cloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, my_cloud_png, my_cloud)
 !else
-sprite $my_cloud <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <g transform="translate(0 1)"> <rect width="24" height="24" fill="none"/> <g transform="translate(2 7)"> <path fill="#5C85DE" d="M -2 17 L 22 17 L 22 -7 L -2 -7 Z"/></g> </g> </svg>
+sprite $my_cloud <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <g transform="translate(0 1)"> <rect width="24" height="24" fill="none"/> <g transform="translate(2 7)"> <path fill="#5C85DE" d="M -2 17 L 22 17 L 22 -7 L -2 -7 Z"/></g> </g> </svg>
 
 GCPEntityColoring(my_cloud)
-!define my_cloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, my_cloud*2, my_cloud)
-!define my_cloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, my_cloud*2, my_cloud)
-!define my_cloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, my_cloud*2, my_cloud)
-!define my_cloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, my_cloud*2, my_cloud)
+!define my_cloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, my_cloud, my_cloud)
+!define my_cloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, my_cloud, my_cloud)
+!define my_cloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, my_cloud, my_cloud)
+!define my_cloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, my_cloud, my_cloud)
 !endif

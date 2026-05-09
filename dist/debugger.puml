@@ -3,10 +3,9 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $debugger_png [128x128/16z] {
-xTW5ZiGm40NHblvIt__2Ax9WqKvvC5K7oFl3uzJfCxFtNxhETVNrH_hw-lhw-lfXV5E_WtZkTmZFVJ2Wz_YTuto3ztLwb6Fyg1O20m0F1W0U300y641uFW3o
-V03a-G38ym6GvmCWpmT0dWy0F1tmEjbtdfSrlxQN5RykKERzkaYPzUj20LyVd5E0Ft7TU_NrzVLxjFZxFzBNrx-Vpx--lhx-yvv_z7CPlcVzpaNuUVyI0th1
-ly20NlCxk_aHl579UJI0ysW0vz40pgC1d4S3E8y6S1uDu3mUm7a-WFDy0EVvWANpRnqgkyxVTR3iyQl00EuNADmlLAXVCFsHlhw-lhw-llxPCxDF
+sprite $debugger_png [72x72/16z] {
+xTS54eDG48FXhJVtFt1rf0ByJt2ISIPyE0k1SIvVALs37Jjsx8WP9Jb2Hdm4aW222hIemBryXflCS9SPRZC342rcwDGOAVBIvaHkcftes-6dbnr-tjcnetUQ
+7RspNQV_wsLddk-V_j-h_R_dzKe_uqlzZ5FrCzxFC6cp68QOOOWPSONd86yjzNtOqtUl_o_wSEpOmJXt
 }
 
 GCPEntityColoring(debugger)
@@ -15,11 +14,11 @@ GCPEntityColoring(debugger)
 !define debuggerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, debugger_png, debugger)
 !define debuggerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, debugger_png, debugger)
 !else
-sprite $debugger <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <g transform="translate(2 2)"> <path fill="#3367D6" d="M 3.4 10.7 L 7.4 10.7 L 7.4 9.3 L 3.4 9.3 Z"/><path fill="#3367D6" d="M 2.6 18.4 L 9.2 11.8 L 8.3 10.9 L 1.7 17.5 Z"/><path fill="#3367D6" d="M 2 2.9 L 8.6 9.5 L 9.5 8.6 L 2.9 2 Z"/><path fill="#3367D6" d="M 12.6 10.7 L 16.6 10.7 L 16.6 9.3 L 12.6 9.3 Z"/><path fill="#3367D6" d="M 10.8 11.8 L 17.1 18 L 18 17.1 L 11.8 10.8 Z"/><path fill="#3367D6" d="M 12.5 8.5 L 18.3 2.6 L 17.4 1.7 L 11.5 7.5 Z"/><path fill="#5C85DE" d="M -0.5 20.5 L 4 20.5 L 4 16 L -0.5 16 Z"/><path fill="#5C85DE" d="M 16 20.5 L 20.5 20.5 L 20.5 16 L 16 16 Z"/><path fill="#5C85DE" d="M -0.5 4 L 4 4 L 4 -0.5 L -0.5 -0.5 Z"/><path fill="#5C85DE" d="M 16 4 L 20.5 4 L 20.5 -0.5 L 16 -0.5 Z"/><path fill="#85A4E6" d="M 6.2 13.8 L 13.8 13.8 L 13.8 6.2 L 6.2 6.2 Z"/><path fill="#5C85DE" d="M -0.5 12.2 L 4 12.2 L 4 7.8 L -0.5 7.8 Z"/><path fill="#5C85DE" d="M 16 12.2 L 20.5 12.2 L 20.5 7.8 L 16 7.8 Z"/></g> </svg>
+sprite $debugger <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <rect width="24" height="24" fill="none"/> <g transform="translate(2 2)"> <path fill="#3367D6" d="M 3.4 10.7 L 7.4 10.7 L 7.4 9.3 L 3.4 9.3 Z"/><path fill="#3367D6" d="M 2.6 18.4 L 9.2 11.8 L 8.3 10.9 L 1.7 17.5 Z"/><path fill="#3367D6" d="M 2 2.9 L 8.6 9.5 L 9.5 8.6 L 2.9 2 Z"/><path fill="#3367D6" d="M 12.6 10.7 L 16.6 10.7 L 16.6 9.3 L 12.6 9.3 Z"/><path fill="#3367D6" d="M 10.8 11.8 L 17.1 18 L 18 17.1 L 11.8 10.8 Z"/><path fill="#3367D6" d="M 12.5 8.5 L 18.3 2.6 L 17.4 1.7 L 11.5 7.5 Z"/><path fill="#5C85DE" d="M -0.5 20.5 L 4 20.5 L 4 16 L -0.5 16 Z"/><path fill="#5C85DE" d="M 16 20.5 L 20.5 20.5 L 20.5 16 L 16 16 Z"/><path fill="#5C85DE" d="M -0.5 4 L 4 4 L 4 -0.5 L -0.5 -0.5 Z"/><path fill="#5C85DE" d="M 16 4 L 20.5 4 L 20.5 -0.5 L 16 -0.5 Z"/><path fill="#85A4E6" d="M 6.2 13.8 L 13.8 13.8 L 13.8 6.2 L 6.2 6.2 Z"/><path fill="#5C85DE" d="M -0.5 12.2 L 4 12.2 L 4 7.8 L -0.5 7.8 Z"/><path fill="#5C85DE" d="M 16 12.2 L 20.5 12.2 L 20.5 7.8 L 16 7.8 Z"/></g> </svg>
 
 GCPEntityColoring(debugger)
-!define debugger(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, debugger*2, debugger)
-!define debugger(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, debugger*2, debugger)
-!define debuggerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, debugger*2, debugger)
-!define debuggerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, debugger*2, debugger)
+!define debugger(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, debugger, debugger)
+!define debugger(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, debugger, debugger)
+!define debuggerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, debugger, debugger)
+!define debuggerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, debugger, debugger)
 !endif

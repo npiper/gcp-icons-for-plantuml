@@ -3,11 +3,10 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $stackdriver_png [128x128/16z] {
-xTU7KKD148DX-TQMwRzXCeWCB_w0zsj0jvgHWtwRrbfhhRLM4z7vbtt-q9C1dszhkSFi-9CDds_3yHvmlk5udtRDFsHxVeITly83nfBjFO7E3pZU0yut6Zz_
-W_FYixs0pezTj-VteFC3ZlVOE7zyas_e_62s5z3vmMmleFC3ZlVO_4UN_2Ne_DZu3q_v6z3v0SSR-E1_ZJa_QkLyJSmtT7umsmle_83ZhIru0ZZU1USRYWyu
-l_vR_ref_cgYjVTN4_DBJuvJuja2jE83pjCV8A45bDW7w1ldRVCLI06ArJTO4-AX0XJ41YMqW1Bx00MnGGLIW8BOeCGMe20sAA45bDW7A8WDAf0251jjyFZL
-1YMs00MnGGajeCG-G45iK84Ke20sAB45A8WDIcW19VO12cA32gG0BJPcRt0adYf0q0E2p-SV06pmjsgjjTPQQpS
+sprite $stackdriver_png [72x72/16z] {
+xTO7Ki0m50DHfNZX_XUcTt16_X7TEi2RJO-ipStDRVrz0xFqcKMt8vFJ8C48s3CvaCa1JZlSBv3ZG8lB4Cg140Cd75ukb0EP7AZdUD0eGordmuAsuHnO2WuV
+hPBZGJM6K0veRAIS3BI47BdCPN_7a6m8_xhNWpGC6KmvQ5K1sinhllMTpNcFrOzCHSXWAa5I94ZA12a3wMZqdSNuRoa4gGnT-FzrVf1EGyrWtA1TYWJ9c77j
+9GM2Z8MXfJ_zXytDNGC
 }
 
 GCPEntityColoring(stackdriver)
@@ -16,11 +15,11 @@ GCPEntityColoring(stackdriver)
 !define stackdriverParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, stackdriver_png, stackdriver)
 !define stackdriverParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, stackdriver_png, stackdriver)
 !else
-sprite $stackdriver <svg viewBox="0 0 24 24"><path fill="#aecbfa" d="M 11.19 11.35 L 15.75 3.51 L 6.75 3.51 L 2.25 11.35 Z"/><path fill="#4285f4" d="M 2.25 12.65 L 6.74 20.49 L 15.73 20.49 L 11.25 12.65 Z"/><path d="m21.75 12-4.5-7.87-4.51 7.87 4.51 7.87z" fill="#669df6"/></svg>
+sprite $stackdriver <svg viewBox="0 0 24 24" width="72" height="72"><path fill="#aecbfa" d="M 11.19 11.35 L 15.75 3.51 L 6.75 3.51 L 2.25 11.35 Z"/><path fill="#4285f4" d="M 2.25 12.65 L 6.74 20.49 L 15.73 20.49 L 11.25 12.65 Z"/><path d="m21.75 12-4.5-7.87-4.51 7.87 4.51 7.87z" fill="#669df6"/></svg>
 
 GCPEntityColoring(stackdriver)
-!define stackdriver(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, stackdriver*2, stackdriver)
-!define stackdriver(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, stackdriver*2, stackdriver)
-!define stackdriverParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, stackdriver*2, stackdriver)
-!define stackdriverParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, stackdriver*2, stackdriver)
+!define stackdriver(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, stackdriver, stackdriver)
+!define stackdriver(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, stackdriver, stackdriver)
+!define stackdriverParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, stackdriver, stackdriver)
+!define stackdriverParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, stackdriver, stackdriver)
 !endif

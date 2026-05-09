@@ -3,15 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_build_png [128x128/16z] {
-xPk7hjmw30KVXvRb___Xboh7EB0G4vTccWOz87Rkyf3QflmNPx5OB1OBtEtNsSrn1_j5Tl1ly2lqu0FSVaNhBu1LsmKe3rwXE7W5j-BMAs35hLUWglNr8U2F
-mAquU0MiE7W52e8l2m77mu0L1wz0UV0AnS4hk1MtNW4hjYjG7Bo2yzPXYpjlZ84zVrZU60DuOYSG52Gt0AB5cH60XOfppnxSWiMvAqYeEFa0X52nvRxsWWMA
-FMut5O3F7z0959i_yZlJPDNMshxPf1ZKpbE_SvSiY6hRl-BJOktCC_zTwt3qdxRzEwtvJujnzu3_vibgyFiFMjF7qE0zu9_bfy5Vi0V7ID2l8MZmLxO7nsZO
-FrzstuNJD3iIulxvNq0J-pbzz9tfaHZt3z3WXNFu-cUQQV0VzxlT1ZzWnDAFu-Xza-0_ujTD64_-TlXwFxvm_W6EP_klNjszrW_nUxg_NRmoVDQFz_qNiUxU
-_alyZNFtZbg_xbwjNuTl6_fQ_r1Ph_VhxjNxcylmLVjbzuhzxNBm5_jrz-hzkdlr_aqE_ch_g6_bVjszUh_kNhrVTg_8toQxL-MV7Fnb_jPkTg_2BvzvByEd
-zZuS-Vxp4y1yzyQJp_UVq6R39vz-qls3sS4_bZBTxzXTOUyQ_1NI_Dg1czthNR-6yYp_0AcZN-oxsC4zs-_Ys7gNu0TYJ_3VVoNLUfUTazRd-ETZm2ux9_Pi
-lwDZuCo3p_Vh62YuaEpNCT3W2_mo1jBw6h_Z1EnHF_5V5F4dGE9ltc3XNokJV_gLn1Bl0fYJwmTBlFEX_XIx0Wb-2Jw4GOu__Vw5-lDQhqJz-TUG8E1Fj6i8
-SJ-yTVLD_Ud1Aq5__YL0WvY_uEhdr0ybLr_Lhy7d0nD_8FYS4ER-Yll7wY-zXewZ_k9h-23-Elimedwe__y7fr-2Bu6hN-mrCFp1rYyMYyLYyGa
+sprite $cloud_build_png [72x72/16z] {
+xPVPagmm34F9qIJX_t_uBfDgLMhAdHhZrzOJYpa8cSLSeJxwg06jZW59KAK8_HUgM6f2Bq5x7ensmUDWVehA9Ldvc1ee5hGQ9HyJEWlnB9Wuflmb4SQKfn2J
+ShUCUBC34k60dURwZuYB6-JkHzYAOxDm2hdzE3DUtq-nksmjvE3z0gzez2uZGQuYvh3vDONUnnZzwuhC4NE2IBx64c4_OeultdfHHhV7BV8JPv4Sp8lJ_k-V
+KriZZfnzTryKfpFcFOUxzYiEtyTPw-Xvt_UiS5RNfpaept78cdULmmgvolaEkS-xn77FxoB7FQ_wSSWbJiSzht6-7xDvrpWEkSBftJqtPZpWN5fsS3Zp6vlc
+N8sjvtFsTkKualVxmPg3Lvr-ps5LsCwSSXK9ZWH-HSyLZByyAOuG9hLjCifnuk_faHDQFd_VptwEmmc9OUfzRKE1oCnZxpYGcmzZ3hJSl6fEVgm7dJcGdkVD
+UVXd80AEAGa570UJ4-oSH31HJERK_Yo5ERK_tOrprRGu8UMZZ_u2
 }
 
 GCPEntityColoring(cloud_build)
@@ -20,11 +17,11 @@ GCPEntityColoring(cloud_build)
 !define cloud_buildParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_build_png, cloud_build)
 !define cloud_buildParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_build_png, cloud_build)
 !else
-sprite $cloud_build <svg viewBox="0 0 24 24"><g><path fill="#4285f4" d="M 12.15 16.24 L 15.67 14.21 L 15.67 10.15 L 14.49 9.46 L 10.97 15.56 Z"/><path fill="#669df6" d="M 8.63 10.15 L 8.63 14.21 L 9.81 14.89 L 13.34 8.8 L 12.15 8.11 Z"/><path fill="#aecbfa" d="M 11.46 17.45 L 7.24 15.01 L 7.24 10.15 L 3.49 7.98 L 3.49 17.18 L 11.46 21.78 Z"/><path fill="#aecbfa" d="M 7.93 8.95 L 12.15 6.51 L 16.37 8.95 L 20.13 6.78 L 12.15 2.17 L 4.17 6.78 Z"/><path fill="#aecbfa" d="M 17.06 15.01 L 12.84 17.45 L 12.84 21.78 L 20.82 17.18 L 20.82 7.98 L 17.06 10.15 Z"/></g></svg>
+sprite $cloud_build <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#4285f4" d="M 12.15 16.24 L 15.67 14.21 L 15.67 10.15 L 14.49 9.46 L 10.97 15.56 Z"/><path fill="#669df6" d="M 8.63 10.15 L 8.63 14.21 L 9.81 14.89 L 13.34 8.8 L 12.15 8.11 Z"/><path fill="#aecbfa" d="M 11.46 17.45 L 7.24 15.01 L 7.24 10.15 L 3.49 7.98 L 3.49 17.18 L 11.46 21.78 Z"/><path fill="#aecbfa" d="M 7.93 8.95 L 12.15 6.51 L 16.37 8.95 L 20.13 6.78 L 12.15 2.17 L 4.17 6.78 Z"/><path fill="#aecbfa" d="M 17.06 15.01 L 12.84 17.45 L 12.84 21.78 L 20.82 17.18 L 20.82 7.98 L 17.06 10.15 Z"/></g></svg>
 
 GCPEntityColoring(cloud_build)
-!define cloud_build(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_build*2, cloud_build)
-!define cloud_build(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_build*2, cloud_build)
-!define cloud_buildParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_build*2, cloud_build)
-!define cloud_buildParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_build*2, cloud_build)
+!define cloud_build(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_build, cloud_build)
+!define cloud_build(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_build, cloud_build)
+!define cloud_buildParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_build, cloud_build)
+!define cloud_buildParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_build, cloud_build)
 !endif

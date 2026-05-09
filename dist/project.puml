@@ -3,14 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $project_png [128x128/16z] {
-x9W7iiGW34C_1YES-z_tz-s5QCQQhUy2H0hQyZuEUVEc-dN4nnU_IaVJdj_yAW2AydYRnGUaRy2dyG6xsUNh-A7VDZvGRtJvElwvpVOS6zfDuwisQBxkVDK6
-VGPsc69xn0DqRVpv6wY2-BSieBXp1JJ5zfWhM2JRkz46VOAu07Fd2-Y2-DG3c61xx0RrszD_23Mdm8xS-3VQe1C8DcZkDosWEGr6OW7cD34c-RK5O8b9VEtz
-ZuYH-ILSwVWHgH-0RFnD0KQ4I2jWB9i7w6dUW8k_ER-aUGCZuiS_SD8Rf6mGiM7GtY1ZWx6bfNg3Icnl4p_L6n2NxvUQx0sCsDutIFS6ZOfVqhr18RONBl06
-ZTYUmXiKOdiIRz0whh5h7o9l417B9MA9BIRo1ZLMqMNU0B668lC65YjmeJVeCMKelK69ALNg3JmcGEmDHbp7nDx0sZxr6Fjgpmvg082180JwTrqDbzbN0ow0
-3xf1tQ1kK3Ue6y3_nsv0_z-xWVr_xmRs_xaRwF_7Ri3_7xk1_t_h1Zx0iHlu_yTkuF_Vke7_V-m6_l-j6_Z_nsxW_z-wWVz_x0R-_w4RRFu_T8F9_uTkiFd_
-q0qc___O3VR__zODzl__s0ts___G3Vxo-3m-Zy_Z-_-4UxpX7a-unoFgyOfwF6CUxw37E-ZnZdcyWnxlcCSxwF6EURo37k-WnplcyGvwl6CUxw37E-Rn3dWy
-0F__1o8U
+sprite $project_png [72x72/16z] {
+xPQ7aSGm30CjCL___NwEFCClUCAdsm8qC4bZTlkvQ4Fav3FMYB7n3Ej4-9aurl28c1lBt8bp9f1rF1xHZKF0Ep7OEE0XuuVSuGCDCnZ8kJWuqEHsZWDnGyQ1
+XDqvsZqTXpX68Wwv-s4OBsBIQf2y976A1t6gtduD4MsCrGbbLMKCyFbkYu6Y7aZ5FJVN3heUILoxuMl_-wKUaAEUauNTUpqIk7OVMGYKJt46Y8DEtJjHZpZO
+A3nrhLtGP-FUpTe1xFoevgGQUEV7DHTrnSHnSCtDo6VY5SDNYciEGzKSHgYQmzW1ddtt63LCvixg-Txrgfqusf6l1fHL6J5M_H37UI1qsG-d7VKSuOTckEUK
+yCDXkESeFrGOPr9-E50S9_rGp1jPZmpM3xFsCCOFSUycvOSua9pmmrbNn2a_zEnzEN-c7zxy4C7w8OBqGmpdXnZI3p6S7s88FwJ0VaY1_P03-o45zaCEx8SK
+s0zlt0C
 }
 
 GCPEntityColoring(project)
@@ -19,11 +17,11 @@ GCPEntityColoring(project)
 !define projectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, project_png, project)
 !define projectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, project_png, project)
 !else
-sprite $project <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve"> <rect width="24" height="24" fill="none"/> <path fill="#85A4E6" d="M 0.8 5.9 L 3.7 0.8 L 9.5 0.8 L 12.4 5.9 L 9.5 10.9 L 3.7 10.9 Z"/><path fill="#5C85DE" d="M 11.4 7.7 L 8.5 2.6 L 9.5 0.7 L 12.4 5.9 Z"/><path fill="#3367D6" d="M 2.7 9.3 L 8.5 9.3 L 10.5 5.9 L 11.4 7.7 L 9.5 10.9 L 3.7 11 Z"/><path fill="#85A4E6" d="M 11.2 11.9 L 14.2 6.8 L 20 6.8 L 22.9 11.9 L 20 16.9 L 14.2 16.9 Z"/><path fill="#5C85DE" d="M 21.9 13.7 L 19 8.6 L 20 6.7 L 22.9 11.9 Z"/><path fill="#3367D6" d="M 13.2 15.3 L 19 15.3 L 21 11.9 L 21.9 13.7 L 20 16.9 L 14.2 17 Z"/><path fill="#85A4E6" d="M 0.8 17.9 L 3.7 12.8 L 9.5 12.8 L 12.4 17.9 L 9.5 22.9 L 3.7 22.9 Z"/><path fill="#5C85DE" d="M 11.4 19.7 L 8.5 14.6 L 9.5 12.7 L 12.4 17.9 Z"/><path fill="#3367D6" d="M 2.7 21.3 L 8.5 21.3 L 10.5 17.9 L 11.4 19.7 L 9.5 22.9 L 3.7 23 Z"/></svg>
+sprite $project <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <rect width="24" height="24" fill="none"/> <path fill="#85A4E6" d="M 0.8 5.9 L 3.7 0.8 L 9.5 0.8 L 12.4 5.9 L 9.5 10.9 L 3.7 10.9 Z"/><path fill="#5C85DE" d="M 11.4 7.7 L 8.5 2.6 L 9.5 0.7 L 12.4 5.9 Z"/><path fill="#3367D6" d="M 2.7 9.3 L 8.5 9.3 L 10.5 5.9 L 11.4 7.7 L 9.5 10.9 L 3.7 11 Z"/><path fill="#85A4E6" d="M 11.2 11.9 L 14.2 6.8 L 20 6.8 L 22.9 11.9 L 20 16.9 L 14.2 16.9 Z"/><path fill="#5C85DE" d="M 21.9 13.7 L 19 8.6 L 20 6.7 L 22.9 11.9 Z"/><path fill="#3367D6" d="M 13.2 15.3 L 19 15.3 L 21 11.9 L 21.9 13.7 L 20 16.9 L 14.2 17 Z"/><path fill="#85A4E6" d="M 0.8 17.9 L 3.7 12.8 L 9.5 12.8 L 12.4 17.9 L 9.5 22.9 L 3.7 22.9 Z"/><path fill="#5C85DE" d="M 11.4 19.7 L 8.5 14.6 L 9.5 12.7 L 12.4 17.9 Z"/><path fill="#3367D6" d="M 2.7 21.3 L 8.5 21.3 L 10.5 17.9 L 11.4 19.7 L 9.5 22.9 L 3.7 23 Z"/></svg>
 
 GCPEntityColoring(project)
-!define project(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, project*2, project)
-!define project(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, project*2, project)
-!define projectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, project*2, project)
-!define projectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, project*2, project)
+!define project(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, project, project)
+!define project(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, project, project)
+!define projectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, project, project)
+!define projectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, project, project)
 !endif

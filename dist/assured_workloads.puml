@@ -3,14 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $assured_workloads_png [128x128/16z] {
-xTW7Tjim48JXtHdiqFS_SQX2Bgn7gxmGG0g-LDTVm-9cRvkcQPecfzj0G8ZZnWCCHVYWF5UX5Mm0OE-h31cVVGL6ZC--nCuNtcC_mdkEptvYj_77_IZUxyBB
-VWqzZttsKsay7dpULw3V-EpNsE72UzQFyCRZ4q97s2SFWg7Kxavq7hb6F7GWq7HyvbT5HqgJkox1RHCw4jvYVB8TT8mjxhgSdvHElXCp_gmVKfj3WD_jH_4p
-xxe4sCxrHE3KySbsr5FbnBik0Jd_kGW_Utpz0A3NUCPTzmY4EuhIMOV0-HuWz2wSUEpJ-_qezYwoGL_nn_TdV_PdFq7BZN3ml68hlresnJTODl2xp_lBrys2
-W-TLU_Rd5TjzRR9xPdzvqVU3VfVzip_xip_xip_xip_xozZ-ChI_BFcitlt7khDhVusBLHq8qJlsXNexI2bKl5FVgZe8hdHLqAEV_5udTHVertS0lDCksAVl
-09DI1DltdM1DjH2zRHzPptubOcnV0_gpF_kEeNsOOM0VjeeX_ItlCMP_hX_Jp_m9_UNpVZ3px_M_JjWFc8ChLFddVTmnDiI69Kgv_k7joGjfMMcHoXNh_ls_
-y2h_lCyzja7Y3glGWGXRUVODgti-bH_xxoiwKlTluTlVHPLWkv__U_LkRkazdz2kZ_hT0FTyI3Lhre-I5s2UWf1gfL4_BstMHm3GTsZKpmi0tC01wZixeryK
-XxZV0KcreBNtf2_hmC5Aj_a9-AblVVoqtwsJupwi5qVswvC_u05qpIT_xDCw0wf-mBfpOkiN6m84GofkepY23_LfcgPf-WK
+sprite $assured_workloads_png [72x72/16z] {
+xTS7ZkGw38HXief5-VudVj8G3t87BzpMvlM7rEtmepnvxCNj1i7MEPb9MmMGIidNnW0SdOuh6GxLKVZACrMdO6LCTKeiZDbtKlXu3CW2vWwlZY7SP-cZhm07
+TXNhS6MISw-EAIU5dtsc2NKmb3l2sJ77UqgS7NFyyIdoSn_WoSsHR_3qc08gfnDV0Gw-ftnBHuj-iuw310iw5do-fsCCc2y9XAgKwkRBW1r3sxQjrRwjQxH1
+hR-K3J5VJdVdxjoTrk9xT9fW0x3IORXr3ZB5ovtY01YPIlhrZWFi8Zjb-BLELQfJubAdClkEVBbJVfkEwChrZcXsr6bRcvtsxKvb3lPqv_Omp29VEzwnZW_8
+JdG7aArB0FxL0GnTp-YrunWuuE6bKlb5ATKUcEqoUU7lXFeE7P6PaJtWcOwRaHMYtlx1u3YWrFzIh0SZ01vy6Vg1bp-4wnKYIop-GnLppaNSTKIxRdOKji09
+CYgp1a2aahRA4Kcts-q_
 }
 
 GCPEntityColoring(assured_workloads)
@@ -19,11 +17,11 @@ GCPEntityColoring(assured_workloads)
 !define assured_workloadsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, assured_workloads_png, assured_workloads)
 !define assured_workloadsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, assured_workloads_png, assured_workloads)
 !else
-sprite $assured_workloads <svg viewBox="0 0 24 24"><path d="M7.63,18.47V9.29H9.49v9.18Zm-3.75,0V9.29H5.69v9.18Zm7.55,0V9.29h1.8v9.18ZM16.9,9.29v4.27l-1.73.8V9.29Z" fill="#4285f4"/><path d="M17.18,17.56l-.44.44L18,19.29l.59-.61.19-.19v3l-.19.28h-.06a3.81,3.81,0,0,1-1-.45h0a4.7,4.7,0,0,1-2.06-3.5V15.19l3.17-1.45.19.37V17.6l-.19.19L18,18.4Z" fill="#aecbfa"/><path d="M18.58,13.74v4l.19-.19,1.29-1.33.43.44-1.72,1.78-.19.19v3.06h.06a3.75,3.75,0,0,0,1-.45s0,0,0,0h0a4.67,4.67,0,0,0,2.06-3.5h0v-.15s0,0,0,0h0V15.19Z" fill="#669df6"/><path d="M15,19.5H10.39V17.87h4.17v.06A5.34,5.34,0,0,0,15,19.5Z" fill="#669df6"/><path d="M9.27,6.52a1.12,1.12,0,0,0,1.12,1.12v2H2.25V8l8.14-5.71V5.39A1.13,1.13,0,0,0,9.27,6.52Z" fill="#aecbfa"/><path d="M18.53,8V9.59H10.39V7.64a1.13,1.13,0,0,0,0-2.25V2.25Z" fill="#669df6"/><path fill="#aecbfa" d="M 10.39 17.86 L 10.39 19.5 L 2.25 19.5 L 2.25 17.88 Z"/></svg>
+sprite $assured_workloads <svg viewBox="0 0 24 24" width="72" height="72"><path d="M7.63,18.47V9.29H9.49v9.18Zm-3.75,0V9.29H5.69v9.18Zm7.55,0V9.29h1.8v9.18ZM16.9,9.29v4.27l-1.73.8V9.29Z" fill="#4285f4"/><path d="M17.18,17.56l-.44.44L18,19.29l.59-.61.19-.19v3l-.19.28h-.06a3.81,3.81,0,0,1-1-.45h0a4.7,4.7,0,0,1-2.06-3.5V15.19l3.17-1.45.19.37V17.6l-.19.19L18,18.4Z" fill="#aecbfa"/><path d="M18.58,13.74v4l.19-.19,1.29-1.33.43.44-1.72,1.78-.19.19v3.06h.06a3.75,3.75,0,0,0,1-.45s0,0,0,0h0a4.67,4.67,0,0,0,2.06-3.5h0v-.15s0,0,0,0h0V15.19Z" fill="#669df6"/><path d="M15,19.5H10.39V17.87h4.17v.06A5.34,5.34,0,0,0,15,19.5Z" fill="#669df6"/><path d="M9.27,6.52a1.12,1.12,0,0,0,1.12,1.12v2H2.25V8l8.14-5.71V5.39A1.13,1.13,0,0,0,9.27,6.52Z" fill="#aecbfa"/><path d="M18.53,8V9.59H10.39V7.64a1.13,1.13,0,0,0,0-2.25V2.25Z" fill="#669df6"/><path fill="#aecbfa" d="M 10.39 17.86 L 10.39 19.5 L 2.25 19.5 L 2.25 17.88 Z"/></svg>
 
 GCPEntityColoring(assured_workloads)
-!define assured_workloads(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, assured_workloads*2, assured_workloads)
-!define assured_workloads(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, assured_workloads*2, assured_workloads)
-!define assured_workloadsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, assured_workloads*2, assured_workloads)
-!define assured_workloadsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, assured_workloads*2, assured_workloads)
+!define assured_workloads(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, assured_workloads, assured_workloads)
+!define assured_workloads(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, assured_workloads, assured_workloads)
+!define assured_workloadsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, assured_workloads, assured_workloads)
+!define assured_workloadsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, assured_workloads, assured_workloads)
 !endif

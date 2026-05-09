@@ -3,13 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_vision_api_png [128x128/16z] {
-xPPdsXuX30DZ6SBU_yBfFVgYVPJ5f5Y_0HbctlBgxqcdq-bqEfrEfnDnjZxpv0109d2q_jm0aLyIP-fF3W3aDm4ErjSF44aIbVKd1m2I1YYlhnyWW7mnGDIX
-vucwjwzd0AGCK8WU0Aea27vNe4G2tlFYN5NrtW0-UbwnLG9zmzqI0A9UBl6ZBxTPWg3rDnd5TlI-13vwOt51lLY-3RsMeE9Vfh_7Vqn_crzVD43SEILop3ao
-xWmGZwEFkJvbniCICEz_l46kTNtAMld306m_7aK_rlLDrh0ayD7dkhxBIay2ZbwRjwuVihY5MW9hs_ovVneNCUh9zSa3Y05iz9m-Dq1BO0yyMFzmdrClvlYv
-03w3CL__dFoz_YH7pa4MYiN6-uihiGHRFiFqJnz7Taoom_tyiRD8lNunEDy_q3Iv11IP_lvrpk4CzDpwzsS8a8u4-lVNHw-7n_t_7n1Fw4c0k_-_8D2x4kIz
-_vzfe6SIc4yufed-4OF3G6z8GEEZvy7KX-cH9ntPbo1_KVy0UYtJy1Vx4cWBGz1wK889QvqlWRvNUb_ulWHxqUlB3LBleFSb26AUWTwNu5C5jg7NJwpXx9N0
-G6y7pF4n1Vgz4WZq1H88z7ib4EXh9F3H-n9ez4KI-EZzP0rw_pz1kGG-Uby2WhuoMOcUIy3Grqf0qDTAGD1N9Wdwqi17NvzEfzFfT3gTJkSj
+sprite $cloud_vision_api_png [72x72/16z] {
+xPC9SiCm200BsAZ__t3k17MyKrFHEzevVMrXgxpy99F9HFMJD24gQSpg8h4RKXtcXcfH4wAIfYuIso35OMAaIc6HyTgg_J8oD15zrtjBfwQ_Lz0CY7Y5ZqOI
+2oJpAByJFntGyFESvZ6uUMjkZzr0b4aZtYwuf2E9sdQQa-Rrn4c4hsLNjxFcAh9S97xe9yrDvFnkxcYqyBJCITBL7zY-n-BjLTyE5A9rsTjhwLxUf8Q7t9d_
+90_xtlyT4_Ie1mhd45yAE9Bnxy8u3KIArTFFiv7oQGB5en67ZDDm97vRUTHKf6vwmpJ9IEiISaoJZoIuR92FD9268hagx9d6780q-KW3QI3IG1gAL4aJM2rD
+e92c40dI34IAD3LHHLDdCfaS0G
 }
 
 GCPEntityColoring(cloud_vision_api)
@@ -18,11 +16,11 @@ GCPEntityColoring(cloud_vision_api)
 !define cloud_vision_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_vision_api_png, cloud_vision_api)
 !define cloud_vision_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_vision_api_png, cloud_vision_api)
 !else
-sprite $cloud_vision_api <svg viewBox="0 0 24 24"><g><g><rect width="24" height="24" fill="none"/><path fill="#669df6" d="M 6 12 L 12 16.99 L 12 20 L 2 12 Z"/><path fill="#669df6" d="M 12 16.99 L 18 12 L 22 12 L 12 20 Z"/><path fill="#aecbfa" d="M 2 12 L 12 4 L 12 7.01 L 6 12 Z"/><path fill="#aecbfa" d="M 12 7.01 L 18 12 L 22 12 L 12 4 Z"/><circle cx="12" cy="12" r="2" fill="#4285f4"/></g></g></svg>
+sprite $cloud_vision_api <svg viewBox="0 0 24 24" width="72" height="72"><g><g><rect width="24" height="24" fill="none"/><path fill="#669df6" d="M 6 12 L 12 16.99 L 12 20 L 2 12 Z"/><path fill="#669df6" d="M 12 16.99 L 18 12 L 22 12 L 12 20 Z"/><path fill="#aecbfa" d="M 2 12 L 12 4 L 12 7.01 L 6 12 Z"/><path fill="#aecbfa" d="M 12 7.01 L 18 12 L 22 12 L 12 4 Z"/><circle cx="12" cy="12" r="2" fill="#4285f4"/></g></g></svg>
 
 GCPEntityColoring(cloud_vision_api)
-!define cloud_vision_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_vision_api*2, cloud_vision_api)
-!define cloud_vision_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_vision_api*2, cloud_vision_api)
-!define cloud_vision_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_vision_api*2, cloud_vision_api)
-!define cloud_vision_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_vision_api*2, cloud_vision_api)
+!define cloud_vision_api(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_vision_api, cloud_vision_api)
+!define cloud_vision_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_vision_api, cloud_vision_api)
+!define cloud_vision_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_vision_api, cloud_vision_api)
+!define cloud_vision_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_vision_api, cloud_vision_api)
 !endif

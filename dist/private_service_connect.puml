@@ -3,14 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $private_service_connect_png [128x128/16z] {
-xC610000082W_QaNgG80002OsVh0SHm6WYXQ7Kk-_u4dSBbHR1a2H78_uWJxCIdytvaBjYMUIOPWI-hv5GyoT8CUsJg-8jEmCh68x7wBfCl2RMzwztjawBfj
-F_cBHg2HMVZp3qBRzigVVX3wjjT-ZmoPjksrF_SWH1OTmyWKF9XawHTnit-iy9d9dRw9Y3et-OvURF4DtpN6D_W1G2EP2Y3N-m8es_atG9VxqN_PgLpjEs3i
-lW6nqtV0T_Zz_VE7psTyKOjmUUVps-otlvS3yNetVr6r39DhtTGiCjCk_J0LGFGh-qe0CUUbt_upCqEl9s_Q_F0BFp2CjTzujNmpW3OPY4Rxjz9N3BFQRnCJ
-I1l1vVJHYioeVS4mgVrl7lsBmb2afegMPYP_bHU-QkadVzLctxBCk5X-zDgLrIE1qgULFdcqUEJlRvRxFe_QZrSnVm97vTzTVmfYxDjnZ7qImchzxvy_-D2N
-e_GJzVcxV_t1OkJpImep6VYE-lgxV_-1ZkQVxQRx8WQ-eRx_tB__GWQ-X4SxwIDVCBx_fjv-_hJYx7VISFP9uEhvSp-BmW-CVCV3IJ5_OkWhdgwOluvy4ezd
-CV3LCVGTptVZ-KV1l0LuxpE0cGjW6EQ3wSzP0Blc7NEA_5L4Zx-QUFXxckUEKpJCokFayyG7vXLlvqzYOlBE9nKpqskVD63f01RpW5xvZlbfwTEm8ecXJoeM
-vN7scO9bsRy-wLYP-9y---GtZ81DLxGsZ81aA7QblX7_R0yE10000004-LklC42r000000G
+sprite $private_service_connect_png [72x72/16z] {
+xTO5ZWCn44JHQgWkv_uNNWK6hIK7HFxYm1iquA_DPhFPpEmbIfRujEHPLKsYFwMmhhNMf0eC5cGjpbLIsj1jOTNYB19juBQijQN_tYYhwfr5ic57RT-WGmUy
+ddO8k0Frh6EWMi6UT0XNgGNqb2CYLUsIVtRCWz4vbGYo5A0wnvpf7UDHvCb9xAgJunPPF47X1YJ3hYsE7BjyTUoQkmD6uf3V_bAtOwfGznvE7fswNMB6xIlQ
+dntMtX4wvxlhCd3d-6NlIB3kkhwxpyZDCJN9DeVexlEtpnt1rO7najYSGFVSly--lJyo_2VkdBJDKOtCyFtxey3_kZc1NNbbDBRaP5pBQnmw7I1laAwr9HN-
+7xlvMS90LjtwvNWAMXp7M7PSbnsZMN9nL8OdShAgIGeycRDKyU5ztMmscys-
 }
 
 GCPEntityColoring(private_service_connect)
@@ -19,11 +16,11 @@ GCPEntityColoring(private_service_connect)
 !define private_service_connectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, private_service_connect_png, private_service_connect)
 !define private_service_connectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, private_service_connect_png, private_service_connect)
 !else
-sprite $private_service_connect <svg viewBox="0 0 24 24"><path d="m12 6.23-4.72 2.1v3.15a6.73 6.73 0 0 0 2.72 5.31 5.75 5.75 0 0 0 2 1z" fill="#669df6"/><path d="M12,17.77a6.52,6.52,0,0,0,4.72-6.29V8.33L12,6.23Z" fill="#4285f4"/><path d="M17.08,11.62c0,.26,0,.51-.06.76H19.4v-.76Z" fill="#4285f4"/><path d="M6.92,11.62c0,.26,0,.51.06.76H4.6v-.76Z" fill="#4285f4"/><path d="M3.59,12.73a.73.73,0,0,1,0-1.46v-.6a1.33,1.33,0,1,0,0,2.66Z" fill="#aecbfa"/><path d="M14.22,14.27a.56.56,0,0,1-.56.55H10.34l-.1,0a.54.54,0,0,1-.45-.53V11.5a.55.55,0,0,1,.55-.55h.28v-.56a1.39,1.39,0,0,1,2.77,0V11h.27a.33.33,0,0,1,.15,0,.54.54,0,0,1,.38.42.29.29,0,0,1,0,.1ZM12,9.54h-.1a.85.85,0,0,0-.75.74s0,.07,0,.1V11h1.72v-.56a.85.85,0,0,0-.08-.35A.84.84,0,0,0,12,9.54Z" fill="#fff"/><path d="M12.25,11.58l-1.1,1.47h.63v1.11l1.07-1.49h-.6Z" fill="#4285f4"/><path d="M3.59,13.33A1.32,1.32,0,0,0,4.92,12v0a1.32,1.32,0,0,0-1.33-1.33v.6a.73.73,0,0,1,0,1.46Z" fill="#669df6"/><path d="M20.41,12.73a.73.73,0,0,1,0-1.46v-.6a1.33,1.33,0,0,0,0,2.66Z" fill="#aecbfa"/><path d="M20.41,13.33A1.32,1.32,0,0,0,21.75,12v0a1.33,1.33,0,0,0-1.34-1.33v.6a.73.73,0,1,1,0,1.46Z" fill="#669df6"/></svg>
+sprite $private_service_connect <svg viewBox="0 0 24 24" width="72" height="72"><path d="m12 6.23-4.72 2.1v3.15a6.73 6.73 0 0 0 2.72 5.31 5.75 5.75 0 0 0 2 1z" fill="#669df6"/><path d="M12,17.77a6.52,6.52,0,0,0,4.72-6.29V8.33L12,6.23Z" fill="#4285f4"/><path d="M17.08,11.62c0,.26,0,.51-.06.76H19.4v-.76Z" fill="#4285f4"/><path d="M6.92,11.62c0,.26,0,.51.06.76H4.6v-.76Z" fill="#4285f4"/><path d="M3.59,12.73a.73.73,0,0,1,0-1.46v-.6a1.33,1.33,0,1,0,0,2.66Z" fill="#aecbfa"/><path d="M14.22,14.27a.56.56,0,0,1-.56.55H10.34l-.1,0a.54.54,0,0,1-.45-.53V11.5a.55.55,0,0,1,.55-.55h.28v-.56a1.39,1.39,0,0,1,2.77,0V11h.27a.33.33,0,0,1,.15,0,.54.54,0,0,1,.38.42.29.29,0,0,1,0,.1ZM12,9.54h-.1a.85.85,0,0,0-.75.74s0,.07,0,.1V11h1.72v-.56a.85.85,0,0,0-.08-.35A.84.84,0,0,0,12,9.54Z" fill="#fff"/><path d="M12.25,11.58l-1.1,1.47h.63v1.11l1.07-1.49h-.6Z" fill="#4285f4"/><path d="M3.59,13.33A1.32,1.32,0,0,0,4.92,12v0a1.32,1.32,0,0,0-1.33-1.33v.6a.73.73,0,0,1,0,1.46Z" fill="#669df6"/><path d="M20.41,12.73a.73.73,0,0,1,0-1.46v-.6a1.33,1.33,0,0,0,0,2.66Z" fill="#aecbfa"/><path d="M20.41,13.33A1.32,1.32,0,0,0,21.75,12v0a1.33,1.33,0,0,0-1.34-1.33v.6a.73.73,0,1,1,0,1.46Z" fill="#669df6"/></svg>
 
 GCPEntityColoring(private_service_connect)
-!define private_service_connect(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, private_service_connect*2, private_service_connect)
-!define private_service_connect(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, private_service_connect*2, private_service_connect)
-!define private_service_connectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, private_service_connect*2, private_service_connect)
-!define private_service_connectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, private_service_connect*2, private_service_connect)
+!define private_service_connect(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, private_service_connect, private_service_connect)
+!define private_service_connect(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, private_service_connect, private_service_connect)
+!define private_service_connectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, private_service_connect, private_service_connect)
+!define private_service_connectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, private_service_connect, private_service_connect)
 !endif

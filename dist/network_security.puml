@@ -3,16 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $network_security_png [128x128/16z] {
-xPk5TiDA34J5a___uGSb-wYWbHtL3tmFb-xiQ9l4H4UukRcvkM6c2n4BkD8ri7b4F02u_BvSFLvu_0KGnh_SkyUR_mNW4VgBlMyytaXp6Eyz-zCSndlF_ZI7
-yTwpFyrXlFVi7vX3whtqvpcCzfxzGtF8lTV-F8U9tcl_DWVNYTvhVps7klU6lvn3k_UUlvn3fuJSVEslWJVyiSZjnzL-u3g_CP4uhl8BlI2ung_qXk4IFtrm
-YT_eWy2rVh_2xnUlFvZUOU02lrCHODWVLWIOzhiK0ORz8LG6cFUB5W6c_Iv5W65_H15Wsby46FSN0SRzHO1nVn5Wt5y5EE_t2F_k7OWZ1tZZUNvJ4RM8ZDjV
-UEG04IgY3Zp7RqmliDNpsCEEP_YLFj1U03ASzslwHYk0uwm__LPu_PQy1pZdTyrd1WeqJ-2SFvXEmMVzT99_fL_zQVvj_rlVVtx-WYD-oP-nSx8D9Fox5m3e
-8NykmFtdyo_WlFtVWD0o71jvsoJ_8u6W7O4KR97OuRc1v4zWQuptxO0Q-1SdEbZIDxyv_mJOIm9MxFKjlyKU3pVpSCq1LFx2y4ZW4Uu1vBbq_m4pdWFmTwUV
-W5mBZ1f8n4e0QPp-Kch0KGL8_Xgc3bu6wFa1Qc5H1kZvdLf8r05QVgKM70i1lE5dwk4B9rxN_GXgeWi1c9VzIaruwTJpif-fYnS1Edu4jP5O3Q1OgBzFB0Sm
-L7uwWFhoeHOAlT41UFtqhwFUVNtiIUV_uNG8Rfp_hvO_KG1_12sNFrA0BTRFT1JpbG0sjFpwDS1LnF2pVbl-m6k01u36IryRZuBMAtyVFkjdsfYOGEELTsG2
-ZVP79Z2mznDot2-qCRG5PeTVlmoElF1b2d-nzqO3pEWpx8M_sFfp0SRq6M_u4KnFnttLZw09pDVyS9f1L_o0qHJYfHyG6iGAFvnf5F4V_83ID6pV-L4iVkIr
-Q6SFeSpy40hx568xFm2NYvw0-LiEOxe2CG-4oR_l-QkRcvkRcpy1
+sprite $network_security_png [72x72/16z] {
+xTU5Zjn040JGvlB___1nQwbcxLv7aEHAVF0qDIZBFvRVM9QVHwAo0AITGDIpFhDj6r2XB_V9QkTJsifVwzFPVjBzXdtkdAP29tsuq_r6VRZJ_GPzkBFVhx8M
+3fUMpYBWqDpXqD0n4SVGuGo1vevyvKyvvtkvy6BpUMRGt4cNXWOEB-REeFbuFAsXaqurTCwfQkZS_DG5meQZZgkeymrWdxy23Zagdr4AVKM1VQVtYv3BKVjN
+1voI_UZSuS7J-p07uzbpBlEZsHE4JlyglfnQEN4xctP_FmDsjLx8bUDvsJ_MK3jVGLps3-B9YroTz8PS92xGPJ_32K6sNaE-kkPLLYa2PO-7FeCyGQ2basl7
+yl50-Q8NNDRX9vEFHsMTu91XL4l43hywC7cMFFWk0_8qbWST5vaDo5WlG7PY378-dE4C5HwOajqeSKPxHvRt-mCJSYH17DPgF4LyhUPJTCUel0YH0p60g0FE
+hA4aJfSQGP6F3afb7BztW9W9zm_gZr8cByOoVvpBetpYunj0SMNuyHmg_rP-ymu
 }
 
 GCPEntityColoring(network_security)
@@ -21,11 +17,11 @@ GCPEntityColoring(network_security)
 !define network_securityParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, network_security_png, network_security)
 !define network_securityParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, network_security_png, network_security)
 !else
-sprite $network_security <svg viewBox="0 0 24 24"><g><path d="M11.5,13v1.79L8.86,12.12,8.91,12H12V11H8.91A1.5,1.5,0,1,0,7.5,13a1.46,1.46,0,0,0,.66-.16l2.89,2.91A.94.94,0,0,0,12,17V13Z" fill="none"/><path d="M11,7a1,1,0,0,0,.5.85V10H12V6A1,1,0,0,0,11,7Z" fill="none"/><path d="M12,17a.94.94,0,0,1-.95-1.25L8.16,12.84A1.46,1.46,0,0,1,7.5,13a1.5,1.5,0,1,1,1.41-2H12V10h-.5V7.85A1,1,0,0,1,12,6V2L4,5v6.05c0,5.06,3.41,9.8,8,11h0Z" fill="#669df6"/><path d="M8.86,12.12l2.64,2.67V13H12V12H8.91Z" fill="#669df6"/><path d="M15.15,10.86,12.5,8.21V10H12v1h3.09Z" fill="#669df6"/><path d="M13,7a.93.93,0,0,1-.05.24l2.91,2.91A1.5,1.5,0,1,1,15.09,12H12v1h.5v2.15A1,1,0,0,1,12,17v5c4.59-1.15,8-5.89,8-10.95V5L12,2V6A1,1,0,0,1,13,7Z" fill="#4285f4"/></g></svg>
+sprite $network_security <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="M11.5,13v1.79L8.86,12.12,8.91,12H12V11H8.91A1.5,1.5,0,1,0,7.5,13a1.46,1.46,0,0,0,.66-.16l2.89,2.91A.94.94,0,0,0,12,17V13Z" fill="none"/><path d="M11,7a1,1,0,0,0,.5.85V10H12V6A1,1,0,0,0,11,7Z" fill="none"/><path d="M12,17a.94.94,0,0,1-.95-1.25L8.16,12.84A1.46,1.46,0,0,1,7.5,13a1.5,1.5,0,1,1,1.41-2H12V10h-.5V7.85A1,1,0,0,1,12,6V2L4,5v6.05c0,5.06,3.41,9.8,8,11h0Z" fill="#669df6"/><path d="M8.86,12.12l2.64,2.67V13H12V12H8.91Z" fill="#669df6"/><path d="M15.15,10.86,12.5,8.21V10H12v1h3.09Z" fill="#669df6"/><path d="M13,7a.93.93,0,0,1-.05.24l2.91,2.91A1.5,1.5,0,1,1,15.09,12H12v1h.5v2.15A1,1,0,0,1,12,17v5c4.59-1.15,8-5.89,8-10.95V5L12,2V6A1,1,0,0,1,13,7Z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(network_security)
-!define network_security(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, network_security*2, network_security)
-!define network_security(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, network_security*2, network_security)
-!define network_securityParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, network_security*2, network_security)
-!define network_securityParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, network_security*2, network_security)
+!define network_security(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, network_security, network_security)
+!define network_security(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, network_security, network_security)
+!define network_securityParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, network_security, network_security)
+!define network_securityParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, network_security, network_security)
 !endif

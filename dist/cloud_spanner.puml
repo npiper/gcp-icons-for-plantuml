@@ -3,15 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $cloud_spanner_png [128x128/16z] {
-xTW9ikCW38HXr2s9tF_4KtwPnOfDSC6OpAB_0FueYQpbRodBiYpBCa49ATVgUF7DJ9Rn8FdgkxkkqOKDtmqBU81i-6uc2qRVzBTuAy-kRtQhpvxldlvjfPz-
--iS3YFfwdmZw8Z-UG4g1kY_qOu2vB_PZ_j_uwQSlm7lVZ0k-_RTzbji3qV8fPKKWpdoLiYeW-45VaY3wXh8siRrVfInEtEs7NnyVyTsLtFJ7ftnttVWF-hxf
-wQUV_eBIJp_zzDCNZRvZAK_tu3zgDLccmopwpnDmeHxzMvOWG6Fnk-hERoq1aB4VcQ0q5X_qS08z-S4EOl1dFY3jqTV8nsiG_x00PVHl3bmQVUCQx1v36Vk7
-0PJhUhm64f-3wwCF0T9R_F4Qn2764_H77mDXNJvMFGpnyXB0qq0xrslZA1xqS8BBeu_fgMvsTeAgR0NY-kXZjkdrzQRZk0rZwEe9sCthsNkDnX5KzeAC-LRF
-tsibBC6LlOPytUs-ldpMOBUOwgw_tzUlxRS_QrdhBzzDPtqmPBvL6nyouHfKtx8f7nGXehxvZG_PS0sgFxFmDE2w3sB_9wlwppfVCh2Tq7-c_0g8xor4pz-_
-7Mdyo6Lv6slrNvdkt_50zFtuaG-QxzFIJNsVXJSReEU3ykvfvKBlJYn0qnSy5t-JlzifqF9BkSEFjNqfXsXplh4S2txe9dyyn6cM2tdmCUdxdE-JFcTzJlxA
-dlLTPPWF-gZlhcCwpGz9wIP-o3ZpAtlUTpCCBZwc0riRkGRiF6BeyBm--iu81vTtxGbYrZdzy0JDPEZUnz6FBy4uTFWu-l4bSEZmKHy_WShO-5WcOj073gzI
-fXATMY26q86dB2pBiYpBicy
+sprite $cloud_spanner_png [72x72/16z] {
+xTTdpgmm38LX-nmNzh_XsmZo3QA9pDTvVZClf4eZR-VnK6aW8q1fmdMWKXtteDoY15cT27VS-nhsdJ_a1cvqL7fFf_qICTWXL0GUmns27Z7MQU9JTF2YZX9z
+P-oaLeTo6wfZAWDqwK36X1iZCcLGH7XEqoiwCNriv-ay7IuTam7mQ9qf0oBNgHIrYDRv8zErU_08GAqXpN9giWQd1FPB84YW3SchKYKkhoE8i_iOekRrCLqf
+8E0Cr8qAm0NOLJAx4C5cOt1Wpw8gPbLAOmVeCWJN_bybzLOAhe5TPyqykrs3-Ul2ZIk77O_8jZmBPlxjXfzs05MWJKvafad7CZF-i7fstQbL12rchhAY7ZCZ
+QesxJkqgB1dPi8HGUsxL4RdJ4UaxAdSxeh9DhtHKJl5AXt92FQvqmlMmOb5aGnJJqo75vd-akfME1mUFmWll2iV94wRNniwZTxdhsLhuoQAfNVlp2FVwvasW
+N4B8wpmUlm4
 }
 
 GCPEntityColoring(cloud_spanner)
@@ -20,11 +17,11 @@ GCPEntityColoring(cloud_spanner)
 !define cloud_spannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_spanner_png, cloud_spanner)
 !define cloud_spannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_spanner_png, cloud_spanner)
 !else
-sprite $cloud_spanner <svg viewBox="0 0 24 24"><g><path fill="#669df6" d="M 13.34 12.76 L 13.34 8.4 L 10.66 8.4 L 10.66 12.76 L 6.89 14.94 L 8.23 17.26 L 12 15.08 L 15.77 17.26 L 17.11 14.94 Z"/><path fill="#4285f4" d="M 13.34 12.76 L 13.34 8.4 L 12 8.4 L 12 13.52 L 7.56 16.1 L 8.23 17.26 L 12 15.08 L 15.77 17.26 L 17.11 14.94 Z"/><path fill="#aecbfa" d="M 10.65 2.77 L 8.62 3.99 L 8.62 7.72 L 12 9.55 L 12 6.44 L 10.65 5.82 Z"/><path fill="#669df6" d="M 13.35 5.82 L 12 6.44 L 12 9.55 L 15.38 7.72 L 15.38 3.99 L 13.35 2.77 Z"/><path d="m18.14 17.08-0.08 1.39 2.7 1.53-2.18 1.2-3.24-1.87 0.11-3.83 3.27-2 3.28 1.88v2.49l-2.69-1.55z" fill="#669df6"/><path d="M5.86,17.08l-1.17-.76L2,17.87l0-2.49,3.23-1.87,3.27,2,.11,3.83L5.42,21.23,3.24,20l2.7-1.56Z" fill="#669df6"/><path fill="#aecbfa" d="M 22 17.87 L 21.95 15.38 L 18.72 13.52 L 15.45 15.53 L 18.14 17.08 L 19.3 16.32 Z"/><path fill="#aecbfa" d="M 2 17.87 L 4.7 16.32 L 5.86 17.08 L 8.55 15.53 L 5.28 13.52 L 2.05 15.38 Z"/></g></svg>
+sprite $cloud_spanner <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#669df6" d="M 13.34 12.76 L 13.34 8.4 L 10.66 8.4 L 10.66 12.76 L 6.89 14.94 L 8.23 17.26 L 12 15.08 L 15.77 17.26 L 17.11 14.94 Z"/><path fill="#4285f4" d="M 13.34 12.76 L 13.34 8.4 L 12 8.4 L 12 13.52 L 7.56 16.1 L 8.23 17.26 L 12 15.08 L 15.77 17.26 L 17.11 14.94 Z"/><path fill="#aecbfa" d="M 10.65 2.77 L 8.62 3.99 L 8.62 7.72 L 12 9.55 L 12 6.44 L 10.65 5.82 Z"/><path fill="#669df6" d="M 13.35 5.82 L 12 6.44 L 12 9.55 L 15.38 7.72 L 15.38 3.99 L 13.35 2.77 Z"/><path d="m18.14 17.08-0.08 1.39 2.7 1.53-2.18 1.2-3.24-1.87 0.11-3.83 3.27-2 3.28 1.88v2.49l-2.69-1.55z" fill="#669df6"/><path d="M5.86,17.08l-1.17-.76L2,17.87l0-2.49,3.23-1.87,3.27,2,.11,3.83L5.42,21.23,3.24,20l2.7-1.56Z" fill="#669df6"/><path fill="#aecbfa" d="M 22 17.87 L 21.95 15.38 L 18.72 13.52 L 15.45 15.53 L 18.14 17.08 L 19.3 16.32 Z"/><path fill="#aecbfa" d="M 2 17.87 L 4.7 16.32 L 5.86 17.08 L 8.55 15.53 L 5.28 13.52 L 2.05 15.38 Z"/></g></svg>
 
 GCPEntityColoring(cloud_spanner)
-!define cloud_spanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_spanner*2, cloud_spanner)
-!define cloud_spanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_spanner*2, cloud_spanner)
-!define cloud_spannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_spanner*2, cloud_spanner)
-!define cloud_spannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_spanner*2, cloud_spanner)
+!define cloud_spanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, cloud_spanner, cloud_spanner)
+!define cloud_spanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_spanner, cloud_spanner)
+!define cloud_spannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_spanner, cloud_spanner)
+!define cloud_spannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_spanner, cloud_spanner)
 !endif

@@ -3,12 +3,10 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $dataproc_metastore_png [128x128/16z] {
-xTb7SWH124JHyd3_2yjBNrwYYOdSyDOTnIHbsamBa2kbb59AATsRaZ_OJSNyMPCO3b7hSKIjXwhr4BKUHrGTlTtQT02Yy31HzTjFmlB_4eM7YQfZY5eFKNYO
-g3f6ozkUeGeFKNNCTjLnP8Z2uxHBXYW_J5GTdhHRKXU5XucgGzHwT55u755rUC3IFe4rf8pe950T9nCtteBvzSbj9PPyz1Ty_xQKcUiLU23wSH2x_D0LM8Vp
-jqklXG_i10icGRXhl13WFpCPF6e3Xy78ZGYkdTa-mVvxvGdyL2OXDAUz8RrQ6J3m1fdlPuDTs5GxE_TWKUFw6XY12M3Cs-mg2unveVVvDUYE7JlDarVJUcJs
-Nlp4fFK8hBliQd47JdYa-3ea4H3h9006ZRmK_tHjYzlHnoyc0Ilt0QB7gbCCcndCceft7oW-_y8X-0O_FKeK7YQgZY7wzWvHU9YeEeRespjKuP7Oyz8EgAf3
-zEqTGnGU9geEKUlHHU5XekeGVNj75uM7YQf3zUqTel0uekh8_jMS9mgFBQeELUiX2ezDTH6Ui5L2RnYbb59AAQNS0m
+sprite $dataproc_metastore_png [72x72/16z] {
+xTKvRi0m34HHQf_xdpYOAl52W9OcglHguditRSPn7809D90jog3b4lx8aWffCYIfK95KI9CXIIKU6g3LKWKjbpeW296cGf8CDKc5D1MIP6Yjmb6_b2zZFe3C
+ALLtxYfTZlaeFN-tANGorr1acWR8wm_lk2EOfuB0tGnq4EuGA7jttzjid_AKlEbGQU1Ni485LBtl_lhFBFFV1IvZ-k_Kr_z_3_RDUx1e_lC86P8AcQQqSmzY
+onxCza7Ui0VNIzsc95pPD4s5BajvlMG2Owvo7CSF
 }
 
 GCPEntityColoring(dataproc_metastore)
@@ -17,11 +15,11 @@ GCPEntityColoring(dataproc_metastore)
 !define dataproc_metastoreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataproc_metastore_png, dataproc_metastore)
 !define dataproc_metastoreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataproc_metastore_png, dataproc_metastore)
 !else
-sprite $dataproc_metastore <svg viewBox="0 0 24 24"><path d="m12.232 12.109 7.1339 4.25-7.1339 4.25-7.1339-4.25zm6.5485-2.1726 3.4694 2.1629-0.0185 0.0096656 0.0185 0.0096656-3.4694 2.1629-1.0842-0.5692 2.5711-1.6044-2.5711-1.6024zm-13.249 0 1.0842 0.5692-2.5726 1.6034 2.5726 1.6034-1.0842 0.5692-3.4694-2.1629 0.018-0.0096656-0.018-0.0096656zm6.7003-6.3274 7.1339 4.25-7.1339 4.25-7.1339-4.25z" fill="#4285f4"/></svg>
+sprite $dataproc_metastore <svg viewBox="0 0 24 24" width="72" height="72"><path d="m12.232 12.109 7.1339 4.25-7.1339 4.25-7.1339-4.25zm6.5485-2.1726 3.4694 2.1629-0.0185 0.0096656 0.0185 0.0096656-3.4694 2.1629-1.0842-0.5692 2.5711-1.6044-2.5711-1.6024zm-13.249 0 1.0842 0.5692-2.5726 1.6034 2.5726 1.6034-1.0842 0.5692-3.4694-2.1629 0.018-0.0096656-0.018-0.0096656zm6.7003-6.3274 7.1339 4.25-7.1339 4.25-7.1339-4.25z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(dataproc_metastore)
-!define dataproc_metastore(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, dataproc_metastore*2, dataproc_metastore)
-!define dataproc_metastore(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dataproc_metastore*2, dataproc_metastore)
-!define dataproc_metastoreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataproc_metastore*2, dataproc_metastore)
-!define dataproc_metastoreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataproc_metastore*2, dataproc_metastore)
+!define dataproc_metastore(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, dataproc_metastore, dataproc_metastore)
+!define dataproc_metastore(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dataproc_metastore, dataproc_metastore)
+!define dataproc_metastoreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataproc_metastore, dataproc_metastore)
+!define dataproc_metastoreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataproc_metastore, dataproc_metastore)
 !endif

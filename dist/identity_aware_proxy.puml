@@ -3,15 +3,12 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $identity_aware_proxy_png [128x128/16z] {
-xPa7akGm24L5-AZlV-ATZjW5EsvLuusyoHwLFacoZCS7D4tJD4tJD4tJD4tJD0thar4CYIgWAapVoDkBKcsrkS701_Ab-d8LlsoONoYbylNwuk9RvWN10hgY
-fVfiGToZe6cmAlNLVPyl_99na4UXFjbqSLFXBqJXvJ2d1FawVNQPVS6JkWMQoDFrHvbyMkjYYG5aDsZ03ED3w2aF-jcw20RmNNu069_od5wEgcCxWc_oeq0U
-ynvxVcCC-IM-ZLSQ7o9nwa42A2S6sAY6vWpUgrs1ZWqsFGEL8Cwhi1j0g98vozs_oMCu37i06GvFNmDr87e5SyO6lHimIacoQXie6rk8kFl7-Ze_MW948s0p
-vXIPljVAXSOYNbHAQVZtLzNbaHMBXBclZ4Yof4p65iuYIYxFMROG0iiYp6_96oHcLBF3dOzroAib623yVV11ZoHG22Wdum43vtUgIQi6m4pzjx2fqWWGfzFP
-Lf_O4Vd607AlsGp1dzNTYjr6ryyDS54tPQU_jgMhBu2RVk0TVTeklrp_DZFJgZxJOVoF_IU16QwOAQ_eCwtMNym_gS4sWFFyxo6NNrb_iVuPi3tGMFzHmEKN
-zf_eZ-pKuobavkkLsUKNzj-m_v5bmFz_IUjLN7xb_XFtVu6bXFs_wlvB-_kVMWvvkWfFO5vGygQ-Mrj-_ZdMz_DF_V5N3lNTVJtl_0jO1dXx_gNppl-YEHH6
-bWU0nn7p1FVThSDvuTclHTs0O_bP__mzRE7vdsF_WOhQBtEb_-7zbm83-Dt-3whxJtuR2lsls1UTEEw_rVV_RBfyOVyn6k3zJwWm4RF0BdvT2_kl4KBM_jrS
-unFxprvbENE2pkw_UwytgXkV_Fx1BN0Jl1puzFSl3jzgpe7GkU-V8iIgC0DKgE3zsxz9qpHDqpHDqpHDqpHDymC
+sprite $identity_aware_proxy_png [72x72/16z] {
+xPO7qkqW28KlxP3zh_X5RAdpTDhV_6uD8qV0-lb5B1QBnK8IFDwUnE3kCA6ZMSq0qr4LDj_PjYrzWxkwoeoE9GqFue_HeGS0OpfSd5LOr9AKUms90PZfg8ox
+zCfYDvHd0ep5PAJ0APXpXvfCNDAIZmw5uzw28QOIakyKMteFe953eBsYibljCm5r1p409bsU9tHI-_BNaAXHJ0KKpVMgS-pW7L90gOtvvlM_HbvwI5YQ3pDV
+PM0xg0DpxDKCrdE1ktOlkGgfxGQkuPiVgy32fxM2a0ZaAfGL3Asnler0qU50GcX8XqHLXQuwqg1xNdRBYnHHPnWVTIeiGkzrxeqP3PDxwPY5NiVzE5uuGfUP
+5SN-xxBWYF98il3Sme0x7dKi8Xqb4kEBZYL3f3L1sMdeI8vp8fnI1pnj_2vJ-rYuW1via_jgfE1o2d47K_jyWBIjGoXxvkC2D7dkr6Cmd87ynstw70mOzL2E
+RyZqkLnXymfa_fvmX6FVO9gujtmZ5el5Ol4F
 }
 
 GCPEntityColoring(identity_aware_proxy)
@@ -20,11 +17,11 @@ GCPEntityColoring(identity_aware_proxy)
 !define identity_aware_proxyParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, identity_aware_proxy_png, identity_aware_proxy)
 !define identity_aware_proxyParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, identity_aware_proxy_png, identity_aware_proxy)
 !else
-sprite $identity_aware_proxy <svg viewBox="0 0 24 24"><g><path d="m11.85 7a5.1 5.1 0 1 0 5.1 5.1 5.1 5.1 0 0 0-5.1-5.1zm0 9.08a4 4 0 1 1 4-4 4 4 0 0 1-4 4.01z" fill="#4285f4"/><path d="M13.77,12.71a2.09,2.09,0,0,0-.28-.22,3.11,3.11,0,0,0-2.61-.28,2.31,2.31,0,0,0-.89.47.86.86,0,0,0-.37.65v1h4.47v-.82A1,1,0,0,0,13.77,12.71Z" fill="#669df6"/><path d="m11.85 11.53a1.16 1.16 0 1 0-1.17-1.15 1.17 1.17 0 0 0 1.17 1.15z" fill="#669df6"/><path fill="#aecbfa" d="M 20.78 10.72 L 19.74 10.72 L 20.51 11.49 L 18.3 11.49 L 18.3 12.39 L 20.51 12.39 L 19.74 13.17 L 20.78 13.17 L 22 11.94 Z"/><path fill="#669df6" d="M 17.54 8.5 L 18.18 9.14 L 19.16 8.17 L 19.16 9.26 L 19.89 8.52 L 19.89 6.79 L 18.16 6.79 L 17.43 7.53 L 18.52 7.53 Z"/><path fill="#669df6" d="M 19.16 15.83 L 18.18 14.86 L 17.54 15.49 L 18.52 16.47 L 17.43 16.47 L 18.16 17.2 L 19.89 17.2 L 19.89 15.47 L 19.16 14.74 Z"/><path d="M3.35,10.65A1.35,1.35,0,1,0,4.71,12a1.35,1.35,0,0,0-1.36-1.35Zm0,2.1A.76.76,0,1,1,4.11,12h0a.76.76,0,0,1-.76.75Z" fill="#669df6"/></g></svg>
+sprite $identity_aware_proxy <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="m11.85 7a5.1 5.1 0 1 0 5.1 5.1 5.1 5.1 0 0 0-5.1-5.1zm0 9.08a4 4 0 1 1 4-4 4 4 0 0 1-4 4.01z" fill="#4285f4"/><path d="M13.77,12.71a2.09,2.09,0,0,0-.28-.22,3.11,3.11,0,0,0-2.61-.28,2.31,2.31,0,0,0-.89.47.86.86,0,0,0-.37.65v1h4.47v-.82A1,1,0,0,0,13.77,12.71Z" fill="#669df6"/><path d="m11.85 11.53a1.16 1.16 0 1 0-1.17-1.15 1.17 1.17 0 0 0 1.17 1.15z" fill="#669df6"/><path fill="#aecbfa" d="M 20.78 10.72 L 19.74 10.72 L 20.51 11.49 L 18.3 11.49 L 18.3 12.39 L 20.51 12.39 L 19.74 13.17 L 20.78 13.17 L 22 11.94 Z"/><path fill="#669df6" d="M 17.54 8.5 L 18.18 9.14 L 19.16 8.17 L 19.16 9.26 L 19.89 8.52 L 19.89 6.79 L 18.16 6.79 L 17.43 7.53 L 18.52 7.53 Z"/><path fill="#669df6" d="M 19.16 15.83 L 18.18 14.86 L 17.54 15.49 L 18.52 16.47 L 17.43 16.47 L 18.16 17.2 L 19.89 17.2 L 19.89 15.47 L 19.16 14.74 Z"/><path d="M3.35,10.65A1.35,1.35,0,1,0,4.71,12a1.35,1.35,0,0,0-1.36-1.35Zm0,2.1A.76.76,0,1,1,4.11,12h0a.76.76,0,0,1-.76.75Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(identity_aware_proxy)
-!define identity_aware_proxy(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, identity_aware_proxy*2, identity_aware_proxy)
-!define identity_aware_proxy(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, identity_aware_proxy*2, identity_aware_proxy)
-!define identity_aware_proxyParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, identity_aware_proxy*2, identity_aware_proxy)
-!define identity_aware_proxyParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, identity_aware_proxy*2, identity_aware_proxy)
+!define identity_aware_proxy(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, identity_aware_proxy, identity_aware_proxy)
+!define identity_aware_proxy(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, identity_aware_proxy, identity_aware_proxy)
+!define identity_aware_proxyParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, identity_aware_proxy, identity_aware_proxy)
+!define identity_aware_proxyParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, identity_aware_proxy, identity_aware_proxy)
 !endif

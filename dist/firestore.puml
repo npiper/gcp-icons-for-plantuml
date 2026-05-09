@@ -3,15 +3,11 @@
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
 !ifdef GCP_USE_PNG
-sprite $firestore_png [128x128/16z] {
-xTW7ijGm40RXrSYIt_qlJ1eotdeV9JGa_wJApTAzXSUFlt3txjsxTo_wFDhlWhVeqUUSH_mUUaJlVRxVY79wVm__n9zZz5BjIKz-RfI5q9B-3JztH9Ns2tv9
-22tXJ_WPGYlGVi7N4DQrN_CXX6Njm8SG5hxjnlSGNBlpFGJNxdmFmRKJ7q9OqEvy3y6rEzz3SEtEzn1Sk_Cz1DVkV0e1jVC2-Hx2pz7ZqOuv9c_CL_dTwUsZ
-hZ6c3lW6ZsXVEHkr_EZndSWuglYf_OT12CGdxHU348YlsgyNOvtlsdCSWlDTEuImm0Vj7eBpNRk7u7pNxY4utxHp2Ajy-eVt49plsZq4vxjs3y7vhht54Hw2
-ywCtlCQ7FTZrCP2VslanaH_iOX0_jVjZeZxOPGW3-7mT9F_JC8HV_IvWpytlry7yUX22pQ-3FIz__2Y4Ks_hAo0uzRQ-0k9JRrsxypq4r-vy3y5VkJBVGt3j
-n8SG5hGxtqDmxSxt45oxypq4r-vy3y6rErz2OEs-GN0F8QBxejFD_xK6VVxrLq0nvlGvtry1nL7AJxhV_EjyE0eXX0K-7OKnTl7rA8nZ8p_fSEfjuCDH224u
-txLx2CvtxHw2yrsxX-1yr6uXBF1LkuVWVDVk8JZVjNi8pWVj2sy1cS_QFGJdktPV7CPVrHvpnhCGXB_sqViytstsfo6yocyhfRzZlxpRkp-UFMl7OzVQI7Zk
-F4Sy2XSpwL__3MPKqNlIlrk6W5lLVhaCOUjYNC7hGhYYLuPmWOSGIlaPGl-D_FDbMmIdVFRHYlpNVmLFAQ-KN_kVm0dQo_ckVPqFselvgRsA3zeB-A1z4n-q
-r_1JUpaVj6_bW_QjVD2-bG_QTwv0-uPxxTwzU_VklGK
+sprite $firestore_png [72x72/16z] {
+xTG7ZiCm34HHSTXy_mjlbRQEYPW9Mg0vm8Fz8N0ysVO4XaSeK0_7dOf2LIF2NQMjGA7lY_TvM4kIfRmvQuP6bgbCPyvnFGjnMAWw2tTug3eBTtWedgLsU2YU
+fNRgK3XHG9mYrAc28HP-8X67ApB_sAbqamD0njVWFGUwb3NODMTb-JSIgd1c5Z8IYZWa2nsyT6WMFbZX55cAKDJXMGG67eexW5oxyt0d3kJwdOUDUllExpk_
+x_o-y_lEyxNlF1_GkVD_XyWC9NV-qlHDEOxCD1djYUMRyhbCHrFnXImfMj9KValQSFueKvAEy_ZlwPV-4pbTnbpJkVFz9CdISaYMjlCdIyiXMJexI9RE7EF9
+jlSA
 }
 
 GCPEntityColoring(firestore)
@@ -20,11 +16,11 @@ GCPEntityColoring(firestore)
 !define firestoreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, firestore_png, firestore)
 !define firestoreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, firestore_png, firestore)
 !else
-sprite $firestore <svg viewBox="0 0 24 24"><g><g><path d="m21 13-9-4v4l9 4zm0-7-9-4v4l9 4z" fill="#669df6"/><path fill="#aecbfa" d="M 3 6 L 12 2 L 12 6 L 3 10 Z"/><path fill="#aecbfa" d="M 3 13 L 12 9 L 12 13 L 3 17 Z"/><path fill="#4285f4" d="M 12 18 L 15.37 16.5 L 19.88 18.5 L 12 22 Z"/></g></g></svg>
+sprite $firestore <svg viewBox="0 0 24 24" width="72" height="72"><g><g><path d="m21 13-9-4v4l9 4zm0-7-9-4v4l9 4z" fill="#669df6"/><path fill="#aecbfa" d="M 3 6 L 12 2 L 12 6 L 3 10 Z"/><path fill="#aecbfa" d="M 3 13 L 12 9 L 12 13 L 3 17 Z"/><path fill="#4285f4" d="M 12 18 L 15.37 16.5 L 19.88 18.5 L 12 22 Z"/></g></g></svg>
 
 GCPEntityColoring(firestore)
-!define firestore(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, firestore*2, firestore)
-!define firestore(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, firestore*2, firestore)
-!define firestoreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, firestore*2, firestore)
-!define firestoreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, firestore*2, firestore)
+!define firestore(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4284F3, firestore, firestore)
+!define firestore(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, firestore, firestore)
+!define firestoreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, firestore, firestore)
+!define firestoreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, firestore, firestore)
 !endif
