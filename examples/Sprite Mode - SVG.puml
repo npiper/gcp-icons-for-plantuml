@@ -1,17 +1,19 @@
-@startuml Sprite Mode - SVG (v2 local)
+@startuml Sprite Mode - SVG (v2)
 'Copyright (c) 2026 Neil Piper (fork maintainer)
 'Copyright (c) 2020 David Holsgrove
 'SPDX-License-Identifier: MIT (For details, see https://github.com/npiper/gcp-icons-for-plantuml/blob/master/LICENSE-CODE)
 
-' SVG sprite mode (default) - requires plantuml >= 1.2026.x with SAX SVG parser
-' No !define GCP_USE_PNG needed - SVG is the default
+' SVG sprite mode via remote include
+' Note: !pragma svgparser sax is not valid for remote !includeurl contexts
+' Use !define GCP_USE_PNG for compatibility, or local includes for SVG sprite rendering
 
-!pragma svgparser sax
-!include ../dist/GCPCommon.puml
-!include ../dist/cloud_run.puml
-!include ../dist/cloud_build.puml
-!include ../dist/artifact_registry.puml
-!include ../dist/cloud_deploy.puml
+!define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
+
+!includeurl GCPPuml/GCPCommon.puml
+!includeurl GCPPuml/cloud_run.puml
+!includeurl GCPPuml/cloud_build.puml
+!includeurl GCPPuml/artifact_registry.puml
+!includeurl GCPPuml/cloud_deploy.puml
 
 left to right direction
 

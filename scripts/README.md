@@ -1,73 +1,193 @@
-# Generating the PlantUML Icons for GCP
+# Generating GCP Icons for PlantUML (v2)
 
-If you would like to have customized builds and/or experiment with *PlantUML Icons for GCP*, you can generate your own distribution of icons and PUML files for local use.
+This document describes how to generate the `dist/` directory using the v2 builder (`icon-builderv2.py`).
+
+> **v1 reference:** The original `icon-builder.py`, `config.yml`, and `requirements.txt` are preserved in [`archive/v1/`](../archive/v1/) for reference. The v1 build instructions are in [`archive/v1/scripts-README.md`](../archive/v1/scripts-README.md).
+
+---
 
 ## Prerequisites
 
-To generate the PlantUML files locally, ensure the following is prerequisites have been completed:
+### Python
 
-* Python 3.6/3.7 and packages from the `requirements.txt` file.
-* [Amazon Corretto 8](https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html) or [OpenJDK 8](https://openjdk.java.net/install/) installed and available from the command line. Newer versions may also be used but have not been tested.
-* Download the latest [GCP Architecture Icons - Assets - PNG](https://cloud.google.com/icons) from here, unzip,  and copy the PNG file contents from `GCP Icons/Products and services` directory to `source/official` directory.
-
-  the folder structure should look like this:
-
-    ```
-    ├── gcp-icons-for-plantuml
-          └── source
-              ├── GCPCommon.puml
-              └── official
-                  ├── AI and Machine Learning
-                  ├── API Management
-                  ├── Compute
-                ...
-    ```
-
-## Configure
-
-### Configuration File: config.yml
-
-The `config.yml` file is used to map specific file names to GCP categories, and set  the name and parameters set for each category or individual file when running the `icon-builder.py` script. The included configuration file is based on the latest release of the [GCP Architecture Icons](https://cloud.google.com/icons).
-
-For general categories, the `Color` attribute is set to match as closely as possible the color represented for that category. The color palettes used are in the `Defaults` section and then reference for the category, or can be overridden per-icon.
-
-On top, each GCP service is mapped to it's primary category.
-
-Next, install the python packages from the `requirements.txt` file. Depending upon your operating system, this may be through `apt`, `yum`, or `pip install` if using a virtual environment. The two requirements are:
-
-- [PyYAML](https://pyyaml.org/)
-- [Pillow](https://github.com/python-pillow/Pillow)
-
-For PIP users, simply run `pip3 install -r requirements.txt` in your environment.
-
-## Run
-
-To verify all dependencies are met, run `icon-builder.py` with the `--check-env` parameter, and if all is good, run the script without any flags..
+Python 3.8+ with the packages listed in `requirements.txt`:
 
 ```bash
-$ ./icon-builder.py --check-env
-Prerequisites met, exiting
+pip3 install -r requirements.txt
 ```
 
-Next, run the same command without `--check-env` to create all new icons and update the `config.yml` file.
+Dependencies:
 
-### What Happens
+| Package | Purpose |
+|---|---|
+| `PyYAML` | Reads `configv2.yml` |
+| `Pillow` | Resizes PNG source icons to 128×128 for PNG sprites |
+| `scour` | Optimises and sanitises SVG source files |
 
-From a logical point of view, the following happens:
+### Java
 
-1. The `config.yml` is loaded
-1. Cleanup: all files and directories from `dist` folder are deleted.
-1. GCPCommon.puml and supporting PUML files are copied to `dist`.
-1. All files ending in `.png` are processed in the `source/official` directory:
-    * Matching files will have a `Target` name and `Color` setting applied.
-    * Non-matching files be set to Uncategorized with default `Target` and `Color` settings.
-1. For each file, the source PNG will be resized, preserving transparency if set.
-1. A PlantUML sprite is generated.
-1. In addition to single GCP services PUML files, a combined PUML file, named `all.puml`, is created for each category.
-1. A markdown table with all GCP services,  image/icon, and the PUML name is generated.
+Java 18+ is required — the bundled `plantuml.jar` (PlantUML 1.2026.x) does not run on Java 8.
+
+Set `JAVA_HOME` to a JDK 18+ installation before running the builder:
+
+```bash
+export JAVA_HOME=/path/to/jdk18
+```
+
+On macOS with the JDK installed in the default location:
+
+```bash
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home
+```
+
+### GCP Icon Sources
+
+Download the latest [GCP Architecture Icons](https://cloud.google.com/icons) (PNG + SVG assets), unzip, and copy the product icon directories into `source/official/`.
+
+The expected layout after extraction:
+
+```
+gcp-icons-for-plantuml/
+  source/
+    official/
+      access_context_manager/
+      app_engine/
+      artifact_registry/
+      bigquery/
+      cloud_run/
+      ... (one directory per GCP product)
+```
+
+Each product directory must contain at least one `.svg` file and one `.png` file matching the directory name.
+
+---
+
+## Configuration: configv2.yml
+
+`configv2.yml` maps each product directory under `source/official/` to an output target name. The v2 config is **flat** — there are no category groups.
+
+Example entry:
+
+```yaml
+icons:
+  - SourceDir: cloud_run
+    Source: cloud_run.png
+    Target: cloud_run
+    Color: GoogleBlue
+```
+
+| Key | Description |
+|---|---|
+| `SourceDir` | Exact directory name under `source/official/` |
+| `Source` | PNG filename inside that directory |
+| `Target` | Output file stem — used for `dist/{Target}.puml`, sprite names, and macro names |
+| `Color` | PlantUML color name applied to the entity macro |
+
+To generate a config template reflecting whatever is currently in `source/official/`:
+
+```bash
+cd scripts
+python3 icon-builderv2.py --create-config-template
+```
+
+This writes `config-template.yml` to the `scripts/` directory, listing every discovered product directory as an entry. Edit it, rename it to `configv2.yml`, and run the builder.
+
+---
+
+## Running the Builder
+
+From the `scripts/` directory:
+
+```bash
+cd scripts
+
+# Verify all prerequisites are met
+JAVA_HOME=/path/to/jdk18 python3 icon-builderv2.py --check-env
+
+# Generate dist/
+JAVA_HOME=/path/to/jdk18 python3 icon-builderv2.py
+```
+
+Or export `JAVA_HOME` once and run both:
+
+```bash
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home
+cd scripts
+python3 icon-builderv2.py --check-env
+python3 icon-builderv2.py
+```
+
+---
+
+## What the Builder Does
+
+For each entry in `configv2.yml`:
+
+1. Reads the source `.svg` from `source/official/{SourceDir}/`.
+2. Optimises it with `scour` (strips comments, IDs, normalises viewBox).
+3. Inlines CSS fill colours into element `style` attributes so PlantUML's SAX SVG parser renders them correctly.
+4. Resizes the source `.png` to 128×128 using Pillow (longest-side thumbnail, white background).
+5. Encodes the resized PNG as a PlantUML base64 sprite (`[128x128/16z]`).
+6. Writes a single `dist/{Target}.puml` containing:
+   - License header
+   - `!pragma svgparser sax`
+   - The SVG sprite (default, used with local `!include`)
+   - The PNG sprite with `_png` suffix (used when `!define GCP_USE_PNG` is set)
+   - The entity macro in snake_case: `!define {Target}(...)`
+7. Copies the full-size `.png` and `.svg` source files to `dist/{Target}.png` / `dist/{Target}.svg`.
+
+After all icons are processed:
+
+- `dist/GCPCommon.puml` is written with shared color constants and macro helpers.
+- `dist/GCPSimplified.puml` is written with the simplified-view macro overrides.
+- `dist/GCPRaw.puml` and `dist/GCPC4Integration.puml` are written.
+- `GCPSymbols.md` is regenerated at the repository root with a full icon reference table.
+
+**Output structure:**
+
+```
+dist/
+  GCPCommon.puml
+  GCPSimplified.puml
+  GCPRaw.puml
+  GCPC4Integration.puml
+  access_context_manager.puml
+  access_context_manager.png
+  access_context_manager.svg
+  app_engine.puml
+  app_engine.png
+  app_engine.svg
+  ... (one set per product)
+```
+
+---
+
+## Generating Example SVGs
+
+After regenerating `dist/`, re-render the example diagrams to `docs/images/`:
+
+```bash
+JAVA=/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home/bin/java
+$JAVA -jar scripts/plantuml.jar -tsvg -o docs/images examples/*.puml
+```
+
+---
+
+## v1 Archive
+
+The following files have been moved to [`archive/v1/`](../archive/v1/) and are kept for reference only:
+
+| File | Description |
+|---|---|
+| `archive/v1/icon-builder.py` | Original v1 builder (category-based output) |
+| `archive/v1/config.yml` | v1 category mapping configuration |
+| `archive/v1/requirements.txt` | v1 Python dependencies (subset of current) |
+| `archive/v1/scripts-README.md` | v1 build instructions |
+
+---
 
 ## License Summary
 
 Code is made available under the MIT license in `LICENSE-CODE`.
 
-The compiled [Plant-UML jar](http://plantuml.com/download), `scripts/plantuml.jar`, is licensed under the MIT license in `LICENSE-CODE`.
+The compiled [PlantUML jar](http://plantuml.com/download), `scripts/plantuml.jar`, is licensed under the MIT license in `LICENSE-CODE`.

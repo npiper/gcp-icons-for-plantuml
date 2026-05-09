@@ -7,12 +7,14 @@
 ' Add !define GCP_USE_PNG before any !include to activate grayscale PNG sprites
 ' No !pragma svgparser sax needed
 
+!define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
+
 !define GCP_USE_PNG
-!include ../dist/GCPCommon.puml
-!include ../dist/cloud_run.puml
-!include ../dist/cloud_build.puml
-!include ../dist/artifact_registry.puml
-!include ../dist/cloud_deploy.puml
+!includeurl GCPPuml/GCPCommon.puml
+!includeurl GCPPuml/cloud_run.puml
+!includeurl GCPPuml/cloud_build.puml
+!includeurl GCPPuml/artifact_registry.puml
+!includeurl GCPPuml/cloud_deploy.puml
 
 left to right direction
 
