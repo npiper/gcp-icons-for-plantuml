@@ -3,7 +3,9 @@
 'Copyright (c) 2020 David Holsgrove
 'SPDX-License-Identifier: MIT (For details, see https://github.com/npiper/gcp-icons-for-plantuml/blob/master/LICENSE-CODE)
 
+!pragma svgparser sax
 
+!define GCP_USE_SVG
 
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
 !includeurl GCPPuml/GCPCommon.puml
@@ -19,7 +21,7 @@ cloud_storage(storageAlias, "Label", "Technology", "Optional Description")
 personAlias --> desktopAlias
 desktopAlias --> storageAlias
 
-rectangle "Coding <$cloud_code_png*0.5>" {
+rectangle "Coding <$cloud_code>" {
 
 }
 
