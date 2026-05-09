@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $cloud_vision_api_png [72x72/16z] {
 xPC9SiCm200BsAZ__t3k17MyKrFHEzevVMrXgxpy99F9HFMJD24gQSpg8h4RKXtcXcfH4wAIfYuIso35OMAaIc6HyTgg_J8oD15zrtjBfwQ_Lz0CY7Y5ZqOI
 2oJpAByJFntGyFESvZ6uUMjkZzr0b4aZtYwuf2E9sdQQa-Rrn4c4hsLNjxFcAh9S97xe9yrDvFnkxcYqyBJCITBL7zY-n-BjLTyE5A9rsTjhwLxUf8Q7t9d_
@@ -15,7 +14,7 @@ GCPEntityColoring(cloud_vision_api)
 !define cloud_vision_api(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_vision_api_png, cloud_vision_api)
 !define cloud_vision_apiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_vision_api_png, cloud_vision_api)
 !define cloud_vision_apiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_vision_api_png, cloud_vision_api)
-!else
+!ifdef GCP_USE_SVG
 sprite $cloud_vision_api <svg viewBox="0 0 24 24" width="72" height="72"><g><g><rect width="24" height="24" fill="none"/><path fill="#669df6" d="M 6 12 L 12 16.99 L 12 20 L 2 12 Z"/><path fill="#669df6" d="M 12 16.99 L 18 12 L 22 12 L 12 20 Z"/><path fill="#aecbfa" d="M 2 12 L 12 4 L 12 7.01 L 6 12 Z"/><path fill="#aecbfa" d="M 12 7.01 L 18 12 L 22 12 L 12 4 Z"/><circle cx="12" cy="12" r="2" fill="#4285f4"/></g></g></svg>
 
 GCPEntityColoring(cloud_vision_api)

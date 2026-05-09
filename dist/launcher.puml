@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $launcher_png [72x72/16z] {
 rTO7akGW30LGHMJV_y0R76e-5h1Tu4s_uWHUjoGReFyl8gymx26lC1u0BJ0Uwn3xwOIiCnu0BJ0UYn0xEY6BZ0T02up72iIUdP0LnWEW1SO3eNd6OnPYJmv0
 iup796HZfymvgkO57PznhYAqB3b6TxYiEDZy1KS8elCELPbsbAhuIuxzOuw_t-VrkQy_X__0Um7lwSBxlhnlo7WVqvVsLQR9ZNLYM-MpgoF7u1zxKUVFpXq9
@@ -17,7 +16,7 @@ GCPEntityColoring(launcher)
 !define launcher(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, launcher_png, launcher)
 !define launcherParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, launcher_png, launcher)
 !define launcherParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, launcher_png, launcher)
-!else
+!ifdef GCP_USE_SVG
 sprite $launcher <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <rect width="24" height="24" fill="none"/> <g transform="translate(1 1)"> <path fill="#5C85DE" d="M 8.8 20.8 L 13.2 20.8 L 13.2 19.2 L 8.8 19.2 Z"/><path fill="#3367D6" d="M 11 20.8 L 13.2 20.8 L 13.2 19.2 L 11 19.2 Z"/><path fill="#5C85DE" d="M 18.7 22.2 L 21.6 14.1 L 17.7 11.9 L 15.3 19.3 L 16.7 22.2 Z"/><path fill="#3367D6" d="M 17.7 11.9 L 15.3 19.3 L 16.7 22.2 Z"/><path fill="#85A4E6" d="M 3.3 22.2 L 0.4 14.1 L 4.3 11.9 L 6.7 19.3 L 5.3 22.2 Z"/><path fill="#5C85DE" d="M 4.3 11.9 L 6.7 19.3 L 5.3 22.2 Z"/><path d="m11 10.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm0-10.7-5.2 5.2v5.5l2.3 8h5.8l2.3-8v-5.5l-5.2-5.2z" fill="#85A4E6"/> <path d="M11-0.2v5.8c1.4,0,2.5,1.1,2.5,2.5s-1.1,2.5-2.5,2.5v8h2.9l2.3-8V5 L11-0.2z" fill="#5C85DE"/> </g> </svg>
 
 GCPEntityColoring(launcher)

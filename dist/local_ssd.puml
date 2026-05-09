@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $local_ssd_png [72x72/16z] {
 xTK7RWCn44DHRXc9zxzm6lf05eTnz-v7buYNkED1dPsTaRTPacHDqGwf5UtSQgDMZPx348EgGuhhiaEMBtF1r4M5WMdCNJY7R6SAMDD9HwdEUIWd52D7yQKD
 EYrrt8HvfjB7okfvCLQQ-PybPS5VMt9DfGsFNONYeiYeA__VQO8HKepz5OMANsAw44gzBXIZMohx3PIRFgJhfPj_o-SQocsSzl-dLqjQcPowYY_Djc50ynzF
@@ -14,7 +13,7 @@ GCPEntityColoring(local_ssd)
 !define local_ssd(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, local_ssd_png, local_ssd)
 !define local_ssdParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, local_ssd_png, local_ssd)
 !define local_ssdParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, local_ssd_png, local_ssd)
-!else
+!ifdef GCP_USE_SVG
 sprite $local_ssd <svg version="1.1" viewBox="0 0 24 24" width="72" height="72"><g fill="none"><path d="m15.747 10.032 2.8075 1.6328c0.14496 0.084294 0.19415 0.27014 0.10986 0.41511-0.026046 0.044793-0.063122 0.082175-0.1077 0.10859l-4.1097 2.4345 4.3988 2.4855c0.095285 0.05387 0.1542 0.15486 0.1542 0.26431v2.3162c0 0.16769-0.13594 0.30363-0.30363 0.30363-0.053616 0-0.10628-0.014198-0.15263-0.041149l-6.6067-3.8415-6.4786 3.8399c-0.14427 0.085485-0.33052 0.037833-0.416-0.10643-0.027765-0.046857-0.042415-0.10032-0.042415-0.15478v-2.3138c0-0.10806 0.057432-0.20798 0.15081-0.26237l8.9063-5.1877-0.82812-0.46883 2.518-1.424zm-10.443-6.0246c0.053616 0 0.10628 0.014197 0.15263 0.041149l6.6057 3.8405 6.4796-3.8389c0.14427-0.085485 0.33052-0.037833 0.416 0.10643 0.027765 0.046857 0.042415 0.10032 0.042415 0.15478v2.3138c0 0.10806-0.057432 0.20798-0.15081 0.26237l-8.9063 5.1877 0.82812 0.46883-2.518 1.424-2.8075-1.6328c-0.14497-0.084294-0.19415-0.27014-0.10986-0.41511 0.026046-0.044793 0.063122-0.082175 0.1077-0.10859l4.1077-2.4345-4.3968-2.4855c-0.095285-0.05387-0.1542-0.15486-0.1542-0.26431v-2.3162c0-0.16769 0.13594-0.30363 0.30363-0.30363z" fill="#4285F4"/></g></svg>
 
 GCPEntityColoring(local_ssd)

@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $datashare_png [72x72/16z] {
 xPY7ZYGX30NR1hlU___mXMa9oLeEBVH8b_OfJoXo4QxVdg-OkNkxxlWhjadm7ea0yEkLZCoClW7ndW2WdncSLpxDiJu8EkTu5CWXnw90JZcjK8uv7Mc3Ox-O
 184sE2q5IfyqIXkSG82WNJM6DZWTo1wCRqVw3iUaLqKCoCh97Kw3kASRmWe7RN1YB3g4F-AqoddUBjcpVkxpVZRO6dT1f0J-zdbulYv8No-mytLgR_96libZ
@@ -16,7 +15,7 @@ GCPEntityColoring(datashare)
 !define datashare(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, datashare_png, datashare)
 !define datashareParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, datashare_png, datashare)
 !define datashareParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, datashare_png, datashare)
-!else
+!ifdef GCP_USE_SVG
 sprite $datashare <svg viewBox="0 0 24 24" width="72" height="72"><path d="M19.45,18.47a1.12,1.12,0,1,1,1.15-1.09,1.13,1.13,0,0,1-1.15,1.09Zm0,1A2.08,2.08,0,1,0,18,18.84a2.08,2.08,0,0,0,1.47.61Z" fill="#4285f4"/><path d="M19.46,4.33A2.07,2.07,0,0,0,18,7.87a2,2,0,0,0,1.47.6h0a2.08,2.08,0,1,0,0-4.15Zm.8,2.86a1.08,1.08,0,0,1-.81.31A1.11,1.11,0,1,1,20.6,6.42,1.14,1.14,0,0,1,20.26,7.19Z" fill="#4285f4"/><path d="M15.9,10h-.05v.95h.07a1.11,1.11,0,0,1,0,2.22h-.07v1h.07a2.08,2.08,0,1,0,0-4.15Z" fill="#4285f4"/><path d="M11.32,2C6.43,2,2.46,4,2.46,6.4s4,4.41,8.86,4.41h.1V2Z" fill="#4285f4"/><path d="M11.32,12.52a14,14,0,0,1-6.27-1.25A4.45,4.45,0,0,1,2.61,8.89H2.46V12h0c0,2.43,4,4.4,8.86,4.4h.1v-3.9Z" fill="#4285f4"/><path d="m11.32 18.1a14 14 0 0 1-6.27-1.24 4.45 4.45 0 0 1-2.44-2.38h-0.15v3.12c0 2.43 4 4.4 8.86 4.4h0.1v-3.9z" fill="#4285f4"/><rect x="13.64" y="2" width="2.22" height="20" fill="#669df6"/></svg>
 
 GCPEntityColoring(datashare)

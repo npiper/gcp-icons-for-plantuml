@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $cloud_firewall_rules_png [72x72/16z] xTMr5K0X5C3GBzZ-4rFZTGwvDSwJ1qXbAPq65DWwheEb_XVViZJCWAtZEW2oBxlEDMHVTXq0sKzTXqSL
 
 GCPEntityColoring(cloud_firewall_rules)
@@ -10,7 +9,7 @@ GCPEntityColoring(cloud_firewall_rules)
 !define cloud_firewall_rules(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_firewall_rules_png, cloud_firewall_rules)
 !define cloud_firewall_rulesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_firewall_rules_png, cloud_firewall_rules)
 !define cloud_firewall_rulesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_firewall_rules_png, cloud_firewall_rules)
-!else
+!ifdef GCP_USE_SVG
 sprite $cloud_firewall_rules <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="1.98" y="2" width="8.89" height="2.22" fill="#4285f4"/><rect x="1.98" y="19.78" width="8.89" height="2.22" fill="#4285f4"/><rect x="1.98" y="10.89" width="8.89" height="2.22" fill="#4285f4"/><rect x="13.09" y="2" width="8.89" height="2.22" fill="#4285f4"/><rect x="13.09" y="19.78" width="8.89" height="2.22" fill="#4285f4"/><rect x="13.09" y="10.89" width="8.89" height="2.22" fill="#4285f4"/><rect x="7.53" y="6.44" width="8.89" height="2.22" fill="#4285f4"/><rect x="7.53" y="15.33" width="8.89" height="2.22" fill="#4285f4"/><rect x="1.98" y="6.44" width="3.33" height="2.22" fill="#4285f4"/><rect x="1.98" y="15.33" width="3.33" height="2.22" fill="#4285f4"/><rect x="18.65" y="6.44" width="3.33" height="2.22" fill="#4285f4"/><rect x="18.65" y="15.33" width="3.33" height="2.22" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(cloud_firewall_rules)

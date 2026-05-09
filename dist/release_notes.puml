@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $release_notes_png [72x72/16z] {
 xTDLaeL058FXuDd_XcUke-dYe6t_SzU7111lEVhbaEr13d507SaQU-EtdKfVWoEe_SEL_KFH3JLSRBgNUxY2gdwm7gHULJRzdckNmnLEFJngPeXH5J-P7Jd5
 PeVJgcK78WMrC3Xorm8mE4e2O73asShWk20SutGhd1K_2E6LK-CO1o4wkg0S-_kfNkrt-CeJ9pkwm1rEyjR9ZYXQ9pk6hd0gCoCwoe6TsIyXy7B_
@@ -13,7 +12,7 @@ GCPEntityColoring(release_notes)
 !define release_notes(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, release_notes_png, release_notes)
 !define release_notesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, release_notes_png, release_notes)
 !define release_notesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, release_notes_png, release_notes)
-!else
+!ifdef GCP_USE_SVG
 sprite $release_notes <svg viewBox="0 0 24 24" width="72" height="72"><path transform="translate(3 1)" d="m9.4737 4.1579v2.1053h-7.3684v12.863h12.632v-7.6h2.1053v7.3684c0 1.1579-0.94737 2.1053-2.1053 2.1053h-12.632c-1.1579 0-2.1053-0.94737-2.1053-2.1053v-12.632c0-1.1579 0.94737-2.1053 2.1053-2.1053zm0 10.526v2.1053h-5.2632v-2.1053zm3.1579-3.1579v2.1053h-8.4211v-2.1053zm0-3.1579v2.1053h-8.4211v-2.1053zm3.1579-5.2632 0.98684 2.1711 2.1711 0.98684-2.1711 0.98684-0.98684 2.1711-0.98684-2.1711-2.1711-0.98684 2.1711-0.98684zm-3.1579-2.1053 0.65789 1.4474 1.4474 0.65789-1.4474 0.65789-0.65789 1.4474-0.65789-1.4474-1.4474-0.65789 1.4474-0.65789z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(release_notes)

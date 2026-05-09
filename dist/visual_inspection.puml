@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $visual_inspection_png [72x72/16z] {
 xTA7Je9H44JXlJM-_mlRzIYmcTn_w71I59XyMKeyLi-UrHB7gBrt50R8P7oejj-gUGoP39aCcHyDLVCOCXao6N8LCXaoVdpBKBfNa3vc_IInL10xxT0Qy_AP
 Wd861Kb1B0W6A5a9ve0ZePQUG_aGPTqX6Ci1cWTAd6GBP3WHjCr1IQ7OW_ATXjGvC5IoW_9pIXni3q9A5nhgOW4Z8B484j185xosVjByEmXH-bdoVmW6A8tB
@@ -14,7 +13,7 @@ GCPEntityColoring(visual_inspection)
 !define visual_inspection(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, visual_inspection_png, visual_inspection)
 !define visual_inspectionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, visual_inspection_png, visual_inspection)
 !define visual_inspectionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, visual_inspection_png, visual_inspection)
-!else
+!ifdef GCP_USE_SVG
 sprite $visual_inspection <svg viewBox="0 0 24 24" width="72" height="72"><path d="M14.28,15.33l1.93,1.93L12,20.65,1.2,12H8a4,4,0,0,0,4,4h0A4.09,4.09,0,0,0,14.28,15.33ZM16,12a4,4,0,0,1-.64,2.18l2.08,2.1L22.81,12Z" fill="#669df6"/><path d="M12,3.36,1.2,12H8a4,4,0,0,1,4-4h0a4,4,0,0,1,4,4h6.79Z" fill="#aecbfa"/><path d="M12,9.57a2.37,2.37,0,0,1,1.71.71,2.4,2.4,0,0,1,0,3.43,2.41,2.41,0,0,1-3.42,0,2.4,2.4,0,0,1,0-3.43A2.37,2.37,0,0,1,12,9.57Z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(visual_inspection)

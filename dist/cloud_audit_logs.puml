@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $cloud_audit_logs_png [72x72/16z] {
 xTS7ZcGX30JGjKsPV_yJBnAUgKvqWJO7A_tuoEdBtnN_mpp2xPiPznZX_ZsORuUic6yjcjFnRt4Y68T_0g6SrZi4qv29M9QhcElgAPa1lQ_dFfm1IIQnQ7Sw
 1Gac5lsGvNeBjPnCK-C2Rw46CY88AMOVqeNQXtHkl06PGFWQqamWFmBn06L1k7luYd4CXb4fsYFqx91X7XasYvEFa3qvhnbWLj5aEcl4f4C6sS8zWFR9sATp
@@ -16,7 +15,7 @@ GCPEntityColoring(cloud_audit_logs)
 !define cloud_audit_logs(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_audit_logs_png, cloud_audit_logs)
 !define cloud_audit_logsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_audit_logs_png, cloud_audit_logs)
 !define cloud_audit_logsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_audit_logs_png, cloud_audit_logs)
-!else
+!ifdef GCP_USE_SVG
 sprite $cloud_audit_logs <svg viewBox="0 0 24 24" width="72" height="72"><g><g><path d="M12.77,12.72a1.07,1.07,0,0,1-1.52,0L9.76,11.23l.76-.76L12,11.93l4.2-4.2.81.79Z" fill="#4285f4"/><path d="M16,11.59a.91.91,0,0,0-.81.81,3.21,3.21,0,0,1-2.86,2.76,3.25,3.25,0,0,1-1.84-.36,3.19,3.19,0,0,1,1.2-6,3.07,3.07,0,0,1,1.21.13.9.9,0,0,0,1-.28h0a.91.91,0,0,0-.4-1.45A5,5,0,0,0,7,12.49,5,5,0,0,0,12.48,17,5,5,0,0,0,17,12.63a.91.91,0,0,0-1-1Z" fill="#669df6"/><path d="m12 18a2 2 0 1 1-2 2 2 2 0 0 1 2-2" fill="#aecbfa"/><path d="m12 2a2 2 0 1 1-2 2 2 2 0 0 1 2-2" fill="#aecbfa"/><rect width="24" height="24" fill="none"/></g><path d="M18,20a1,1,0,0,1-.71-1.7L20,15.59V8.41L17.31,5.7a1,1,0,0,1,0-1.41,1,1,0,0,1,1.42,0l3,3A1,1,0,0,1,22,8v8a1,1,0,0,1-.29.7l-3,3A1,1,0,0,1,18,20Z" fill="#4285f4"/><path d="M6,20a1,1,0,0,1-.71-.3l-3-3A1,1,0,0,1,2,16V8a1,1,0,0,1,.29-.71l3-3a1,1,0,0,1,1.42,0,1,1,0,0,1,0,1.41L4,8.41v7.18L6.69,18.3a1,1,0,0,1,0,1.42A1,1,0,0,1,6,20Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(cloud_audit_logs)

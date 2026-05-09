@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $access_context_manager_png [72x72/16z] {
 xTW53W9134PXjasQtl_4nD27Tbu4-QFOjpRIilks_1FXC9dXC81c3A0vaxdev36BZ055NYG41j3e5WEQCO1c3A0P0sZCp24mUEzTXkzkotDgoY13XbbZDdwj
 9cTJXBe65rM4kklzUrE4-Y5qPE0KdNw1eLDq2F6YwDG6f-iXGuTG0o93Xr038aE7K0CYGuTG0n8SvRh4--m_TmvdEXpFBSqBQPvQwuQqZadhghJE2_kEjm_w
@@ -14,7 +13,7 @@ GCPEntityColoring(access_context_manager)
 !define access_context_manager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, access_context_manager_png, access_context_manager)
 !define access_context_managerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, access_context_manager_png, access_context_manager)
 !define access_context_managerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, access_context_manager_png, access_context_manager)
-!else
+!ifdef GCP_USE_SVG
 sprite $access_context_manager <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#aecbfa" d="M 12 19.27 L 4.72 12 L 12 4.72 L 15.64 8.36 L 17 7 L 12 2 L 2 12 L 12 22 L 17 17 L 15.64 15.64 Z"/><path fill="#4285f4" d="M 18.36 8.36 L 22 12 L 18.36 15.64 Z"/><path fill="#669df6" d="M 12 8.36 L 15.64 12 L 12 15.64 Z"/></g></svg>
 
 GCPEntityColoring(access_context_manager)

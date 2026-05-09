@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $cloud_run_for_anthos_png [72x72/16z] {
 xPC9kXiX38DZ6opkV-8MHnzkDjg1wJvwQnR-o9Av_JMwT4dEmHZEuG1s1gO0PnWIeA7iSofQQv1zEwrpV9VZQ07IFOp6LFk6W8Og7MHxdKV65GtOjLEskwUF
 zBNHEInpMkzyN0d3UlVAisGkTuzlZwvtRm_PBdUVqKePXif6vmAKx7wrS-xWSlTEEn8N7cMnUtPE344Em1Sw9mRnKmYtuvqJKnK84BC_t3anD89okFjo_rmd
@@ -17,7 +16,7 @@ GCPEntityColoring(cloud_run_for_anthos)
 !define cloud_run_for_anthos(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_run_for_anthos_png, cloud_run_for_anthos)
 !define cloud_run_for_anthosParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_run_for_anthos_png, cloud_run_for_anthos)
 !define cloud_run_for_anthosParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_run_for_anthos_png, cloud_run_for_anthos)
-!else
+!ifdef GCP_USE_SVG
 sprite $cloud_run_for_anthos <svg viewBox="0 0 24 24" width="72" height="72"><path d="M6.42,13a3.92,3.92,0,0,0,0,7.83,3.92,3.92,0,0,0,0-7.83ZM6,17.09,5.37,19.2l-.83.42.62-2.53h0l-.62-2.52.83.42L6,17.09Zm0,2.53.83-2.53L6,14.57l3.32,2.52Z" fill="#aecbfa"/><path d="M12.75,3.13,7.47,12.42a4.61,4.61,0,0,1,1.26.5l4-7.06,4.32,7.57L12.75,9.06,8.86,13a4.37,4.37,0,0,1,1,.89L12.75,11l4.57,4.64-4.57-2.07L10.4,14.62a4.48,4.48,0,0,1,.5,1.27l1.85-.83,4.36,2H11a4.67,4.67,0,0,1-.22,1.36H21.43Z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(cloud_run_for_anthos)

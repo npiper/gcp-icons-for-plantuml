@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $certificate_authority_service_png [72x72/16z] {
 fTW73kKW40DG6ChOzp_mrWX-SDW_PAsUyZGuJKhwcjAxfUEeukxUotyXkRex0BXxpQ-LveuhxoKRog3Gx4qja4XHmLh2KbmvBSeQ156gsN4jxlrnevqelUHh
 iQLhKT5QMhxVJe6Yz6w1JcwkHTqb4mKjFQH1f1jamjIKGX34aMcsKDpfQHi_SVBUiGEdtIuaSBiiBU38liOhaxQmCzjn4YG9ycDZr1atV2Tu1NEYofWpTXbl
@@ -17,7 +16,7 @@ GCPEntityColoring(certificate_authority_service)
 !define certificate_authority_service(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, certificate_authority_service_png, certificate_authority_service)
 !define certificate_authority_serviceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, certificate_authority_service_png, certificate_authority_service)
 !define certificate_authority_serviceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, certificate_authority_service_png, certificate_authority_service)
-!else
+!ifdef GCP_USE_SVG
 sprite $certificate_authority_service <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <g transform="translate(3)"> <path d="M9,0l-9.7,4.4v6.5C-0.8,17,3.4,22.6,9,24c5.6-1.4,9.7-7,9.7-13.1V4.4L9,0L9,0z" fill="#4285F4"/> <path d="m18.7 12c-0.1 0.8-0.2 1.6-0.4 2.2-0.2 0.9-0.5 1.6-0.7 2.1-0.1 0.3-0.2 0.5-0.3 0.7-0.2 0.3-0.3 0.6-0.5 0.9-0.4 0.7-0.8 1.2-1.2 1.7s-0.9 1-1.5 1.6c-0.6 0.5-0.7 0.7-1.4 1.1s-1.1 0.7-2.4 1.2c-0.3 0.2-0.7 0.3-1.3 0.5l-3.2-4.4v-13.6h7.9l5 6z" fill="#2879EA"/> <path d="m9 3.3c3 0 5.4 2.4 5.4 5.5 0 1.8-0.8 3.4-2.2 4.4v6.5l-3.2-3.1-3.2 3.1v-6.5c-1.3-1-2.2-2.6-2.2-4.4 0-3.1 2.4-5.5 5.4-5.5zm0 8.2c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.8-2.7-2.8-2.7 1.2-2.7 2.7 1.2 2.8 2.7 2.8z" fill="#fff"/> </g> </svg>
 
 GCPEntityColoring(certificate_authority_service)

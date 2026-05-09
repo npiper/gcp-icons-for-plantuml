@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $data_layers_png [72x72/16z] {
 xTG7RiCm34PXRUh-9suI_na4sEUemkXwcF5WFY-bFzL__-LQSzglb5fBsSUKUgdKl8jHEwHy7oFI9cQF98pkZmRbhs1qPhsagSkaN9-drKjPW-4kCKPpqYKc
 CUPr3f4Ou-OGYJ5-3f4Oeqfh6WeamgW-PqyAI8n9USnBGvk0n9XcDY-PDIATOsmg0vB37EK0SqaaEa4QlzbZFCdFAPzTLu1nfF3eKEem0Icyg9ZaCPu464yg
@@ -15,7 +14,7 @@ GCPEntityColoring(data_layers)
 !define data_layers(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, data_layers_png, data_layers)
 !define data_layersParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, data_layers_png, data_layers)
 !define data_layersParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, data_layers_png, data_layers)
-!else
+!ifdef GCP_USE_SVG
 sprite $data_layers <svg viewBox="0 0 24 24" width="72" height="72"><rect x="11.25" y="4.1" width="1.5" height="4.64" fill="#aecbfa"/><path d="M12,20.8,2.25,14.32,12,7.84l9.75,6.48ZM5,14.32,12,19l7-4.68L12,9.64Z" fill="#669df6"/><path d="M12,16.16,2.25,9.68,12,3.2l9.75,6.48ZM5,9.68l7,4.68,7-4.68L12,5Z" fill="#aecbfa"/><path d="M18.26,12,12,7.84,5.74,12,12,16.16Z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(data_layers)

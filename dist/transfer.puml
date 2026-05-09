@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $transfer_png [72x72/16z] {
 xPV50GCn3C1yhFqNBhxBYkk7DO0EGagaq3HiaWSi3rWU38zZGXB1swQ9DrcVUtYVPvg33pY4rxbZUJWa3zJoh8F_yyu7RDey54HJmZhDtZSgxQjxfNDdYI4q
 2uf6p88gTM4dGK9OQCsHaHmRYWSCpuhYWJzvXAop_xFoIXdf-y7ePuN51SGcSFTLILJgOXiRaKBJd04
@@ -13,7 +12,7 @@ GCPEntityColoring(transfer)
 !define transfer(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, transfer_png, transfer)
 !define transferParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, transfer_png, transfer)
 !define transferParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, transfer_png, transfer)
-!else
+!ifdef GCP_USE_SVG
 sprite $transfer <svg version="1.1" viewBox="0 0 24 24" width="72" height="72"><g fill="none"><g transform="translate(3 2)" fill="#4285F4"><path d="m11 3v-2.5l7 4.5-7 4.5v-2.5h-8.885c-0.55228 0-1-0.44772-1-1v-2c0-0.55228 0.44772-1 1-1h8.885zm-4 7.5v2.5h8.8315c0.5523 0 1 0.4477 1 1v2c0 0.5523-0.4477 1-1 1h-8.8315v2.5l-7-4.5 7-4.5z"/></g></g></svg>
 
 GCPEntityColoring(transfer)

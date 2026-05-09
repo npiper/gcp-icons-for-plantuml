@@ -1,6 +1,5 @@
 @startuml Two Modes - Simple View
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/GCPSimplified.puml
 !includeurl GCPPuml/cloud_endpoints.puml

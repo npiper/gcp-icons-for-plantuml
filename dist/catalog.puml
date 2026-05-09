@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $catalog_png [72x72/16z] {
 xTH54iC034DHXUFx7xWCAhYQZ5tsNwklONnwLJM8_j3HVQipFAgSExt9cUxtBAUSSdIZuomkoy4z1ogxYY1od2LbFWJuZ7PC7BTmAC48HrIE-adOeMt0uVqO
 SC09HpDpZrqnnxPDsDHf1suyI70iw5YIqqed__hmyEPSaE2SLYtD5piy3peZg9pt7HPohAVfrtvNo_ddgZK
@@ -13,7 +12,7 @@ GCPEntityColoring(catalog)
 !define catalog(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, catalog_png, catalog)
 !define catalogParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, catalog_png, catalog)
 !define catalogParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, catalog_png, catalog)
-!else
+!ifdef GCP_USE_SVG
 sprite $catalog <svg overflow="visible" baseProfile="tiny" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <rect width="24" height="24" fill="none"/> <g transform="translate(3 4)"> <path d="m9.9 13.6c0.3 1.2 1.4 2.1 2.7 2.1 1.6 0 2.8-1.3 2.8-2.8s-1.3-2.8-2.8-2.8c-1.3 0-2.4 0.9-2.7 2.1h-7.3v1.5h7.3zm8.9 4.2h-19.6v-10.6h5.2l1.6 1.6h6l1.5-1.5h5.2v10.5zm-13.9-4.2h-1.5v1.5h1.5v-1.5zm2.2 0h-1.5v1.5h1.5v-1.5zm4.1-0.7c0 0.8 0.6 1.4 1.4 1.4s1.4-0.6 1.4-1.4-0.6-1.4-1.4-1.4-1.4 0.6-1.4 1.4z" fill="#3367D6"/> <path fill="#5C85DE" d="M 8.2 8 L 6.4 8 L 5.1 6.5 L 0.8 6.5 L 0.8 3.5 L 8.2 3.5 Z"/><path fill="#85A4E6" d="M 12.8 6.8 L 11.5 8 L 9 8 L 9 2.8 L 3 2.8 L 3 1.2 L 12.8 1.2 Z"/><path fill="#85A4E6" d="M 17.2 6.5 L 13.5 6.5 L 13.5 0.5 L 6.8 0.5 L 6.8 -1 L 17.2 -1 Z"/></g> </svg>
 
 GCPEntityColoring(catalog)

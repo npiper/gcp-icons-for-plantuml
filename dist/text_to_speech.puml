@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $text_to_speech_png [72x72/16z] {
 xT87UkH024HXHAiexd_XNPjsubCMpkutEVsJIkgDHYE5qUP9YitigPG2FIf26ipZ6QtwSKW6f0M7322uLd3YWuYqHsUkE_DFSM2By3fWne3FEBQIzC2UtdIG
 1-pKokTH-bEq4mvWEG2l7uSUvxfmBWwuJHON1IUzyBiumsbRNNGCXjMCpYlETlIw4t7RuMFRtojdUuvdHxLjffgT1NkXROSVx0odrPr6Tq9quS2sGbjnD2uP
@@ -14,7 +13,7 @@ GCPEntityColoring(text_to_speech)
 !define text_to_speech(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, text_to_speech_png, text_to_speech)
 !define text_to_speechParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, text_to_speech_png, text_to_speech)
 !define text_to_speechParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, text_to_speech_png, text_to_speech)
-!else
+!ifdef GCP_USE_SVG
 sprite $text_to_speech <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="2.01" y="6.99" width="6.64" height="1.67" fill="#669df6"/><path fill="#669df6" d="M 11.17 15.32 L 2 15.32 L 2 16.99 L 2 16.99 L 11.17 16.99 Z"/><path fill="#669df6" d="M 4.51 11.16 L 2 11.16 L 2 12.82 L 6.18 12.82 L 12 12.82 L 10.33 11.16 Z"/><path d="M12,9.07a.42.42,0,0,1,.42-.36.41.41,0,0,1,.41.36v9.18a2.09,2.09,0,0,0,2.61,2A2.16,2.16,0,0,0,17,18.14V5.75a.4.4,0,0,1,.19-.4.41.41,0,0,1,.45,0,.4.4,0,0,1,.19.4v9.16a2.07,2.07,0,0,0,.81,1.64,2,2,0,0,0,1.8.37A2.16,2.16,0,0,0,22,14.8V12H20.33v2.92a.4.4,0,0,1-.19.4.41.41,0,0,1-.45,0,.4.4,0,0,1-.19-.4V5.75a2.09,2.09,0,0,0-2.61-2,2.16,2.16,0,0,0-1.56,2.13V18.25a.4.4,0,0,1-.19.4.41.41,0,0,1-.45,0,.4.4,0,0,1-.19-.4V9.08a2.07,2.07,0,0,0-4.11-.36,2.4,2.4,0,0,0-.05.46v2L12,12.82V9.07Z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(text_to_speech)

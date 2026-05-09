@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $tensorflow_enterprise_png [72x72/16z] {
 xTP7ieD0303H_j5z_nDxvoA9GkIWNgiUcHaEhAegGHQdWhfOKT15qfTDnwy59zDqT8dIT7IsqdJoah5ZJeaTpIcnepabTZJ7n8wFT-Wxv9te-yevlqGElma7
 OWUcEZ3km1G7OkUlEJVQ3sEEDWOdb_d_v1rVApbUnIa7rd9WBOUr7Axeb5CENUVe_JpmSLuiJ46vVbLLlG4
@@ -13,7 +12,7 @@ GCPEntityColoring(tensorflow_enterprise)
 !define tensorflow_enterprise(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, tensorflow_enterprise_png, tensorflow_enterprise)
 !define tensorflow_enterpriseParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, tensorflow_enterprise_png, tensorflow_enterprise)
 !define tensorflow_enterpriseParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, tensorflow_enterprise_png, tensorflow_enterprise)
-!else
+!ifdef GCP_USE_SVG
 sprite $tensorflow_enterprise <svg version="1.1" viewBox="0 0 24 24" width="72" height="72"><g fill="none"><path d="m12.301 4 6.69 3.9033 0.0091322 3.5409-4.0267-2.3761v1.7882l2.0073 1.1714 0.011208 3.0789-2.0185-1.1929v4.5015l-2.6724 1.5849v-16zm-0.60177-3.179e-5v16l-2.6724-1.5849v-9.3469l-4.0267 2.376 0.0091322-3.5409 6.69-3.9033z" fill="#4285F4"/></g></svg>
 
 GCPEntityColoring(tensorflow_enterprise)

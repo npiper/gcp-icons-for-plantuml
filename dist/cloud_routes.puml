@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $cloud_routes_png [72x72/16z] {
 xTW7ZWGX34JH9jZ5_I-yYPrGdfA51Chz3s0nhmchlPQwkslNcRnVHpApScGzxaS6-M_rq1nlX-ROjhRvJ24vdhaoxFRAPt8GC30RWDXwvYAXZV4AVeMg6AEr
 GOC2ON4HQUiv0qt1wgp8EJCKCIPRaPv3rZrVJbE_YwtPM5UL3rldnde73Sp8EkB4VIZkZ_fRguOteXBMOst6mZf_7nHyIlX-xKe2edMt81g4THKVrXQ-hn0M
@@ -16,7 +15,7 @@ GCPEntityColoring(cloud_routes)
 !define cloud_routes(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_routes_png, cloud_routes)
 !define cloud_routesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_routes_png, cloud_routes)
 !define cloud_routesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_routes_png, cloud_routes)
-!else
+!ifdef GCP_USE_SVG
 sprite $cloud_routes <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#4285f4" d="M 16.68 18.94 L 12.81 18.94 L 4.43 8.45 L 2 8.45 L 2 5.02 L 5.94 5.02 L 14.34 15.51 L 16.68 15.51 L 16.68 12.79 L 22 17.22 L 16.68 21.65 Z"/><path fill="#669df6" d="M 12.46 10.84 L 14.34 8.49 L 16.68 8.49 L 16.68 11.21 L 22 6.78 L 16.68 2.35 L 16.68 5.06 L 12.81 5.06 L 10.33 8.17 Z"/><path fill="#669df6" d="M 6.33 13.16 L 4.43 15.55 L 2 15.55 L 2 18.98 L 5.94 18.98 L 8.46 15.83 Z"/></g></svg>
 
 GCPEntityColoring(cloud_routes)

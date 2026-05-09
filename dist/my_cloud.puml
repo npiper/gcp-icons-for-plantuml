@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $my_cloud_png [72x72/16z] {
 xTO5ZiD034RXqCJtF_5k-IzOLl9Shfyuy8KyQhibLLLLLQCTwhE8cfWosqqpOCmjgoZ8j6vNGv1xpdfeqWaUtrRUJh03C1XgqR4BXzjEnKSidk3uKh7ZJ1ku
 eUOmu8Oc8MFVSySEWM67Ws4AC2fQ_G4JE-OnnB70mSiGC1eLu0GhMZ3-BG2l9vxj-KxEa7EQm-PUq5tlnwXp_SUYnmwweUYqFh721cVHJN2XAfD466Kmt-UC
@@ -14,7 +13,7 @@ GCPEntityColoring(my_cloud)
 !define my_cloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, my_cloud_png, my_cloud)
 !define my_cloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, my_cloud_png, my_cloud)
 !define my_cloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, my_cloud_png, my_cloud)
-!else
+!ifdef GCP_USE_SVG
 sprite $my_cloud <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve" width="72" height="72"> <g transform="translate(0 1)"> <rect width="24" height="24" fill="none"/> <g transform="translate(2 7)"> <path fill="#5C85DE" d="M -2 17 L 22 17 L 22 -7 L -2 -7 Z"/></g> </g> </svg>
 
 GCPEntityColoring(my_cloud)

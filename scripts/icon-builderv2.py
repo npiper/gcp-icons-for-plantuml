@@ -474,16 +474,23 @@ def _encode_png_sprite(png_path):
 
 
 def generate_puml(target, svg_string, color, png_sprite, out_dir):
-    """Write a .puml with dual SVG (default) and PNG (!define GCP_USE_PNG) sprites."""
+    """Write a .puml with dual PNG (default) and SVG (!define GCP_USE_SVG) sprites.
+
+    Default (no define): PNG sprite — works with any PlantUML version and remote
+    !includeurl.  Sprite name is {target}_png.
+
+    Opt-in SVG: add !pragma svgparser sax and !define GCP_USE_SVG before any
+    !include.  Requires PlantUML >= 1.2026.x and local file includes.  Sprite
+    name is {target} (no suffix), coloured and scalable.
+    """
     p = target + "_png"
 
     content = PUML_LICENSE_HEADER
     content += "\n"
 
     if png_sprite:
-        content += "!ifdef GCP_USE_PNG\n"
-        # PNG sprite block — plantuml.jar emits e.g. "sprite $name [48z]\nABC...\n"
-        # Rename the sprite to {target}_png so both can coexist when needed
+        # PNG sprite block — default (no define required)
+        # Rename the sprite to {target}_png so it coexists with the SVG sprite.
         content += png_sprite.replace(f"sprite ${target} ", f"sprite ${p} ", 1) + "\n"
         content += "\n"
         content += f"GCPEntityColoring({target})\n"
@@ -491,9 +498,9 @@ def generate_puml(target, svg_string, color, png_sprite, out_dir):
         content += f"!define {target}(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, {color}, {p}, {target})\n"
         content += f"!define {target}Participant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, {color}, {p}, {target})\n"
         content += f"!define {target}Participant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, {color}, {p}, {target})\n"
-        content += "!else\n"
+        content += "!ifdef GCP_USE_SVG\n"
 
-    # SVG sprite block (default)
+    # SVG sprite block (opt-in via !define GCP_USE_SVG)
     content += f"sprite ${target} {svg_string}\n"
     content += "\n"
     content += f"GCPEntityColoring({target})\n"

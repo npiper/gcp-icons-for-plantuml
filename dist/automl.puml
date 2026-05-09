@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $automl_png [72x72/16z] {
 xPU5jiCm34DjDQxw_pyyZ8VEYVqOTdTWl2kf8_cXl7W1tc1oG5l75ib3RbTuUYJCWMHPkDr0gXnevbHr7AwdPEPaanatvpRPKaoct1uWvGt9LcwFqC9a-P8T
 uZwPLakE9siofQLryYNdwuatV_zSY7JgXuzldZkSDRqvJ-WW5RARqvO3a2DmL3g09ahsG4CKG6vp3iLTK3CbqsOwGAfadUa0cYYvpNM0wHkBp3mDT5hoCadL
@@ -15,7 +14,7 @@ GCPEntityColoring(automl)
 !define automl(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, automl_png, automl)
 !define automlParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, automl_png, automl)
 !define automlParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, automl_png, automl)
-!else
+!ifdef GCP_USE_SVG
 sprite $automl <svg viewBox="0 0 24 24" width="72" height="72"><g><path fill="#4285f4" d="M 4.5 16.72 L 9.5 8.14 L 11.17 8.14 L 12.83 5.57 L 11.15 3 L 7 3 L 2 11.58 Z"/><path fill="#669df6" fill-opacity="0.8" d="M 14.5 5.57 L 12.83 8.14 L 16.17 8.14 L 17.83 5.57 L 16.17 3 L 12.83 3 Z"/><path fill="#aecbfa" fill-opacity="0.6" d="M 19.5 7.28 L 14.5 15.86 L 12.83 15.86 L 11.17 18.43 L 12.85 21 L 17 21 L 22 12.42 Z"/><path fill="#669df6" fill-opacity="0.8" d="M 11.17 21 L 9.5 18.43 L 11.17 15.86 L 7.83 15.86 L 6.17 18.43 L 7.83 21 Z"/></g></svg>
 
 GCPEntityColoring(automl)

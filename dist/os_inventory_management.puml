@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $os_inventory_management_png [72x72/16z] {
 xTS55W8n30JGrEV-5yOXDFjMqk1aqDfVD_gTU02WsPLhZ0p7pDWXz7cB0vaoKwbaC5EjO-QTyY07MWTShNHcID4qZxZZZg6NE-veuqv0tuPpj0wkQQAiSy29
 eZpgG1Ihmi5zWYYFElWT9oxTDnYsLnZTxYJ6wHq9aM5_vgOcZhSVEFyK00Xzvwntv7gD_4HbsEvq_BMVDuWzCZeaeZzE6y_Eh8XffjLYH7sYKpOueHiCZ3v_
@@ -14,7 +13,7 @@ GCPEntityColoring(os_inventory_management)
 !define os_inventory_management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, os_inventory_management_png, os_inventory_management)
 !define os_inventory_managementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, os_inventory_management_png, os_inventory_management)
 !define os_inventory_managementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, os_inventory_management_png, os_inventory_management)
-!else
+!ifdef GCP_USE_SVG
 sprite $os_inventory_management <svg xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 24 24" width="72" height="72"><g><use fill="#4285F4" ns1:href="#a"/></g></svg>
 
 GCPEntityColoring(os_inventory_management)

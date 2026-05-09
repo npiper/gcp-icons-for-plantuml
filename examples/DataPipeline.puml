@@ -1,6 +1,5 @@
 @startuml Data Pipeline - GCP v2
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/iot_core.puml
 !includeurl GCPPuml/pubsub.puml

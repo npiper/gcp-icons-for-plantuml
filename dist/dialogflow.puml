@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $dialogflow_png [72x72/16z] {
 xTE7TSGm40DHPh3_YkqNBwr6METmKy0NIJoLFzQpEaRz26MzHfAlaEGhBFaAItc59LPOoYiiiSAIhx2KL_9IkrTOQX_jVFozyk_yLRkpn0fBUMMsp7_Qrv6p
 TIU1qfPqv6ZhJYA5d1r8iR8tEe4KAoTEA0MAvTnBzuhXW7HH30UaYv9pBj95yPrOQlEYP9sBT55i9vGYXHtexpfFHndcs6aPIAkLmuOhIQDGTLgILYqdjQLJ
@@ -14,7 +13,7 @@ GCPEntityColoring(dialogflow)
 !define dialogflow(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dialogflow_png, dialogflow)
 !define dialogflowParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dialogflow_png, dialogflow)
 !define dialogflowParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dialogflow_png, dialogflow)
-!else
+!ifdef GCP_USE_SVG
 sprite $dialogflow <svg viewBox="0 0 24 24" width="72" height="72"><g><g><g><path d="M12,12,4,8v6.76a.49.49,0,0,0,.19.39L8.83,17.9a.32.32,0,0,1,.17.29V21.7a.17.17,0,0,0,.26.14l10.51-6.69a.5.5,0,0,0,.23-.42V8Z" fill="#4285f4"/></g></g><path d="M12,10l8-4L12.12,2.06a.25.25,0,0,0-.24,0L4,6Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(dialogflow)

@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $apigee_api_platform_png [72x72/16z] {
 xTZPUXiX38RX0f9-t_yDTo5gz91lffgUTOaE3Rnc5SPV_khuZ6d-8snU5oyFIU5h_0eP5XvluM43nQuAlvTMdB7EOfDU5PBTCEPnXXyrFPMIufBnGBXNSIIp
 1mK8Z8URLS_y0wDNk7kyT0UjR9eBCLP1nKYMnJbNcAEHhKPzukzGCREAywDnEbPj01LJZNxQyjE97IUUa3kPNInsQ7f4-DulX4HcX-qEBGvhLmIaN1gMSc2U
@@ -18,7 +17,7 @@ GCPEntityColoring(apigee_api_platform)
 !define apigee_api_platform(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, apigee_api_platform_png, apigee_api_platform)
 !define apigee_api_platformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, apigee_api_platform_png, apigee_api_platform)
 !define apigee_api_platformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, apigee_api_platform_png, apigee_api_platform)
-!else
+!ifdef GCP_USE_SVG
 sprite $apigee_api_platform <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="M5.2,12l1.32-1.32L4.73,8.89a2.94,2.94,0,0,1,2.08-5,2.92,2.92,0,0,1,2.07.86l1.8,1.79L12,5.2,10.21,3.41a4.81,4.81,0,1,0-6.8,6.8Z" fill="#669df6"/><path d="M18.8,12l-1.32,1.32,1.79,1.8a2.94,2.94,0,0,1-4.16,4.15l-1.79-1.79L12,18.8l1.79,1.79a4.81,4.81,0,1,0,6.8-6.8Z" fill="#669df6"/><path d="m8.89 19.27a2.94 2.94 0 0 1-4.16-4.16l1.79-1.79 4.16 4.16zm6.23-14.54a2.93 2.93 0 0 1 5 2.08 3 3 0 0 1-0.86 2.08l-1.79 1.79-4.15-4.16zm-3.12 10.46a3.2 3.2 0 0 1-3.19-3.19 3.21 3.21 0 0 1 3.19-3.19 3.21 3.21 0 0 1 3.19 3.19 3.2 3.2 0 0 1-3.19 3.19zm6.8-3.19 1.79-1.79a4.81 4.81 0 1 0-6.8-6.8l-10.38 10.38a4.81 4.81 0 1 0 6.8 6.8l1.79-1.79z" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(apigee_api_platform)

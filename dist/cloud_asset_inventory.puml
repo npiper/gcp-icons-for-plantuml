@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $cloud_asset_inventory_png [72x72/16z] {
 xTS54i9G38HXwhd_XN7gVsTsSSYEOEa7zFdkJSbaCiNugP-8_kekmcUYXueuncQkKF_2Ptgex26JyQ7n_m18PFed8yXX038OW0nc-X8XPWm860EYQsneFXQS
 czqpVginOq304EGmsn3MjUEweXqNjDngssrRHBHKeZ4AnCmv3PSjcH8OeH-HqyOrDJdmlmZYCWbwG8Dr6iFTkLXfh88PXWG688C1o600GiQ2H8RR5XfSXmG6
@@ -14,7 +13,7 @@ GCPEntityColoring(cloud_asset_inventory)
 !define cloud_asset_inventory(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_asset_inventory_png, cloud_asset_inventory)
 !define cloud_asset_inventoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_asset_inventory_png, cloud_asset_inventory)
 !define cloud_asset_inventoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_asset_inventory_png, cloud_asset_inventory)
-!else
+!ifdef GCP_USE_SVG
 sprite $cloud_asset_inventory <svg version="1.1" viewBox="0 0 24 24" width="72" height="72"><g fill="none"><g transform="translate(2 4)" fill="#4285F4"><path d="M 12.114 0 L 11.14 0.9744 L 18.229 8.0455 L 12.114 14.16 L 6.0006 8.0455 L 8.9205 5.124 L 7.9553 4.1597 L 4.0695 8.0455 L 12.114 16.091 L 20.161 8.0455 Z"/><path d="M 10.123 9.8132 L 8.3553 8.0459 L 10.123 6.2777 L 11.89 8.0459 Z"/><path d="M 8.0454 0 L -1.68e-4 8.0455 L 8.0454 16.091 L 9.0088 15.127 L 1.931 8.0455 L 8.0454 1.9312 L 14.159 8.0455 L 11.239 10.966 L 12.205 11.932 L 16.091 8.0455 Z"/></g></g></svg>
 
 GCPEntityColoring(cloud_asset_inventory)

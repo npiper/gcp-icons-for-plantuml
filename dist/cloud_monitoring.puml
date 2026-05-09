@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $cloud_monitoring_png [72x72/16z] {
 xTC54i9G5CNGUhl_3UDafXBSkHdzyWxQugsbb59tHt7YN7JzNeVRzpfSljVXxlNEQA-WQnqskJaC0froHhlbdW6wnc6VToEGEHpjXtWt0ga3SnXgO0HoPxV1
 48n0whG5ep0EkJCQ7JD0fJjZXiOCK3KQi0ODYAvdgB-NeNiPijaxUfqJX-vZo6jvYkugZbTkEphbjfiO-P4_h9HIMWC
@@ -13,7 +12,7 @@ GCPEntityColoring(cloud_monitoring)
 !define cloud_monitoring(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_monitoring_png, cloud_monitoring)
 !define cloud_monitoringParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_monitoring_png, cloud_monitoring)
 !define cloud_monitoringParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_monitoring_png, cloud_monitoring)
-!else
+!ifdef GCP_USE_SVG
 sprite $cloud_monitoring <svg viewBox="0 0 24 24" width="72" height="72"><g><rect x="10.83" y="15.84" width="2.33" height="2.64" fill="#669df6"/><path d="M18.48,13.87a.56.56,0,0,1-.4-.17L14,9.47l-2.74,2.89a.57.57,0,0,1-.76.05L8.42,10.73l-2.2,2.92a.56.56,0,0,1-.45.22H2v1.71a.75.75,0,0,0,.74.75H21.26a.75.75,0,0,0,.74-.75V13.87Z" fill="#4285f4"/><path d="M5.5,12.76,7.88,9.6a.55.55,0,0,1,.37-.22.63.63,0,0,1,.42.12l2.12,1.72,2.8-2.94a.54.54,0,0,1,.4-.17h0a.54.54,0,0,1,.4.17l4.33,4.48H22V6a.74.74,0,0,0-.74-.74H2.74A.74.74,0,0,0,2,6v6.81Z" fill="#669df6"/><rect x="8.67" y="18.18" width="6.67" height=".61" rx=".3" fill="#4285f4"/></g></svg>
 
 GCPEntityColoring(cloud_monitoring)

@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $dataproc_metastore_png [72x72/16z] {
 xTKvRi0m34HHQf_xdpYOAl52W9OcglHguditRSPn7809D90jog3b4lx8aWffCYIfK95KI9CXIIKU6g3LKWKjbpeW296cGf8CDKc5D1MIP6Yjmb6_b2zZFe3C
 ALLtxYfTZlaeFN-tANGorr1acWR8wm_lk2EOfuB0tGnq4EuGA7jttzjid_AKlEbGQU1Ni485LBtl_lhFBFFV1IvZ-k_Kr_z_3_RDUx1e_lC86P8AcQQqSmzY
@@ -14,7 +13,7 @@ GCPEntityColoring(dataproc_metastore)
 !define dataproc_metastore(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, dataproc_metastore_png, dataproc_metastore)
 !define dataproc_metastoreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, dataproc_metastore_png, dataproc_metastore)
 !define dataproc_metastoreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, dataproc_metastore_png, dataproc_metastore)
-!else
+!ifdef GCP_USE_SVG
 sprite $dataproc_metastore <svg viewBox="0 0 24 24" width="72" height="72"><path d="m12.232 12.109 7.1339 4.25-7.1339 4.25-7.1339-4.25zm6.5485-2.1726 3.4694 2.1629-0.0185 0.0096656 0.0185 0.0096656-3.4694 2.1629-1.0842-0.5692 2.5711-1.6044-2.5711-1.6024zm-13.249 0 1.0842 0.5692-2.5726 1.6034 2.5726 1.6034-1.0842 0.5692-3.4694-2.1629 0.018-0.0096656-0.018-0.0096656zm6.7003-6.3274 7.1339 4.25-7.1339 4.25-7.1339-4.25z" fill="#4285f4"/></svg>
 
 GCPEntityColoring(dataproc_metastore)

@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $asset_inventory_png [72x72/16z] {
 xTP5eW9140JHbh7xN_XhGM2voAuDqh61iJSkvRMRpMPzAwUsunXd-dQ6Zf-6cHzdWnc4-h-JXNeuIQZZZ48mfQGWc1G4au9WKX1C4eBHa7ri56Go6Z8P3TcC
 Wan6GnRZGjVCUhrGlO3MAyYy6QhO8ejn8Cr4Qeh1E50DY7dh8wVXiCCMf1a3CXWD6Knq1R7CSZ0A9dG7CXYrQqqpjGn0JJ0kj0h6XWJZGuhH2KWoFWIJWc26
@@ -14,7 +13,7 @@ GCPEntityColoring(asset_inventory)
 !define asset_inventory(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, asset_inventory_png, asset_inventory)
 !define asset_inventoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, asset_inventory_png, asset_inventory)
 !define asset_inventoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, asset_inventory_png, asset_inventory)
-!else
+!ifdef GCP_USE_SVG
 sprite $asset_inventory <svg viewBox="0 0 24 24" width="72" height="72"><rect transform="translate(-4.89 12) rotate(-45.01)" x="10.75" y="10.61" width="2.57" height="2.57" fill="#4285f4"/><path fill="#669df6" d="M 17.87 11.89 L 17.8 11.95 L 14.03 15.73 L 12.97 14.68 L 15.77 11.89 L 10.06 6.18 L 10.06 4.08 L 10.13 4.15 Z"/><path fill="#aecbfa" d="M 10.06 6.18 L 4.36 11.89 L 11.11 18.65 L 10.06 19.7 L 10 19.63 L 2.25 11.89 L 10.06 4.08 Z"/><path fill="#669df6" d="M 13.94 17.6 L 13.94 19.7 L 13.88 19.63 L 6.13 11.9 L 9.97 8.05 L 11.03 9.11 L 8.23 11.9 Z"/><path fill="#4285f4" d="M 13.94 17.6 L 19.64 11.9 L 12.89 5.14 L 13.94 4.08 L 14 4.15 L 21.75 11.9 L 21.68 11.96 L 13.94 19.7 Z"/></svg>
 
 GCPEntityColoring(asset_inventory)

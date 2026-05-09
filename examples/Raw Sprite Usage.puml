@@ -1,6 +1,5 @@
 @startuml Raw Sprite Usage
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/vertexai.puml
 !includeurl GCPPuml/iot_core.puml

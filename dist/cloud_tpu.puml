@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $cloud_tpu_png [72x72/16z] {
 xPTbWcGX30QJG5Av_uLNW7O1PjRtrP_MLzY7oP_AmO77D_pb-sMYyVBzvps7fxZ75FSorSGICz6QPfwYMEPlyNXSw9see7V_mKNiVIyzbbMuArJ1xluvzvI0
 AZTKa5rFWUIksb2tFK5c8jSOwDpZSS43yXkuNIMTKR-LD4Q3HYOmLDhCb57YOdvgCIr0SRfAcpP1jpnZb17HeSeElkyHiD4p5myVyCGbFy4dF1MNGRaqJ2SU
@@ -16,7 +15,7 @@ GCPEntityColoring(cloud_tpu)
 !define cloud_tpu(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_tpu_png, cloud_tpu)
 !define cloud_tpuParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_tpu_png, cloud_tpu)
 !define cloud_tpuParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_tpu_png, cloud_tpu)
-!else
+!ifdef GCP_USE_SVG
 sprite $cloud_tpu <svg viewBox="0 0 24 24" width="72" height="72"><g><g><path d="M6.48,9.62a.37.37,0,1,1-.05-.74l2.3-.32a.37.37,0,0,1,.42.32.38.38,0,0,1-.32.43l-2.3.31Z" fill="#4285f4"/><rect transform="translate(-1.21 17.55) rotate(-71.93)" x="11.11" y="7.43" width=".75" height="4.36" fill="#4285f4"/><path d="M9.18,9.16H9.07a.37.37,0,0,1-.24-.46l.83-2.84a.37.37,0,0,1,.46-.24.36.36,0,0,1,.26.45L9.54,8.88A.38.38,0,0,1,9.18,9.16Z" fill="#4285f4"/><path d="M14.31,10.56a.36.36,0,0,1-.31-.17A.36.36,0,0,1,14,10l1.67-4.23a.38.38,0,0,1,.47-.18.38.38,0,0,1,.23.45l-1.68,4.24A.39.39,0,0,1,14.31,10.56Z" fill="#4285f4"/><rect transform="translate(-7.84 8.26) rotate(-38.61)" x="5.35" y="14.95" width="5.03" height=".75" fill="#4285f4"/><path fill="#4285f4" d="M 14.12 10.71 L 14.41 10.02 L 18.05 11.61 L 17.75 12.29 Z"/><path fill="#4285f4" d="M 13.99 14.59 L 14.51 14.04 L 17.74 17.09 L 17.22 17.63 Z"/><rect transform="translate(-2 2.12) rotate(-11.48)" x="9.18" y="9" width=".75" height="4.06" fill="#4285f4"/><path fill="#4285f4" d="M 9.96 13.6 L 14.06 10 L 14.56 10.56 L 10.46 14.16 Z"/><path fill="#4285f4" d="M 13.75 14.22 L 13.99 10.25 L 14.74 10.3 L 14.49 14.27 Z"/><circle cx="10.01" cy="13.82" r="1.36" fill="#4285f4"/><circle cx="14.37" cy="10.36" r="1.61" fill="#4285f4"/><circle cx="14.36" cy="14.54" r=".84" fill="#4285f4"/><circle cx="9.04" cy="8.67" r=".99" fill="#4285f4"/></g><path fill="#669df6" d="M 13 3 L 11 3 L 11 7 L 13 7 L 13 3 Z"/><path fill="#669df6" d="M 17 3 L 15 3 L 15 7 L 17 7 L 17 3 Z"/><path fill="#669df6" d="M 9 3 L 7 3 L 7 7 L 9 7 L 9 3 Z"/><path fill="#669df6" d="M 13 17 L 11 17 L 11 21 L 13 21 L 13 17 Z"/><path fill="#669df6" d="M 17 17 L 15 17 L 15 21 L 17 21 L 17 17 Z"/><path fill="#669df6" d="M 9 17 L 7 17 L 7 21 L 9 21 L 9 17 Z"/><path fill="#669df6" d="M 7 11 L 3 11 L 3 13 L 7 13 L 7 11 Z"/><path fill="#669df6" d="M 7 7 L 3 7 L 3 9 L 7 9 L 7 7 Z"/><path fill="#669df6" d="M 7 15 L 3 15 L 3 17 L 7 17 L 7 15 Z"/><path fill="#669df6" d="M 21 11 L 17 11 L 17 13 L 21 13 L 21 11 Z"/><path fill="#669df6" d="M 21 7 L 17 7 L 17 9 L 21 9 L 21 7 Z"/><path fill="#669df6" d="M 21 15 L 17 15 L 17 17 L 21 17 L 21 15 Z"/><path d="M18,5H6A1,1,0,0,0,5,6V18a1,1,0,0,0,1,1H18a1,1,0,0,0,1-1V6A1,1,0,0,0,18,5ZM17,16.47a.53.53,0,0,1-.53.53H7.53A.53.53,0,0,1,7,16.47V7.53A.53.53,0,0,1,7.53,7h8.94a.53.53,0,0,1,.53.53Z" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(cloud_tpu)

@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $vertexai_png [72x72/16z] {
 xPQ7hYin24IPmMN__uiVJkC6xRv9LSsv9LOxOe91ja_oumTf2lHE4pZf9fW1L3dkoeCPKDKJF5AFVS23tl6kHwCzG1u4y00MyFAPj3bR7dI_kDyup6sRo8Fm
 11PWptDkDvU7CbaH9dtERjMZ0Gv6HdjqBxIdnadXBP_xevxyUbFO0rkCESVZzJZzAgG56C6vtVFQzy04894NEpr_o-0Oj88MidUAE0BP9br6fUPoFU_qUo5Q
@@ -17,7 +16,7 @@ GCPEntityColoring(vertexai)
 !define vertexai(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, vertexai_png, vertexai)
 !define vertexaiParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, vertexai_png, vertexai)
 !define vertexaiParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, vertexai_png, vertexai)
-!else
+!ifdef GCP_USE_SVG
 sprite $vertexai <svg viewBox="0 0 24 24" width="72" height="72"><path d="M20,13.89A.77.77,0,0,0,19,13.73l-7,5.14v.22a.72.72,0,1,1,0,1.43v0a.74.74,0,0,0,.45-.15l7.41-5.47A.76.76,0,0,0,20,13.89Z" fill="#669df6"/><path d="M12,20.52a.72.72,0,0,1,0-1.43h0v-.22L5,13.73a.76.76,0,0,0-1,.16.74.74,0,0,0,.16,1l7.41,5.47a.73.73,0,0,0,.44.15v0Z" fill="#aecbfa"/><path d="M12,18.34a1.47,1.47,0,1,0,1.47,1.47A1.47,1.47,0,0,0,12,18.34Zm0,2.18a.72.72,0,1,1,.72-.71A.71.71,0,0,1,12,20.52Z" fill="#4285f4"/><path d="M6,6.11a.76.76,0,0,1-.75-.75V3.48a.76.76,0,1,1,1.51,0V5.36A.76.76,0,0,1,6,6.11Z" fill="#aecbfa"/><circle cx="5.98" cy="12" r=".76" fill="#aecbfa"/><circle cx="5.98" cy="9.79" r=".76" fill="#aecbfa"/><circle cx="5.98" cy="7.57" r=".76" fill="#aecbfa"/><path d="M18,8.31a.76.76,0,0,1-.75-.76V5.67a.75.75,0,1,1,1.5,0V7.55A.75.75,0,0,1,18,8.31Z" fill="#4285f4"/><circle cx="18.02" cy="12.01" r=".76" fill="#4285f4"/><circle cx="18.02" cy="9.76" r=".76" fill="#4285f4"/><circle cx="18.02" cy="3.48" r=".76" fill="#4285f4"/><path d="M12,15a.76.76,0,0,1-.75-.75V12.34a.76.76,0,0,1,1.51,0v1.89A.76.76,0,0,1,12,15Z" fill="#669df6"/><circle cx="12" cy="16.45" r=".76" fill="#669df6"/><circle cx="12" cy="10.14" r=".76" fill="#669df6"/><circle cx="12" cy="7.92" r=".76" fill="#669df6"/><path d="M15,10.54a.76.76,0,0,1-.75-.75V7.91a.76.76,0,1,1,1.51,0V9.79A.76.76,0,0,1,15,10.54Z" fill="#4285f4"/><circle cx="15.01" cy="5.69" r=".76" fill="#4285f4"/><circle cx="15.01" cy="14.19" r=".76" fill="#4285f4"/><circle cx="15.01" cy="11.97" r=".76" fill="#4285f4"/><circle cx="8.99" cy="14.19" r=".76" fill="#aecbfa"/><circle cx="8.99" cy="7.92" r=".76" fill="#aecbfa"/><circle cx="8.99" cy="5.69" r=".76" fill="#aecbfa"/><path d="M9,12.73A.76.76,0,0,1,8.24,12V10.1a.75.75,0,1,1,1.5,0V12A.75.75,0,0,1,9,12.73Z" fill="#aecbfa"/></svg>
 
 GCPEntityColoring(vertexai)

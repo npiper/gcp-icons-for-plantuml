@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $cloud_generic_png [72x72/16z] {
 xTOtaiCm40NHfkVzBxmhAQ8dlAlVCUf506QeCBLwr8eZHuwSaL-ZcHFtJC-kmT7Xb9F3HHaTBilZy9YXi_3QOk1WrAk3OIyEnZqwcDS5SdXmPYnQxXsiokt8
 MQsO1Cw2SKkATseE9VZ7p2NJVxxZeQwK_KUE73boAapz0m
@@ -13,7 +12,7 @@ GCPEntityColoring(cloud_generic)
 !define cloud_generic(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, cloud_generic_png, cloud_generic)
 !define cloud_genericParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, cloud_generic_png, cloud_generic)
 !define cloud_genericParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, cloud_generic_png, cloud_generic)
-!else
+!ifdef GCP_USE_SVG
 sprite $cloud_generic <svg version="1.1" viewBox="0 0 24 24" width="72" height="72"><g fill="none"><path d="m22 2v20h-20v-20h20zm-10 4.6154c-1.7869 0-3.3095 1.1315-3.8904 2.7171l-0.1606 2.9426e-4c-2.011 0-3.6413 1.6303-3.6413 3.6413 0 2.011 1.6303 3.6413 3.6413 3.6413h8.102c2.011 0 3.6413-1.6303 3.6413-3.6413 0-2.011-1.6303-3.6413-3.6413-3.6413l-0.1606-2.9426e-4c-0.58091-1.5856-2.1035-2.7171-3.8904-2.7171z" fill="#4285F4"/></g></svg>
 
 GCPEntityColoring(cloud_generic)

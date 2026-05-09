@@ -2,7 +2,6 @@
 ' Copyright (c) 2020 David Holsgrove
 ' SPDX-License-Identifier: MIT (For details, see LICENSE-CODE)
 
-!ifdef GCP_USE_PNG
 sprite $security_command_center_png [72x72/16z] {
 xPW7jkCm202H10ptl_1MV_EJY6TPsykycZQcg4R-8lxJJGwiopR32Ja07x93Ko0uFP6csvPuxua0jDqhIn0HpvvFWFKRPI5YxebCRocXmfEcLKljoK9TbQNs
 98Jrmk8PIkr9mASc9sB5a-1_gkUSNmtsFK3ETs3J0wD9Cc3BWyeJodqFT7cXmqqFD9dGODMJcbgqxkbIqEzuC2anRdZafAkvcsPyRTa3cgts0tqDYCfpqkJ0
@@ -16,7 +15,7 @@ GCPEntityColoring(security_command_center)
 !define security_command_center(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4284F3, security_command_center_png, security_command_center)
 !define security_command_centerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4284F3, security_command_center_png, security_command_center)
 !define security_command_centerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4284F3, security_command_center_png, security_command_center)
-!else
+!ifdef GCP_USE_SVG
 sprite $security_command_center <svg viewBox="0 0 24 24" width="72" height="72"><g><path d="M13.31,6.85a5.23,5.23,0,0,1,3.75,3.75h3.53V5.24L13.31,2Z" fill="#4285f4"/><path d="M6.93,10.61a5.22,5.22,0,0,1,3.75-3.75V2L3.41,5.24v5.37Z" fill="#4285f4"/><path d="M10.69,17a5.23,5.23,0,0,1-3.75-3.75H3.63A12,12,0,0,0,10.69,22Z" fill="#4285f4"/><path d="M17.07,13.25A5.23,5.23,0,0,1,13.32,17v5a12,12,0,0,0,7.05-8.75Z" fill="#4285f4"/><circle cx="12" cy="11.92" r="2.63" fill="#669df6"/></g></svg>
 
 GCPEntityColoring(security_command_center)

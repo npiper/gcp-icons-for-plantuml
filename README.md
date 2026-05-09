@@ -129,18 +129,18 @@ Include `GCPCommon.puml` first, then any product files you need.
 
 ```plantuml
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/cloud_run.puml
 !includeurl GCPPuml/cloud_storage.puml
 ```
 
-> **Note:** `!define GCP_USE_PNG` activates grayscale PNG sprites, compatible with all PlantUML versions and remote includes. Without it, SVG sprites are used (requires local file includes and PlantUML >= 1.2026.x).
+> **Note:** PNG sprites are the default — no extra define is needed. They work with all PlantUML versions and remote `!includeurl`. To use full-colour SVG sprites instead, add `!pragma svgparser sax` and `!define GCP_USE_SVG` **before** any `!include`, and use local `!include` (not `!includeurl`). SVG mode requires PlantUML >= 1.2026.x.
 
 ### Using local files (after cloning)
 
 ```plantuml
 !pragma svgparser sax
+!define GCP_USE_SVG
 !define GCPPuml path/to/dist
 !include GCPPuml/GCPCommon.puml
 !include GCPPuml/bigquery.puml
@@ -165,7 +165,6 @@ Generated example diagrams are available in [`docs/images/`](docs/images/).
 ```plantuml
 @startuml Hello World
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/cloud_code.puml
 !includeurl GCPPuml/cloud_storage.puml
@@ -190,7 +189,6 @@ IoT message processing via an error rule, routing to Pub/Sub event and error que
 ```plantuml
 @startuml Basic Usage - GCP IoT Rules Engine
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/iot_core.puml
 !includeurl GCPPuml/pubsub.puml
@@ -218,7 +216,6 @@ Cloud Endpoints fronting Cloud Run, backed by Firestore, Cloud Armor at the edge
 ```plantuml
 @startuml Serverless API - GCP v2
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/cloud_armor.puml
 !includeurl GCPPuml/cloud_endpoints.puml
@@ -254,7 +251,6 @@ Streaming ingestion from IoT devices through to BigQuery and Looker.
 ```plantuml
 @startuml Data Pipeline - GCP v2
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/iot_core.puml
 !includeurl GCPPuml/pubsub.puml
@@ -293,7 +289,6 @@ Use sprites directly inside any PlantUML shape — no macro required.
 ```plantuml
 @startuml Raw Sprite Usage
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/vertexai.puml
 !includeurl GCPPuml/iot_core.puml
@@ -319,7 +314,6 @@ The `GCPSimplified.puml` include filters technical detail for executive-level di
 ```plantuml
 @startuml Two Modes - Simple View
 !define GCPPuml https://raw.githubusercontent.com/npiper/gcp-icons-for-plantuml/refs/heads/feature/2026-update/dist
-!define GCP_USE_PNG
 !includeurl GCPPuml/GCPCommon.puml
 !includeurl GCPPuml/GCPSimplified.puml
 !includeurl GCPPuml/cloud_endpoints.puml
@@ -356,11 +350,11 @@ Each `.puml` file in `dist/` contains **both** a PNG sprite and an SVG sprite fo
 
 | Mode | How to activate | When to use |
 |---|---|---|
-| **PNG** (grayscale, 128×128) | `!define GCP_USE_PNG` before any include | Remote `!includeurl`, any PlantUML version |
-| **SVG** (full colour, scalable) | Default (no define needed) | Local `!include` with PlantUML >= 1.2026.x and `!pragma svgparser sax` |
+| **PNG** (grayscale, 72×72) | Default — no define needed | Remote `!includeurl`, any PlantUML version |
+| **SVG** (full colour, scalable) | `!pragma svgparser sax` + `!define GCP_USE_SVG` before any include | Local `!include` with PlantUML >= 1.2026.x |
 
-When using PNG mode, sprite names are suffixed `_png` (e.g. `$cloud_run_png`).
-When using SVG mode (local only), sprite names have no suffix (e.g. `$cloud_run`).
+When using PNG mode (default), sprite names are suffixed `_png` (e.g. `$cloud_run_png`).
+When using SVG mode (`!define GCP_USE_SVG`), sprite names have no suffix (e.g. `$cloud_run`).
 
 See [`examples/Sprite Mode - PNG.puml`](examples/Sprite%20Mode%20-%20PNG.puml) and [`examples/Sprite Mode - SVG.puml`](examples/Sprite%20Mode%20-%20SVG.puml) for working examples of both modes.
 

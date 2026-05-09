@@ -130,10 +130,12 @@ For each entry in `configv2.yml`:
 5. Encodes the resized PNG as a PlantUML base64 sprite (`[72x72/16z]`).
 6. Writes a single `dist/{Target}.puml` containing:
    - License header
-   - The SVG sprite (default, used with local `!include`). The root `<svg>` has
+   - The PNG sprite with `_png` suffix — **default** (no define required). Used
+     with any PlantUML version and remote `!includeurl`.
+   - The SVG sprite (opt-in with `!define GCP_USE_SVG`). The root `<svg>` has
      `width="72" height="72"` so PlantUML reserves the same layout space as the
-     PNG sprite, giving consistent icon sizes across both modes.
-   - The PNG sprite with `_png` suffix (used when `!define GCP_USE_PNG` is set)
+     PNG sprite, giving consistent icon sizes across both modes. Requires
+     `!pragma svgparser sax` and local `!include`. Wrapped in `!ifdef GCP_USE_SVG`.
    - Entity macros in snake_case: `!define {Target}(...)`.
 7. Copies the full-size `.png` and `.svg` source files to `dist/{Target}.png` / `dist/{Target}.svg`.
 
