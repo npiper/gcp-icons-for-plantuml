@@ -15,22 +15,28 @@ PlantUML sprites, macros, and includes for Google Cloud Platform (GCP) services.
 
 ## Table of Contents
 
-- [What Changed from v1](#what-changed-from-v1)
-- [Migrating from v1](#migrating-from-v1)
-- [Getting Started](#getting-started)
-  - [Hello World](#hello-world)
-- [Examples](#examples)
-  - [Basic Usage](#basic-usage)
-  - [Serverless API](#serverless-api)
-  - [Data Pipeline](#data-pipeline)
-  - [Raw Sprite Usage](#raw-sprite-usage)
-  - [Simplified View](#simplified-view)
-- [Sprite Modes: PNG and SVG](#sprite-modes-png-and-svg)
-- [Customised Builds](#customised-builds)
-- [Contributing](#contributing)
-- [License Summary](#license-summary)
-- [Acknowledgements](#acknowledgements)
-- [v1 Reference Archive](#v1-reference-archive)
+- [GCP Icons for PlantUML](#gcp-icons-for-plantuml)
+  - [Table of Contents](#table-of-contents)
+  - [What Changed from v1](#what-changed-from-v1)
+  - [Migrating from v1](#migrating-from-v1)
+  - [Getting Started](#getting-started)
+    - [Using this repository directly (URL)](#using-this-repository-directly-url)
+    - [Using local files (after cloning)](#using-local-files-after-cloning)
+    - [Via plantuml-stdlib (if/when included)](#via-plantuml-stdlib-ifwhen-included)
+  - [Examples](#examples)
+    - [Hello World](#hello-world)
+    - [Basic Usage](#basic-usage)
+    - [Serverless API](#serverless-api)
+    - [Data Pipeline](#data-pipeline)
+    - [Raw Sprite Usage](#raw-sprite-usage)
+    - [Simplified View](#simplified-view)
+    - [Technical View](#technical-view)
+  - [Sprite Modes: PNG and SVG](#sprite-modes-png-and-svg)
+  - [Customised Builds](#customised-builds)
+  - [Contributing](#contributing)
+  - [License Summary](#license-summary)
+  - [Acknowledgements](#acknowledgements)
+  - [v1 Reference Archive](#v1-reference-archive)
 
 ---
 
@@ -237,6 +243,8 @@ service --> secrets : reads at startup
 @enduml
 ```
 
+![Serverless API](docs/images/Serverless%20API%20-%20GCP%20v2.svg)
+
 ---
 
 ### Data Pipeline
@@ -274,6 +282,8 @@ warehouse --> dashboard : SQL
 @enduml
 ```
 
+![Data Pipeline](docs/images/Data%20Pipeline%20-%20GCP%20v2.svg)
+
 ---
 
 ### Raw Sprite Usage
@@ -298,7 +308,7 @@ mySecondFunction --> mySecondML
 @enduml
 ```
 
-![Raw Sprite Usage](docs/images/Raw%20usage%20-%20Sprites.svg)
+![Raw Sprite Usage](docs/images/Raw%20Sprite%20Usage.svg)
 
 ---
 
@@ -332,6 +342,14 @@ endpoints <--> engine
 
 ---
 
+### Technical View
+
+The same diagram without `GCPSimplified.puml` — full technical detail.
+
+![Technical View](docs/images/Two%20Modes%20-%20Technical%20View.svg)
+
+---
+
 ## Sprite Modes: PNG and SVG
 
 Each `.puml` file in `dist/` contains **both** a PNG sprite and an SVG sprite for every icon.
@@ -345,6 +363,14 @@ When using PNG mode, sprite names are suffixed `_png` (e.g. `$cloud_run_png`).
 When using SVG mode (local only), sprite names have no suffix (e.g. `$cloud_run`).
 
 See [`examples/Sprite Mode - PNG.puml`](examples/Sprite%20Mode%20-%20PNG.puml) and [`examples/Sprite Mode - SVG.puml`](examples/Sprite%20Mode%20-%20SVG.puml) for working examples of both modes.
+
+**PNG mode** (remote `!includeurl`, grayscale):
+
+![Sprite Mode PNG](docs/images/Sprite%20Mode%20-%20PNG%20fallback%20(v2%20local).svg)
+
+**SVG mode** (local `!include`, full colour):
+
+![Sprite Mode SVG](docs/images/Sprite%20Mode%20-%20SVG%20(v2).svg)
 
 ---
 
